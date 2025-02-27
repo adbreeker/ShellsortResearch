@@ -5,15 +5,17 @@
 #include <thread>
 #include <math.h>
 #include <future>
+#include <random>
+#include <string>
 
 struct Result
 {
     double time;
     std::string name;
-    std::vector<int> gapsUsed;
+    std::vector<long> gapsUsed;
 };
 
-void shellSort(std::vector<int>& arr, std::vector<int>& gaps)
+void shellSort(std::vector<int>& arr, std::vector<long>& gaps)
 {
     for(int gap : gaps)
     {
@@ -40,7 +42,7 @@ void measureSortTime(void(*sortFunc)(std::vector<int>&), std::vector<int> data, 
     output.set_value(Result{ elapsed.count(), name });
 }
 
-void measureShellSortTime(std::vector<int> data, std::vector<int> gaps, std::string name, std::promise<Result> output) 
+void measureShellSortTime(std::vector<int> data, std::vector<long> gaps, std::string name, std::promise<Result> output) 
 {
     auto start = std::chrono::high_resolution_clock::now();
     shellSort(data, gaps);
@@ -50,13 +52,13 @@ void measureShellSortTime(std::vector<int> data, std::vector<int> gaps, std::str
     output.set_value(Result{ elapsed.count(), name, gaps });
 }
 
-std::vector<int> getTokudaGaps(int sortingRange)
+std::vector<long> getTokudaGaps(long sortingRange)
 {
-    std::vector<int> tokudaGaps;
+    std::vector<long> tokudaGaps;
 
-    for (int k = 1; k < sortingRange; k++)
+    for (long k = 1; k < sortingRange; k++)
     {
-        int gap = (int)std::ceil((std::pow(9.0 / 4.0, k) - 1) / ((9.0 / 4.0) - 1));
+        long gap = (long)std::ceil((std::pow(9.0 / 4.0, k) - 1) / ((9.0 / 4.0) - 1));
 
         if (gap < sortingRange)
         {
@@ -72,10 +74,10 @@ std::vector<int> getTokudaGaps(int sortingRange)
     return tokudaGaps;
 }
 
-std::vector<int> getCiuraGaps(int sortingRange)
+std::vector<long> getCiuraGaps(long sortingRange)
 {
-    std::vector<int> ciuraGaps;
-    for (int gap : {1, 4, 10, 23, 57, 132, 301, 701 /*later extension:*/, 1750})
+    std::vector<long> ciuraGaps;
+    for (long gap : {1, 4, 10, 23, 57, 132, 301, 701 /*later extension:*/, 1750})
     {
         if (gap < sortingRange)
         {
@@ -88,15 +90,15 @@ std::vector<int> getCiuraGaps(int sortingRange)
     return ciuraGaps;
 }
 
-std::vector<int> getLeeGaps(int sortingRange)
+std::vector<long> getLeeGaps(long sortingRange)
 {
-    std::vector<int> leeGaps;
+    std::vector<long> leeGaps;
 
     double lambda = 2.24360906142;
 
-    for (int k = 1; k < sortingRange; k++)
+    for (long k = 1; k < sortingRange; k++)
     {
-        int gap = (int)std::ceil((std::pow(lambda, k) - 1) / (lambda - 1));
+        long gap = (long)std::ceil((std::pow(lambda, k) - 1) / (lambda - 1));
 
         if (gap < sortingRange)
         {
@@ -112,13 +114,13 @@ std::vector<int> getLeeGaps(int sortingRange)
     return leeGaps;
 }
 
-std::vector<int> getSkeanEhrenborgJaromczykGaps(int sortingRange)
+std::vector<long> getSkeanEhrenborgJaromczykGaps(long sortingRange)
 {
-    std::vector<int> sejGaps;
+    std::vector<long> sejGaps;
 
-    for (int k = -1; k < sortingRange; k++)
+    for (long k = -1; k < sortingRange; k++)
     {
-        int gap = (int)std::floor(4.0816 * std::pow(8.5714, k / 2.2449));
+        long gap = (long)std::floor(4.0816 * std::pow(8.5714, k / 2.2449));
 
         if (gap < sortingRange)
         {
@@ -134,18 +136,84 @@ std::vector<int> getSkeanEhrenborgJaromczykGaps(int sortingRange)
     return sejGaps;
 }
 
+std::vector<long> getRandomizedGaps(long sortingRange)
+{
+    std::vector<long> randomizedGaps = {1};
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+
+    if (rand() % 2 == 0)
+    {
+        std::uniform_real_distribution<float> dist(1.0001f, 5.0f);
+
+        for (long k = 1; k < sortingRange; k++)
+        {
+
+            float x = dist(gen);
+            long gap = (long)std::ceil(randomizedGaps[k-1] * x);
+
+            if (gap < sortingRange)
+            {
+                randomizedGaps.push_back(gap);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+    else
+    {
+        std::uniform_real_distribution<float> dist(2.0f, 5.0f);
+
+        for (long k = 1; k < sortingRange; k++)
+        {
+
+            float x = dist(gen);
+            long gap = (long)std::floor(randomizedGaps[k - 1] * x);
+
+            if (gap < sortingRange)
+            {
+                randomizedGaps.push_back(gap);
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+
+    std::reverse(randomizedGaps.begin(), randomizedGaps.end());
+    return randomizedGaps;
+}
+
 int main() 
 {
-    const int SORTING_RANGE = 10000;
+    const long SORTING_RANGE = 1000;
 
-    std::vector<int> tokudaGaps = getTokudaGaps(SORTING_RANGE);
-    std::vector<int> ciuraGaps = getCiuraGaps(SORTING_RANGE);
-    std::vector<int> leeGaps = getLeeGaps(SORTING_RANGE);
-    std::vector<int> sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
+    std::vector<long> tokudaGaps = getTokudaGaps(SORTING_RANGE);
+    std::vector<long> ciuraGaps = getCiuraGaps(SORTING_RANGE);
+    std::vector<long> leeGaps = getLeeGaps(SORTING_RANGE);
+    std::vector<long> sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
 
-    int winners[4] = { 0, 0, 0, 0 };
+    std::vector<long> randomizedGaps[95];
+    for (std::vector<long>& rg : randomizedGaps) rg = getRandomizedGaps(SORTING_RANGE);
 
-    for (int i = 0; i < 1000; i++)
+    for (std::vector<long> rg : randomizedGaps)
+    {
+        for (long gap : rg)
+        {
+            std::cout << gap << "  ";
+        }
+        std::cout << "\n";
+    }
+
+    int winners[6] = {};
+    
+    std::cout << "\n\n";
+
+    for (int i = 0; i < 1; i++)
     {
         std::cout << "Iteration " << i << "\n";
 
@@ -153,44 +221,42 @@ int main()
         std::vector<int> data(SORTING_RANGE);
         for (int& num : data) num = rand() % 10000;
 
-        // Use promises & futures for safe thread return values
-        std::promise<Result> p1, p2, p3, p4;
-        std::future<Result> f1 = p1.get_future();
-        std::future<Result> f2 = p2.get_future();
-        std::future<Result> f3 = p3.get_future();
-        std::future<Result> f4 = p4.get_future();
+        // Use promises & futures for safe thread return value
+        std::promise<Result> promises[100];
+        std::future<Result> futures[100];
+        for (int j = 0; j < 100; j++) futures[j] = promises[j].get_future();
 
-        std::thread t1(measureShellSortTime, data, tokudaGaps, "Tokuda", std::move(p1));
-        std::thread t2(measureShellSortTime, data, ciuraGaps, "Ciura", std::move(p2));
-        std::thread t3(measureShellSortTime, data, leeGaps, "Lee", std::move(p3));
-        std::thread t4(measureShellSortTime, data, sejGaps, "SEJ", std::move(p4));
+        std::thread threads[100];
 
-        t1.join();
-        t2.join();
-        t3.join();
-        t4.join();
+        threads[0] = std::thread(measureShellSortTime, data, tokudaGaps, "Tokuda", std::move(promises[0]));
+        threads[1] = std::thread(measureShellSortTime, data, ciuraGaps, "Ciura", std::move(promises[1]));
+        threads[2] = std::thread(measureShellSortTime, data, leeGaps, "Lee", std::move(promises[2]));
+        threads[3] = std::thread(measureShellSortTime, data, sejGaps, "SEJ", std::move(promises[3]));
+        threads[4] = std::thread(measureSortTime, [](std::vector<int>& d) {std::sort(d.begin(), d.end());}, data, "stdSort", std::move(promises[4]));
+
+        for (int j = 5; j<100; j++) threads[j] = std::thread(measureShellSortTime, data, randomizedGaps[j-5], "Random" + std::to_string(j-4), std::move(promises[j]));
+
+        for (int j = 0; j < 100; j++) threads[j].join();
 
         // Get results from threads
-        results.push_back(f1.get());
-        results.push_back(f2.get());
-        results.push_back(f3.get());
-        results.push_back(f4.get());
+        for (int j = 0; j < 100; j++) results.push_back(futures[j].get());
 
         // Sort results to find the fastest
         std::sort(results.begin(), results.end(), [](const Result& a, const Result& b) {
             return a.time < b.time;
             });
 
-        if (results[0].name == "Tokuda") { winners[0]++; }
-        if (results[0].name == "Ciura") { winners[1]++; }
-        if (results[0].name == "Lee") { winners[2]++; }
-        if (results[0].name == "SEJ") { winners[3]++; }
+        for (Result r : results)
+        {
+            std::cout << r.name + ": " << r.time << "ms\n";
+            if (r.name != "stdSort")
+            {
+                std::cout << "Gaps: ";
+                for (long gap : r.gapsUsed) std::cout << gap << " ";
+            }
+            std::cout << "\n\n";
+        }
     }
-
-    std::cout << "Tokuda: " << winners[0] << "\n";
-    std::cout << "Ciura: " << winners[1] << "\n";
-    std::cout << "Lee: " << winners[2] << "\n";
-    std::cout << "SEJ: " << winners[3] << "\n";
 
     return 0;
 }
