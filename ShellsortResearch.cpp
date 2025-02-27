@@ -119,7 +119,7 @@ std::vector<unsigned long> getSkeanEhrenborgJaromczykGaps(unsigned long sortingR
 {
     std::vector<unsigned long> sejGaps;
 
-    for (long k = -1; k < sortingRange; k++)
+    for (long k = -1; k < (long long)sortingRange; k++)
     {
         unsigned long gap = (unsigned long)std::floor(4.0816 * std::pow(8.5714, k / 2.2449));
 
@@ -145,7 +145,7 @@ std::vector<unsigned long> getRandomizedGaps(unsigned long sortingRange)
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> dist(1.1f, 5.0f);
 
-    for (unsigned long k = 1; k < sortingRange; k++)
+    for (long k = 1; k < sortingRange; k++)
     {
 
         float x = dist(gen);
@@ -323,7 +323,7 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
 
 int main() 
 {
-    const unsigned long SORTING_RANGE = 10000;
+    /*const unsigned long SORTING_RANGE = 10000;
 
     std::vector<unsigned long> tokudaGaps = getTokudaGaps(SORTING_RANGE);
     std::vector<unsigned long> ciuraGaps = getCiuraGaps(SORTING_RANGE);
@@ -333,12 +333,12 @@ int main()
     std::vector<std::vector<unsigned long>> randomizedGaps = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
     for (int i = randomizedGaps.size(); i<1000; i++) randomizedGaps.push_back(getRandomizedGaps(SORTING_RANGE));
 
-    std::vector<Result> results = compareShellSorts(SORTING_RANGE, randomizedGaps, 5000);
+    std::vector<Result> results = compareShellSorts(SORTING_RANGE, randomizedGaps, 100);*/
 
-    /*std::vector<Result> results = compareShellWith_stdSort_Ciura_SEJ(
-        SORTING_RANGE,
-        std::vector<long> {3219, 716, 196, 90, 19, 4, 1},
-        {1000, 1000});*/
+    std::vector<Result> results = compareShellWith_stdSort_Ciura_SEJ(
+        {1000, 1000},
+        std::vector<unsigned long> {3219, 716, 196, 90, 19, 4, 1},
+        100);
 
     std::cout << "\n\n    Results:\n";
 
