@@ -210,10 +210,20 @@ std::vector<Result> compareShellSorts(long sortingRange, std::vector<std::vector
         for (int j = 0; j < sortsCount; j++) futures[j] = promises[j].get_future();
 
         std::vector<std::thread> threads;
-       
-        for (int j = 0; j < sortsCount; j++) threads.push_back(std::thread(measureShellSortTime, data, gapSequences[j], "Random" + std::to_string(j), std::move(promises[j])));
+        
+        int cpuCores = std::thread::hardware_concurrency();
 
-        for (int j = 0; j < sortsCount; j++) threads[j].join();
+        for (int j = 0; j < sortsCount; j++)
+        {
+            threads.push_back(std::thread(measureShellSortTime, data, gapSequences[j], "Random" + std::to_string(j), std::move(promises[j])));
+            if (j % cpuCores == cpuCores - 1)
+            {
+                for (int l = j - 3; l <= j; l++)
+                {
+                    threads[l].join();
+                }
+            }
+        }
 
         // Get results from threads
         std::vector<Result> results;
@@ -335,15 +345,15 @@ int main()
     std::vector<long> leeGaps = getLeeGaps(SORTING_RANGE);
     std::vector<long> sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
 
-    std::vector<std::vector<long>> randomizedGaps = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
+    /*std::vector<std::vector<long>> randomizedGaps = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
     for (int i = 0; i<96; i++) randomizedGaps.push_back(getRandomizedGaps(SORTING_RANGE));
 
-    std::vector<Result> results = compareShellSorts(SORTING_RANGE ,randomizedGaps, 100);
+    std::vector<Result> results = compareShellSorts(SORTING_RANGE ,randomizedGaps, 100);*/
 
-    /*std::vector<Result> results = compareShellWith_stdSort_Ciura_SEJ(
+    std::vector<Result> results = compareShellWith_stdSort_Ciura_SEJ(
         SORTING_RANGE,
-        std::vector<long> {1},
-        1000);*/
+        std::vector<long> {3219, 716, 196, 90, 19, 4, 1},
+        1000);
 
     std::cout << "\n\n    Results:\n";
 
