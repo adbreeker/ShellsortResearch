@@ -321,9 +321,108 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
     return avgResults;
 }
 
+std::vector<std::vector<unsigned long>> geneticAlgorithmCrossParents(std::vector<std::vector<unsigned long>> parents)
+{
+    std::vector<std::vector<unsigned long>> childs;
+
+    for (int i = 0; i < parents.size(); i+=2)
+    {
+        std::vector<unsigned long> parent1 = parents[i];
+        std::vector<unsigned long> parent2;
+        if (i + 1 < parents.size()) { parent2 = parents[i + 1]; }
+        else { parent2 = parents[0]; }
+
+        std::vector<unsigned long> child1(parent1.begin(), parent1.begin() + parent1.size() / 2);
+        for (unsigned long gap : parent2)
+        {
+            if (gap < child1.back()) { child1.push_back(gap); }
+        }
+
+        std::vector<unsigned long> child2(parent2.begin(), parent2.begin() + parent2.size() / 2);
+        for (unsigned long gap : parent1)
+        {
+            if (gap < child2.back()) { child2.push_back(gap); }
+        }
+
+        childs.push_back(child1);
+        childs.push_back(child2);
+    }
+
+    return childs;
+}
+
+std::vector<unsigned long> geneticAlgorithmForGapsSeeking(unsigned long sortingRange, std::vector<std::vector<unsigned long>> startGapsSequences, int tryoutsIterations, int geneticIterations)
+{   
+    std::vector<Result> results;
+    bool fasterFound = false;
+
+    for (int i = 0; !fasterFound ; i++)
+    {
+        std::cout << "\n\nGenetic iteration " << i << ":\n";
+        std::cout << "Gaps:\n";
+        for (std::vector<unsigned long> sequence : startGapsSequences)
+        {
+            for (unsigned long gap : sequence)
+            {
+                std::cout << gap << " ";
+            }
+            std::cout << "\n";
+        }
+        std:: cout << "\n";
+
+        if (i >= geneticIterations)
+        {
+            std::cout << "Checking top 3: \n";
+
+            for (int w = 0; w < 3; w++)
+            {
+                std::cout << w + 1 << ":   ";
+                for (unsigned long gap : startGapsSequences[w]) std::cout << gap << " ";
+                std::cout << "  ";
+
+                std::vector<Result> checkTop = compareShellWith_stdSort_Ciura_SEJ(
+                    { sortingRange, sortingRange },
+                    startGapsSequences[w],
+                    tryoutsIterations);
+
+                if (checkTop[3].gapsUsed != startGapsSequences[w] 
+                    && !(startGapsSequences[w] == getCiuraGaps(sortingRange) 
+                        || startGapsSequences[w] == getSkeanEhrenborgJaromczykGaps(sortingRange)))
+                {
+                    return startGapsSequences[w];
+                }
+
+                std::cout << "\n";
+            }
+
+            std::cout << "\n\n";
+        }
+
+        std::cout << "Genetic generated gaps ";
+        results = compareShellSorts(sortingRange, startGapsSequences, tryoutsIterations);
+
+        std::vector<std::vector<unsigned long>> newGapsSequences;
+
+        for (int r = 0; r < results.size() / 4; r++) { newGapsSequences.push_back(results[r].gapsUsed); }
+
+        std::vector<std::vector<unsigned long>> childs = geneticAlgorithmCrossParents(newGapsSequences);
+
+        newGapsSequences.insert(newGapsSequences.end(), childs.begin(), childs.end());
+
+        for (int g = newGapsSequences.size(); g < startGapsSequences.size(); g++)
+        {
+            newGapsSequences.push_back(getRandomizedGaps(sortingRange));
+        }
+
+        startGapsSequences = newGapsSequences;
+    }
+}
+
 int main() 
 {
-    /*const unsigned long SORTING_RANGE = 10000;
+    std::vector<Result> results;
+
+    const unsigned long SORTING_RANGE = 1000;
 
     std::vector<unsigned long> tokudaGaps = getTokudaGaps(SORTING_RANGE);
     std::vector<unsigned long> ciuraGaps = getCiuraGaps(SORTING_RANGE);
@@ -331,17 +430,17 @@ int main()
     std::vector<unsigned long> sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
 
     std::vector<std::vector<unsigned long>> randomizedGaps = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
-    for (int i = randomizedGaps.size(); i<1000; i++) randomizedGaps.push_back(getRandomizedGaps(SORTING_RANGE));
+    for (int i = randomizedGaps.size(); i<100; i++) randomizedGaps.push_back(getRandomizedGaps(SORTING_RANGE));
 
-    std::vector<Result> results = compareShellSorts(SORTING_RANGE, randomizedGaps, 100);*/
+    std::vector<unsigned long> geneticResultSequence = geneticAlgorithmForGapsSeeking(SORTING_RANGE, randomizedGaps, 100, 10);
 
-    std::vector<Result> results = compareShellWith_stdSort_Ciura_SEJ(
-        {1000, 1000},
-        std::vector<unsigned long> {3219, 716, 196, 90, 19, 4, 1},
+    std::cout << "\n\n    COMPARING FINAL SEQUENCEs\n\n";
+    results = compareShellWith_stdSort_Ciura_SEJ(
+        { SORTING_RANGE, SORTING_RANGE },
+        geneticResultSequence,
         100);
 
-    std::cout << "\n\n    Results:\n";
-
+    std::cout << "\n\nResults:\n";
     for (Result r : results)
     {
         std::cout << r.name << ": " << r.time << "ms | " << r.wins << "w\nGaps: ";
