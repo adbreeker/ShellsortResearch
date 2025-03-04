@@ -8,29 +8,59 @@
 #include <random>
 #include <string>
 
+class GapsSequence
+{
+    public:
+    std::string name;
+    std::vector<unsigned long> gaps;
+
+    GapsSequence(){}
+
+    GapsSequence(std::string name, std::vector<unsigned long> gaps) : 
+        name(name),
+        gaps(gaps)
+    {
+    }
+
+    void PrintInstance()
+    {
+        std::cout << name << ": ";
+        for (unsigned long gap : gaps) std::cout << gap << " ";
+    }
+
+    bool operator==(const GapsSequence& other) const {
+        return name == other.name && gaps == other.gaps;
+    }
+};
+
 struct Result
 {
     double time;
-    std::string name;
-    std::vector<unsigned long> gapsUsed;
+    double operations;
+    GapsSequence gapsSequence;
     int wins = 0;
 };
 
-void shellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+unsigned long shellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
 {
+    unsigned long operations = 0;
     for(unsigned long gap : gaps)
     {
+        operations++;
         for (unsigned long i = gap; i < arr.size(); i++)
         {
+            operations++;
             int temp = arr[i];
             unsigned long j;
             for (j = i; (j >= gap) && (arr[j - gap] > temp); j -= gap)
             {
+                operations++;
                 arr[j] = arr[j - gap];
             }
             arr[j] = temp;
         }
     }
+    return operations;
 }
 
 void measureSortTime(void(*sortFunc)(std::vector<int>&), std::vector<int> data, std::string name, std::promise<Result> output) 
@@ -40,20 +70,22 @@ void measureSortTime(void(*sortFunc)(std::vector<int>&), std::vector<int> data, 
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
-    output.set_value(Result{ elapsed.count(), name });
+    //output.set_value(Result{ elapsed.count(), NULL, NULL });
 }
 
-void measureShellSortTime(std::vector<int> data, std::vector<unsigned long> gaps, std::string name, std::promise<Result> output)
+void measureShellSortTime(std::vector<int> data, GapsSequence gapsSequence, std::promise<Result> output)
 {
+    unsigned long operations;
+
     auto start = std::chrono::high_resolution_clock::now();
-    shellSort(data, gaps);
+    operations = shellSort(data, gapsSequence.gaps);
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
-    output.set_value(Result{ elapsed.count(), name, gaps });
+    output.set_value(Result{ elapsed.count(), (double)operations, gapsSequence });
 }
 
-std::vector<unsigned long> getTokudaGaps(unsigned long sortingRange)
+GapsSequence getTokudaGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> tokudaGaps;
 
@@ -72,10 +104,10 @@ std::vector<unsigned long> getTokudaGaps(unsigned long sortingRange)
     }
 
     std::reverse(tokudaGaps.begin(), tokudaGaps.end());
-    return tokudaGaps;
+    return GapsSequence("Tokuda", tokudaGaps);
 }
 
-std::vector<unsigned long> getCiuraGaps(unsigned long sortingRange)
+GapsSequence getCiuraGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> ciuraGaps;
     for (unsigned long gap : {1, 4, 10, 23, 57, 132, 301, 701 /*later extension:*/, 1750})
@@ -88,10 +120,10 @@ std::vector<unsigned long> getCiuraGaps(unsigned long sortingRange)
     }
 
     std::reverse(ciuraGaps.begin(), ciuraGaps.end());
-    return ciuraGaps;
+    return GapsSequence("Ciura", ciuraGaps);
 }
 
-std::vector<unsigned long> getLeeGaps(unsigned long sortingRange)
+GapsSequence getLeeGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> leeGaps;
 
@@ -112,10 +144,10 @@ std::vector<unsigned long> getLeeGaps(unsigned long sortingRange)
     }
 
     std::reverse(leeGaps.begin(), leeGaps.end());
-    return leeGaps;
+    return GapsSequence("Lee", leeGaps);
 }
 
-std::vector<unsigned long> getSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
+GapsSequence getSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> sejGaps;
 
@@ -134,7 +166,7 @@ std::vector<unsigned long> getSkeanEhrenborgJaromczykGaps(unsigned long sortingR
     }
 
     std::reverse(sejGaps.begin(), sejGaps.end());
-    return sejGaps;
+    return GapsSequence("SEJ", sejGaps);
 }
 
 std::vector<unsigned long> getRandomizedGaps(unsigned long sortingRange)
@@ -167,9 +199,9 @@ std::vector<unsigned long> getRandomizedGaps(unsigned long sortingRange)
     return randomizedGaps;
 }
 
-std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<std::vector<unsigned long>> gapSequences, int iterations)
+std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations)
 {
-    int sortsCount = gapSequences.size();
+    int sortsCount = gapsSequences.size();
     std::vector<Result> avgResults(sortsCount);
 
     std::cout << "Compare iterations:";
@@ -194,7 +226,7 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<st
 
         for (int j = 0; j < sortsCount; j++)
         {
-            threads.push_back(std::thread(measureShellSortTime, data, gapSequences[j], "Random" + std::to_string(j), std::move(promises[j])));
+            threads.push_back(std::thread(measureShellSortTime, data, gapsSequences[j], std::move(promises[j])));
             if (j % cpuCores == cpuCores - 1)
             {
                 for (int l = j - (cpuCores - 1); l <= j; l++)
@@ -220,27 +252,32 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<st
             for (int j = 0; j < sortsCount; j++)
             {
                 avgResults[j].time += results[j].time;
+                avgResults[j].operations += results[j].operations;
             }
         }
 
         std::sort(results.begin(), results.end(), [](const Result& a, const Result& b) {
-            return a.time < b.time;
+            return a.operations < b.operations;
             });
 
-        for (Result& r : avgResults) if (r.name == results[0].name) { r.wins++; }
+        for (Result& r : avgResults) if (r.gapsSequence == results[0].gapsSequence) { r.wins++; }
     }
 
-    for (Result& r : avgResults) r.time = r.time / iterations;
+    for (Result& r : avgResults)
+    {
+        r.time = r.time / iterations;
+        r.operations = r.operations / iterations;
+    }
 
     // Sort results to find the fastest
     std::sort(avgResults.begin(), avgResults.end(), [](const Result& a, const Result& b) {
-        return a.time < b.time;
+        return a.operations < b.operations;
         });
 
     return avgResults;
 }
 
-std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, unsigned long> sortingRange, std::vector<unsigned long> gapSequence, int iterations)
+std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, unsigned long> sortingRange, GapsSequence gapsSequence, int iterations)
 {
     std::vector<Result> avgResults(4);
 
@@ -260,8 +297,8 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
         std::vector<int> data(toSortSize);
         for (int& num : data) num = rand() % 10000;
 
-        std::vector<unsigned long> gapsCiura = getCiuraGaps(toSortSize);
-        std::vector<unsigned long> gapsSEJ = getSkeanEhrenborgJaromczykGaps(toSortSize);
+        GapsSequence gapsCiura = getCiuraGaps(toSortSize);
+        GapsSequence gapsSEJ = getSkeanEhrenborgJaromczykGaps(toSortSize);
 
         // Use promises & futures for safe thread return value
         std::promise<Result> pCompare, pStdSort, pCiura, pSEJ;
@@ -272,10 +309,10 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
 
         std::vector<std::thread> threads;
 
-        std::thread tCompare(measureShellSortTime, data, gapSequence, "Compared", std::move(pCompare));
+        std::thread tCompare(measureShellSortTime, data, gapsSequence, std::move(pCompare));
         std::thread tStdSort(measureSortTime, [](std::vector<int>& d) {std::sort(d.begin(), d.end());}, data, "stdSort", std::move(pStdSort));
-        std::thread tCiura(measureShellSortTime, data, gapsCiura, "Ciura", std::move(pCiura));
-        std::thread tSEJ(measureShellSortTime, data, gapsSEJ, "SEJ", std::move(pSEJ));
+        std::thread tCiura(measureShellSortTime, data, gapsCiura, std::move(pCiura));
+        std::thread tSEJ(measureShellSortTime, data, gapsSEJ, std::move(pSEJ));
 
         tCompare.join();
         tStdSort.join();
@@ -308,7 +345,7 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
             return a.time < b.time;
             });
 
-        for (Result& r : avgResults) if (r.name == results[0].name) { r.wins++; }
+        for (Result& r : avgResults) if (r.gapsSequence == results[0].gapsSequence) { r.wins++; }
     }
 
     for (Result& r : avgResults) r.time = r.time / iterations;
@@ -321,101 +358,75 @@ std::vector<Result> compareShellWith_stdSort_Ciura_SEJ(std::pair<unsigned long, 
     return avgResults;
 }
 
-std::vector<std::vector<unsigned long>> geneticAlgorithmCrossParents(std::vector<std::vector<unsigned long>> parents)
+std::vector<GapsSequence> geneticAlgorithmCrossParents(std::vector<GapsSequence> parents)
 {
-    std::vector<std::vector<unsigned long>> childs;
+    std::vector<GapsSequence> childs;
 
     for (int i = 0; i < parents.size(); i+=2)
     {
-        std::vector<unsigned long> parent1 = parents[i];
-        std::vector<unsigned long> parent2;
+        GapsSequence parent1 = parents[i];
+        GapsSequence parent2;
         if (i + 1 < parents.size()) { parent2 = parents[i + 1]; }
         else { parent2 = parents[0]; }
 
-        std::vector<unsigned long> child1(parent1.begin(), parent1.begin() + parent1.size() / 2);
-        for (unsigned long gap : parent2)
+        std::vector<unsigned long> child1Gaps(parent1.gaps.begin(), parent1.gaps.begin() + parent1.gaps.size() / 2);
+        for (unsigned long gap : parent2.gaps)
         {
-            if (gap < child1.back()) { child1.push_back(gap); }
+            if (gap < child1Gaps.back()) { child1Gaps.push_back(gap); }
         }
 
-        std::vector<unsigned long> child2(parent2.begin(), parent2.begin() + parent2.size() / 2);
-        for (unsigned long gap : parent1)
+        std::vector<unsigned long> child2Gaps(parent2.gaps.begin(), parent2.gaps.begin() + parent2.gaps.size() / 2);
+        for (unsigned long gap : parent1.gaps)
         {
-            if (gap < child2.back()) { child2.push_back(gap); }
+            if (gap < child2Gaps.back()) { child2Gaps.push_back(gap); }
         }
 
-        childs.push_back(child1);
-        childs.push_back(child2);
+        childs.push_back(GapsSequence("Child" + parent1.name + parent2.name, child1Gaps));
+        childs.push_back(GapsSequence("Child" + parent2.name + parent1.name, child2Gaps));
     }
 
     return childs;
 }
 
-std::vector<unsigned long> geneticAlgorithmForGapsSeeking(unsigned long sortingRange, std::vector<std::vector<unsigned long>> startGapsSequences, int tryoutsIterations, int geneticIterations)
+std::vector<Result> geneticAlgorithmForGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations, int geneticIterations)
 {   
     std::vector<Result> results;
     bool fasterFound = false;
 
-    for (int i = 0; !fasterFound ; i++)
+    for (int i = 0; i < geneticIterations ; i++)
     {
         std::cout << "\n\nGenetic iteration " << i << ":\n";
         std::cout << "Gaps:\n";
-        for (std::vector<unsigned long> sequence : startGapsSequences)
+        for (GapsSequence sequence : algorithmGapsSequences)
         {
-            for (unsigned long gap : sequence)
-            {
-                std::cout << gap << " ";
-            }
+            sequence.PrintInstance();
             std::cout << "\n";
         }
         std:: cout << "\n";
 
-        if (i >= geneticIterations)
-        {
-            std::cout << "Checking top 3: \n";
-
-            for (int w = 0; w < 3; w++)
-            {
-                std::cout << w + 1 << ":   ";
-                for (unsigned long gap : startGapsSequences[w]) std::cout << gap << " ";
-                std::cout << "  ";
-
-                std::vector<Result> checkTop = compareShellWith_stdSort_Ciura_SEJ(
-                    { sortingRange, sortingRange },
-                    startGapsSequences[w],
-                    tryoutsIterations);
-
-                if (checkTop[3].gapsUsed != startGapsSequences[w] 
-                    && !(startGapsSequences[w] == getCiuraGaps(sortingRange) 
-                        || startGapsSequences[w] == getSkeanEhrenborgJaromczykGaps(sortingRange)))
-                {
-                    return startGapsSequences[w];
-                }
-
-                std::cout << "\n";
-            }
-
-            std::cout << "\n\n";
-        }
-
         std::cout << "Genetic generated gaps ";
-        results = compareShellSorts(sortingRange, startGapsSequences, tryoutsIterations);
+        results = compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
-        std::vector<std::vector<unsigned long>> newGapsSequences;
+        std::vector<GapsSequence> newGapsSequences;
 
-        for (int r = 0; r < results.size() / 4; r++) { newGapsSequences.push_back(results[r].gapsUsed); }
+        for (int r = 0; r < results.size() / 2; r++) { newGapsSequences.push_back(results[r].gapsSequence); }
 
-        std::vector<std::vector<unsigned long>> childs = geneticAlgorithmCrossParents(newGapsSequences);
+        std::vector<GapsSequence> childs = geneticAlgorithmCrossParents(newGapsSequences);
 
-        newGapsSequences.insert(newGapsSequences.end(), childs.begin(), childs.end());
+        //newGapsSequences.insert(newGapsSequences.end(), childs.begin(), childs.end());
+        newGapsSequences = childs;
 
-        for (int g = newGapsSequences.size(); g < startGapsSequences.size(); g++)
+        for (int g = newGapsSequences.size(); g < algorithmGapsSequences.size(); g++)
         {
-            newGapsSequences.push_back(getRandomizedGaps(sortingRange));
+            newGapsSequences.push_back(GapsSequence(
+                "Random" + std::to_string(i) + "-" + std::to_string(g), 
+                getRandomizedGaps(sortingRange)));
         }
 
-        startGapsSequences = newGapsSequences;
+        algorithmGapsSequences = newGapsSequences;
     }
+
+    return compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 }
 
 int main() 
@@ -424,27 +435,22 @@ int main()
 
     const unsigned long SORTING_RANGE = 1000;
 
-    std::vector<unsigned long> tokudaGaps = getTokudaGaps(SORTING_RANGE);
-    std::vector<unsigned long> ciuraGaps = getCiuraGaps(SORTING_RANGE);
-    std::vector<unsigned long> leeGaps = getLeeGaps(SORTING_RANGE);
-    std::vector<unsigned long> sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
+    GapsSequence tokudaGaps = getTokudaGaps(SORTING_RANGE);
+    GapsSequence ciuraGaps = getCiuraGaps(SORTING_RANGE);
+    GapsSequence leeGaps = getLeeGaps(SORTING_RANGE);
+    GapsSequence sejGaps = getSkeanEhrenborgJaromczykGaps(SORTING_RANGE);
 
-    std::vector<std::vector<unsigned long>> randomizedGaps = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
-    for (int i = randomizedGaps.size(); i<100; i++) randomizedGaps.push_back(getRandomizedGaps(SORTING_RANGE));
+    std::vector<GapsSequence> randomizedGapsSequences = { tokudaGaps, ciuraGaps, leeGaps, sejGaps};
+    for (int i = randomizedGapsSequences.size(); i<60; i++) randomizedGapsSequences.push_back(GapsSequence("Random" + std::to_string(i), getRandomizedGaps(SORTING_RANGE)));
 
-    std::vector<unsigned long> geneticResultSequence = geneticAlgorithmForGapsSeeking(SORTING_RANGE, randomizedGaps, 100, 10);
+    results = geneticAlgorithmForGapsSeeking(SORTING_RANGE, randomizedGapsSequences, 50, 10);
 
-    std::cout << "\n\n    COMPARING FINAL SEQUENCEs\n\n";
-    results = compareShellWith_stdSort_Ciura_SEJ(
-        { SORTING_RANGE, SORTING_RANGE },
-        geneticResultSequence,
-        100);
+    //results = compareShellSorts(SORTING_RANGE, randomizedGapsSequences, 100);
 
     std::cout << "\n\nResults:\n";
     for (Result r : results)
     {
-        std::cout << r.name << ": " << r.time << "ms | " << r.wins << "w\nGaps: ";
-        for (unsigned long gap : r.gapsUsed) std::cout << gap << " ";
-        std::cout << "\n\n";
+        r.gapsSequence.PrintInstance();
+        std::cout << "\n  Time: " << r.time << "ms | Operations: " << r.operations << " | Wins: " << r.wins << "\n\n";
     }
 }
