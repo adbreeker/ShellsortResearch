@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ShellsortResearch.cpp" />
+    <ClCompile Include="ShellsortResearchMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneticAlgorithm.hpp" />
+    <ClInclude Include="Shellsort.hpp" />
+    <ClInclude Include="ShellsortComparisions.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
