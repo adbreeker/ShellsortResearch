@@ -7,15 +7,28 @@
 #include <future>
 #include <chrono>
 #include <thread>
+#include <random>
 #include "Shellsort.hpp"
 
 struct Result
 {
-    double time;
-    double operations;
+    double time = 0.0;
+    double operations = 0;
     GapsSequence gapsSequence;
     int wins = 0;
 };
+
+std::vector<int> getRandomData(unsigned long sortingRange)
+{
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<int> dist(-10000, 10000);
+
+    std::vector<int> data(sortingRange);
+    for (int& num : data) num = dist(gen);
+
+    return data;
+}
 
 void measureShellSort(std::vector<int> data, GapsSequence gapsSequence, std::promise<Result> output)
 {
@@ -29,8 +42,6 @@ void measureShellSort(std::vector<int> data, GapsSequence gapsSequence, std::pro
     output.set_value(Result{ elapsed.count(), (double)operations, gapsSequence });
 }
 
-
-
 std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations)
 {
     int sortsCount = gapsSequences.size();
@@ -43,8 +54,7 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
         if (i % 50 == 0) std::cout << "\n";
         std::cout << "+";
 
-        std::vector<int> data(sortingRange);
-        for (int& num : data) num = rand() % 10000;
+        std::vector<int> data = getRandomData(sortingRange);
 
         // Use promises & futures for safe thread return value
         std::vector<std::promise<Result>> promises(sortsCount);

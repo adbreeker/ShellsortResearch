@@ -11,7 +11,7 @@
 
 namespace genetic
 {
-    std::vector<GapsSequence> crossParents(std::vector<GapsSequence> parents)
+    std::vector<GapsSequence> crossParents(std::vector<GapsSequence> parents, int populationIndex)
     {
         std::vector<GapsSequence> childs;
 
@@ -34,8 +34,8 @@ namespace genetic
                 if (gap < child2Gaps.back()) { child2Gaps.push_back(gap); }
             }
 
-            childs.push_back(GapsSequence("Child" + std::to_string(parent1.gaps.front()) + std::to_string(parent2.gaps.front()), child1Gaps));
-            childs.push_back(GapsSequence("Child" + std::to_string(parent2.gaps.front()) + std::to_string(parent1.gaps.front()), child2Gaps));
+            childs.push_back(GapsSequence("Child" + std::to_string(populationIndex) + "-" + std::to_string(i + 1), child1Gaps));
+            childs.push_back(GapsSequence("Child" + std::to_string(populationIndex) + "-" + std::to_string(i + 2), child2Gaps));
         }
 
         return childs;
@@ -45,12 +45,12 @@ namespace genetic
     {
         std::vector<GapsSequence> newPopulation = std::vector<GapsSequence>(oldPopulation.begin(), oldPopulation.begin() + oldPopulation.size() / 2);
 
-        newPopulation = crossParents(newPopulation);
+        newPopulation = crossParents(newPopulation, populationIndex);
 
         for (int i = newPopulation.size(); i < oldPopulation.size(); i++)
         {
             newPopulation.push_back(GapsSequence(
-                "Random" + std::to_string(populationIndex) + "-" + std::to_string(i),
+                "Random" + std::to_string(populationIndex) + "-" + std::to_string(i+1),
                 getRandomizedGaps(sortingRange)));
         }
 
@@ -107,7 +107,7 @@ namespace genetic
             if (best == results[0].gapsSequence && !(best.gaps == getCiuraGaps(sortingRange).gaps || best.gaps == getSkeanEhrenborgJaromczykGaps(sortingRange).gaps))
             {
                 std::cout << "\n\n--------------------------------- NEW BEST -----------------------------\n\n";
-                std::ofstream file("BestGapsSequences" + std::to_string(sortingRange) + ".txt", std::ios::app);
+                std::ofstream file("./Results/BestGapsSequences" + std::to_string(sortingRange) + ".txt", std::ios::app);
                 std::string line = best.name + ": ";
                 for (unsigned long gap : best.gaps) line += (std::to_string(gap) + " ");
                 file << line << "\n";
