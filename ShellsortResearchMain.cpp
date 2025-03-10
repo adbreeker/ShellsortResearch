@@ -4,7 +4,7 @@
 #include "Shellsort.hpp"
 #include "ShellsortComparisions.hpp"
 
-const unsigned long SORTING_RANGE = 10000;
+const unsigned long SORTING_RANGE = 1000;
 
 void PrintResults(std::vector<Result>& results)
 {
