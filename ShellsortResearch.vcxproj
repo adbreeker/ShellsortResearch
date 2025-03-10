@@ -130,6 +130,7 @@
     <ClCompile Include="ShellsortResearchMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FilesManagement.hpp" />
     <ClInclude Include="GeneticAlgorithm.hpp" />
     <ClInclude Include="Shellsort.hpp" />
     <ClInclude Include="ShellsortComparisions.hpp" />
