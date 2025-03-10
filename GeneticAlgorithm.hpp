@@ -106,12 +106,8 @@ namespace genetic
             GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations)[0].gapsSequence;
             if (best == results[0].gapsSequence && !(best.gaps == getCiuraGaps(sortingRange).gaps || best.gaps == getSkeanEhrenborgJaromczykGaps(sortingRange).gaps))
             {
-                std::cout << "\n\n--------------------------------- NEW BEST -----------------------------\n\n";
-                std::ofstream file("./Results/BestGapsSequences" + std::to_string(sortingRange) + ".txt", std::ios::app);
-                std::string line = best.name + ": ";
-                for (unsigned long gap : best.gaps) line += (std::to_string(gap) + " ");
-                file << line << "\n";
-                file.close();
+                std::cout << "\n\n--------------------------------------------------- NEW BEST -------------------------------------------------------\n\n";
+                files::saveGapsToFile(sortingRange, best);
             }
 
             //creating new genetic sequences
