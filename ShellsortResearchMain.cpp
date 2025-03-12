@@ -6,7 +6,7 @@
 #include "ShellsortComparisions.hpp"
 #include "FilesManagement.hpp"
 
-const unsigned long SORTING_RANGE = 1000;
+const unsigned long SORTING_RANGE = 5000;
 
 void PrintResults(std::vector<Result>& results)
 {
@@ -30,10 +30,10 @@ int main()
     };
 
 
-    //for (int i = gapsSequences.size(); i<100; i++) gapsSequences.push_back(GapsSequence("Random" + std::to_string(i + 1), getRandomizedGaps(SORTING_RANGE)));
-    //genetic::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+    for (int i = gapsSequences.size(); i<100; i++) gapsSequences.push_back(GapsSequence("Random" + std::to_string(i + 1), getRandomizedGaps(SORTING_RANGE)));
+    genetic::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
 
-    for (GapsSequence& gs : files::getGapsFromFile(SORTING_RANGE)) gapsSequences.push_back(gs);
+    //for (GapsSequence& gs : files::getGapsFromFile(SORTING_RANGE)) gapsSequences.push_back(gs);
 
     auto results = compareShellSorts(SORTING_RANGE, gapsSequences, 100);
     PrintResults(results);

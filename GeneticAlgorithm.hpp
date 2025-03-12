@@ -8,6 +8,7 @@
 #include <fstream>
 #include "Shellsort.hpp"
 #include "ShellsortComparisions.hpp"
+#include "FilesManagement.hpp"
 
 namespace genetic
 {
