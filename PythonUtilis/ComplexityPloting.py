@@ -18,15 +18,15 @@ def sci_notation(x, pos):
 # Create outputs directory if it doesn't exist
 output_dir.mkdir(exist_ok=True)
 
-# Plot 1: Small n (up to 50)
-n_small = np.linspace(1, 50, 1000)
+# Plot 1: Small n (up to 100)
+n_small = np.linspace(1, 100, 1000)
 
 # Calculate complexity functions for small n
 n_squared_small = n_small**2
 n_3_2_small = n_small**(3/2)
 n_4_3_small = n_small**(4/3)
-n_log_n_small = n_small * np.log(n_small)
-n_log2_n_small = n_small * (np.log(n_small)**2)
+n_log_n_small = n_small * np.log2(n_small)
+n_log2_n_small = n_small * (np.log2(n_small)**2)
 
 # Create the plot for small n
 plt.figure(figsize=(10, 6))
@@ -47,7 +47,7 @@ plt.ylim(ylim)
 plt.xlabel('n', fontsize=12)
 plt.ylabel('Operations', fontsize=12)
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sci_notation))
-plt.title('Time Complexity Growth (n 1-50)', fontsize=14)
+plt.title('Time Complexity Growth (n 1-100)', fontsize=14)
 plt.legend(fontsize=11, loc='upper left')
 plt.grid(True, alpha=0.3)
 
@@ -57,15 +57,15 @@ plt.savefig(output_path_small, dpi=300, bbox_inches='tight')
 print(f"Small n plot saved to: {output_path_small}")
 plt.close()
 
-# Plot 2: Large n (up to 10000)
-n_large = np.linspace(1, 10000, 1000)
+# Plot 2: Large n (up to 100000)
+n_large = np.linspace(1, 100000, 1000)
 
 # Calculate complexity functions for large n
 n_squared_large = n_large**2
 n_3_2_large = n_large**(3/2)
 n_4_3_large = n_large**(4/3)
-n_log_n_large = n_large * np.log(n_large)
-n_log2_n_large = n_large * (np.log(n_large)**2)
+n_log_n_large = n_large * np.log2(n_large)
+n_log2_n_large = n_large * (np.log2(n_large)**2)
 
 # Create the plot for large n
 plt.figure(figsize=(10, 6))
@@ -86,7 +86,7 @@ plt.ylim(ylim)
 plt.xlabel('n', fontsize=12)
 plt.ylabel('Operations', fontsize=12)
 plt.gca().yaxis.set_major_formatter(FuncFormatter(sci_notation))
-plt.title('Time Complexity Growth (n 1-10000)', fontsize=14)
+plt.title('Time Complexity Growth (n 1-100000)', fontsize=14)
 plt.legend(fontsize=11, loc='upper left')
 plt.grid(True, alpha=0.3)
 
