@@ -60,7 +60,6 @@ namespace search_cuckoo
 
         for(int i = 0; i < currentNests.size() / 3; i++)
         {
-            int randomIndex = utilis::getRandomInt(0, currentNests.size() - 1);
             GapsSequence newNest = performLevyFlight(currentNests[i], beta);
             newNest.name = "LevyChild" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
             newNests.push_back(newNest);
@@ -121,7 +120,7 @@ namespace search_cuckoo
             results = compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best - ";
-            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations)[0].gapsSequence;
+            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
             if (best == results[0].gapsSequence && !isGapsSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);

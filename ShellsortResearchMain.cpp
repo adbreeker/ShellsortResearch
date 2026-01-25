@@ -9,7 +9,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 2000;
+const unsigned long SORTING_RANGE = 2500;
 
 void PrintResults(std::vector<Result>& results)
 {
@@ -35,20 +35,24 @@ int main()
 
     for (int i = gapsSequences.size(); i<100; i++) gapsSequences.push_back(GapsSequence("Random" + std::to_string(i + 1), getRandomizedGaps(SORTING_RANGE)));
     
-    // #pragma omp parallel sections num_threads(2)
-    // {
-    //     #pragma omp section
-    //     {
-    //         search_genetic::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
-    //     }
-    //     #pragma omp section
-    //     {
-    //         search_cuckoo::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
-    //     }
-    // }
+    #pragma omp parallel sections num_threads(3)
+    {
+        #pragma omp section
+        {
+            search_genetic::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_cuckoo::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_abc::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+        }
+    }
     //search_genetic::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
     //search_cuckoo::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
-    search_abc::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+    //search_abc::endlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
 
     //unreachable while endless seeking
     for (GapsSequence& gs : files::getGapsFromFile("BestGapsSequences" + std::to_string(SORTING_RANGE) + "_cuckoo.txt")) gapsSequences.push_back(gs);
