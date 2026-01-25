@@ -5,10 +5,11 @@
 #include <iostream>
 #include <vector>
 #include <random>
+#include <algorithm>
 
 class GapsSequence
 {
-public:
+    public:
     std::string name;
     std::vector<unsigned long> gaps;
 
@@ -27,7 +28,7 @@ public:
     }
 
     bool operator==(const GapsSequence& other) const {
-        return name == other.name && gaps == other.gaps;
+        return gaps == other.gaps;
     }
 };
 

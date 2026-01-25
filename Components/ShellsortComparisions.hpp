@@ -4,11 +4,11 @@
 
 #include <iostream>
 #include <vector>
-#include <future>
 #include <chrono>
-#include <thread>
-#include <random>
+#include <algorithm>
+#include <omp.h>
 #include "Shellsort.hpp"
+#include "Utilis.hpp"
 
 struct Result
 {
@@ -18,19 +18,7 @@ struct Result
     int wins = 0;
 };
 
-std::vector<int> getRandomData(unsigned long sortingRange)
-{
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_int_distribution<int> dist(-10000, 10000);
-
-    std::vector<int> data(sortingRange);
-    for (int& num : data) num = dist(gen);
-
-    return data;
-}
-
-void measureShellSort(std::vector<int> data, GapsSequence gapsSequence, std::promise<Result> output)
+Result measureShellSort(std::vector<int> data, GapsSequence gapsSequence)
 {
     unsigned long operations;
 
@@ -39,7 +27,7 @@ void measureShellSort(std::vector<int> data, GapsSequence gapsSequence, std::pro
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
-    output.set_value(Result{ elapsed.count(), (double)operations, gapsSequence });
+    return Result{ elapsed.count(), (double)operations, gapsSequence };
 }
 
 std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations)
@@ -54,34 +42,16 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
         if (i % 50 == 0) std::cout << "\n";
         std::cout << "+";
 
-        std::vector<int> data = getRandomData(sortingRange);
+        std::vector<int> data = utilis::getRandomSortingData(sortingRange);
 
-        // Use promises & futures for safe thread return value
-        std::vector<std::promise<Result>> promises(sortsCount);
-        std::vector < std::future<Result>> futures(sortsCount);
-        for (int j = 0; j < sortsCount; j++) futures[j] = promises[j].get_future();
+        // Use OpenMP for parallel execution
+        std::vector<Result> results(sortsCount);
 
-        std::vector<std::thread> threads;
-
-        int cpuCores = std::thread::hardware_concurrency();
-
-
+        #pragma omp parallel for
         for (int j = 0; j < sortsCount; j++)
         {
-            threads.push_back(std::thread(measureShellSort, data, gapsSequences[j], std::move(promises[j])));
-            if (j % cpuCores == cpuCores - 1)
-            {
-                for (int l = j - (cpuCores - 1); l <= j; l++)
-                {
-                    threads[l].join();
-                }
-            }
+            results[j] = measureShellSort(data, gapsSequences[j]);
         }
-        for (int l = threads.size() - (sortsCount % cpuCores); l < threads.size(); l++) threads[l].join();
-
-        // Get results from threads
-        std::vector<Result> results;
-        for (int j = 0; j < sortsCount; j++) results.push_back(futures[j].get());
 
         if (i == 0)
         {
@@ -118,6 +88,18 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
         });
 
     return avgResults;
+}
+
+bool isGapsSequenceIn(const GapsSequence& sequence, const std::vector<GapsSequence>& listOfSequences)
+{
+    for (const GapsSequence& gs : listOfSequences)
+    {
+        if (gs == sequence)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 

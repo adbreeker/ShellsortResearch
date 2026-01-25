@@ -25,21 +25,33 @@ std::vector<std::string> splitString(std::string toSplit, const std::string& spl
 
 namespace files
 {
-    void saveGapsToFile(unsigned long sortingRange, GapsSequence sequence)
+    void saveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapsSequence sequence)
     {
-        std::ofstream file("./Results/BestGapsSequences" + std::to_string(sortingRange) + ".txt", std::ios::app);
+        std::string filename = "Results/BestGapsSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
+        std::ofstream file(filename, std::ios::app);
+        
+        if (!file.is_open())
+        {
+            std::cerr << "ERROR: Could not open file for writing: " << filename << std::endl;
+            return;
+        }
+        
         std::string line = sequence.name + ": ";
         for (unsigned long gap : sequence.gaps) line += (std::to_string(gap) + " ");
         file << line << "\n";
+        file.flush();  // Ensure data is written to disk
         file.close();
+        
+        std::cout << "Saved to: " << filename << std::endl;
     }
 
 
-    std::vector<GapsSequence> getGapsFromFile(unsigned long sortingRange)
+    std::vector<GapsSequence> getGapsFromFile(std::string fileName)
     {
         std::vector<GapsSequence> gapsFromFile;
 
-        std::ifstream file("./Results/BestGapsSequences" + std::to_string(sortingRange) + ".txt");
+        std::string path = "Results/" + fileName;
+        std::ifstream file(path);
         if (file.is_open())
         {
             std::string line;
