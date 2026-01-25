@@ -1,0 +1,785 @@
+{
+  "algorithm": "Cuckoo Search",
+  "num_sequences": 167,
+  "avg_interval": 130.75903614457832,
+  "sequences": {
+    "min_sequence": [
+      2081,
+      659,
+      256,
+      116,
+      51,
+      23,
+      10,
+      4,
+      1
+    ],
+    "avg_sequence": [
+      2332.8,
+      858.32,
+      303.5,
+      132.5,
+      56.76,
+      23.07,
+      10.07,
+      4.07,
+      1.0
+    ],
+    "max_sequence": [
+      2642,
+      1019,
+      323,
+      136,
+      61,
+      24,
+      11,
+      5,
+      1
+    ]
+  },
+  "sequence_endings": {
+    "last_1_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 1,
+      "top_patterns": [
+        {
+          "pattern": [
+            1
+          ],
+          "count": 167,
+          "percentage": 100.0
+        }
+      ]
+    },
+    "last_2_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 2,
+      "top_patterns": [
+        {
+          "pattern": [
+            4,
+            1
+          ],
+          "count": 156,
+          "percentage": 93.41
+        },
+        {
+          "pattern": [
+            5,
+            1
+          ],
+          "count": 11,
+          "percentage": 6.59
+        }
+      ]
+    },
+    "last_3_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 2,
+      "top_patterns": [
+        {
+          "pattern": [
+            10,
+            4,
+            1
+          ],
+          "count": 156,
+          "percentage": 93.41
+        },
+        {
+          "pattern": [
+            11,
+            5,
+            1
+          ],
+          "count": 11,
+          "percentage": 6.59
+        }
+      ]
+    },
+    "last_4_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 2,
+      "top_patterns": [
+        {
+          "pattern": [
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 156,
+          "percentage": 93.41
+        },
+        {
+          "pattern": [
+            24,
+            11,
+            5,
+            1
+          ],
+          "count": 11,
+          "percentage": 6.59
+        }
+      ]
+    },
+    "last_5_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 8,
+      "top_patterns": [
+        {
+          "pattern": [
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 134,
+          "percentage": 80.24
+        },
+        {
+          "pattern": [
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 15,
+          "percentage": 8.98
+        },
+        {
+          "pattern": [
+            58,
+            24,
+            11,
+            5,
+            1
+          ],
+          "count": 10,
+          "percentage": 5.99
+        },
+        {
+          "pattern": [
+            55,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 3,
+          "percentage": 1.8
+        },
+        {
+          "pattern": [
+            61,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            51,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            53,
+            24,
+            11,
+            5,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            60,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        }
+      ]
+    },
+    "last_6_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 18,
+      "top_patterns": [
+        {
+          "pattern": [
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 51,
+          "percentage": 30.54
+        },
+        {
+          "pattern": [
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 51,
+          "percentage": 30.54
+        },
+        {
+          "pattern": [
+            132,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 18,
+          "percentage": 10.78
+        },
+        {
+          "pattern": [
+            134,
+            58,
+            24,
+            11,
+            5,
+            1
+          ],
+          "count": 10,
+          "percentage": 5.99
+        },
+        {
+          "pattern": [
+            130,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 9,
+          "percentage": 5.39
+        },
+        {
+          "pattern": [
+            130,
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 6,
+          "percentage": 3.59
+        },
+        {
+          "pattern": [
+            127,
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 6,
+          "percentage": 3.59
+        },
+        {
+          "pattern": [
+            125,
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 3,
+          "percentage": 1.8
+        },
+        {
+          "pattern": [
+            129,
+            55,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            128,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        }
+      ]
+    },
+    "last_7_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 75,
+      "top_patterns": [
+        {
+          "pattern": [
+            310,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 11,
+          "percentage": 6.59
+        },
+        {
+          "pattern": [
+            306,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 10,
+          "percentage": 5.99
+        },
+        {
+          "pattern": [
+            300,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 10,
+          "percentage": 5.99
+        },
+        {
+          "pattern": [
+            310,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 9,
+          "percentage": 5.39
+        },
+        {
+          "pattern": [
+            309,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 8,
+          "percentage": 4.79
+        },
+        {
+          "pattern": [
+            308,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 6,
+          "percentage": 3.59
+        },
+        {
+          "pattern": [
+            298,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 5,
+          "percentage": 2.99
+        },
+        {
+          "pattern": [
+            301,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 5,
+          "percentage": 2.99
+        },
+        {
+          "pattern": [
+            322,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 4,
+          "percentage": 2.4
+        },
+        {
+          "pattern": [
+            307,
+            134,
+            58,
+            24,
+            11,
+            5,
+            1
+          ],
+          "count": 4,
+          "percentage": 2.4
+        }
+      ]
+    },
+    "last_8_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 159,
+      "top_patterns": [
+        {
+          "pattern": [
+            833,
+            309,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            841,
+            310,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            862,
+            309,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            886,
+            322,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            967,
+            310,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            953,
+            300,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            993,
+            299,
+            135,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            926,
+            294,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 2,
+          "percentage": 1.2
+        },
+        {
+          "pattern": [
+            705,
+            303,
+            130,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            702,
+            292,
+            129,
+            55,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        }
+      ]
+    },
+    "last_9_elements": {
+      "total_sequences": 167,
+      "unique_patterns": 167,
+      "top_patterns": [
+        {
+          "pattern": [
+            2197,
+            705,
+            303,
+            130,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2089,
+            702,
+            292,
+            129,
+            55,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2145,
+            696,
+            313,
+            133,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2163,
+            713,
+            306,
+            129,
+            55,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2186,
+            689,
+            302,
+            130,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2237,
+            674,
+            302,
+            130,
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2222,
+            667,
+            256,
+            130,
+            54,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2201,
+            679,
+            296,
+            130,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2153,
+            689,
+            297,
+            126,
+            51,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "pattern": [
+            2227,
+            691,
+            304,
+            131,
+            57,
+            23,
+            10,
+            4,
+            1
+          ],
+          "count": 1,
+          "percentage": 0.6
+        }
+      ]
+    }
+  }
+}

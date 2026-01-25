@@ -5,7 +5,7 @@ from pathlib import Path
 
 # Get the directory where this script is located
 script_dir = Path(__file__).parent
-output_dir = script_dir / "outputs"
+output_dir = script_dir / "outputs" / "ComplexityPloting"
 
 # Custom formatter to display full scientific notation on each tick
 def sci_notation(x, pos):
@@ -16,7 +16,7 @@ def sci_notation(x, pos):
     return f'{x:.0f}'
 
 # Create outputs directory if it doesn't exist
-output_dir.mkdir(exist_ok=True)
+output_dir.mkdir(parents=True, exist_ok=True)
 
 # Plot 1: Small n (up to 100)
 n_small = np.linspace(1, 100, 1000)
