@@ -16,6 +16,11 @@ struct Result
     double operations = 0;
     GapsSequence gapsSequence;
     int wins = 0;
+
+    double getFitnessScore()
+    {
+        return operations;
+    }
 };
 
 Result measureShellSort(std::vector<int> data, GapsSequence gapsSequence)
@@ -30,17 +35,20 @@ Result measureShellSort(std::vector<int> data, GapsSequence gapsSequence)
     return Result{ elapsed.count(), (double)operations, gapsSequence };
 }
 
-std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations)
+std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations, bool debugs = false)
 {
     int sortsCount = gapsSequences.size();
     std::vector<Result> avgResults(sortsCount);
 
-    std::cout << "Compare iterations:";
+    if (debugs) { std::cout << "Compare iterations:"; }
 
     for (int i = 0; i < iterations; i++)
     {
-        if (i % 50 == 0) std::cout << "\n";
-        std::cout << "+";
+        if (debugs)
+        {
+            if (i % 50 == 0) std::cout << "\n";
+            std::cout << "+";
+        }
 
         std::vector<int> data = utilis::getRandomSortingData(sortingRange);
 

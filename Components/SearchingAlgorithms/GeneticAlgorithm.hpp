@@ -126,7 +126,7 @@ namespace search_genetic
             results = compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best - ";
-            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations)[0].gapsSequence;
+            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
             if (best == results[0].gapsSequence && !isGapsSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
