@@ -1,0 +1,75 @@
+EmployedRemaining41-29: 1710 405 126 58 28 11 4 1 
+OnlookerNeighborhood73-3: 1768 387 172 58 24 9 4 1 
+EmployedNeighborhood135-7: 2176 563 164 84 30 11 5 1 
+OnlookerRemaining231-50: 1312 3452 393 129 58 24 9 4 1 
+OnlookerRemaining260-86: 1567 365 135 71 29 10 4 1 
+OnlookerRemaining505-75: 1692 458 176 71 29 10 4 1 
+EmployedRemaining624-29: 1763 322 143 49 25 9 4 1 
+OnlookerRemaining1083-78: 1148 343 131 51 19 10 4 1 
+OnlookerRemaining1379-51: 1005 385 134 68 27 10 4 1 
+OnlookerRemaining1631-43: 1878 564 221 78 30 11 5 1 
+EmployedRemaining1741-71: 1834 367 153 65 25 14 4 1 
+OnlookerRemaining1754-71: 1862 385 152 70 21 10 4 1 
+OnlookerRemaining2231-49: 2389 1767 343 131 74 23 10 4 1 
+OnlookerNeighborhood2318-79: 955 296 106 51 23 10 4 1 
+OnlookerRemaining2586-25: 1801 545 146 66 24 11 5 1 
+OnlookerRemaining3098-96: 1849 507 184 58 30 11 5 1 
+EmployedRemaining3359-98: 1876 2536 348 138 53 25 9 4 1 
+EmployedRemaining3361-22: 1925 403 130 56 24 11 4 1 
+OnlookerRemaining3525-82: 984 290 127 65 24 9 4 1 
+EmployedRemaining3830-74: 1826 429 137 58 24 11 5 1 
+OnlookerRemaining3954-1: 1013 361 143 58 23 10 3 1 
+OnlookerRemaining4160-27: 1104 360 143 52 20 9 4 1 
+OnlookerRemaining4191-93: 1710 365 184 71 24 9 4 1 
+OnlookerRemaining4413-98: 6172 1546 401 180 62 23 12 5 1 
+OnlookerRemaining4746-29: 1750 6336 483 173 67 24 11 4 1 
+OnlookerNeighborhood4879-16: 1827 385 163 56 25 9 4 1 
+EmployedNeighborhood4883-16: 1571 390 150 62 23 12 5 1 
+OnlookerRemaining4893-16: 1841 389 154 71 25 14 4 1 
+OnlookerNeighborhood4943-48: 1933 406 153 68 23 10 4 1 
+EmployedNeighborhood4963-82: 1988 377 182 73 27 10 4 1 
+OnlookerRemaining5231-61: 873 285 108 58 24 9 4 1 
+OnlookerRemaining5243-40: 2254 783 316 118 56 21 10 4 1 
+OnlookerRemaining5279-35: 948 268 149 52 24 9 4 1 
+OnlookerNeighborhood5574-94: 1775 4778 311 136 71 24 11 5 1 
+OnlookerRemaining5665-92: 1631 351 115 70 21 10 4 1 
+OnlookerRemaining5888-32: 1657 343 2580 6095 146 61 20 9 4 1 
+OnlookerRemaining6314-17: 1063 351 146 55 21 10 4 1 
+OnlookerRemaining6829-77: 2203 1715 397 164 57 27 14 4 1 
+OnlookerRemaining7065-37: 992 319 101 54 25 10 4 1 
+EmployedRemaining7219-95: 1912 350 139 55 30 9 4 1 
+EmployedRemaining7309-80: 2920 1555 456 139 72 27 10 4 1 
+OnlookerRemaining7346-63: 1781 363 163 71 24 9 4 1 
+OnlookerRemaining7723-66: 1854 512 191 70 23 10 4 1 
+EmployedRemaining7912-17: 927 279 132 58 24 9 4 1 
+OnlookerRemaining8179-73: 1804 504 161 64 24 9 4 1 
+EmployedRemaining8341-34: 1624 452 156 59 24 9 4 1 
+EmployedRemaining8439-35: 555 180 77 28 12 5 1 
+EmployedNeighborhood8444-61: 1079 434 145 57 23 10 4 1 
+EmployedNeighborhood8595-79: 2110 506 150 68 29 9 4 1 
+OnlookerRemaining9266-7: 1556 468 143 61 29 9 4 1 
+OnlookerRemaining10072-57: 995 354 124 61 19 10 4 1 
+OnlookerNeighborhood10272-76: 940 260 115 56 21 10 4 1 
+OnlookerRemaining10454-83: 1656 2841 479 171 71 24 11 5 1 
+OnlookerRemaining10754-40: 1896 453 166 79 27 10 4 1 
+EmployedRemaining10918-2: 1749 445 185 70 29 9 4 1 
+OnlookerRemaining11078-78: 1960 583 168 64 23 10 4 1 
+OnlookerRemaining11113-47: 1839 503 188 75 27 14 4 1 
+OnlookerRemaining11323-74: 856 320 131 61 23 10 4 1 
+EmployedNeighborhood11614-96: 2019 562 162 73 24 9 4 1 
+EmployedNeighborhood11741-33: 1936 423 156 56 21 10 4 1 
+OnlookerRemaining12326-10: 2025 3160 487 199 68 32 13 4 1 
+OnlookerRemaining12535-61: 939 346 144 70 23 13 4 1 
+OnlookerRemaining12673-34: 1790 518 184 77 28 11 4 1 
+EmployedRemaining12852-92: 1563 459 172 66 29 14 4 1 
+OnlookerRemaining12944-26: 1766 2533 374 155 58 23 10 4 1 
+OnlookerRemaining13350-5: 1884 475 166 69 24 11 5 1 
+OnlookerRemaining13865-8: 1822 408 191 65 28 11 4 1 
+OnlookerRemaining13931-27: 933 412 147 58 23 10 4 1 
+OnlookerRemaining13975-76: 1993 481 173 70 23 10 4 1 
+OnlookerNeighborhood14215-71: 2258 1655 477 170 70 24 9 4 1 
+EmployedRemaining14246-48: 1520 456 171 75 28 11 4 1 
+OnlookerRemaining14297-32: 1672 2554 371 162 52 27 10 4 1 
+EmployedNeighborhood14436-43: 2082 778 255 114 49 21 10 4 1 
+OnlookerRemaining14498-96: 1573 360 147 61 29 9 4 1 
+OnlookerRemaining14568-72: 2058 520 232 79 32 13 4 1 
