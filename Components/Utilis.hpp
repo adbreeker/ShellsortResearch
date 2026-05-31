@@ -40,7 +40,7 @@ namespace utilis
 
         std::vector<int> data(sortingRange);
         #pragma omp parallel for
-        for (int i = 0; i < sortingRange; i++) 
+        for (std::size_t i = 0; i < data.size(); ++i)
         {
             data[i] = dist(gen);
         }
@@ -55,6 +55,16 @@ namespace utilis
         std::normal_distribution<double> dist(mean, stddev);
         return dist(gen);
     }
+
+    int roundUpToOdd(int number)
+    {
+        return (number % 2 == 0) ? number + 1 : number;
+    }
+
+    int roundUpToEven(int number)
+    {
+        return (number % 2 != 0) ? number + 1 : number;
+    }   
 }
 
 #endif // !UTILIS_HPP

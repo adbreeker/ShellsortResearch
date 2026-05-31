@@ -14,7 +14,7 @@ namespace search_genetic
 {
     GapsSequence MutateGapsSequence(GapsSequence gapsSequence)
     {
-        for (int i = 0; i < gapsSequence.gaps.size() - 1; i++)
+        for (std::size_t i = 0; i + 1 < gapsSequence.gaps.size(); ++i)
         {
             if (utilis::getRandomFloat(0.0f, 1.0f) < 0.25f) //25% chance to mutate each gap
             {
@@ -71,7 +71,7 @@ namespace search_genetic
     std::vector<GapsSequence> getNewPopulation(unsigned long sortingRange, std::vector<GapsSequence> oldPopulation, int populationIndex)
     {
         std::vector<GapsSequence> newPopulation = std::vector<GapsSequence>(oldPopulation.begin(), oldPopulation.begin() + oldPopulation.size() / 10);
-        for (int i = 0; i < newPopulation.size(); i++)
+        for (std::size_t i = 0; i < newPopulation.size(); ++i)
         {
             newPopulation[i].name = "Survivor" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
         }
@@ -89,7 +89,7 @@ namespace search_genetic
             }
         }
 
-        for (int i = 0; newPopulation.size() < oldPopulation.size(); i++)
+        for (std::size_t i = 0; newPopulation.size() < oldPopulation.size(); ++i)
         {
             newPopulation.push_back(GapsSequence(
                 "Random" + std::to_string(populationIndex) + "-" + std::to_string(i+1),

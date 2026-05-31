@@ -28,16 +28,16 @@ namespace search_cuckoo
         return u / std::pow(std::fabs(v), 1.0 / beta);
     }
 
-    GapsSequence performLevyFlight(GapsSequence currentSolution, double beta)
+    GapsSequence performLevyFlight(GapsSequence currentSolution, double beta, double stepSizeMultiplier = 0.01)
     {
         std::cout << "\nLeavy in: ";
         currentSolution.PrintInstance();
 
-        for (int i = 0; i < currentSolution.gaps.size()-1; i++)
+        for (std::size_t i = 0; i + 1 < currentSolution.gaps.size(); ++i)
         {
             unsigned long currentGap = currentSolution.gaps[i]; 
 
-            double stepSize = 0.01 * (currentGap);
+            double stepSize = stepSizeMultiplier * (currentGap);
             double levyStep = getLevyDistribution(beta) * stepSize;
             double newGap = currentGap + levyStep;
 
@@ -58,7 +58,7 @@ namespace search_cuckoo
     {
         std::vector<GapsSequence> newNests;
 
-        for(int i = 0; i < currentNests.size() / 3; i++)
+        for (std::size_t i = 0; i < currentNests.size() / 3; ++i)
         {
             GapsSequence newNest = performLevyFlight(currentNests[i], beta);
             newNest.name = "LevyChild" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
@@ -67,7 +67,7 @@ namespace search_cuckoo
 
         currentNests.erase(currentNests.end()-newNests.size(), currentNests.end());
 
-        for(int i = 0; i < currentNests.size(); i++)
+        for (std::size_t i = 0; i < currentNests.size(); ++i)
         {
             currentNests[i].name = "Survivor" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
         }
@@ -83,7 +83,7 @@ namespace search_cuckoo
 
         newPopulation = exchangeNestsByLevyFlight(newPopulation, 1.5, populationIndex);
 
-        for (int i = 0; newPopulation.size() < oldPopulation.size(); i++)
+        for (std::size_t i = 0; newPopulation.size() < oldPopulation.size(); ++i)
         {
             newPopulation.push_back(GapsSequence(
                 "Random" + std::to_string(populationIndex) + "-" + std::to_string(i+1),

@@ -58,7 +58,7 @@ GapsSequence getTokudaGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> tokudaGaps;
 
-    for (long k = 1; k < sortingRange; k++)
+    for (unsigned long k = 1; k < sortingRange; ++k)
     {
         unsigned long gap = (unsigned long)std::ceil((std::pow(9.0 / 4.0, k) - 1) / ((9.0 / 4.0) - 1));
 
@@ -98,7 +98,7 @@ GapsSequence getLeeGaps(unsigned long sortingRange)
 
     double lambda = 2.24360906142;
 
-    for (long k = 1; k < sortingRange; k++)
+    for (unsigned long k = 1; k < sortingRange; ++k)
     {
         unsigned long gap = (unsigned long)std::ceil((std::pow(lambda, k) - 1) / (lambda - 1));
 
@@ -146,7 +146,7 @@ std::vector<unsigned long> getRandomizedGaps(unsigned long sortingRange)
     std::mt19937 gen(rd());
     std::uniform_real_distribution<float> dist(1.1f, 5.0f);
 
-    for (long k = 1; k < sortingRange; k++)
+    for (unsigned long k = 1; k < sortingRange; ++k)
     {
 
         float x = dist(gen);

@@ -26,7 +26,8 @@ namespace search_abc
         std::reverse(currentFoodSource.gaps.begin(), currentFoodSource.gaps.end());
         std::reverse(randomFoodSource.gaps.begin(), randomFoodSource.gaps.end());
 
-        for(int i = 1; i < std::min(currentFoodSource.gaps.size(), randomFoodSource.gaps.size()); i++)
+        const std::size_t minSize = std::min(currentFoodSource.gaps.size(), randomFoodSource.gaps.size());
+        for (std::size_t i = 1; i < minSize; ++i)
         {
             double currentGap = static_cast<double>(currentFoodSource.gaps[i]);
 
@@ -47,12 +48,12 @@ namespace search_abc
     // Employed Bees Phase tuple (sequence, fitnessScore, trialCounter)
     std::vector<FoodSource> employedBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex)
     {
-        for (int i = 0; i < currentSolutions.size(); i++)
+        for (std::size_t i = 0; i < currentSolutions.size(); ++i)
         {
             int j;
             do {
-                j = utilis::getRandomInt(0, currentSolutions.size() - 1);
-            } while (j == i);
+                j = utilis::getRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
+            } while (j == static_cast<int>(i));
 
             GapsSequence currentFoodSource = currentSolutions[i].gapsSequence;
             GapsSequence randomFoodSource = currentSolutions[j].gapsSequence;
@@ -83,7 +84,7 @@ namespace search_abc
         std::vector<double> fitness(currentSolutions.size());
         double fitnessSum = 0.0;
         
-        for (int i = 0; i < currentSolutions.size(); i++)
+        for (std::size_t i = 0; i < currentSolutions.size(); ++i)
         {
             // Inverse fitness: better solutions (fewer operations) get higher fitness
             // Add 1 to avoid division by zero
@@ -93,19 +94,19 @@ namespace search_abc
         }
 
         // Each onlooker bee evaluates one solution (same number as food sources)
-        for (int onlooker = 0; onlooker < currentSolutions.size(); onlooker++)
+        for (std::size_t onlooker = 0; onlooker < currentSolutions.size(); ++onlooker)
         {
             // Roulette wheel selection - select solution based on fitness probability
             double r = utilis::getRandomDouble(0.0, fitnessSum);
             double cumulativeFitness = 0.0;
             int selectedIndex = 0;
 
-            for (int i = 0; i < currentSolutions.size(); i++)
+            for (std::size_t i = 0; i < currentSolutions.size(); ++i)
             {
                 cumulativeFitness += fitness[i];
                 if (cumulativeFitness >= r)
                 {
-                    selectedIndex = i;
+                    selectedIndex = static_cast<int>(i);
                     break;
                 }
             }
@@ -113,7 +114,7 @@ namespace search_abc
             // Find a different random solution for perturbation
             int j;
             do {
-                j = utilis::getRandomInt(0, currentSolutions.size() - 1);
+                j = utilis::getRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
             } while (j == selectedIndex);
 
             GapsSequence currentFoodSource = currentSolutions[selectedIndex].gapsSequence;
@@ -131,7 +132,7 @@ namespace search_abc
                 fitness[selectedIndex] = 1.0 / better.operations;
                 // Update fitnessSum
                 fitnessSum = 0.0;
-                for (int i = 0; i < currentSolutions.size(); i++) fitnessSum += fitness[i];
+                for (std::size_t i = 0; i < currentSolutions.size(); ++i) fitnessSum += fitness[i];
             }
             else
             {
@@ -145,7 +146,7 @@ namespace search_abc
 
     std::vector<FoodSource> scoutBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex, int sourceLimit)
     {
-        for (int i = 0; i < currentSolutions.size(); i++)
+        for (std::size_t i = 0; i < currentSolutions.size(); ++i)
         {
             if (currentSolutions[i].trialCounter >= sourceLimit)
             {
@@ -180,7 +181,7 @@ namespace search_abc
         };
 
         std::vector<FoodSource> foodSources = std::vector<FoodSource>();
-        for (int i = 0; i < algorithmGapsSequences.size(); i++)
+        for (std::size_t i = 0; i < algorithmGapsSequences.size(); ++i)
         {
             foodSources.push_back(FoodSource{ algorithmGapsSequences[i], 0, 0});
         }
