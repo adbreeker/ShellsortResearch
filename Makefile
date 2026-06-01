@@ -4,12 +4,12 @@
 
 # Compiler settings
 CXX = g++
-CXXFLAGS = -std=c++17 -O2 -Wall -Wextra -fopenmp
+CXXFLAGS = -std=c++17 -O3 -Wall -Wextra -fopenmp
 
 # Project settings
 TARGET = ShellsortResearch
 MAIN_SOURCE = ShellsortResearchMain.cpp
-HEADERS = Components/Shellsort.hpp Components/ShellsortComparisions.hpp Components/FilesManagement.hpp Components/SearchingAlgorithms/GeneticAlgorithm.hpp Components/SearchingAlgorithms/ArtificialBeeColony.hpp Components/SearchingAlgorithms/CuckooSearch.hpp
+HEADERS = Components/Shellsort.hpp Components/ShellsortComparisions.hpp Components/FilesManagement.hpp Components/SearchingAlgorithms/AugmentedGA.hpp Components/SearchingAlgorithms/GeneticAlgorithm.hpp Components/SearchingAlgorithms/ArtificialBeeColony.hpp Components/SearchingAlgorithms/CuckooSearch.hpp
 
 # Directories
 RESULTS_DIR = Results

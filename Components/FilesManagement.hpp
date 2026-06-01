@@ -27,7 +27,7 @@ namespace files
 {
     void saveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapsSequence sequence)
     {
-        std::string filename = "Results/BestGapsSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
+        std::string filename = "Results/CandidateGapsSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
         std::ofstream file(filename, std::ios::app);
         
         if (!file.is_open())
