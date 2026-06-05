@@ -7,7 +7,7 @@
 #include <fstream>
 #include "Shellsort.hpp"
 
-std::vector<std::string> splitString(std::string toSplit, const std::string& spliter)
+std::vector<std::string> SplitString(std::string toSplit, const std::string& spliter)
 {
     std::vector<std::string> tokens;
     size_t start = 0, end;
@@ -25,7 +25,7 @@ std::vector<std::string> splitString(std::string toSplit, const std::string& spl
 
 namespace files
 {
-    void saveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapsSequence sequence)
+    void SaveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapsSequence sequence)
     {
         std::string filename = "Results/CandidateGapsSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
         std::ofstream file(filename, std::ios::app);
@@ -46,7 +46,7 @@ namespace files
     }
 
 
-    std::vector<GapsSequence> getGapsFromFile(std::string fileName)
+    std::vector<GapsSequence> GetGapsFromFile(std::string fileName)
     {
         std::vector<GapsSequence> gapsFromFile;
 
@@ -57,10 +57,10 @@ namespace files
             std::string line;
             while (std::getline(file, line))
             {
-                std::vector<std::string> splited = splitString(line, ":");
+                std::vector<std::string> splited = SplitString(line, ":");
 
                 std::string sequenceName = splited[0];
-                splited = splitString(splited[1], " ");
+                splited = SplitString(splited[1], " ");
 
                 std::vector<unsigned long> gaps;
                 for (std::string& gap : splited)

@@ -17,25 +17,25 @@ struct Result
     GapsSequence gapsSequence;
     int wins = 0;
 
-    double getFitnessScore()
+    double GetFitnessScore()
     {
         return operations;
     }
 };
 
-Result measureShellSort(std::vector<int> data, GapsSequence gapsSequence)
+Result MeasureShellSort(std::vector<int> data, GapsSequence gapsSequence)
 {
     unsigned long operations;
 
     auto start = std::chrono::high_resolution_clock::now();
-    operations = shellSort(data, gapsSequence.gaps);
+    operations = ShellSort(data, gapsSequence.gaps);
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
     return Result{ elapsed.count(), (double)operations, gapsSequence };
 }
 
-std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations, bool debugs = false)
+std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations, bool debugs = false)
 {
     int sortsCount = gapsSequences.size();
     std::vector<Result> avgResults(sortsCount);
@@ -50,7 +50,7 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
             std::cout << "+";
         }
 
-        std::vector<int> data = utilis::getRandomSortingData(sortingRange);
+        std::vector<int> data = utilis::GetRandomSortingData(sortingRange);
 
         // Use OpenMP for parallel execution
         std::vector<Result> results(sortsCount);
@@ -58,7 +58,7 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
         #pragma omp parallel for
         for (int j = 0; j < sortsCount; j++)
         {
-            results[j] = measureShellSort(data, gapsSequences[j]);
+            results[j] = MeasureShellSort(data, gapsSequences[j]);
         }
 
         if (i == 0)
@@ -98,7 +98,7 @@ std::vector<Result> compareShellSorts(unsigned long sortingRange, std::vector<Ga
     return avgResults;
 }
 
-bool isGapsSequenceIn(const GapsSequence& sequence, const std::vector<GapsSequence>& listOfSequences)
+bool IsGapsSequenceIn(const GapsSequence& sequence, const std::vector<GapsSequence>& listOfSequences)
 {
     for (const GapsSequence& gs : listOfSequences)
     {

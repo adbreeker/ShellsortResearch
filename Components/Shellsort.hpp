@@ -27,12 +27,24 @@ class GapsSequence
         for (unsigned long gap : gaps) std::cout << gap << " ";
     }
 
+    void ValidateSequence(unsigned long sortingRange)
+    {
+        for (unsigned long& gap : gaps)
+        {
+            if (gap < 1 || gap >= sortingRange)
+            {
+                gap = utilis::GetRandomInt(2, static_cast<int>(sortingRange - 1));
+                name += "|Validated";
+            }
+        }
+    }
+
     bool operator==(const GapsSequence& other) const {
         return gaps == other.gaps;
     }
 };
 
-unsigned long shellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+unsigned long ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
 {
     unsigned long operations = 0;
     for (unsigned long gap : gaps)
@@ -54,7 +66,7 @@ unsigned long shellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
     return operations;
 }
 
-GapsSequence getTokudaGaps(unsigned long sortingRange)
+GapsSequence GetTokudaGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> tokudaGaps;
 
@@ -76,7 +88,7 @@ GapsSequence getTokudaGaps(unsigned long sortingRange)
     return GapsSequence("Tokuda", tokudaGaps);
 }
 
-GapsSequence getCiuraGaps(unsigned long sortingRange)
+GapsSequence GetCiuraGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> ciuraGaps;
     for (unsigned long gap : {1, 4, 10, 23, 57, 132, 301, 701 /*later extension:*/, 1750})
@@ -92,7 +104,7 @@ GapsSequence getCiuraGaps(unsigned long sortingRange)
     return GapsSequence("Ciura", ciuraGaps);
 }
 
-GapsSequence getLeeGaps(unsigned long sortingRange)
+GapsSequence GetLeeGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> leeGaps;
 
@@ -116,7 +128,7 @@ GapsSequence getLeeGaps(unsigned long sortingRange)
     return GapsSequence("Lee", leeGaps);
 }
 
-GapsSequence getSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
+GapsSequence GetSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> sejGaps;
 
@@ -138,7 +150,7 @@ GapsSequence getSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
     return GapsSequence("SEJ", sejGaps);
 }
 
-std::vector<unsigned long> getRandomizedGaps(unsigned long sortingRange)
+std::vector<unsigned long> GetRandomizedGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> randomizedGaps = { 1 };
 

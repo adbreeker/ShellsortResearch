@@ -21,7 +21,7 @@ namespace search_abc
         int trialCounter;
     };
 
-    GapsSequence getNeighborSolution(GapsSequence currentFoodSource, GapsSequence randomFoodSource)
+    GapsSequence GetNeighborSolution(GapsSequence currentFoodSource, GapsSequence randomFoodSource)
     {
         std::reverse(currentFoodSource.gaps.begin(), currentFoodSource.gaps.end());
         std::reverse(randomFoodSource.gaps.begin(), randomFoodSource.gaps.end());
@@ -31,7 +31,7 @@ namespace search_abc
         {
             double currentGap = static_cast<double>(currentFoodSource.gaps[i]);
 
-            float phi = utilis::getRandomFloat(-1.0f, 1.0f);
+            float phi = utilis::GetRandomFloat(-1.0f, 1.0f);
             double newGap = currentGap + phi * (static_cast<double>(currentFoodSource.gaps[i]) - static_cast<double>(randomFoodSource.gaps[i]));
 
             if (newGap > currentGap) { newGap = std::ceil(newGap); }
@@ -46,23 +46,23 @@ namespace search_abc
     }
 
     // Employed Bees Phase tuple (sequence, fitnessScore, trialCounter)
-    std::vector<FoodSource> employedBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex)
+    std::vector<FoodSource> EmployedBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex)
     {
         for (std::size_t i = 0; i < currentSolutions.size(); ++i)
         {
             int j;
             do {
-                j = utilis::getRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
+                j = utilis::GetRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
             } while (j == static_cast<int>(i));
 
             GapsSequence currentFoodSource = currentSolutions[i].gapsSequence;
             GapsSequence randomFoodSource = currentSolutions[j].gapsSequence;
-            GapsSequence neighborSolution = getNeighborSolution(currentFoodSource, randomFoodSource);
+            GapsSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
 
-            neighborSolution.name = "EmployedNeighborhood" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
-            currentFoodSource.name = "EmployedRemaining" + std::to_string(populationIndex) + "-" + std::to_string(i + 1); 
+            neighborSolution.name = std::to_string(populationIndex) + "|EmployedNeighborhood|" + std::to_string(i + 1);
+            currentFoodSource.name = std::to_string(populationIndex) + "|EmployedRemaining|" + std::to_string(i + 1); 
 
-            Result better = compareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
+            Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
             if (better.gapsSequence == neighborSolution)
             {
@@ -78,7 +78,7 @@ namespace search_abc
         return currentSolutions;
     }
 
-    std::vector<FoodSource> onlookerBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex)
+    std::vector<FoodSource> OnlookerBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex)
     {
         // Calculate fitness (inverse of operations - lower operations = higher fitness)
         std::vector<double> fitness(currentSolutions.size());
@@ -97,7 +97,7 @@ namespace search_abc
         for (std::size_t onlooker = 0; onlooker < currentSolutions.size(); ++onlooker)
         {
             // Roulette wheel selection - select solution based on fitness probability
-            double r = utilis::getRandomDouble(0.0, fitnessSum);
+            double r = utilis::GetRandomDouble(0.0, fitnessSum);
             double cumulativeFitness = 0.0;
             int selectedIndex = 0;
 
@@ -114,17 +114,17 @@ namespace search_abc
             // Find a different random solution for perturbation
             int j;
             do {
-                j = utilis::getRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
+                j = utilis::GetRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
             } while (j == selectedIndex);
 
             GapsSequence currentFoodSource = currentSolutions[selectedIndex].gapsSequence;
             GapsSequence randomFoodSource = currentSolutions[j].gapsSequence;
-            GapsSequence neighborSolution = getNeighborSolution(currentFoodSource, randomFoodSource);
+            GapsSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
 
-            neighborSolution.name = "OnlookerNeighborhood" + std::to_string(populationIndex) + "-" + std::to_string(selectedIndex + 1);
-            currentFoodSource.name = "OnlookerRemaining" + std::to_string(populationIndex) + "-" + std::to_string(selectedIndex + 1); 
+            neighborSolution.name = std::to_string(populationIndex) + "|OnlookerNeighborhood|" + std::to_string(selectedIndex + 1);
+            currentFoodSource.name = std::to_string(populationIndex) + "|OnlookerRemaining|" + std::to_string(selectedIndex + 1); 
 
-            Result better = compareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
+            Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
             if (better.gapsSequence == neighborSolution)
             {
@@ -144,15 +144,15 @@ namespace search_abc
         return currentSolutions;
     }
 
-    std::vector<FoodSource> scoutBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex, int sourceLimit)
+    std::vector<FoodSource> ScoutBeesPhase(std::vector<FoodSource> currentSolutions, unsigned long sortingRange, int populationIndex, int sourceLimit)
     {
         for (std::size_t i = 0; i < currentSolutions.size(); ++i)
         {
             if (currentSolutions[i].trialCounter >= sourceLimit)
             {
                 GapsSequence newSolution = GapsSequence(
-                    "ScoutRandom" + std::to_string(populationIndex) + "-" + std::to_string(i + 1),
-                    getRandomizedGaps(sortingRange));
+                    std::to_string(populationIndex) + "|ScoutRandom|" + std::to_string(i + 1),
+                    GetRandomizedGaps(sortingRange));
 
                 currentSolutions[i] = FoodSource{newSolution, 0, 0};
             }
@@ -160,24 +160,25 @@ namespace search_abc
         return currentSolutions;
     }
 
-    std::vector<FoodSource> getNewPopulation(unsigned long sortingRange, std::vector<FoodSource> oldPopulation, int populationIndex)
+    std::vector<FoodSource> GetNewPopulation(unsigned long sortingRange, std::vector<FoodSource> oldPopulation, int populationIndex)
     {
-        std::vector<FoodSource> newPopulation = employedBeesPhase(oldPopulation, sortingRange, populationIndex);
-        newPopulation = onlookerBeesPhase(newPopulation, sortingRange, populationIndex);
-        newPopulation = scoutBeesPhase(newPopulation, sortingRange, populationIndex, 20);
+        std::vector<FoodSource> newPopulation = EmployedBeesPhase(oldPopulation, sortingRange, populationIndex);
+        newPopulation = OnlookerBeesPhase(newPopulation, sortingRange, populationIndex);
+        newPopulation = ScoutBeesPhase(newPopulation, sortingRange, populationIndex, 20);
+
         return newPopulation;
     }
 
-    void endlessGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations)
+    void EndlessGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations)
     {
         std::vector<Result> results;
 
         std::vector<GapsSequence> alreadyFound = 
         { 
-            getTokudaGaps(sortingRange),
-            getCiuraGaps(sortingRange), 
-            getLeeGaps(sortingRange),
-            getSkeanEhrenborgJaromczykGaps(sortingRange) 
+            GetTokudaGaps(sortingRange),
+            GetCiuraGaps(sortingRange), 
+            GetLeeGaps(sortingRange),
+            GetSkeanEhrenborgJaromczykGaps(sortingRange) 
         };
 
         std::vector<FoodSource> foodSources = std::vector<FoodSource>();
@@ -200,18 +201,18 @@ namespace search_abc
             std::cout << "\nABC generated gaps - ";
             algorithmGapsSequences.clear();
             for (FoodSource& fs : foodSources) algorithmGapsSequences.push_back(fs.gapsSequence);
-            results = compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
+            results = CompareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best - ";
-            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
-            if (best == results[0].gapsSequence && !isGapsSequenceIn(best, alreadyFound))
+            GapsSequence best = CompareShellSorts(sortingRange, { results[0].gapsSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
+            if (best == results[0].gapsSequence && !IsGapsSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
                 std::cout << "\n\n--------------------------------------------------- NEW BEST -------------------------------------------------------\n\n";
-                files::saveGapsToFile(sortingRange, "abc", best);
+                files::SaveGapsToFile(sortingRange, "abc", best);
             }
 
-            foodSources = getNewPopulation(sortingRange, foodSources, i + 1);
+            foodSources = GetNewPopulation(sortingRange, foodSources, i + 1);
         }
     }
 }

@@ -12,7 +12,7 @@
 
 namespace search_cuckoo
 {
-    double getLevyDistribution(double beta)
+    double GetLevyDistribution(double beta)
     {
             // --- compute sigma_u ---
         double sigma_u = std::pow(
@@ -21,24 +21,24 @@ namespace search_cuckoo
             1.0 / beta
         );
 
-        double u = utilis::getNormalDistribution(0.0, sigma_u);
-        double v = utilis::getNormalDistribution(0.0, 1.0);
+        double u = utilis::GetNormalDistribution(0.0, sigma_u);
+        double v = utilis::GetNormalDistribution(0.0, 1.0);
 
         // --- Lévy step ---
         return u / std::pow(std::fabs(v), 1.0 / beta);
     }
 
-    GapsSequence performLevyFlight(GapsSequence currentSolution, double beta, double stepSizeMultiplier = 0.01)
+    GapsSequence PerformLevyFlight(GapsSequence currentSolution, double beta, double stepSizeMultiplier = 0.01)
     {
-        std::cout << "\nLeavy in: ";
-        currentSolution.PrintInstance();
+        //std::cout << "\nLeavy in: ";
+        //currentSolution.PrintInstance();
 
         for (std::size_t i = 0; i + 1 < currentSolution.gaps.size(); ++i)
         {
             unsigned long currentGap = currentSolution.gaps[i]; 
 
             double stepSize = stepSizeMultiplier * (currentGap);
-            double levyStep = getLevyDistribution(beta) * stepSize;
+            double levyStep = GetLevyDistribution(beta) * stepSize;
             double newGap = currentGap + levyStep;
 
             if (newGap > currentGap) { newGap = std::ceil(newGap); }
@@ -48,20 +48,20 @@ namespace search_cuckoo
             currentSolution.gaps[i] = static_cast<unsigned long>(newGap);
         }
 
-        std::cout << "\nLeavy out: ";
-        currentSolution.PrintInstance();
+        //std::cout << "\nLeavy out: ";
+        //currentSolution.PrintInstance();
 
         return currentSolution;
     }
 
-    std::vector<GapsSequence> exchangeNestsByLevyFlight(std::vector<GapsSequence> currentNests, double beta, int populationIndex)
+    std::vector<GapsSequence> ExchangeNestsByLevyFlight(std::vector<GapsSequence> currentNests, double beta, int populationIndex)
     {
         std::vector<GapsSequence> newNests;
 
         for (std::size_t i = 0; i < currentNests.size() / 3; ++i)
         {
-            GapsSequence newNest = performLevyFlight(currentNests[i], beta);
-            newNest.name = "LevyChild" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
+            GapsSequence newNest = PerformLevyFlight(currentNests[i], beta);
+            newNest.name = std::to_string(populationIndex) + "|LevyChild|" + std::to_string(i + 1);
             newNests.push_back(newNest);
         }
 
@@ -69,7 +69,7 @@ namespace search_cuckoo
 
         for (std::size_t i = 0; i < currentNests.size(); ++i)
         {
-            currentNests[i].name = "Survivor" + std::to_string(populationIndex) + "-" + std::to_string(i + 1);
+            currentNests[i].name = std::to_string(populationIndex) + "|Survivor|" + std::to_string(i + 1);
         }
 
         currentNests.insert(currentNests.end(), newNests.begin(), newNests.end());
@@ -77,32 +77,35 @@ namespace search_cuckoo
         return currentNests;
     }
 
-    std::vector<GapsSequence> getNewPopulation(unsigned long sortingRange, std::vector<GapsSequence> oldPopulation, int populationIndex)
+    std::vector<GapsSequence> GetNewPopulation(unsigned long sortingRange, std::vector<GapsSequence> oldPopulation, int populationIndex)
     {
         std::vector<GapsSequence> newPopulation = std::vector<GapsSequence>(oldPopulation.begin(), oldPopulation.begin() + oldPopulation.size() * 3 / 4);
 
-        newPopulation = exchangeNestsByLevyFlight(newPopulation, 1.5, populationIndex);
+        newPopulation = ExchangeNestsByLevyFlight(newPopulation, 1.5, populationIndex);
+
+        //Validate population to ensure all gaps are within range to avoid fake results
+        for (GapsSequence& gs : newPopulation) { gs.ValidateSequence(sortingRange); }
 
         for (std::size_t i = 0; newPopulation.size() < oldPopulation.size(); ++i)
         {
             newPopulation.push_back(GapsSequence(
-                "Random" + std::to_string(populationIndex) + "-" + std::to_string(i+1),
-                getRandomizedGaps(sortingRange)));
+                std::to_string(populationIndex) + "|Random|" + std::to_string(i+1),
+                GetRandomizedGaps(sortingRange)));
         }
 
         return newPopulation;
     }
 
-    void endlessGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations)
+    void EndlessGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations)
     {
         std::vector<Result> results;
 
         std::vector<GapsSequence> alreadyFound = 
         { 
-            getTokudaGaps(sortingRange),
-            getCiuraGaps(sortingRange), 
-            getLeeGaps(sortingRange),
-            getSkeanEhrenborgJaromczykGaps(sortingRange) 
+            GetTokudaGaps(sortingRange),
+            GetCiuraGaps(sortingRange), 
+            GetLeeGaps(sortingRange),
+            GetSkeanEhrenborgJaromczykGaps(sortingRange) 
         };
 
         for (long i = 1; true; i++)
@@ -117,22 +120,22 @@ namespace search_cuckoo
             std::cout << "Sum of sequences: " << algorithmGapsSequences.size() << "\n";
 
             std::cout << "\nCuckoo generated gaps - ";
-            results = compareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
+            results = CompareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best - ";
-            GapsSequence best = compareShellSorts(sortingRange, { results[0].gapsSequence, getCiuraGaps(sortingRange), getSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
-            if (best == results[0].gapsSequence && !isGapsSequenceIn(best, alreadyFound))
+            GapsSequence best = CompareShellSorts(sortingRange, { results[0].gapsSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
+            if (best == results[0].gapsSequence && !IsGapsSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
                 std::cout << "\n\n--------------------------------------------------- NEW BEST -------------------------------------------------------\n\n";
-                files::saveGapsToFile(sortingRange, "cuckoo", best);
+                files::SaveGapsToFile(sortingRange, "cuckoo", best);
             }
 
             //creating new cuckoo sequences
             std::vector<GapsSequence> newGapsSequences;
             for (Result& r : results) newGapsSequences.push_back(r.gapsSequence);
 
-            algorithmGapsSequences = getNewPopulation(sortingRange, newGapsSequences, i + 1);
+            algorithmGapsSequences = GetNewPopulation(sortingRange, newGapsSequences, i + 1);
         }
     }
 }

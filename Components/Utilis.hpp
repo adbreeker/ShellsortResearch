@@ -8,7 +8,7 @@
 
 namespace utilis
 {
-    float getRandomFloat(float min, float max)
+    float GetRandomFloat(float min, float max)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -16,7 +16,7 @@ namespace utilis
         return dist(gen);
     }
 
-    double getRandomDouble(double min, double max)
+    double GetRandomDouble(double min, double max)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -24,7 +24,7 @@ namespace utilis
         return dist(gen);
     }
 
-    int getRandomInt(int min, int max)
+    int GetRandomInt(int min, int max)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -32,7 +32,7 @@ namespace utilis
         return dist(gen);
     }
 
-    std::vector<int> getRandomSortingData(unsigned long sortingRange)
+    std::vector<int> GetRandomSortingData(unsigned long sortingRange)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -48,7 +48,7 @@ namespace utilis
         return data;
     }
 
-    double getNormalDistribution(double mean, double stddev)
+    double GetNormalDistribution(double mean, double stddev)
     {
         std::random_device rd;
         std::mt19937 gen(rd());
@@ -56,12 +56,12 @@ namespace utilis
         return dist(gen);
     }
 
-    int roundUpToOdd(int number)
+    int RoundUpToOdd(int number)
     {
         return (number % 2 == 0) ? number + 1 : number;
     }
 
-    int roundUpToEven(int number)
+    int RoundUpToEven(int number)
     {
         return (number % 2 != 0) ? number + 1 : number;
     }   
