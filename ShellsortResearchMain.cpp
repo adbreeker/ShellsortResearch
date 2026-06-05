@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include <vector>
 #include <fstream>
+#include "Components/SearchingAlgorithms/GeneticAlgorithm_v1.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v2.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v3.hpp"
 #include "Components/SearchingAlgorithms/CuckooSearch.hpp"
