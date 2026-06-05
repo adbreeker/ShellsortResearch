@@ -4,7 +4,6 @@
 #include <iostream>
 #include <random>
 #include <vector>
-#include <omp.h>
 
 namespace utilis
 {

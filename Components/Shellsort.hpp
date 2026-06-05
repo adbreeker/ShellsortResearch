@@ -6,6 +6,7 @@
 #include <vector>
 #include <random>
 #include <algorithm>
+#include "Utilis.hpp"
 
 class GapsSequence
 {

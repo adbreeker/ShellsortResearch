@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 #include <vector>
 #include <fstream>
-#include "Components/SearchingAlgorithms/AugmentedGA.hpp"
-#include "Components/SearchingAlgorithms/GeneticAlgorithm.hpp"
+#include "Components/SearchingAlgorithms/GeneticAlgorithm_v2.hpp"
+#include "Components/SearchingAlgorithms/GeneticAlgorithm_v3.hpp"
 #include "Components/SearchingAlgorithms/CuckooSearch.hpp"
 #include "Components/SearchingAlgorithms/ArtificialBeeColony.hpp"
 #include "Components/Shellsort.hpp"
@@ -40,7 +40,7 @@ int main()
     // {
     //     #pragma omp section
     //     {
-    //         search_genetic::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+    //         search_genetic_v2::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
     //     }
     //     #pragma omp section
     //     {
@@ -52,14 +52,14 @@ int main()
     //     }
     // }
 
-    //search_genetic::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+    //search_genetic_v2::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
     //search_cuckoo::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
     //search_abc::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
 
-    search_augmentedGA::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
+    search_genetic_v3::EndlessGapsSeeking(SORTING_RANGE, gapsSequences, 100);
 
     //unreachable while endless seeking
-    for (GapsSequence& gs : files::GetGapsFromFile("CandidateGapsSequences" + std::to_string(SORTING_RANGE) + "_augmentedGA.txt")) gapsSequences.push_back(gs);
+    for (GapsSequence& gs : files::GetGapsFromFile("CandidateGapsSequences" + std::to_string(SORTING_RANGE) + "_GAv3.txt")) gapsSequences.push_back(gs);
     auto results = CompareShellSorts(SORTING_RANGE, gapsSequences, 100);
     PrintResults(results);
 }
