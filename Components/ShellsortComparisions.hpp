@@ -40,7 +40,7 @@ std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<Ga
     int sortsCount = gapsSequences.size();
     std::vector<Result> avgResults(sortsCount);
 
-    if (debugs) { std::cout << "Compare iterations:"; }
+    if (debugs) { std::cout << " - Compare iterations:"; }
 
     for (int i = 0; i < iterations; i++)
     {

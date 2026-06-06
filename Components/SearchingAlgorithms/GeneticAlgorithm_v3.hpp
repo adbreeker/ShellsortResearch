@@ -149,15 +149,15 @@ namespace search_genetic_v3
             }
             std::cout << "Sum of sequences: " << algorithmGapsSequences.size() << "\n";
 
-            std::cout << "\nGenetic Algorithm v3 generated gaps - ";
+            std::cout << "\nGenetic Algorithm v3 generated gaps";
             results = CompareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
 
-            std::cout << "\nChecking for new best - ";
+            std::cout << "\nChecking for new best";
             GapsSequence best = CompareShellSorts(sortingRange, { results[0].gapsSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
             if (best == results[0].gapsSequence && !IsGapsSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
-                std::cout << "\n\n--------------------------------------------------- NEW BEST -------------------------------------------------------\n\n";
+                std::cout << "\n\nNEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE\n\n";
                 files::SaveGapsToFile(sortingRange, "GAv3", best);
             }
 
