@@ -21,6 +21,11 @@ RESULTS_DIR = "../Results"
 # Set to None to analyze all populations in the files.
 MAX_POPULATIONS = None
 
+# Maximum number of sequences to analyze (e.g., 1000). 
+# Set to None to analyze all sequences.
+# NOTE: You cannot set both MAX_POPULATIONS and MAX_SEQUENCES simultaneously.
+MAX_SEQUENCES = None 
+
 # Add as many files as you want here. 
 # Key: Range size (will be sorted numerically)
 # Value: Filename
@@ -48,8 +53,8 @@ def get_dynamic_colors(num_colors):
     colormap = plt.colormaps['viridis']
     return [colormap(i) for i in np.linspace(0.2, 0.9, num_colors)]
 
-def parse_file(filepath, max_pops=None):
-    """Parse a results file and extract sequence data up to a max population limit."""
+def parse_file(filepath, max_pops=None, max_seqs=None):
+    """Parse a results file and extract sequence data and metadata up to limits."""
     sequences = []
     with open(filepath, 'r') as f:
         for line in f:
@@ -69,12 +74,31 @@ def parse_file(filepath, max_pops=None):
             if max_pops is not None and population > max_pops:
                 continue
             
-            # Extract sequence after colon
+            # Extract metadata and sequence
             if ':' in line:
-                seq_part = line.split(':')[1].strip()
+                header, seq_part = line.split(':', 1)
+                
+                header_parts = header.split('|')
+                type_val = header_parts[1].strip() if len(header_parts) > 1 else "Unknown"
+                
+                is_mutated = 'Mutated' in header
+                is_validated = 'Validated' in header
+                
                 sequence = [int(x) for x in seq_part.split() if x.isdigit()]
+                
                 if sequence:
-                    sequences.append((population, sequence))
+                    sequences.append({
+                        'pop': population,
+                        'type': type_val,
+                        'mut': is_mutated,
+                        'val': is_validated,
+                        'seq': sequence
+                    })
+                    
+                    # Stop parsing if we reached the maximum sequence limit
+                    if max_seqs is not None and len(sequences) >= max_seqs:
+                        break
+                        
     return sequences
 
 def analyze_sequences(sequences):
@@ -82,23 +106,30 @@ def analyze_sequences(sequences):
     if not sequences:
         return None
     
-    populations = [s[0] for s in sequences]
-    seqs = [s[1] for s in sequences]
+    populations = [s['pop'] for s in sequences]
+    seqs = [s['seq'] for s in sequences]
     
     num_sequences = len(sequences)
     
+    # Calculate Interval Statistics
     sorted_pops = sorted(populations)
     if len(sorted_pops) > 1:
         intervals = [sorted_pops[i+1] - sorted_pops[i] for i in range(len(sorted_pops)-1)]
         avg_interval = np.mean(intervals)
+        med_interval = np.median(intervals)
+        min_interval = np.min(intervals)
+        max_interval = np.max(intervals)
+        std_interval = np.std(intervals)
     else:
-        avg_interval = 0
+        avg_interval = med_interval = min_interval = max_interval = std_interval = 0
         
+    # Analyze sequences aligned from the END
     max_len = max(len(s) for s in seqs)
-    
     padded_seqs = []
+    
     for s in seqs:
-        padded = s + [None] * (max_len - len(s))
+        # Pad at the front to right-align the sequences (align by their endings)
+        padded = [None] * (max_len - len(s)) + s
         padded_seqs.append(padded)
         
     avg_seq, min_seq, max_seq = [], [], []
@@ -109,7 +140,12 @@ def analyze_sequences(sequences):
             avg_seq.append(np.mean(values))
             min_seq.append(min(values))
             max_seq.append(max(values))
+        else:
+            avg_seq.append(0)
+            min_seq.append(0)
+            max_seq.append(0)
             
+    # Calculate Common Endings
     beginning_counts = {}
     for n in range(1, max_len + 1):
         beginnings = []
@@ -126,13 +162,25 @@ def analyze_sequences(sequences):
                 'total': len(beginnings)
             }
             
+    # Calculate Metadata Stats (Types, Mutated, Validated)
+    types_counter = Counter(s['type'] for s in sequences)
+    mut_count = sum(1 for s in sequences if s['mut'])
+    val_count = sum(1 for s in sequences if s['val'])
+            
     return {
         'num_sequences': num_sequences,
         'avg_interval': avg_interval,
+        'med_interval': med_interval,
+        'min_interval': min_interval,
+        'max_interval': max_interval,
+        'std_interval': std_interval,
         'avg_seq': avg_seq,
         'min_seq': min_seq,
         'max_seq': max_seq,
         'beginning_counts': beginning_counts,
+        'types_counter': types_counter,
+        'mut_count': mut_count,
+        'val_count': val_count,
         'populations': sorted_pops
     }
 
@@ -150,7 +198,7 @@ def create_grid_subplots(num_items):
         
     return fig, axes, rows, cols
 
-def plot_num_sequences(all_results, sorted_ranges, colors, max_pops_label):
+def plot_num_sequences(all_results, sorted_ranges, colors, limit_label):
     """Plot 1: Number of sequences per range."""
     fig, ax = plt.subplots(figsize=(10, 6))
     
@@ -164,35 +212,36 @@ def plot_num_sequences(all_results, sorted_ranges, colors, max_pops_label):
                 str(count), ha='center', va='bottom', fontsize=12, fontweight='bold')
                 
     ax.set_ylabel('Number of Sequences', fontsize=12)
-    ax.set_title(f'Number of Gap Sequences Generated ({TARGET_ALGO}){max_pops_label}', fontsize=14, fontweight='bold')
+    ax.set_title(f'Number of Gap Sequences Generated ({TARGET_ALGO}){limit_label}', fontsize=14, fontweight='bold')
     ax.set_ylim(0, max(counts) * 1.15)
     
     plt.tight_layout()
     plt.savefig(f'{OUTPUT_DIR}/plot1_num_sequences.png', dpi=150)
     plt.close()
 
-def plot_avg_interval(all_results, sorted_ranges, colors, max_pops_label):
-    """Plot 2: Average population interval between sequences."""
+def plot_avg_interval(all_results, sorted_ranges, colors, limit_label):
+    """Plot 2: Average population interval between sequences (with Std Dev)."""
     fig, ax = plt.subplots(figsize=(10, 6))
     
     intervals = [all_results[r]['avg_interval'] for r in sorted_ranges]
+    stds = [all_results[r]['std_interval'] for r in sorted_ranges]
     labels = [f"Range {r}" for r in sorted_ranges]
     
     bars = ax.bar(labels, intervals, color=colors, edgecolor='black', linewidth=1.2)
     
-    for bar, interval in zip(bars, intervals):
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.5,
-                f'{interval:.1f}', ha='center', va='bottom', fontsize=12, fontweight='bold')
+    for bar, interval, std in zip(bars, intervals, stds):
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + max(intervals)*0.02,
+                f'{interval:.1f}\n± {std:.1f}', ha='center', va='bottom', fontsize=11, fontweight='bold')
                 
     ax.set_ylabel('Average Population Interval', fontsize=12)
-    ax.set_title(f'Average Populations Between Finding New Sequences ({TARGET_ALGO}){max_pops_label}', fontsize=14, fontweight='bold')
-    ax.set_ylim(0, max(intervals) * 1.15)
+    ax.set_title(f'Average Populations Between Finding New Sequences ({TARGET_ALGO}){limit_label}', fontsize=14, fontweight='bold')
+    ax.set_ylim(0, max(intervals) * 1.25)
     
     plt.tight_layout()
     plt.savefig(f'{OUTPUT_DIR}/plot2_avg_interval.png', dpi=150)
     plt.close()
 
-def plot_common_beginnings(all_results, sorted_ranges, colors, max_pops_label):
+def plot_common_beginnings(all_results, sorted_ranges, colors, limit_label):
     """Plot 4: Most common sequence endings (from 1) in a flexible 3-column grid."""
     num_ranges = len(sorted_ranges)
     
@@ -245,13 +294,13 @@ def plot_common_beginnings(all_results, sorted_ranges, colors, max_pops_label):
         for idx in range(num_ranges, rows * cols):
             axes[idx].set_visible(False)
             
-        plt.suptitle(f'{TARGET_ALGO}: Most Common Endings - Last {n} Element{"s" if n > 1 else ""} (from 1){max_pops_label}', 
+        plt.suptitle(f'{TARGET_ALGO}: Most Common Endings - Last {n} Element{"s" if n > 1 else ""} (from 1){limit_label}', 
                      fontsize=16, fontweight='bold')
         plt.tight_layout(rect=[0, 0.03, 1, 0.95])
         plt.savefig(f'{OUTPUT_DIR}/plot4_endings_length_{n}.png', dpi=150, bbox_inches='tight')
         plt.close()
 
-def plot_common_beginnings_detailed(all_results, sorted_ranges, colors, max_pops_label):
+def plot_common_beginnings_detailed(all_results, sorted_ranges, colors, limit_label):
     """Summary plot showing coverage trends across all ranges in a 3-column grid."""
     num_ranges = len(sorted_ranges)
     fig, axes, rows, cols = create_grid_subplots(num_ranges)
@@ -307,12 +356,12 @@ def plot_common_beginnings_detailed(all_results, sorted_ranges, colors, max_pops
     for idx in range(num_ranges, rows * cols):
         axes[idx].set_visible(False)
         
-    plt.suptitle(f'{TARGET_ALGO}: Coverage of Top Sequence Endings (from 1){max_pops_label}', fontsize=16, fontweight='bold')
+    plt.suptitle(f'{TARGET_ALGO}: Coverage of Top Sequence Endings (from 1){limit_label}', fontsize=16, fontweight='bold')
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
     plt.savefig(f'{OUTPUT_DIR}/plot5_endings_coverage.png', dpi=150, bbox_inches='tight')
     plt.close()
 
-def export_to_txt(all_results, sorted_ranges, max_pops_label):
+def export_to_txt(all_results, sorted_ranges, limit_label):
     """Export analysis results to TXT files for each range."""
     for range_val in sorted_ranges:
         results = all_results[range_val]
@@ -321,22 +370,34 @@ def export_to_txt(all_results, sorted_ranges, max_pops_label):
         with open(txt_path, 'w', encoding='utf-8') as f:
             f.write(f"{'='*60}\n")
             f.write(f"  {TARGET_ALGO} - Range {range_val} Analysis\n")
-            f.write(f"  {max_pops_label.strip()}\n")
+            if limit_label:
+                f.write(f"  {limit_label.strip()}\n")
             f.write(f"{'='*60}\n\n")
             
-            f.write(f"1. Number of sequences generated: {results['num_sequences']}\n")
-            f.write(f"2. Average populations between sequences: {float(results['avg_interval']):.2f}\n\n")
+            f.write(f"1. Number of sequences generated: {results['num_sequences']}\n\n")
+            
+            f.write(f"2. Population Intervals Between Sequences:\n")
+            f.write(f"   Average: {results['avg_interval']:.2f}\n")
+            f.write(f"   Median:  {results['med_interval']:.2f}\n")
+            f.write(f"   Minimum: {results['min_interval']}\n")
+            f.write(f"   Maximum: {results['max_interval']}\n")
+            f.write(f"   Std Dev: {results['std_interval']:.2f}\n\n")
             
             f.write(f"3. Sequence Statistics:\n")
             f.write(f"   Min sequence: {results['min_seq']}\n")
             f.write(f"   Avg sequence: {[round(float(x), 2) for x in results['avg_seq']]}\n")
             f.write(f"   Max sequence: {results['max_seq']}\n\n")
             
-            f.write(f"   Position-by-position:\n")
-            f.write(f"   {'Pos':<5} {'Min':<10} {'Avg':<12} {'Max':<10}\n")
-            f.write(f"   {'-'*37}\n")
-            for i in range(len(results['avg_seq'])):
-                f.write(f"   {i+1:<5} {results['min_seq'][i]:<10} {results['avg_seq'][i]:<12.2f} {results['max_seq'][i]:<10}\n")
+            f.write(f"   Position-by-position (Aligned from End):\n")
+            f.write(f"   {'Pos':<7} {'Min':<10} {'Avg':<12} {'Max':<10}\n")
+            f.write(f"   {'-'*39}\n")
+            max_len = len(results['avg_seq'])
+            
+            # Iterate backwards so the last gap (end of the list) prints first as Pos 1
+            for i in range(max_len):
+                idx = max_len - 1 - i
+                pos_label = str(i + 1)
+                f.write(f"   {pos_label:<7} {results['min_seq'][idx]:<10} {results['avg_seq'][idx]:<12.2f} {results['max_seq'][idx]:<10}\n")
                 
             f.write(f"\n4. Sequence Endings (from 1):\n")
             for n, data in results['beginning_counts'].items():
@@ -345,8 +406,26 @@ def export_to_txt(all_results, sorted_ranges, max_pops_label):
                     percentage = (count / data['total']) * 100
                     seq_str = ', '.join(map(str, seq))
                     f.write(f"      [{seq_str}]: {count} times ({percentage:.2f}%)\n")
+                    
+            f.write(f"\n5. Sequence Types & Flags:\n")
+            f.write(f"   Total Unique Types: {len(results['types_counter'])}\n")
+            f.write(f"   ---------------------------------------\n")
+            for type_val, count in results['types_counter'].most_common():
+                percentage = (count / results['num_sequences']) * 100
+                f.write(f"   {type_val:<20} {count:>5} ({percentage:>5.1f}%)\n")
+                
+            f.write(f"\n   Flags Detected:\n")
+            f.write(f"   ---------------------------------------\n")
+            mut_pct = (results['mut_count'] / results['num_sequences']) * 100 if results['num_sequences'] else 0
+            val_pct = (results['val_count'] / results['num_sequences']) * 100 if results['num_sequences'] else 0
+            f.write(f"   Contains |Mutated:   {results['mut_count']:>5} ({mut_pct:>5.1f}%)\n")
+            f.write(f"   Contains |Validated: {results['val_count']:>5} ({val_pct:>5.1f}%)\n")
 
 def main():
+    # Mutual exclusivity validation
+    if MAX_POPULATIONS is not None and MAX_SEQUENCES is not None:
+        raise ValueError("Cannot set both MAX_POPULATIONS and MAX_SEQUENCES at the same time. Please set one of them to None.")
+
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     
     all_results = {}
@@ -358,7 +437,7 @@ def main():
             continue
             
         print(f"Processing Range {range_val}...")
-        sequences = parse_file(filepath, max_pops=MAX_POPULATIONS)
+        sequences = parse_file(filepath, max_pops=MAX_POPULATIONS, max_seqs=MAX_SEQUENCES)
         results = analyze_sequences(sequences)
         
         if results:
@@ -373,21 +452,26 @@ def main():
     
     colors = get_dynamic_colors(len(sorted_ranges))
     
-    max_pops_label = f"\n (Max Iterations: {MAX_POPULATIONS})" if MAX_POPULATIONS else ""
+    # Generate the proper label for plots and text files depending on which config is set
+    limit_label = ""
+    if MAX_POPULATIONS is not None:
+        limit_label = f"\n (Max Iterations: {MAX_POPULATIONS})"
+    elif MAX_SEQUENCES is not None:
+        limit_label = f"\n (Max Sequences: {MAX_SEQUENCES})"
     
     print("\n" + "="*60)
     print("  EXPORTING TXT FILES")
     print("="*60)
-    export_to_txt(all_results, sorted_ranges, max_pops_label)
+    export_to_txt(all_results, sorted_ranges, limit_label)
     
     print("\n" + "="*60)
     print("  GENERATING PLOTS")
     print("="*60)
     
-    plot_num_sequences(all_results, sorted_ranges, colors, max_pops_label)
-    plot_avg_interval(all_results, sorted_ranges, colors, max_pops_label)
-    plot_common_beginnings(all_results, sorted_ranges, colors, max_pops_label)
-    plot_common_beginnings_detailed(all_results, sorted_ranges, colors, max_pops_label)
+    plot_num_sequences(all_results, sorted_ranges, colors, limit_label)
+    plot_avg_interval(all_results, sorted_ranges, colors, limit_label)
+    plot_common_beginnings(all_results, sorted_ranges, colors, limit_label)
+    plot_common_beginnings_detailed(all_results, sorted_ranges, colors, limit_label)
     
     print(f"\nAnalysis complete! Results saved to '{OUTPUT_DIR}/'")
 
