@@ -35,6 +35,7 @@ FILES = {
     "2500": "CandidateGapsSequences2500_GAv3.txt",
     "5000": "CandidateGapsSequences5000_GAv3.txt",
     "10000": "CandidateGapsSequences10000_GAv3.txt",
+    "100000": "CandidateGapsSequences100000_GAv3.txt",
 }
 
 OUTPUT_DIR = f'outputs/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis'

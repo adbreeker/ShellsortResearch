@@ -11,7 +11,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 100000; //do with 7500, 4999, 7499, 100000
+const unsigned long SORTING_RANGE = 4999; //do with 7500, 7499, 100000
 
 void PrintResults(std::vector<Result>& results)
 {
