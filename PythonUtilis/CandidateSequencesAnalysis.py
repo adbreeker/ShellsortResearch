@@ -30,12 +30,12 @@ MAX_SEQUENCES = None
 # Key: Range size (will be sorted numerically)
 # Value: Filename
 FILES = {
-    "100": "CandidateGapsSequences100_GAv3.txt",
-    "1000": "CandidateGapsSequences1000_GAv3.txt",
-    "2500": "CandidateGapsSequences2500_GAv3.txt",
-    "5000": "CandidateGapsSequences5000_GAv3.txt",
-    "10000": "CandidateGapsSequences10000_GAv3.txt",
-    "100000": "CandidateGapsSequences100000_GAv3.txt",
+    "100": "CandidateGapSequences100_GAv3.txt",
+    "1000": "CandidateGapSequences1000_GAv3.txt",
+    "2500": "CandidateGapSequences2500_GAv3.txt",
+    "5000": "CandidateGapSequences5000_GAv3.txt",
+    "10000": "CandidateGapSequences10000_GAv3.txt",
+    "100000": "CandidateGapSequences100000_GAv3.txt",
 }
 
 OUTPUT_DIR = f'outputs/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis'

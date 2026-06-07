@@ -14,7 +14,7 @@ struct Result
 {
     double time = 0.0;
     double operations = 0;
-    GapsSequence gapsSequence;
+    GapSequence gapSequence;
     int wins = 0;
 
     double GetFitnessScore()
@@ -23,21 +23,21 @@ struct Result
     }
 };
 
-Result MeasureShellSort(std::vector<int> data, GapsSequence gapsSequence)
+Result MeasureShellSort(std::vector<int> data, GapSequence gapSequence)
 {
     unsigned long operations;
 
     auto start = std::chrono::high_resolution_clock::now();
-    operations = ShellSort(data, gapsSequence.gaps);
+    operations = ShellSort(data, gapSequence.gaps);
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
-    return Result{ elapsed.count(), (double)operations, gapsSequence };
+    return Result{ elapsed.count(), (double)operations, gapSequence };
 }
 
-std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<GapsSequence> gapsSequences, int iterations, bool debugs = false)
+std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<GapSequence> gapSequences, int iterations, bool debugs = false)
 {
-    int sortsCount = gapsSequences.size();
+    int sortsCount = gapSequences.size();
     std::vector<Result> avgResults(sortsCount);
 
     if (debugs) { std::cout << " - Compare iterations:"; }
@@ -58,7 +58,7 @@ std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<Ga
         #pragma omp parallel for
         for (int j = 0; j < sortsCount; j++)
         {
-            results[j] = MeasureShellSort(data, gapsSequences[j]);
+            results[j] = MeasureShellSort(data, gapSequences[j]);
         }
 
         if (i == 0)
@@ -81,7 +81,7 @@ std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<Ga
             return a.operations < b.operations;
             });
 
-        for (Result& r : avgResults) if (r.gapsSequence == results[0].gapsSequence) { r.wins++; }
+        for (Result& r : avgResults) if (r.gapSequence == results[0].gapSequence) { r.wins++; }
     }
 
     for (Result& r : avgResults)
@@ -98,9 +98,9 @@ std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<Ga
     return avgResults;
 }
 
-bool IsGapsSequenceIn(const GapsSequence& sequence, const std::vector<GapsSequence>& listOfSequences)
+bool IsGapSequenceIn(const GapSequence& sequence, const std::vector<GapSequence>& listOfSequences)
 {
-    for (const GapsSequence& gs : listOfSequences)
+    for (const GapSequence& gs : listOfSequences)
     {
         if (gs == sequence)
         {

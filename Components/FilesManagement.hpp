@@ -25,9 +25,9 @@ std::vector<std::string> SplitString(std::string toSplit, const std::string& spl
 
 namespace files
 {
-    void SaveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapsSequence sequence)
+    void SaveGapsToFile(unsigned long sortingRange, std::string algorithmName, GapSequence sequence)
     {
-        std::string filename = "Results/CandidateGapsSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
+        std::string filename = "Results/CandidateGapSequences" + std::to_string(sortingRange) + "_" + algorithmName + ".txt";
         std::ofstream file(filename, std::ios::app);
         
         if (!file.is_open())
@@ -46,9 +46,9 @@ namespace files
     }
 
 
-    std::vector<GapsSequence> GetGapsFromFile(std::string fileName)
+    std::vector<GapSequence> GetGapsFromFile(std::string fileName)
     {
-        std::vector<GapsSequence> gapsFromFile;
+        std::vector<GapSequence> gapsFromFile;
 
         std::string path = "Results/" + fileName;
         std::ifstream file(path);
@@ -68,7 +68,7 @@ namespace files
                     gaps.push_back(std::stoul(gap));
                 }
 
-                gapsFromFile.push_back(GapsSequence(sequenceName, gaps));
+                gapsFromFile.push_back(GapSequence(sequenceName, gaps));
             }
         }
 

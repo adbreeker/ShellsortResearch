@@ -16,12 +16,12 @@ namespace search_abc
 {
     struct FoodSource
     {
-        GapsSequence gapsSequence;
+        GapSequence gapSequence;
         double fitnessScore;
         int trialCounter;
     };
 
-    GapsSequence GetNeighborSolution(GapsSequence currentFoodSource, GapsSequence randomFoodSource)
+    GapSequence GetNeighborSolution(GapSequence currentFoodSource, GapSequence randomFoodSource)
     {
         std::reverse(currentFoodSource.gaps.begin(), currentFoodSource.gaps.end());
         std::reverse(randomFoodSource.gaps.begin(), randomFoodSource.gaps.end());
@@ -55,22 +55,22 @@ namespace search_abc
                 j = utilis::GetRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
             } while (j == static_cast<int>(i));
 
-            GapsSequence currentFoodSource = currentSolutions[i].gapsSequence;
-            GapsSequence randomFoodSource = currentSolutions[j].gapsSequence;
-            GapsSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
+            GapSequence currentFoodSource = currentSolutions[i].gapSequence;
+            GapSequence randomFoodSource = currentSolutions[j].gapSequence;
+            GapSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
 
             neighborSolution.name = std::to_string(populationIndex) + "|EmployedNeighborhood|" + std::to_string(i + 1);
             currentFoodSource.name = std::to_string(populationIndex) + "|EmployedRemaining|" + std::to_string(i + 1); 
 
             Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
-            if (better.gapsSequence == neighborSolution)
+            if (better.gapSequence == neighborSolution)
             {
                 currentSolutions[i] = FoodSource{neighborSolution, better.operations, 0}; //replace source
             }
             else
             {
-                currentSolutions[i].gapsSequence = currentFoodSource; //keep old source
+                currentSolutions[i].gapSequence = currentFoodSource; //keep old source
                 currentSolutions[i].fitnessScore = better.operations;
                 currentSolutions[i].trialCounter += 1; //increase trial counter
             }
@@ -117,16 +117,16 @@ namespace search_abc
                 j = utilis::GetRandomInt(0, static_cast<int>(currentSolutions.size() - 1));
             } while (j == selectedIndex);
 
-            GapsSequence currentFoodSource = currentSolutions[selectedIndex].gapsSequence;
-            GapsSequence randomFoodSource = currentSolutions[j].gapsSequence;
-            GapsSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
+            GapSequence currentFoodSource = currentSolutions[selectedIndex].gapSequence;
+            GapSequence randomFoodSource = currentSolutions[j].gapSequence;
+            GapSequence neighborSolution = GetNeighborSolution(currentFoodSource, randomFoodSource);
 
             neighborSolution.name = std::to_string(populationIndex) + "|OnlookerNeighborhood|" + std::to_string(selectedIndex + 1);
             currentFoodSource.name = std::to_string(populationIndex) + "|OnlookerRemaining|" + std::to_string(selectedIndex + 1); 
 
             Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
-            if (better.gapsSequence == neighborSolution)
+            if (better.gapSequence == neighborSolution)
             {
                 currentSolutions[selectedIndex] = FoodSource{neighborSolution, better.operations, 0};
                 fitness[selectedIndex] = 1.0 / better.operations;
@@ -136,7 +136,7 @@ namespace search_abc
             }
             else
             {
-                currentSolutions[selectedIndex].gapsSequence = currentFoodSource; //keep old source
+                currentSolutions[selectedIndex].gapSequence = currentFoodSource; //keep old source
                 currentSolutions[selectedIndex].trialCounter += 1; //increase trial counter
             }
         }
@@ -150,7 +150,7 @@ namespace search_abc
         {
             if (currentSolutions[i].trialCounter >= sourceLimit)
             {
-                GapsSequence newSolution = GapsSequence(
+                GapSequence newSolution = GapSequence(
                     std::to_string(populationIndex) + "|ScoutRandom|" + std::to_string(i + 1),
                     GetRandomizedGaps(sortingRange));
 
@@ -169,11 +169,11 @@ namespace search_abc
         return newPopulation;
     }
 
-    void EndlessGapsSeeking(unsigned long sortingRange, std::vector<GapsSequence> algorithmGapsSequences, int tryoutsIterations)
+    void EndlessGapSeeking(unsigned long sortingRange, std::vector<GapSequence> algorithmGapSequences, int tryoutsIterations)
     {
         std::vector<Result> results;
 
-        std::vector<GapsSequence> alreadyFound = 
+        std::vector<GapSequence> alreadyFound = 
         { 
             GetTokudaGaps(sortingRange),
             GetCiuraGaps(sortingRange), 
@@ -182,9 +182,9 @@ namespace search_abc
         };
 
         std::vector<FoodSource> foodSources = std::vector<FoodSource>();
-        for (std::size_t i = 0; i < algorithmGapsSequences.size(); ++i)
+        for (std::size_t i = 0; i < algorithmGapSequences.size(); ++i)
         {
-            foodSources.push_back(FoodSource{ algorithmGapsSequences[i], 0, 0});
+            foodSources.push_back(FoodSource{ algorithmGapSequences[i], 0, 0});
         }
 
         for (long i = 1; true; i++)
@@ -193,19 +193,19 @@ namespace search_abc
             std::cout << "Gaps:\n";
             for (FoodSource foodSource : foodSources)
             {
-                foodSource.gapsSequence.PrintInstance();
+                foodSource.gapSequence.PrintInstance();
                 std::cout << "\n";
             }
             std::cout << "Sum of sequences: " << foodSources.size() << "\n";
 
             std::cout << "\nABC generated gaps";
-            algorithmGapsSequences.clear();
-            for (FoodSource& fs : foodSources) algorithmGapsSequences.push_back(fs.gapsSequence);
-            results = CompareShellSorts(sortingRange, algorithmGapsSequences, tryoutsIterations);
+            algorithmGapSequences.clear();
+            for (FoodSource& fs : foodSources) algorithmGapSequences.push_back(fs.gapSequence);
+            results = CompareShellSorts(sortingRange, algorithmGapSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best";
-            GapsSequence best = CompareShellSorts(sortingRange, { results[0].gapsSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapsSequence;
-            if (best == results[0].gapsSequence && !IsGapsSequenceIn(best, alreadyFound))
+            GapSequence best = CompareShellSorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
+            if (best == results[0].gapSequence && !IsGapSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
                 std::cout << "\n\nNEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE\n\n";

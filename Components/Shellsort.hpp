@@ -8,15 +8,15 @@
 #include <algorithm>
 #include "Utilis.hpp"
 
-class GapsSequence
+class GapSequence
 {
     public:
     std::string name;
     std::vector<unsigned long> gaps;
 
-    GapsSequence() {}
+    GapSequence() {}
 
-    GapsSequence(std::string name, std::vector<unsigned long> gaps) :
+    GapSequence(std::string name, std::vector<unsigned long> gaps) :
         name(name),
         gaps(gaps)
     {
@@ -40,7 +40,7 @@ class GapsSequence
         }
     }
 
-    bool operator==(const GapsSequence& other) const {
+    bool operator==(const GapSequence& other) const {
         return gaps == other.gaps;
     }
 };
@@ -67,7 +67,8 @@ unsigned long ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
     return operations;
 }
 
-GapsSequence GetTokudaGaps(unsigned long sortingRange)
+// Tokuda 1992: 1, 4, 9, 20, 46, 103, 233, 525, 1182, 2660, 5985, 13467, 30301, 68178...
+GapSequence GetTokudaGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> tokudaGaps;
 
@@ -86,10 +87,11 @@ GapsSequence GetTokudaGaps(unsigned long sortingRange)
     }
 
     std::reverse(tokudaGaps.begin(), tokudaGaps.end());
-    return GapsSequence("Tokuda", tokudaGaps);
+    return GapSequence("Tokuda", tokudaGaps);
 }
 
-GapsSequence GetCiuraGaps(unsigned long sortingRange)
+// Ciura 2001: 1, 4, 10, 23, 57, 132, 301, 701 (later extension: 1750)
+GapSequence GetCiuraGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> ciuraGaps;
     for (unsigned long gap : {1, 4, 10, 23, 57, 132, 301, 701 /*later extension:*/, 1750})
@@ -102,10 +104,11 @@ GapsSequence GetCiuraGaps(unsigned long sortingRange)
     }
 
     std::reverse(ciuraGaps.begin(), ciuraGaps.end());
-    return GapsSequence("Ciura", ciuraGaps);
+    return GapSequence("Ciura", ciuraGaps);
 }
 
-GapsSequence GetLeeGaps(unsigned long sortingRange)
+// Lee 2021: 1, 4, 9, 20, 45, 102, 230, 516, 1158, 2599, 5831, 13082, 29351, 65853...
+GapSequence GetLeeGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> leeGaps;
 
@@ -126,10 +129,11 @@ GapsSequence GetLeeGaps(unsigned long sortingRange)
     }
 
     std::reverse(leeGaps.begin(), leeGaps.end());
-    return GapsSequence("Lee", leeGaps);
+    return GapSequence("Lee", leeGaps);
 }
 
-GapsSequence GetSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
+// Skean, Ehrenborg, Jaromczyk 2023: 1, 4, 10, 27, 72, 187, 488, 1272, 3313, 8627, 22465, 58498...
+GapSequence GetSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> sejGaps;
 
@@ -148,7 +152,7 @@ GapsSequence GetSkeanEhrenborgJaromczykGaps(unsigned long sortingRange)
     }
 
     std::reverse(sejGaps.begin(), sejGaps.end());
-    return GapsSequence("SEJ", sejGaps);
+    return GapSequence("SEJ", sejGaps);
 }
 
 std::vector<unsigned long> GetRandomizedGaps(unsigned long sortingRange)
