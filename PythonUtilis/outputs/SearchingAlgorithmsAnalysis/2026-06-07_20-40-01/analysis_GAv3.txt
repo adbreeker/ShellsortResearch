@@ -1,0 +1,108 @@
+============================================================
+  Genetic Algorithm v3 Analysis
+============================================================
+
+1. Number of sequences generated: 1014
+
+2. Population Intervals Between Sequences:
+   Average: 77.59
+   Median:  15.00
+   Minimum: 1
+   Maximum: 1249
+   Std Dev: 149.80
+
+3. Sequence Statistics:
+   Min sequence: [393, 114, 41, 15, 9, 4, 1]
+   Avg sequence: [458.12, 211.35, 60.82, 21.91, 10.01, 4.01, 1.0]
+   Max sequence: [498, 451, 108, 33, 14, 5, 1]
+
+   Position-by-position (Aligned from End):
+   Pos     Min        Avg          Max       
+   ---------------------------------------
+   1       1          1.00         1         
+   2       4          4.01         5         
+   3       9          10.01        14        
+   4       15         21.91        33        
+   5       41         60.82        108       
+   6       114        211.35       451       
+   7       393        458.12       498       
+
+4. Sequence Endings (from 1):
+
+   Last 1 element(s) - 1014 sequences, 1 unique patterns:
+      [1]: 1014 times (100.00%)
+
+   Last 2 element(s) - 1014 sequences, 2 unique patterns:
+      [4, 1]: 1005 times (99.11%)
+      [5, 1]: 9 times (0.89%)
+
+   Last 3 element(s) - 1014 sequences, 7 unique patterns:
+      [10, 4, 1]: 679 times (66.96%)
+      [9, 4, 1]: 233 times (22.98%)
+      [11, 4, 1]: 37 times (3.65%)
+      [14, 4, 1]: 33 times (3.25%)
+      [13, 4, 1]: 23 times (2.27%)
+      [11, 5, 1]: 8 times (0.79%)
+      [12, 5, 1]: 1 times (0.10%)
+
+   Last 4 element(s) - 1014 sequences, 29 unique patterns:
+      [21, 10, 4, 1]: 198 times (19.53%)
+      [19, 10, 4, 1]: 185 times (18.24%)
+      [23, 10, 4, 1]: 136 times (13.41%)
+      [20, 9, 4, 1]: 106 times (10.45%)
+      [24, 9, 4, 1]: 99 times (9.76%)
+      [17, 10, 4, 1]: 89 times (8.78%)
+      [27, 10, 4, 1]: 53 times (5.23%)
+      [24, 11, 4, 1]: 25 times (2.47%)
+      [28, 13, 4, 1]: 13 times (1.28%)
+      [29, 10, 4, 1]: 13 times (1.28%)
+
+   Last 5 element(s) - 1014 sequences, 229 unique patterns:
+      [51, 19, 10, 4, 1]: 44 times (4.34%)
+      [49, 21, 10, 4, 1]: 35 times (3.45%)
+      [56, 21, 10, 4, 1]: 33 times (3.25%)
+      [49, 17, 10, 4, 1]: 26 times (2.56%)
+      [53, 19, 10, 4, 1]: 24 times (2.37%)
+      [52, 20, 9, 4, 1]: 22 times (2.17%)
+      [52, 19, 10, 4, 1]: 20 times (1.97%)
+      [57, 23, 10, 4, 1]: 20 times (1.97%)
+      [57, 21, 10, 4, 1]: 18 times (1.78%)
+      [54, 19, 10, 4, 1]: 18 times (1.78%)
+
+   Last 6 element(s) - 1014 sequences, 1008 unique patterns:
+      [147, 52, 20, 9, 4, 1]: 2 times (0.20%)
+      [140, 41, 19, 10, 4, 1]: 2 times (0.20%)
+      [141, 43, 20, 9, 4, 1]: 2 times (0.20%)
+      [141, 43, 17, 10, 4, 1]: 2 times (0.20%)
+      [204, 59, 24, 9, 4, 1]: 2 times (0.20%)
+      [145, 56, 21, 10, 4, 1]: 2 times (0.20%)
+      [203, 67, 24, 9, 4, 1]: 1 times (0.10%)
+      [382, 77, 23, 10, 4, 1]: 1 times (0.10%)
+      [135, 49, 17, 10, 4, 1]: 1 times (0.10%)
+      [141, 60, 19, 10, 4, 1]: 1 times (0.10%)
+
+   Last 7 element(s) - 41 sequences, 41 unique patterns:
+      [484, 186, 45, 19, 10, 4, 1]: 1 times (2.44%)
+      [498, 147, 52, 20, 9, 4, 1]: 1 times (2.44%)
+      [461, 143, 41, 19, 10, 4, 1]: 1 times (2.44%)
+      [467, 146, 45, 19, 10, 4, 1]: 1 times (2.44%)
+      [452, 127, 50, 21, 10, 4, 1]: 1 times (2.44%)
+      [466, 171, 46, 21, 10, 4, 1]: 1 times (2.44%)
+      [418, 131, 48, 21, 10, 4, 1]: 1 times (2.44%)
+      [450, 131, 56, 21, 10, 4, 1]: 1 times (2.44%)
+      [445, 141, 43, 20, 9, 4, 1]: 1 times (2.44%)
+      [445, 141, 43, 17, 10, 4, 1]: 1 times (2.44%)
+
+5. Sequence Types & Flags:
+   Total Unique Types: 5
+   ---------------------------------------
+   Survivor               437 ( 43.1%)
+   Child_Cross            176 ( 17.4%)
+   Random                 163 ( 16.1%)
+   Child_Avg              147 ( 14.5%)
+   Child_Levy              91 (  9.0%)
+
+   Flags Detected:
+   ---------------------------------------
+   Contains |Mutated:     120 ( 11.8%)
+   Contains |Validated:     0 (  0.0%)

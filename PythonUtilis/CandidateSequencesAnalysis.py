@@ -6,6 +6,7 @@ across MULTIPLE sorting ranges.
 import os
 import re
 import math
+from datetime import datetime
 from collections import defaultdict, Counter
 import matplotlib.pyplot as plt
 import numpy as np
@@ -38,7 +39,8 @@ FILES = {
     "100000": "CandidateGapSequences100000_GAv3.txt",
 }
 
-OUTPUT_DIR = f'outputs/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis'
+current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+OUTPUT_DIR = f'outputs/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis/{current_time}'
 
 # ---------------------
 

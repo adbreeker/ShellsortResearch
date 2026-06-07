@@ -36,8 +36,8 @@ namespace search_genetic_v1
                 if (gap < child2Gaps.back()) { child2Gaps.push_back(gap); }
             }
 
-            childs.push_back(GapSequence("Child" + std::to_string(populationIndex) + "-" + std::to_string(i + 1), child1Gaps));
-            childs.push_back(GapSequence("Child" + std::to_string(populationIndex) + "-" + std::to_string(i + 2), child2Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child|" + std::to_string(i + 1), child1Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child|" + std::to_string(i + 2), child2Gaps));
         }
 
         return childs;
@@ -55,7 +55,7 @@ namespace search_genetic_v1
         for (std::size_t i = newPopulation.size(); i < oldPopulation.size(); i++)
         {
             newPopulation.push_back(GapSequence(
-                "Random" + std::to_string(populationIndex) + "-" + std::to_string(i+1),
+                std::to_string(populationIndex) + "|Random|" + std::to_string(i+1),
                 GetRandomizedGaps(sortingRange)));
         }
 
@@ -76,7 +76,7 @@ namespace search_genetic_v1
 
         for (long i = 1; true; i++)
         {
-            std::cout << "\n\nGenetic Algorithm v2 iteration " << i << ":\n";
+            std::cout << "\n\nGenetic Algorithm v1 iteration " << i << ":\n";
             std::cout << "Gaps sequences:\n";
             for (GapSequence sequence : algorithmGapSequences)
             {
@@ -85,7 +85,7 @@ namespace search_genetic_v1
             }
             std::cout << "Sum of sequences: " << algorithmGapSequences.size() << "\n";
 
-            std::cout << "\nGenetic Algorithm v2 generated gaps";
+            std::cout << "\nGenetic Algorithm v1 generated gaps";
             results = CompareShellSorts(sortingRange, algorithmGapSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best";
@@ -94,7 +94,7 @@ namespace search_genetic_v1
             {
                 alreadyFound.push_back(best);
                 std::cout << "\n\nNEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE\n\n";
-                files::SaveGapsToFile(sortingRange, "GAv2", best);
+                files::SaveGapsToFile(sortingRange, "GAv1", best);
             }
 
             //creating new genetic sequences
