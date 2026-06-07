@@ -136,6 +136,7 @@ def analyze_sequences(sequences):
         padded_seqs.append(padded)
         
     avg_seq, min_seq, max_seq = [], [], []
+    gap_freqs_by_pos = {}
     
     for pos in range(max_len):
         values = [s[pos] for s in padded_seqs if s[pos] is not None]
@@ -143,6 +144,15 @@ def analyze_sequences(sequences):
             avg_seq.append(np.mean(values))
             min_seq.append(min(values))
             max_seq.append(max(values))
+            
+            # Position from the end (last element = 1)
+            pos_from_end = max_len - pos
+            counter = Counter(values)
+            gap_freqs_by_pos[pos_from_end] = {
+                'counts': counter,
+                'most_common': counter.most_common(10),
+                'total': len(values)
+            }
         else:
             avg_seq.append(0)
             min_seq.append(0)
@@ -180,6 +190,7 @@ def analyze_sequences(sequences):
         'avg_seq': avg_seq,
         'min_seq': min_seq,
         'max_seq': max_seq,
+        'gap_freqs_by_pos': gap_freqs_by_pos,
         'beginning_counts': beginning_counts,
         'types_counter': types_counter,
         'mut_count': mut_count,
@@ -303,8 +314,67 @@ def plot_common_beginnings(all_results, sorted_ranges, colors, limit_label):
         plt.savefig(f'{OUTPUT_DIR}/plot4_endings_length_{n}.png', dpi=150, bbox_inches='tight')
         plt.close()
 
+def plot_common_gaps_by_pos(all_results, sorted_ranges, colors, limit_label):
+    """Plot 5: Most common individual gaps at each position (from 1) in a 3-column grid."""
+    num_ranges = len(sorted_ranges)
+    
+    for pos in range(1, 7):
+        fig, axes, rows, cols = create_grid_subplots(num_ranges)
+        
+        for idx, range_val in enumerate(sorted_ranges):
+            ax = axes[idx]
+            results = all_results[range_val]
+            
+            if pos in results['gap_freqs_by_pos']:
+                data = results['gap_freqs_by_pos'][pos]
+                if data['most_common']:
+                    top_gaps = data['most_common'][:min(10, len(data['most_common']))]
+                    
+                    labels = [f"{gap}" for gap, _ in top_gaps][::-1]
+                    percentages = [(count / data['total']) * 100 for _, count in top_gaps][::-1]
+                    counts = [count for _, count in top_gaps][::-1]
+                    
+                    y_pos = np.arange(len(labels))
+                    
+                    bars = ax.barh(y_pos, percentages, color=colors[idx], 
+                                   edgecolor='black', linewidth=0.8, height=0.7)
+                                   
+                    ax.set_yticks(y_pos)
+                    ax.set_yticklabels(labels, fontsize=11)
+                    ax.set_xlabel('Percentage (%)', fontsize=12)
+                    ax.set_title(f'Range {range_val}', fontsize=14, fontweight='bold')
+                    
+                    max_pct = max(percentages) if percentages else 10
+                    x_limit = max(max_pct * 1.3, 5)
+                    ax.set_xlim(0, x_limit)
+                    ax.grid(axis='x', alpha=0.3)
+                    
+                    half_axis = x_limit / 2
+                    for bar, pct, cnt in zip(bars, percentages, counts):
+                        width = bar.get_width()
+                        if width >= half_axis:
+                            ax.text(width - 0.5, bar.get_y() + bar.get_height()/2,
+                                   f'{pct:.1f}% ({cnt})', ha='right', va='center',
+                                   fontsize=10, fontweight='bold', color='white')
+                        else:
+                            ax.text(width + 0.3, bar.get_y() + bar.get_height()/2,
+                                   f'{pct:.1f}% ({cnt})', ha='left', va='center',
+                                   fontsize=10, fontweight='bold', color='black')
+            else:
+                ax.text(0.5, 0.5, "No data for this position", ha='center', va='center', transform=ax.transAxes)
+                ax.set_title(f'Range {range_val}', fontsize=14, fontweight='bold')
+                
+        for idx in range(num_ranges, rows * cols):
+            axes[idx].set_visible(False)
+            
+        plt.suptitle(f'{TARGET_ALGO}: Most Common Individual Gaps - Position {pos} (from 1){limit_label}', 
+                     fontsize=16, fontweight='bold')
+        plt.tight_layout(rect=[0, 0.03, 1, 0.95])
+        plt.savefig(f'{OUTPUT_DIR}/plot5_common_gaps_pos_{pos}.png', dpi=150, bbox_inches='tight')
+        plt.close()
+
 def plot_common_beginnings_detailed(all_results, sorted_ranges, colors, limit_label):
-    """Summary plot showing coverage trends across all ranges in a 3-column grid."""
+    """Plot 6: Summary plot showing coverage trends across all ranges in a 3-column grid."""
     num_ranges = len(sorted_ranges)
     fig, axes, rows, cols = create_grid_subplots(num_ranges)
     
@@ -361,7 +431,7 @@ def plot_common_beginnings_detailed(all_results, sorted_ranges, colors, limit_la
         
     plt.suptitle(f'{TARGET_ALGO}: Coverage of Top Sequence Endings (from 1){limit_label}', fontsize=16, fontweight='bold')
     plt.tight_layout(rect=[0, 0.03, 1, 0.95])
-    plt.savefig(f'{OUTPUT_DIR}/plot5_endings_coverage.png', dpi=150, bbox_inches='tight')
+    plt.savefig(f'{OUTPUT_DIR}/plot6_endings_coverage.png', dpi=150, bbox_inches='tight')
     plt.close()
 
 def export_to_txt(all_results, sorted_ranges, limit_label):
@@ -410,7 +480,16 @@ def export_to_txt(all_results, sorted_ranges, limit_label):
                     seq_str = ', '.join(map(str, seq))
                     f.write(f"      [{seq_str}]: {count} times ({percentage:.2f}%)\n")
                     
-            f.write(f"\n5. Sequence Types & Flags:\n")
+            f.write(f"\n5. Most Common Gaps by Position (from 1):\n")
+            for pos in range(1, min(11, max_len + 1)):  # Show up to 10 positions
+                if pos in results['gap_freqs_by_pos']:
+                    data = results['gap_freqs_by_pos'][pos]
+                    f.write(f"\n   Position {pos} (from end) - {data['total']} valid gaps, {len(data['counts'])} unique values:\n")
+                    for gap, count in data['most_common'][:5]:  # Top 5 per position
+                        percentage = (count / data['total']) * 100
+                        f.write(f"      Gap [{gap}]: {count} times ({percentage:.2f}%)\n")
+            
+            f.write(f"\n6. Sequence Types & Flags:\n")
             f.write(f"   Total Unique Types: {len(results['types_counter'])}\n")
             f.write(f"   ---------------------------------------\n")
             for type_val, count in results['types_counter'].most_common():
@@ -474,6 +553,7 @@ def main():
     plot_num_sequences(all_results, sorted_ranges, colors, limit_label)
     plot_avg_interval(all_results, sorted_ranges, colors, limit_label)
     plot_common_beginnings(all_results, sorted_ranges, colors, limit_label)
+    plot_common_gaps_by_pos(all_results, sorted_ranges, colors, limit_label)
     plot_common_beginnings_detailed(all_results, sorted_ranges, colors, limit_label)
     
     print(f"\nAnalysis complete! Results saved to '{OUTPUT_DIR}/'")
