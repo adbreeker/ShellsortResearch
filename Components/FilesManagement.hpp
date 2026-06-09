@@ -57,15 +57,30 @@ namespace files
             std::string line;
             while (std::getline(file, line))
             {
+                if (!line.empty() && line.back() == '\r') { line.pop_back(); }
+
+                if (line.empty()) continue;
+
                 std::vector<std::string> splited = SplitString(line, ":");
+                if (splited.size() < 2) continue;
 
                 std::string sequenceName = splited[0];
-                splited = SplitString(splited[1], " ");
+                std::vector<std::string> strGaps = SplitString(splited[1], " ");
 
                 std::vector<unsigned long> gaps;
-                for (std::string& gap : splited)
+                for (const std::string& gap : strGaps)
                 {
-                    gaps.push_back(std::stoul(gap));
+                    if (gap.empty() || gap.find_first_not_of(" \t\r\n") == std::string::npos) { continue; }
+
+                    try 
+                    {
+                        gaps.push_back(std::stoul(gap));
+                    } 
+                    catch (const std::invalid_argument& e) 
+                    {
+                        printf("WARNING: Invalid gap value '%s' in file '%s'. Skipping this gap.\n", gap.c_str(), path.c_str());
+                        continue;
+                    }
                 }
 
                 gapsFromFile.push_back(GapSequence(sequenceName, gaps));
