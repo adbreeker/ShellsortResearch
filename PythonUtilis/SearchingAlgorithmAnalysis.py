@@ -21,16 +21,14 @@ SORTING_RANGE = 500
 # Key: Algorithm Identifier
 # Value: Filename
 FILES = {
-    "GAv1": "CandidateGapSequences500_GAv1.txt",
-    "GAv2": "CandidateGapSequences500_GAv2.txt",
-    "GAv3": "CandidateGapSequences500_GAv3.txt"
+    "GAv3": "CandidateGapSequences10000_GAv3.txt",
+    "GAv4": "CandidateGapSequences10000_GAv4.txt"
 }
 
 # Display names for the algorithms (used in plots and text output)
 ALGO_NAMES = {
-    "GAv1": "Genetic Algorithm v1",
-    "GAv2": "Genetic Algorithm v2",
-    "GAv3": "Genetic Algorithm v3"
+    "GAv3": "Genetic Algorithm v3",
+    "GAv4": "Genetic Algorithm v4"
 }
 
 # Generate output directory with current datetime
