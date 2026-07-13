@@ -86,10 +86,10 @@ namespace search_genetic_v4
                 double currentGapC5 = static_cast<double>(child5Gaps[i]);
 
                 float phi = utilis::GetRandomFloat(-1.0f, 1.0f);
-                double modfifier = phi * (currentGapC4 - currentGapC5);
+                double modifier = phi * (currentGapC4 - currentGapC5);
 
-                double newGapC4 = currentGapC4 + modfifier;
-                double newGapC5 = currentGapC5 + modfifier;
+                double newGapC4 = currentGapC4 + modifier;
+                double newGapC5 = currentGapC5 + modifier;
 
                 if (newGapC4 > currentGapC4) { newGapC4 = std::ceil(newGapC4); }
                 else { newGapC4 = std::floor(newGapC4); }
