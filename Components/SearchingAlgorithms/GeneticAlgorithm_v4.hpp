@@ -1,5 +1,5 @@
-#ifndef GENETIC_ALGORITHM_V3_HPP
-#define GENETIC_ALGORITHM_V3_HPP
+#ifndef GENETIC_ALGORITHM_V4_HPP
+#define GENETIC_ALGORITHM_V4_HPP
 
 
 #include <iostream>
@@ -12,7 +12,7 @@
 #include "../FilesManagement.hpp"
 #include "CuckooSearch.hpp"
 
-namespace search_genetic_v3
+namespace search_genetic_v4
 {
     GapSequence MutateGapSequences(GapSequence gapSequence)
     {
@@ -42,7 +42,7 @@ namespace search_genetic_v3
     {
         std::vector<GapSequence> childs;
 
-        for (int i = 0; parents.size() >= 2 ; i += 4)
+        for (int i = 0; parents.size() >= 2 ; i += 12)
         {
             //Getting 2 random parents and removing them from the pool
             int randomIndex1 = utilis::GetRandomInt(0, parents.size() - 1);
@@ -74,15 +74,66 @@ namespace search_genetic_v3
             }
             std::reverse(child3Gaps.begin(), child3Gaps.end());
 
-            //Child 4: average of parent1 and parent2, changed by levy flight - as in cuckoo search
-            std::vector<unsigned long> child4Gaps;
-            child4Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child3Gaps), 1.5, 0.03).gaps;
+            //Child 4 and 5: new children generated gap by gap from distances between parents - as in ABC
+            const std::size_t minSize = std::min(parent1.gaps.size(), parent2.gaps.size());
+            std::vector<unsigned long> child4Gaps = std::vector<unsigned long>(parent1.gaps.begin(), parent1.gaps.end());
+            std::reverse(child4Gaps.begin(), child4Gaps.end());
+            std::vector<unsigned long> child5Gaps = std::vector<unsigned long>(parent2.gaps.begin(), parent2.gaps.end());
+            std::reverse(child5Gaps.begin(), child5Gaps.end());
+            for (std::size_t i = 1; i < minSize; ++i)
+            {
+                double currentGapC4 = static_cast<double>(child4Gaps[i]);
+                double currentGapC5 = static_cast<double>(child5Gaps[i]);
+
+                float phi = utilis::GetRandomFloat(-1.0f, 1.0f);
+                double modfifier = phi * (currentGapC4 - currentGapC5);
+
+                double newGapC4 = currentGapC4 + modfifier;
+                double newGapC5 = currentGapC5 + modfifier;
+
+                if (newGapC4 > currentGapC4) { newGapC4 = std::ceil(newGapC4); }
+                else { newGapC4 = std::floor(newGapC4); }
+                if (newGapC4 < 1) newGapC4 = 1;
+
+                if (newGapC5 > currentGapC5) { newGapC5 = std::ceil(newGapC5); }
+                else { newGapC5 = std::floor(newGapC5); }
+                if (newGapC5 < 1) newGapC5 = 1;
+
+                child4Gaps[i] = static_cast<unsigned long>(newGapC4);
+                child5Gaps[i] = static_cast<unsigned long>(newGapC5);
+            }
+            std::reverse(child4Gaps.begin(), child4Gaps.end());
+            std::reverse(child5Gaps.begin(), child5Gaps.end());
+
+            //Child 6,7,8,9,10,11,12: parents and children changed by levy flight - as in cuckoo search
+            std::vector<unsigned long> child6Gaps;
+            child6Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", parent1.gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child7Gaps;
+            child7Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", parent2.gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child8Gaps;
+            child8Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child1Gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child9Gaps;
+            child9Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child2Gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child10Gaps;
+            child10Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child3Gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child11Gaps;
+            child11Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child4Gaps), 1.5, 0.03).gaps;
+            std::vector<unsigned long> child12Gaps;
+            child12Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child5Gaps), 1.5, 0.03).gaps;
 
             //Indexing and adding children to the new population
-            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Cross|" + std::to_string(i  + 1), child1Gaps));
-            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Cross|" + std::to_string(i  + 2), child2Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Cross12|" + std::to_string(i  + 1), child1Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Cross21|" + std::to_string(i  + 2), child2Gaps));
             childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Avg|" + std::to_string(i  + 3), child3Gaps));
-            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Levy|" + std::to_string(i  + 4), child4Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_ABC1|" + std::to_string(i  + 4), child4Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_ABC2|" + std::to_string(i  + 5), child5Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyP1|" + std::to_string(i  + 6), child6Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyP2|" + std::to_string(i  + 7), child7Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyC1|" + std::to_string(i  + 8), child8Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyC2|" + std::to_string(i  + 9), child9Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyAVG|" + std::to_string(i  + 10), child10Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyABC1|" + std::to_string(i  + 11), child11Gaps));
+            childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_LevyABC2|" + std::to_string(i  + 12), child12Gaps));
         }
 
         return childs;
@@ -90,15 +141,15 @@ namespace search_genetic_v3
 
     std::vector<GapSequence> GetNewPopulation(unsigned long sortingRange, std::vector<GapSequence> oldPopulation, int populationIndex)
     {
-        //Keep top 1 solution, rest will be generated by crossing, mutation, and new random sequences
+        //Keep top 3 solutions, rest will be generated by crossing, mutation, and new random sequences
         std::vector<GapSequence> newPopulation = std::vector<GapSequence>(oldPopulation.begin(), oldPopulation.begin() + 1);
         for (std::size_t i = 0; i < newPopulation.size(); ++i)
         {
             newPopulation[i].name = std::to_string(populationIndex) + "|Survivor|" + std::to_string(i + 1);
         }
 
-        //Cross top ~33% to get ~66% new children solutions
-        std::vector<GapSequence> crossPopulation = std::vector<GapSequence>(oldPopulation.begin(), oldPopulation.begin() + utilis::RoundUpToEven(oldPopulation.size() / 3));
+        //Cross top ~10% to get ~60% new children solutions
+        std::vector<GapSequence> crossPopulation = std::vector<GapSequence>(oldPopulation.begin(), oldPopulation.begin() + utilis::RoundUpToEven(oldPopulation.size() / 10));
         crossPopulation = CrossParents(crossPopulation, populationIndex);
 
         newPopulation.insert(newPopulation.end(), crossPopulation.begin(), crossPopulation.end());
@@ -115,7 +166,7 @@ namespace search_genetic_v3
         //Validate population to ensure all gaps are within range to avoid fake results
         for (GapSequence& gs : newPopulation) { gs.ValidateSequence(sortingRange); }
 
-        //Generate random solutions to fill the population with new genes (~33%)
+        //Generate random solutions to fill the population with new genes (~40%)
         for (std::size_t i = 0; newPopulation.size() < oldPopulation.size(); ++i)
         {
             newPopulation.push_back(GapSequence(
@@ -158,7 +209,7 @@ namespace search_genetic_v3
             {
                 alreadyFound.push_back(best);
                 std::cout << "\n\nNEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE\n\n";
-                files::SaveGapsToFile(sortingRange, "GAv3", best);
+                files::SaveGapsToFile(sortingRange, "GAv4", best);
             }
 
             //creating new genetic sequences
@@ -170,4 +221,4 @@ namespace search_genetic_v3
     }
 }
 
-#endif // !GENETIC_ALGORITHM_V3_HPP
+#endif // !GENETIC_ALGORITHM_V4_HPP

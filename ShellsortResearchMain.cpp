@@ -4,6 +4,7 @@
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v1.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v2.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v3.hpp"
+#include "Components/SearchingAlgorithms/GeneticAlgorithm_v4.hpp"
 #include "Components/SearchingAlgorithms/CuckooSearch.hpp"
 #include "Components/SearchingAlgorithms/ArtificialBeeColony.hpp"
 #include "Components/Shellsort.hpp"
@@ -11,7 +12,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 7500; //do 7499, 
+const unsigned long SORTING_RANGE = 10000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -58,7 +59,7 @@ int main()
     // search_cuckoo::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
     // search_abc::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
-    search_genetic_v3::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+    search_genetic_v4::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
     // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv3.txt")) gapSequences.push_back(gs);
     // auto results = CompareShellSorts(SORTING_RANGE, gapSequences, 1000);
@@ -73,7 +74,8 @@ int main()
     //     results[1].gapSequence,
     //     results[2].gapSequence,
     //     results[3].gapSequence,
-    //     results[4].gapSequence
+    //     results[4].gapSequence,
+    //     results[5].gapSequence
     // };
     // auto finalResults = CompareShellSorts(SORTING_RANGE, finalGroup, 10000);
     // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
