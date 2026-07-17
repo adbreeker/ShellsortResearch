@@ -5,6 +5,7 @@
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v2.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v3.hpp"
 #include "Components/SearchingAlgorithms/GeneticAlgorithm_v4.hpp"
+#include "Components/SearchingAlgorithms/GeneticAlgorithm_v5.hpp"
 #include "Components/SearchingAlgorithms/CuckooSearch.hpp"
 #include "Components/SearchingAlgorithms/ArtificialBeeColony.hpp"
 #include "Components/Shellsort.hpp"
@@ -12,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 10000; 
+const unsigned long SORTING_RANGE = 1000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -39,27 +40,31 @@ int main()
 
     for (int i = gapSequences.size(); i<100; i++) gapSequences.push_back(GapSequence("1|Random|" + std::to_string(i + 1), GetRandomizedGaps(SORTING_RANGE)));
     
-    // #pragma omp parallel sections num_threads(3) firstprivate(gapSequences)
-    // {
-    //     #pragma omp section
-    //     {
-    //         search_genetic_v1::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-    //     }
-    //     #pragma omp section
-    //     {
-    //         search_genetic_v2::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-    //     }
-    //     #pragma omp section
-    //     {
-    //         search_genetic_v3::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-    //     }
-    // }
+    #pragma omp parallel sections num_threads(5) firstprivate(gapSequences)
+    {
+        #pragma omp section
+        {
+            search_genetic_v1::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_genetic_v2::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_genetic_v3::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_genetic_v4::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+        }
+        #pragma omp section
+        {
+            search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+        }
+    }
 
-    // search_genetic_v2::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-    // search_cuckoo::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-    // search_abc::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
-
-    search_genetic_v4::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+    // search_genetic_v4::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
     // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv3.txt")) gapSequences.push_back(gs);
     // auto results = CompareShellSorts(SORTING_RANGE, gapSequences, 1000);
