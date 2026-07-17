@@ -67,29 +67,24 @@ namespace search_genetic_v4
             }
 
             //Child 3: average of parent1 and parent2 gaps - inspired by ABC
-            std::vector<unsigned long> child3Gaps;
-            for (std::size_t j = 0; j < std::min(parent1.gaps.size(), parent2.gaps.size()); ++j)
+            std::vector<unsigned long> child3Gaps = {1};
+            std::size_t minSize = std::min(parent1.gaps.size(), parent2.gaps.size());
+            for (std::size_t j = 1; j < minSize; ++j)
             {
                 child3Gaps.push_back((parent1.gaps[parent1.gaps.size() - j - 1] + parent2.gaps[parent2.gaps.size() - j - 1]) / 2);
             }
             std::reverse(child3Gaps.begin(), child3Gaps.end());
 
             //Child 4 and 5: new children generated gap by gap from distances between parents - as in ABC
-            const std::size_t minSize = std::min(parent1.gaps.size(), parent2.gaps.size());
-            std::vector<unsigned long> child4Gaps = std::vector<unsigned long>(parent1.gaps.begin(), parent1.gaps.end());
-            std::reverse(child4Gaps.begin(), child4Gaps.end());
-            std::vector<unsigned long> child5Gaps = std::vector<unsigned long>(parent2.gaps.begin(), parent2.gaps.end());
-            std::reverse(child5Gaps.begin(), child5Gaps.end());
-            for (std::size_t i = 1; i < minSize; ++i)
+            std::vector<unsigned long> child4Gaps = {1};
+            std::vector<unsigned long> child5Gaps = {1};
+            for (std::size_t j = 1; j < minSize; ++j)
             {
-                double currentGapC4 = static_cast<double>(child4Gaps[i]);
-                double currentGapC5 = static_cast<double>(child5Gaps[i]);
+                double currentGapC4 = static_cast<double>(parent1.gaps[parent1.gaps.size() - j - 1]);
+                double currentGapC5 = static_cast<double>(parent2.gaps[parent2.gaps.size() - j - 1]);
 
-                float phi = utilis::GetRandomFloat(-1.0f, 1.0f);
-                double modifier = phi * (currentGapC4 - currentGapC5);
-
-                double newGapC4 = currentGapC4 + modifier;
-                double newGapC5 = currentGapC5 + modifier;
+                double newGapC4 = currentGapC4 + (utilis::GetRandomFloat(-1.0f, 1.0f) * (currentGapC4 - currentGapC5));
+                double newGapC5 = currentGapC5 + (utilis::GetRandomFloat(-1.0f, 1.0f) * (currentGapC5 - currentGapC4));
 
                 if (newGapC4 > currentGapC4) { newGapC4 = std::ceil(newGapC4); }
                 else { newGapC4 = std::floor(newGapC4); }
@@ -99,11 +94,12 @@ namespace search_genetic_v4
                 else { newGapC5 = std::floor(newGapC5); }
                 if (newGapC5 < 1) newGapC5 = 1;
 
-                child4Gaps[i] = static_cast<unsigned long>(newGapC4);
-                child5Gaps[i] = static_cast<unsigned long>(newGapC5);
+                child4Gaps.push_back(static_cast<unsigned long>(newGapC4));
+                child5Gaps.push_back(static_cast<unsigned long>(newGapC5));
             }
             std::reverse(child4Gaps.begin(), child4Gaps.end());
             std::reverse(child5Gaps.begin(), child5Gaps.end());
+
 
             //Child 6,7,8,9,10,11,12: parents and children changed by levy flight - as in cuckoo search
             std::vector<unsigned long> child6Gaps;
@@ -191,7 +187,7 @@ namespace search_genetic_v4
 
         for (long i = 1; true; i++)
         {
-            std::cout << "\n\nGenetic Algorithm v3 iteration " << i << ":\n";
+            std::cout << "\n\nGenetic Algorithm v4 iteration " << i << ":\n";
             std::cout << "Gaps sequences:\n";
             for (GapSequence sequence : algorithmGapSequences)
             {
@@ -200,7 +196,7 @@ namespace search_genetic_v4
             }
             std::cout << "Sum of sequences: " << algorithmGapSequences.size() << "\n";
 
-            std::cout << "\nGenetic Algorithm v3 generated gaps";
+            std::cout << "\nGenetic Algorithm v4 generated gaps";
             results = CompareShellSorts(sortingRange, algorithmGapSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best";

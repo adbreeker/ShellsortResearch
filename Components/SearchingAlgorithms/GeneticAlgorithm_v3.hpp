@@ -67,8 +67,8 @@ namespace search_genetic_v3
             }
 
             //Child 3: average of parent1 and parent2 gaps - inspired by ABC
-            std::vector<unsigned long> child3Gaps;
-            for (std::size_t j = 0; j < std::min(parent1.gaps.size(), parent2.gaps.size()); ++j)
+            std::vector<unsigned long> child3Gaps = {1};
+            for (std::size_t j = 1; j < std::min(parent1.gaps.size(), parent2.gaps.size()); ++j)
             {
                 child3Gaps.push_back((parent1.gaps[parent1.gaps.size() - j - 1] + parent2.gaps[parent2.gaps.size() - j - 1]) / 2);
             }
