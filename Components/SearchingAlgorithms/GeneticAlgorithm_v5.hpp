@@ -14,6 +14,8 @@
 
 namespace search_genetic_v5
 {
+    long stagnatedGenerations = 0;
+
     GapSequence MutateGapSequences(GapSequence gapSequence)
     {
         for (std::size_t i = 0; i + 1 < gapSequence.gaps.size(); ++i)
@@ -52,6 +54,8 @@ namespace search_genetic_v5
             int randomIndex2 = utilis::GetRandomInt(0, parents.size() - 1);
             GapSequence parent2 = parents[randomIndex2];
             parents.erase(parents.begin() + randomIndex2);
+            //If parents are the same, mutate one of them
+            if(parent1.gaps == parent2.gaps) { parent2 = MutateGapSequences(parent2); }
 
             //Child 1 and 2: new children generated gap by gap from distances between parents - as in ABC
             std::size_t minSize = std::min(parent1.gaps.size(), parent2.gaps.size());
@@ -116,6 +120,8 @@ namespace search_genetic_v5
             int randomIndex2 = utilis::GetRandomInt(0, parents.size() - 1);
             GapSequence parent2 = parents[randomIndex2];
             parents.erase(parents.begin() + randomIndex2);
+            //If parents are the same, mutate one of them
+            if(parent1.gaps == parent2.gaps) { parent2 = MutateGapSequences(parent2); }
 
             //Child 1: first half of parent1, then gaps from parent2 that are smaller than last gap in child1
             std::vector<unsigned long> child1Gaps(parent1.gaps.begin(), parent1.gaps.begin() + parent1.gaps.size() / 2);
@@ -141,7 +147,7 @@ namespace search_genetic_v5
 
             //Child 4: average of parent1 and parent2, changed by levy flight - as in cuckoo search
             std::vector<unsigned long> child4Gaps;
-            child4Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child3Gaps), 1.5, 0.04).gaps;
+            child4Gaps = search_cuckoo::PerformLevyFlight(GapSequence("TempChild", child3Gaps), 2.0, 0.04).gaps;
 
             //Indexing and adding children to the new population
             childs.push_back(GapSequence(std::to_string(populationIndex) + "|Child_Cross12|" + std::to_string(i  + 1), child1Gaps));
@@ -162,7 +168,12 @@ namespace search_genetic_v5
             newPopulation[i].name = std::to_string(populationIndex) + "|Survivor|" + std::to_string(i + 1);
         }
 
-        if (utilis::GetRandomInt(0, 200) != 0) // 0.5% for a cataclysm event wiping all but the survivor
+        if (utilis::GetRandomInt(0, 1000) <= (0 + stagnatedGenerations)) //Increasing 0.1% for a cataclysm event wiping all but the survivor
+        {
+            stagnatedGenerations = 0;
+            std::cout << "\n\n!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! CATACLYSM EVENT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n\n";
+        }
+        else //Population crossing and mutation (no cataclysm event)
         {
             //Cross top 4 solutions to get 12 children aimed at exploitation
             std::vector<GapSequence> crossPopulationExploitation = std::vector<GapSequence>(oldPopulation.begin(), oldPopulation.begin() + 4);
@@ -228,15 +239,19 @@ namespace search_genetic_v5
             GapSequence best = CompareShellSorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
             if (best == results[0].gapSequence && !IsGapSequenceIn(best, alreadyFound))
             {
+                stagnatedGenerations = 0;
                 alreadyFound.push_back(best);
                 std::cout << "\n\nNEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE ---------------------------- NEW CANDIDATE SEQUENCE\n\n";
                 files::SaveGapsToFile(sortingRange, "GAv5", best);
+            }
+            else
+            {
+                stagnatedGenerations++;
             }
 
             //creating new genetic sequences
             std::vector<GapSequence> newGapSequences;
             for (Result& r : results) newGapSequences.push_back(r.gapSequence);
-
             algorithmGapSequences = GetNewPopulation(sortingRange, newGapSequences, i + 1);
         }
     }
