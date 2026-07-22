@@ -45,26 +45,60 @@ class GapSequence
     }
 };
 
-unsigned long ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+void ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
 {
-    unsigned long operations = 0;
     for (unsigned long gap : gaps)
     {
-        operations++;
         for (unsigned long i = gap; i < arr.size(); i++)
         {
-            operations++;
             int temp = arr[i];
             unsigned long j;
             for (j = i; (j >= gap) && (arr[j - gap] > temp); j -= gap)
             {
-                operations++;
                 arr[j] = arr[j - gap];
             }
             arr[j] = temp;
         }
     }
-    return operations;
+}
+
+std::tuple<unsigned long, unsigned long, unsigned long> ShellSort_Stats(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+{
+    unsigned long comparisons = 0;
+    unsigned long loops = 0;
+    unsigned long operations = 0;
+
+    for (unsigned long gap : gaps)
+    {
+        loops++; 
+        for (unsigned long i = gap; i < arr.size(); i++)
+        {
+            loops++;
+            int temp = arr[i];
+            unsigned long j = i;
+            operations += 2;
+            while(j >= gap)
+            {
+                loops++;
+                comparisons++;
+                if (arr[j - gap] > temp)
+                {
+                    arr[j] = arr[j - gap];
+                    j -= gap;
+                    operations += 2;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            arr[j] = temp;
+            operations += 1;
+        }
+    }
+
+    operations += (loops + comparisons);
+    return std::make_tuple(comparisons, loops, operations);
 }
 
 // Tokuda 1992: 1, 4, 9, 20, 46, 103, 233, 525, 1182, 2660, 5985, 13467, 30301, 68178...

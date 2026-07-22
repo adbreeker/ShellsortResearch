@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 1000; 
+const unsigned long SORTING_RANGE = 100; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -22,7 +22,8 @@ void PrintResults(std::vector<Result>& results, int topN = 10)
     {
         auto& r = results[i];
         r.gapSequence.PrintInstance();
-        std::cout << "\n  Time: " << r.time << "ms | Operations: " << r.operations << " | Wins: " << r.wins << "\n\n";
+        std::cout << "\n  Time: " << r.time << "ms | Wins: " << r.wins
+            << "\n  Comparisons: " << r.comparisons << " | Loops: " << r.loops << " | Operations: " << r.operations << "\n\n";
     }
 }
 
@@ -64,9 +65,9 @@ int main()
     //     }
     // }
 
-    search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+    //search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
-    // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv3.txt")) gapSequences.push_back(gs);
+    // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5.txt")) gapSequences.push_back(gs);
     // auto results = CompareShellSorts(SORTING_RANGE, gapSequences, 1000);
     // PrintResults(results, 10);
     // std::vector<GapSequence> finalGroup = 
@@ -84,7 +85,7 @@ int main()
     // };
     // auto finalResults = CompareShellSorts(SORTING_RANGE, finalGroup, 10000);
     // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
-    //     return a.time < b.time;
+    //     return a.GetFitnessScore() < b.GetFitnessScore();
     //     });
     // PrintResults(finalResults, finalGroup.size()); 
 
