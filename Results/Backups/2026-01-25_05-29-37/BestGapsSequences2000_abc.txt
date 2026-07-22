@@ -1,0 +1,44 @@
+ScoutRandom181-5: 1984 594 159 86 27 14 4 1 
+OnlookerNeighborhood16-9: 361 135 59 28 13 4 1 
+EmployedNeighborhood19-84: 1503 367 223 87 28 13 4 1 
+OnlookerNeighborhood20-44: 1707 524 239 77 28 13 4 1 
+OnlookerNeighborhood21-64: 1468 437 181 87 39 11 4 1 
+OnlookerNeighborhood32-21: 466 273 92 32 13 5 1 
+EmployedNeighborhood40-35: 482 215 81 34 16 5 1 
+OnlookerNeighborhood52-38: 863 295 89 34 16 5 1 
+OnlookerNeighborhood63-78: 1625 415 222 75 31 14 4 1 
+OnlookerNeighborhood63-89: 534 159 70 29 9 4 1 
+OnlookerNeighborhood72-8: 411 159 70 29 13 6 1 
+EmployedNeighborhood89-75: 549 131 69 34 16 5 1 
+OnlookerNeighborhood92-32: 799 211 82 32 11 4 1 
+EmployedNeighborhood96-33: 1549 632 167 65 25 14 4 1 
+EmployedNeighborhood97-100: 1131 374 148 86 29 16 5 1 
+EmployedNeighborhood98-10: 543 185 76 29 13 4 1 
+EmployedNeighborhood106-97: 563 190 60 28 11 4 1 
+OnlookerNeighborhood107-83: 446 168 57 23 10 4 1 
+OnlookerNeighborhood104-10: 499 165 62 27 13 5 1 
+OnlookerNeighborhood120-36: 451 193 85 40 12 5 1 
+EmployedNeighborhood121-59: 1594 743 204 93 30 13 5 1 
+OnlookerNeighborhood126-69: 1742 439 209 83 28 12 5 1 
+EmployedNeighborhood127-95: 1288 314 168 58 27 13 5 1 
+EmployedNeighborhood131-15: 1773 610 226 72 35 13 5 1 
+EmployedNeighborhood138-89: 1778 692 202 79 28 13 4 1 
+EmployedNeighborhood151-90: 1538 384 190 72 27 11 4 1 
+EmployedNeighborhood162-86: 2840 463 190 74 25 11 5 1 
+OnlookerNeighborhood172-71: 1891 496 142 77 33 9 4 1 
+EmployedNeighborhood177-7: 1599 458 204 86 37 13 4 1 
+OnlookerNeighborhood181-7: 1599 435 168 85 36 14 5 1 
+OnlookerNeighborhood184-99: 1343 422 131 86 27 13 5 1 
+EmployedNeighborhood191-15: 2105 430 153 78 30 13 5 1 
+EmployedNeighborhood195-72: 4234 1371 242 83 34 16 5 1 
+EmployedNeighborhood196-32: 613 168 73 33 12 5 1 
+OnlookerNeighborhood210-45: 1835 455 169 71 29 11 4 1 
+OnlookerRemaining11-47: 1360 476 167 65 33 10 4 1 
+OnlookerRemaining19-11: 559 192 78 31 11 5 1 
+OnlookerNeighborhood21-99: 1459 262 109 39 16 6 1 
+OnlookerRemaining31-44: 838 345 137 53 24 11 4 1 
+OnlookerRemaining32-31: 616 239 83 30 14 5 1 
+OnlookerRemaining35-61: 406 167 79 31 10 4 1 
+OnlookerNeighborhood38-67: 625 161 67 31 11 4 1 
+EmployedNeighborhood40-49: 1730 993 191 72 40 14 5 1 
+OnlookerRemaining50-99: 1457 439 137 68 21 12 5 1 

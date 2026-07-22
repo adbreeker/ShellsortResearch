@@ -1,0 +1,1692 @@
+Random18: 88 19 4 1 
+Random7-29: 78 17 4 1 
+Random13-1: 81 19 4 1 
+Survivor66-1_mutated: 97 19 4 1 
+Survivor91-1_mutated: 85 18 4 1 
+Survivor92-1_mutated: 85 18 3 1 
+Child_Avg93-35: 76 16 3 1 
+Random94-13: 67 19 4 1 
+Random95-3: 93 19 4 1 
+Survivor111-1_mutated: 93 22 3 1 
+Child_Avg112-47: 77 18 3 1 
+Random113-29: 83 19 4 1 
+Random116-16: 77 18 4 1 
+Child_Avg123-43: 64 14 4 1 
+Random125-18: 69 18 4 1 
+Random132-10: 94 19 4 1 
+Survivor201-1_mutated: 94 19 3 1 
+Child_Levy202-20: 91 19 4 1 
+Survivor207-1_mutated: 91 19 3 1 
+Survivor227-1_mutated: 78 14 4 1 
+Random229-15: 95 67 18 4 1 
+Random231-32: 92 19 4 1 
+Child_Levy245-16: 74 16 3 1 
+Random246-18: 89 18 4 1 
+Survivor250-1_mutated: 95 18 4 1 
+Survivor263-1_mutated: 93 18 4 1 
+Child_Levy293-48: 84 21 4 1 
+Child_Avg294-35: 71 13 4 1 
+Random297-29: 70 19 4 1 
+Random299-3: 62 19 4 1 
+Survivor303-1_mutated: 62 19 3 1 
+Random350-16: 90 19 4 1 
+Random353-17: 86 19 4 1 
+Random362-28: 62 13 4 1 
+Random363-34: 66 17 4 1 
+Child_Levy365-52: 62 19 5 1 
+Survivor404-1_mutated: 98 19 5 1 
+Random411-25: 75 19 4 1 
+Random427-24: 89 19 4 1 
+Child_Avg435-7: 85 19 4 1 
+Survivor460-1_mutated: 91 19 5 1 
+Random475-18: 88 18 4 1 
+Random478-28: 82 18 4 1 
+Survivor491-1_mutated: 82 18 3 1 
+Random498-20: 84 18 4 1 
+Random506-4: 64 18 4 1 
+Survivor508-1_mutated: 54 18 4 1 
+Survivor555-1_mutated: 66 19 4 1 
+Survivor562-1_mutated: 80 18 4 1 
+Random564-15: 84 17 4 1 
+Survivor571-1_mutated: 84 17 3 1 
+Random586-30: 48 19 4 1 
+Random588-34: 71 17 4 1 
+Child_Avg589-15: 66 14 4 1 
+Random592-32: 76 19 4 1 
+Random628-15: 72 19 4 1 
+Random630-21: 73 17 4 1 
+Random640-33: 72 18 4 1 
+Child_Avg671-23: 77 17 4 1 
+Survivor688-1_mutated: 105 19 4 1 
+Child_Avg698-19: 98 19 4 1 
+Survivor700-1_mutated: 98 19 3 1 
+Child_Levy701-64: 68 17 4 1 
+Random703-34: 71 19 4 1 
+Survivor717-1_mutated: 104 19 4 1 
+Survivor726-1_mutated: 104 23 4 1 
+Child_Avg731-35: 82 17 4 1 
+Child_Avg736-31: 72 14 4 1 
+Child_Cross737-25: 72 11 4 1 
+Random751-18: 87 18 4 1 
+Child_Avg793-11: 69 14 4 1 
+Random803-3: 82 19 4 1 
+Survivor811-1_mutated: 74 19 4 1 
+Child_Cross812-33: 61 11 4 1 
+Survivor818-1_mutated: 47 19 4 1 
+Survivor901-1_mutated: 94 18 4 1 
+Survivor920-1_mutated: 91 23 4 1 
+Survivor939-1_mutated: 97 18 4 1 
+Survivor958-1_mutated: 97 18 3 1 
+Child_Cross989-17: 98 81 19 4 1 
+Survivor1018-1_mutated: 98 97 17 4 1 
+Child_Levy1050-8: 58 21 5 1 
+Survivor1067-1_mutated: 81 19 3 1 
+Survivor1091-1_mutated: 76 19 5 1 
+Survivor1101-1_mutated: 76 17 4 1 
+Random1112-21: 38 19 4 1 
+Random1115-15: 81 17 4 1 
+Random1117-9: 87 19 4 1 
+Survivor1129-1_mutated: 83 18 4 1 
+Survivor1148-1_mutated: 91 16 4 1 
+Random1151-35: 86 18 4 1 
+Random1185-34: 83 17 4 1 
+Survivor1255-1_mutated: 95 19 3 1 
+Random1288-14: 56 17 4 1 
+Child_Levy1289-16: 90 18 4 1 
+Survivor1298-1_mutated: 101 19 4 1 
+Survivor1371-1_mutated: 81 19 5 1 
+Survivor1417-1_mutated: 94 19 5 1 
+Survivor1423-1_mutated: 105 19 5 1 
+Survivor1534-1_mutated: 74 16 4 1 
+Child_Levy1657-32: 77 18 5 1 
+Random1717-20: 59 18 4 1 
+Survivor1762-1_mutated: 90 17 4 1 
+Random1763-5: 80 19 4 1 
+Child_Avg1835-11: 74 14 4 1 
+Random1839-27: 84 19 4 1 
+Child_Levy1842-40: 71 19 3 1 
+Survivor1880-1_mutated: 85 19 5 1 
+Random1886-19: 87 52 19 4 1 
+Survivor1939-1_mutated: 88 16 4 1 
+Survivor1955-1_mutated: 92 16 4 1 
+Survivor2063-1_mutated: 100 19 4 1 
+Survivor2171-1_mutated: 108 19 4 1 
+Survivor2195-1_mutated: 99 19 3 1 
+Survivor2198-1_mutated: 99 21 3 1 
+Child_Avg2240-51: 68 13 4 1 
+Survivor2262-1_mutated: 92 17 4 1 
+Survivor2292-1_mutated: 69 21 4 1 
+Random2293-2: 76 16 4 1 
+Survivor2306-1_mutated: 92 23 4 1 
+Child_Levy2310-20: 63 13 4 1 
+Survivor2344-1_mutated: 83 14 4 1 
+Survivor2373-1_mutated: 94 21 4 1 
+Survivor2380-1_mutated: 110 21 4 1 
+Child_Levy2414-44: 68 13 3 1 
+Random2420-35: 97 53 16 4 1 
+Random2422-34: 79 58 16 4 1 
+Survivor2466-1_mutated: 81 16 4 1 
+Survivor2539-1_mutated: 93 17 3 1 
+Child_Levy2580-36: 67 13 4 1 
+Random2604-31: 90 77 18 4 1 
+Survivor2650-1_mutated: 92 21 4 1 
+Survivor2661-1_mutated: 92 22 4 1 
+Random2705-27: 57 19 4 1 
+Child_Avg2892-55: 64 18 3 1 
+Random2894-1: 91 67 19 4 1 
+Survivor2938-1_mutated: 94 18 5 1 
+Survivor2984-1_mutated: 94 19 6 1 
+Survivor3000-1_mutated: 94 19 7 1 
+Child_Levy3048-8: 74 14 3 1 
+Survivor3066-1_mutated: 90 19 3 1 
+Survivor3178-1_mutated: 98 19 2 1 
+Child_Levy3230-52: 78 14 3 1 
+Survivor3277-1_mutated: 86 16 3 1 
+Child_Cross3335-10_mutated: 61 14 4 1 
+Random3336-5: 60 19 4 1 
+Child_Levy3339-8: 63 13 3 1 
+Survivor3347-1_mutated: 93 19 5 1 
+Survivor3362-1_mutated: 92 17 3 1 
+Random3436-19: 55 19 4 1 
+Child_Avg3437-31: 71 14 4 1 
+Survivor3459-1_mutated: 92 19 3 1 
+Survivor3468-1_mutated: 92 19 2 1 
+Random3490-31: 41 18 4 1 
+Survivor3546-1_mutated: 94 17 4 1 
+Survivor3549-1_mutated: 78 17 5 1 
+Child_Levy3550-24: 79 14 3 1 
+Survivor3553-1_mutated: 73 17 5 1 
+Survivor3564-1_mutated: 72 19 3 1 
+Child_Levy3565-4: 68 16 4 1 
+Survivor3605-1_mutated: 94 23 4 1 
+Survivor3629-1_mutated: 76 19 3 1 
+Survivor3660-1_mutated: 79 19 4 1 
+Random3736-16: 69 16 4 1 
+Child_Levy3752-32: 75 19 5 1 
+Survivor3903-1_mutated: 67 19 3 1 
+Survivor4037-1_mutated: 93 16 4 1 
+Survivor4046-1_mutated: 85 21 5 1 
+Random4074-2: 61 17 4 1 
+Survivor4083-1_mutated: 88 19 3 1 
+Survivor4085-1_mutated: 88 16 3 1 
+Child_Levy4226-12_mutated: 105 21 4 1 
+Survivor4227-1_mutated: 109 22 4 1 
+Survivor4293-1_mutated: 103 19 4 1 
+Child_Levy4297-24: 79 14 4 1 
+Survivor4394-1_mutated: 98 18 4 1 
+Survivor4430-1_mutated: 92 19 5 1 
+Child_Avg4442-43: 79 21 4 1 
+Survivor4494-1_mutated: 93 19 3 1 
+Child_Levy4510-8: 74 16 6 1 
+Child_Levy4512-16: 59 18 5 1 
+Survivor4547-1_mutated: 72 18 3 1 
+Child_Avg4560-43_mutated: 61 11 3 1 
+Random4565-10: 86 41 17 4 1 
+Survivor4584-1_mutated: 89 19 3 1 
+Survivor4695-1_mutated: 105 17 4 1 
+Child_Levy4713-48: 59 18 3 1 
+Survivor4716-1_mutated: 61 17 3 1 
+Survivor4758-1_mutated: 78 17 3 1 
+Survivor4835-1_mutated: 89 17 4 1 
+Random4836-29: 99 88 19 4 1 
+Survivor4837-1_mutated: 99 77 19 4 1 
+Survivor4842-1_mutated: 106 19 5 1 
+Child_Cross4848-46: 97 76 19 5 1 
+Child_Levy4854-56_mutated: 92 16 3 1 
+Child_Cross4904-49: 74 18 4 1 
+Random4909-35: 67 18 4 1 
+Survivor4913-1_mutated: 85 19 3 1 
+Survivor4920-1_mutated: 69 14 3 1 
+Random4923-26: 65 19 4 1 
+Random4950-28: 97 68 17 4 1 
+Random4958-1: 99 86 18 4 1 
+Survivor5065-1_mutated: 94 16 3 1 
+Survivor5125-1_mutated: 82 18 5 1 
+Random5145-6: 43 19 4 1 
+Random5151-8: 79 16 4 1 
+Child_Avg5314-3: 73 14 4 1 
+Random5315-12: 78 18 4 1 
+Survivor5346-1_mutated: 89 16 4 1 
+Survivor5492-1_mutated: 81 21 4 1 
+Survivor5635-1_mutated: 93 21 4 1 
+Random5675-31: 80 17 4 1 
+Survivor5706-1_mutated: 81 18 4 1 
+Child_Avg5930-35: 62 14 4 1 
+Survivor5953-1_mutated: 92 18 4 1 
+Child_Avg5968-63: 76 14 4 1 
+Survivor5977-1_mutated: 95 19 4 1 
+Survivor6050-1_mutated: 77 19 4 1 
+Random6075-8: 95 62 19 4 1 
+Survivor6096-1_mutated: 106 55 19 3 1 
+Random6102-6: 70 18 4 1 
+Survivor6151-1_mutated: 99 19 4 1 
+Survivor6187-1_mutated: 99 18 4 1 
+Random6191-31: 63 16 4 1 
+Child_Levy6192-28: 65 21 3 1 
+Child_Avg6193-59: 63 16 3 1 
+Survivor6200-1_mutated: 64 16 4 1 
+Random6202-16: 79 17 4 1 
+Child_Cross6278-22_mutated: 71 11 4 1 
+Survivor6326-1_mutated: 91 17 3 1 
+Child_Avg6368-19: 67 13 3 1 
+Survivor6385-1_mutated: 111 19 4 1 
+Survivor6387-1_mutated: 111 17 4 1 
+Random6397-28: 79 18 4 1 
+Random6433-21: 59 13 4 1 
+Random6441-21: 95 86 19 4 1 
+Random6442-13: 88 67 18 4 1 
+Survivor6451-1_mutated: 83 17 3 1 
+Child_Avg6469-55: 77 14 4 1 
+Survivor6487-1_mutated: 110 19 5 1 
+Child_Cross6508-34: 110 19 4 1 
+Child_Cross6509-14_mutated: 110 22 4 1 
+Survivor6520-1_mutated: 113 22 4 1 
+Survivor6547-1_mutated: 103 19 3 1 
+Child_Levy6654-52: 71 14 3 1 
+Random6655-31: 75 18 4 1 
+Survivor6656-1_mutated: 75 21 4 1 
+Survivor6721-1_mutated: 79 16 3 1 
+Survivor6796-1_mutated: 108 22 3 1 
+Child_Levy6821-32: 81 13 3 1 
+Child_Levy6926-56: 157 18 4 1 
+Survivor6947-1_mutated: 89 17 5 1 
+Random6985-15: 73 18 4 1 
+Survivor7002-1_mutated: 64 18 5 1 
+Child_Cross7046-2: 61 11 1 
+Child_Avg7047-31: 21 5 1 
+Survivor7058-1_mutated: 21 6 1 
+Survivor7077-1_mutated: 24 6 1 
+Child_Levy7078-8_mutated: 18 4 1 
+Child_Avg7080-47: 19 4 1 
+Child_Levy7083-48: 19 5 1 
+Child_Levy7084-8: 19 7 1 
+Child_Levy7090-8: 22 4 1 
+Survivor7117-1_mutated: 88 22 4 1 
+Survivor7204-1_mutated: 95 19 5 1 
+Survivor7209-1_mutated: 100 22 5 1 
+Survivor7223-1_mutated: 97 21 4 1 
+Survivor7337-1_mutated: 57 19 3 1 
+Survivor7364-1_mutated: 87 22 4 1 
+Survivor7474-1_mutated: 52 19 4 1 
+Survivor7616-1_mutated: 98 18 3 1 
+Survivor7617-1_mutated: 107 19 2 1 
+Survivor7712-1_mutated: 63 21 4 1 
+Survivor7777-1_mutated: 93 17 4 1 
+Random7800-30: 92 63 13 4 1 
+Child_Levy7873-32_mutated: 58 16 3 1 
+Child_Levy8012-64_mutated: 72 23 6 1 
+Survivor8046-1_mutated: 91 17 4 1 
+Survivor8079-1_mutated: 93 22 4 1 
+Survivor8089-1_mutated: 96 22 3 1 
+Child_Levy8097-8: 66 17 3 1 
+Survivor8115-1_mutated: 72 18 5 1 
+Random8193-23: 96 55 18 4 1 
+Survivor8197-1_mutated: 86 16 4 1 
+Survivor8227-1_mutated: 101 19 3 1 
+Child_Cross8371-9_mutated: 93 18 5 1 
+Survivor8458-1_mutated: 91 22 4 1 
+Survivor8503-1_mutated: 89 18 5 1 
+Survivor8519-1_mutated: 92 18 5 1 
+Survivor8576-1_mutated: 91 21 3 1 
+Survivor8802-1_mutated: 86 19 5 1 
+Child_Cross8819-30: 57 14 4 1 
+Survivor8827-1_mutated: 92 23 5 1 
+Survivor8831-1_mutated: 87 23 4 1 
+Child_Levy8867-44_mutated: 76 19 6 1 
+Survivor8971-1_mutated: 87 17 4 1 
+Child_Levy9024-32: 66 13 4 1 
+Survivor9099-1_mutated: 83 16 3 1 
+Survivor9119-1_mutated: 86 17 4 1 
+Survivor9258-1_mutated: 94 22 4 1 
+Child_Levy9280-64: 63 21 5 1 
+Random9289-24: 93 71 19 4 1 
+Survivor9428-1_mutated: 120 19 4 1 
+Survivor9430-1_mutated: 114 19 4 1 
+Survivor9437-1_mutated: 93 18 3 1 
+Survivor9520-1_mutated: 105 19 3 1 
+Random9594-23: 97 59 18 4 1 
+Survivor9661-1_mutated: 73 17 3 1 
+Random9682-9: 81 70 19 4 1 
+Survivor9842-1_mutated: 109 23 4 1 
+Child_Levy9866-44: 71 19 6 1 
+Random9946-1: 61 14 3 1 
+Survivor9976-1_mutated: 84 23 4 1 
+Child_Avg9977-15: 72 17 4 1 
+Random10098-34: 98 85 18 4 1 
+Random10114-24: 99 77 18 4 1 
+Survivor10116-1_mutated: 102 77 18 5 1 
+Survivor10122-1_mutated: 122 77 18 5 1 
+Survivor10265-1_mutated: 97 19 3 1 
+Child_Levy10356-44: 74 16 5 1 
+Survivor10409-1_mutated: 106 19 4 1 
+Random10543-35: 96 73 17 4 1 
+Random10587-3: 78 16 4 1 
+Random10633-22: 96 77 18 4 1 
+Survivor10634-1_mutated: 96 77 18 5 1 
+Survivor10660-1_mutated: 82 16 4 1 
+Random10768-26: 46 18 4 1 
+Survivor10790-1_mutated: 90 21 4 1 
+Survivor10806-1_mutated: 90 22 3 1 
+Survivor10836-1_mutated: 108 23 4 1 
+Survivor10849-1_mutated: 83 21 4 1 
+Survivor10907-1_mutated: 102 22 4 1 
+Survivor10947-1_mutated: 87 16 4 1 
+Random11252-7: 66 14 3 1 
+Child_Levy11408-32: 61 22 3 1 
+Survivor11459-1_mutated: 100 17 4 1 
+Survivor11474-1_mutated: 79 21 5 1 
+Survivor11501-1_mutated: 79 21 6 1 
+Child_Levy11538-56_mutated: 63 21 3 1 
+Survivor11550-1_mutated: 88 22 5 1 
+Survivor11659-1_mutated: 90 19 5 1 
+Survivor11665-1_mutated: 107 22 6 1 
+Survivor11666-1_mutated: 108 22 6 1 
+Survivor11670-1_mutated: 108 22 5 1 
+Child_Levy11672-8: 96 19 5 1 
+Child_Levy11696-16: 66 22 4 1 
+Random11875-4: 95 77 18 4 1 
+Survivor11954-1_mutated: 94 18 3 1 
+Survivor11980-1_mutated: 88 21 4 1 
+Survivor11995-1_mutated: 87 21 4 1 
+Survivor12012-1_mutated: 84 14 4 1 
+Random12015-14: 48 14 4 1 
+Random12017-18: 99 54 18 4 1 
+Survivor12052-1_mutated: 101 23 4 1 
+Child_Levy12079-12: 60 19 5 1 
+Survivor12269-1_mutated: 97 18 5 1 
+Random12530-7: 65 18 4 1 
+Child_Cross12540-33: 72 11 3 1 
+Random12547-27: 63 17 4 1 
+Random12642-11: 91 80 18 4 1 
+Survivor12869-1_mutated: 92 18 6 1 
+Survivor12900-1_mutated: 44 17 4 1 
+Random12903-34: 98 70 19 4 1 
+Survivor12937-1_mutated: 84 21 3 1 
+Survivor13180-1_mutated: 91 18 4 1 
+Survivor13244-1_mutated: 91 22 3 1 
+Survivor13336-1_mutated: 107 19 5 1 
+Random13340-28: 58 16 4 1 
+Survivor13439-1_mutated: 86 19 3 1 
+Child_Levy13552-52_mutated: 69 14 6 1 
+Survivor13752-1_mutated: 96 18 4 1 
+Random13839-34: 67 14 3 1 
+Survivor13908-1_mutated: 100 19 5 1 
+Survivor13951-1_mutated: 109 19 4 1 
+Survivor13952-1_mutated: 109 19 3 1 
+Survivor14420-1_mutated: 57 19 5 1 
+Survivor14465-1_mutated: 83 22 4 1 
+Child_Levy14632-24: 78 16 3 1 
+Survivor14693-1_mutated: 80 22 4 1 
+Child_Levy14694-20: 77 18 2 1 
+Random14741-14: 99 62 19 4 1 
+Survivor15024-1_mutated: 91 19 6 1 
+Child_Levy15054-52: 84 21 5 1 
+Survivor15079-1_mutated: 96 18 3 1 
+Survivor15195-1_mutated: 99 23 4 1 
+Survivor15200-1_mutated: 112 23 4 1 
+Survivor15307-1_mutated: 97 19 2 1 
+Child_Avg15663-3: 82 16 3 1 
+Survivor15678-1_mutated: 125 19 4 1 
+Survivor15688-1_mutated: 94 18 6 1 
+Random15779-24: 98 82 17 4 1 
+Survivor15870-1_mutated: 94 21 5 1 
+Random15896-1: 96 80 18 4 1 
+Random15957-20: 39 17 4 1 
+Survivor16036-1_mutated: 96 17 4 1 
+Survivor16086-1_mutated: 96 19 3 1 
+Child_Levy16141-4: 84 16 3 1 
+Survivor16231-1_mutated: 95 21 5 1 
+Survivor16259-1_mutated: 95 21 4 1 
+Survivor16281-1_mutated: 85 21 4 1 
+Survivor16391-1_mutated: 96 19 4 1 
+Child_Levy16541-48_mutated: 67 19 5 1 
+Child_Levy16813-44: 56 17 3 1 
+Survivor17015-1_mutated: 80 21 5 1 
+Survivor17151-1_mutated: 75 19 3 1 
+Survivor17314-1_mutated: 103 19 5 1 
+Child_Avg17321-19: 73 13 4 1 
+Random17350-30: 64 14 3 1 
+Survivor17365-1_mutated: 88 18 3 1 
+Survivor17426-1_mutated: 123 19 5 1 
+Survivor17444-1_mutated: 110 22 5 1 
+Survivor17491-1_mutated: 81 19 6 1 
+Child_Levy17504-64: 67 13 6 1 
+Survivor17550-1_mutated: 92 21 3 1 
+Child_Levy17551-44: 81 19 2 1 
+Child_Cross17926-50_mutated: 82 23 4 1 
+Survivor17998-1_mutated: 90 23 4 1 
+Child_Levy18072-52_mutated: 83 22 6 1 
+Survivor18075-1_mutated: 90 22 7 1 
+Survivor18146-1_mutated: 70 19 3 1 
+Child_Levy18188-52: 59 23 3 1 
+Child_Levy18399-20: 62 13 3 1 
+Survivor18511-1_mutated: 113 19 4 1 
+Survivor18637-1_mutated: 124 19 4 1 
+Survivor18643-1_mutated: 124 19 3 1 
+Survivor18670-1_mutated: 86 22 4 1 
+Random18708-29: 97 85 18 4 1 
+Survivor18750-1_mutated: 81 22 4 1 
+Survivor18778-1_mutated: 113 19 3 1 
+Survivor18958-1_mutated: 87 19 3 1 
+Random18985-25: 38 14 4 1 
+Survivor19061-1_mutated: 103 17 4 1 
+Survivor19215-1_mutated: 116 19 4 1 
+Survivor19234-1_mutated: 116 22 4 1 
+Survivor19250-1_mutated: 98 19 6 1 
+Survivor19254-1_mutated: 111 19 6 1 
+Survivor19269-1_mutated: 111 19 5 1 
+Survivor19290-1_mutated: 111 18 5 1 
+Random19335-25: 95 82 18 4 1 
+Survivor19397-1_mutated: 97 19 5 1 
+Survivor19402-1_mutated: 97 23 4 1 
+Child_Levy19403-20: 96 18 5 1 
+Survivor19493-1_mutated: 102 18 5 1 
+Survivor19517-1_mutated: 104 17 4 1 
+Survivor19526-1_mutated: 89 22 4 1 
+Survivor19620-1_mutated: 124 21 4 1 
+Random20253-3: 49 18 4 1 
+Child_Cross20349-9_mutated: 88 17 4 1 
+Random20360-7: 98 88 19 4 1 
+Survivor20413-1_mutated: 104 22 4 1 
+Survivor20503-1_mutated: 107 19 3 1 
+Survivor20532-1_mutated: 73 21 6 1 
+Survivor20590-1_mutated: 101 22 3 1 
+Survivor20595-1_mutated: 116 22 3 1 
+Random20659-28: 41 14 4 1 
+Child_Avg20661-55_mutated: 61 11 5 1 
+Survivor20800-1_mutated: 107 19 4 1 
+Survivor21065-1_mutated: 89 18 3 1 
+Survivor21319-1_mutated: 89 23 4 1 
+Child_Cross21386-42: 89 61 11 4 1 
+Child_Levy21609-4: 69 16 6 1 
+Survivor21645-1_mutated: 92 16 5 1 
+Random21655-9: 99 72 18 4 1 
+Survivor22256-1_mutated: 103 22 4 1 
+Survivor22306-1_mutated: 99 19 5 1 
+Survivor22309-1_mutated: 99 17 6 1 
+Random22386-13: 97 81 19 4 1 
+Random22841-24: 99 76 19 4 1 
+Survivor22953-1_mutated: 85 18 5 1 
+Random23044-27: 97 76 19 4 1 
+Random23083-10: 62 18 4 1 
+Child_Levy23134-16: 71 16 3 1 
+Child_Levy23592-36: 109 19 5 1 
+Random23602-6: 93 55 19 4 1 
+Survivor23947-1_mutated: 101 21 4 1 
+Survivor23978-1_mutated: 112 21 5 1 
+Survivor23981-1_mutated: 112 22 5 1 
+Survivor24143-1_mutated: 104 22 3 1 
+Child_Levy24902-44: 74 21 3 1 
+Survivor25070-1_mutated: 80 22 5 1 
+Survivor25328-1_mutated: 71 22 3 1 
+Random25567-4: 95 54 18 4 1 
+Random25610-31: 54 17 4 1 
+Survivor25668-1_mutated: 101 19 5 1 
+Survivor25676-1_mutated: 101 19 6 1 
+Child_Levy25733-56: 65 21 5 1 
+Random25863-10: 77 54 18 4 1 
+Survivor25902-1_mutated: 71 16 4 1 
+Survivor25926-1_mutated: 77 18 6 1 
+Survivor25961-1_mutated: 82 19 6 1 
+Survivor26005-1_mutated: 102 19 5 1 
+Survivor26021-1_mutated: 102 17 3 1 
+Random26026-12: 89 73 17 4 1 
+Child_Levy26036-56: 69 16 3 1 
+Survivor26149-1_mutated: 97 19 6 1 
+Survivor26204-1_mutated: 102 19 4 1 
+Survivor26418-1_mutated: 102 19 3 1 
+Survivor26576-1_mutated: 79 19 6 1 
+Child_Levy26838-8: 60 19 3 1 
+Survivor26896-1_mutated: 98 18 5 1 
+Random27018-15: 90 76 19 4 1 
+Survivor27058-1_mutated: 85 21 3 1 
+Child_Levy27071-12: 73 13 3 1 
+Survivor27134-1_mutated: 103 18 4 1 
+Child_Levy27276-48: 62 14 3 1 
+Random27281-18: 97 65 19 4 1 
+Survivor27314-1_mutated: 81 17 3 1 
+Child_Cross27780-61_mutated: 91 69 14 4 1 
+Survivor28088-1_mutated: 109 21 4 1 
+Survivor28147-1_mutated: 109 21 5 1 
+Survivor28367-1_mutated: 93 18 2 1 
+Survivor28431-1_mutated: 92 23 3 1 
+Random28451-3: 99 63 17 4 1 
+Survivor28458-1_mutated: 108 21 4 1 
+Child_Avg28652-11_mutated: 82 13 4 1 
+Survivor28655-1_mutated: 82 14 4 1 
+Survivor28705-1_mutated: 110 17 4 1 
+Survivor28711-1_mutated: 80 21 4 1 
+Survivor28938-1_mutated: 88 17 3 1 
+Survivor29396-1_mutated: 111 19 3 1 
+Survivor29678-1_mutated: 95 18 5 1 
+Random29679-17: 94 67 19 4 1 
+Random29705-5: 99 86 19 4 1 
+Child_Avg29750-39: 82 17 3 1 
+Survivor29842-1_mutated: 100 18 3 1 
+Survivor29879-1_mutated: 91 21 4 1 
+Child_Levy29944-60: 83 14 3 1 
+Child_Levy30126-56: 87 18 5 1 
+Survivor30453-1_mutated: 89 21 4 1 
+Survivor30562-1_mutated: 104 19 3 1 
+Survivor30573-1_mutated: 114 19 2 1 
+Survivor30580-1_mutated: 70 19 5 1 
+Child_Levy30621-36: 65 19 3 1 
+Child_Levy30795-48_mutated: 70 21 3 1 
+Child_Levy30797-16: 68 17 3 1 
+Random30917-29: 94 72 18 4 1 
+Child_Avg31129-43: 81 14 4 1 
+Survivor31156-1_mutated: 108 19 5 1 
+Survivor31170-1_mutated: 108 19 6 1 
+Survivor31189-1_mutated: 126 19 6 1 
+Survivor31319-1_mutated: 93 17 5 1 
+Survivor31467-1_mutated: 94 17 5 1 
+Child_Levy31519-32: 77 14 3 1 
+Random31642-28: 78 64 17 4 1 
+Survivor31993-1_mutated: 68 21 4 1 
+Survivor32052-1_mutated: 98 22 4 1 
+Survivor32238-1_mutated: 83 19 6 1 
+Survivor32332-1_mutated: 113 19 5 1 
+Survivor32438-1_mutated: 117 19 4 1 
+Survivor32491-1_mutated: 97 21 5 1 
+Survivor32492-1_mutated: 106 21 5 1 
+Survivor32507-1_mutated: 106 21 4 1 
+Survivor32541-1_mutated: 112 21 4 1 
+Random32662-21: 94 81 19 4 1 
+Survivor32836-1_mutated: 94 22 3 1 
+Survivor32852-1_mutated: 96 21 4 1 
+Survivor32862-1_mutated: 96 21 5 1 
+Survivor32882-1_mutated: 70 22 4 1 
+Survivor33193-1_mutated: 131 19 4 1 
+Survivor33279-1_mutated: 84 16 4 1 
+Survivor33310-1_mutated: 66 19 3 1 
+Random33445-16: 94 76 19 4 1 
+Random33539-14: 85 72 18 4 1 
+Survivor33648-1_mutated: 101 18 4 1 
+Child_Avg33751-55_mutated: 72 13 4 1 
+Survivor33862-1_mutated: 85 22 4 1 
+Child_Cross34020-26: 72 11 1 
+Survivor34047-1_mutated: 19 3 1 
+Survivor34097-1_mutated: 80 19 5 1 
+Random34569-20: 77 16 4 1 
+Random34605-3: 95 76 19 4 1 
+Survivor34868-1_mutated: 94 17 3 1 
+Survivor35074-1_mutated: 53 19 4 1 
+Survivor35149-1_mutated: 100 18 4 1 
+Survivor35286-1_mutated: 73 22 4 1 
+Survivor35337-1_mutated: 101 21 3 1 
+Survivor35386-1_mutated: 95 21 3 1 
+Child_Levy35415-16_mutated: 67 14 6 1 
+Survivor35474-1_mutated: 109 19 6 1 
+Survivor35567-1_mutated: 80 19 3 1 
+Random35782-35: 98 71 19 4 1 
+Survivor35784-1_mutated: 117 71 19 4 1 
+Survivor36009-1_mutated: 89 19 5 1 
+Random36135-27: 49 17 4 1 
+Survivor36195-1_mutated: 92 17 5 1 
+Survivor36239-1_mutated: 65 23 4 1 
+Survivor36698-1_mutated: 87 17 3 1 
+Survivor36867-1_mutated: 85 22 6 1 
+Survivor36888-1_mutated: 76 19 7 1 
+Survivor37123-1_mutated: 106 23 4 1 
+Survivor37369-1_mutated: 113 18 4 1 
+Child_Avg37730-11_mutated: 87 13 4 1 
+Random37736-4: 91 75 19 4 1 
+Survivor38199-1_mutated: 110 19 3 1 
+Survivor38217-1_mutated: 93 23 4 1 
+Survivor38351-1_mutated: 106 21 6 1 
+Child_Levy38429-40: 73 14 6 1 
+Random38793-13: 36 18 4 1 
+Child_Levy39289-48_mutated: 83 22 5 1 
+Random39297-5: 93 56 17 4 1 
+Random39451-16: 90 79 18 4 1 
+Random39734-15: 80 66 17 4 1 
+Random39866-3: 92 54 18 4 1 
+Survivor40216-1_mutated: 76 22 4 1 
+Child_Cross40459-53_mutated: 93 78 22 5 1 
+Random40460-26: 91 81 18 4 1 
+Survivor40705-1_mutated: 81 16 3 1 
+Child_Levy40890-48: 87 16 3 1 
+Random40983-2: 93 67 18 4 1 
+Random41309-34: 95 66 17 4 1 
+Survivor41377-1_mutated: 96 24 4 1 
+Random41685-16: 95 84 17 4 1 
+Survivor41686-1_mutated: 95 84 19 4 1 
+Survivor41689-1_mutated: 99 17 4 1 
+Child_Levy41867-32: 68 16 3 1 
+Child_Levy42006-8: 130 21 5 1 
+Survivor42008-1_mutated: 137 22 5 1 
+Survivor42372-1_mutated: 97 23 7 1 
+Child_Levy42374-48: 109 18 4 1 
+Child_Levy42533-36: 74 21 4 1 
+Random42675-22: 88 71 19 4 1 
+Child_Cross42878-25_mutated: 114 22 4 1 
+Survivor42944-1_mutated: 112 19 4 1 
+Survivor42947-1_mutated: 127 19 4 1 
+Random43108-34: 92 67 18 4 1 
+Random43634-32: 90 64 18 4 1 
+Survivor43669-1_mutated: 62 19 6 1 
+Survivor43716-1_mutated: 107 22 4 1 
+Child_Levy43719-4_mutated: 90 21 5 1 
+Survivor43766-1_mutated: 100 19 3 1 
+Survivor43820-1_mutated: 69 23 4 1 
+Random44780-16: 98 76 19 4 1 
+Survivor45131-1_mutated: 85 19 6 1 
+Random45173-7: 86 76 18 4 1 
+Survivor45365-1_mutated: 99 19 6 1 
+Survivor45370-1_mutated: 99 19 7 1 
+Survivor45393-1_mutated: 99 18 6 1 
+Survivor45453-1_mutated: 88 23 4 1 
+Random45469-19: 94 84 18 4 1 
+Survivor45554-1_mutated: 93 19 6 1 
+Survivor45558-1_mutated: 93 21 6 1 
+Survivor45661-1_mutated: 99 21 4 1 
+Survivor46238-1_mutated: 107 18 4 1 
+Survivor46790-1_mutated: 107 21 4 1 
+Survivor46956-1_mutated: 76 17 7 1 
+Child_Levy46958-56_mutated: 73 13 6 1 
+Random46985-28: 96 85 19 4 1 
+Child_Avg47244-59_mutated: 84 19 3 1 
+Survivor47371-1_mutated: 112 17 4 1 
+Survivor47507-1_mutated: 95 23 4 1 
+Random47725-10: 97 62 19 4 1 
+Survivor47775-1_mutated: 65 19 5 1 
+Child_Levy47935-16: 86 17 3 1 
+Survivor47996-1_mutated: 88 18 5 1 
+Survivor48222-1_mutated: 98 17 4 1 
+Survivor48332-1_mutated: 73 17 6 1 
+Survivor48589-1_mutated: 103 21 5 1 
+Survivor48590-1_mutated: 103 21 6 1 
+Child_Avg48600-7: 79 13 4 1 
+Random48602-29: 94 84 17 4 1 
+Random48704-18: 97 67 18 4 1 
+Child_Levy48963-64_mutated: 81 16 6 1 
+Child_Levy49501-64: 89 16 5 1 
+Survivor49551-1_mutated: 102 19 6 1 
+Survivor49567-1_mutated: 120 19 6 1 
+Survivor49746-1_mutated: 89 16 3 1 
+Child_Levy49860-8_mutated: 87 16 5 1 
+Survivor49966-1_mutated: 67 23 4 1 
+Survivor50166-1_mutated: 97 18 6 1 
+Survivor50167-1_mutated: 97 18 7 1 
+Survivor50451-1_mutated: 92 24 4 1 
+Survivor50465-1_mutated: 77 17 3 1 
+Survivor50942-1_mutated: 91 17 5 1 
+Random51605-17: 93 80 17 4 1 
+Survivor51619-1_mutated: 104 18 4 1 
+Random51838-17: 90 57 19 4 1 
+Random52003-26: 90 66 19 4 1 
+Survivor52117-1_mutated: 103 17 6 1 
+Survivor52177-1_mutated: 88 22 3 1 
+Child_Levy52413-36_mutated: 96 18 2 1 
+Child_Levy52613-64_mutated: 92 16 6 1 
+Survivor52982-1_mutated: 119 22 4 1 
+Survivor53015-1_mutated: 126 22 4 1 
+Survivor53051-1_mutated: 126 22 3 1 
+Survivor53055-1_mutated: 147 22 3 1 
+Survivor53300-1_mutated: 96 23 4 1 
+Survivor53472-1_mutated: 106 22 4 1 
+Survivor53628-1_mutated: 98 23 4 1 
+Survivor53635-1_mutated: 98 23 3 1 
+Random53786-15: 98 87 18 4 1 
+Survivor54032-1_mutated: 87 19 6 1 
+Survivor54133-1_mutated: 90 19 6 1 
+Survivor54977-1_mutated: 114 17 4 1 
+Survivor55039-1_mutated: 82 23 5 1 
+Child_Levy55669-60_mutated: 81 14 6 1 
+Survivor55880-1_mutated: 78 17 6 1 
+Survivor55918-1_mutated: 88 18 6 1 
+Survivor56197-1_mutated: 108 19 3 1 
+Survivor56238-1_mutated: 77 23 3 1 
+Survivor56248-1_mutated: 77 23 4 1 
+Survivor56310-1_mutated: 98 21 4 1 
+Child_Avg56335-59_mutated: 72 11 5 1 
+Random56712-23: 98 36 18 4 1 
+Survivor56722-1_mutated: 97 22 3 1 
+Random57047-1: 98 80 19 4 1 
+Random57049-27: 97 69 14 4 1 
+Random57051-26: 51 18 4 1 
+Survivor58391-1_mutated: 103 22 3 1 
+Child_Levy58396-4: 90 22 4 1 
+Random58529-9: 90 73 17 4 1 
+Survivor58563-1_mutated: 112 18 4 1 
+Survivor58747-1_mutated: 90 22 5 1 
+Survivor58931-1_mutated: 109 21 6 1 
+Survivor58941-1_mutated: 111 21 4 1 
+Survivor58943-1_mutated: 111 24 4 1 
+Survivor59587-1_mutated: 79 21 3 1 
+Random59853-33: 94 75 18 4 1 
+Child_Levy59861-40: 95 22 4 1 
+Survivor59938-1_mutated: 93 21 3 1 
+Survivor60155-1_mutated: 98 21 3 1 
+Random60524-34: 89 65 18 4 1 
+Survivor60933-1_mutated: 99 23 3 1 
+Survivor61132-1_mutated: 97 17 4 1 
+Random61491-5: 46 17 4 1 
+Survivor61510-1_mutated: 108 18 5 1 
+Random61606-33: 93 82 18 4 1 
+Random61642-14: 99 59 18 4 1 
+Survivor61669-1_mutated: 87 18 3 1 
+Random61994-20: 86 43 19 4 1 
+Child_Levy62264-36_mutated: 77 19 6 1 
+Survivor62514-1_mutated: 71 22 4 1 
+Random62540-22: 92 57 19 4 1 
+Survivor63251-1_mutated: 122 19 5 1 
+Survivor63259-1_mutated: 122 19 6 1 
+Child_Levy63261-60_mutated: 105 19 7 1 
+Survivor63267-1_mutated: 105 19 8 1 
+Child_Levy63274-20: 91 18 7 1 
+Random63279-16: 91 74 16 4 1 
+Random63607-9: 91 52 19 4 1 
+Survivor63869-1_mutated: 104 19 7 1 
+Random64128-26: 92 56 17 4 1 
+Child_Levy64630-8: 71 19 5 1 
+Random65174-3: 96 82 18 4 1 
+Random65257-35: 95 56 17 4 1 
+Survivor65309-1_mutated: 111 23 3 1 
+Survivor65396-1_mutated: 105 18 4 1 
+Child_Levy65593-16: 101 21 5 1 
+Survivor65649-1_mutated: 99 21 5 1 
+Random65740-10: 95 85 19 4 1 
+Random66075-14: 51 17 4 1 
+Survivor66138-1_mutated: 116 85 18 4 1 
+Child_Levy67157-40: 97 17 3 1 
+Survivor67286-1_mutated: 95 17 4 1 
+Survivor67563-1_mutated: 101 22 4 1 
+Survivor67621-1_mutated: 99 18 5 1 
+Random67719-1: 86 67 18 4 1 
+Random68128-35: 81 72 19 4 1 
+Random68135-19: 89 62 13 4 1 
+Random68174-5: 99 75 19 4 1 
+Child_Levy68258-48: 89 17 3 1 
+Survivor68471-1_mutated: 91 18 3 1 
+Survivor68717-1_mutated: 92 18 3 1 
+Random69771-32: 92 75 18 4 1 
+Survivor69775-1_mutated: 92 76 18 4 1 
+Survivor69781-1_mutated: 75 22 4 1 
+Random70057-5: 97 54 18 4 1 
+Child_Levy70113-40_mutated: 71 14 6 1 
+Survivor70257-1_mutated: 98 86 19 4 1 
+Random70283-34: 91 62 19 4 1 
+Child_Levy70634-44: 140 19 3 1 
+Survivor70635-1_mutated: 160 19 4 1 
+Random70730-2: 94 83 17 4 1 
+Random71201-29: 99 57 19 4 1 
+Survivor71602-1_mutated: 105 18 5 1 
+Child_Levy71685-32: 105 21 5 1 
+Survivor71721-1_mutated: 95 19 6 1 
+Random71918-5: 98 59 18 4 1 
+Survivor72590-1_mutated: 111 21 7 1 
+Child_Levy72591-44: 89 17 7 1 
+Child_Levy72592-48: 92 17 6 1 
+Survivor72627-1_mutated: 97 16 3 1 
+Random72835-11: 94 75 19 4 1 
+Survivor72836-1_mutated: 94 75 19 3 1 
+Random73432-18: 98 73 17 4 1 
+Survivor73436-1_mutated: 98 73 17 5 1 
+Survivor73536-1_mutated: 88 17 5 1 
+Survivor73610-1_mutated: 110 18 4 1 
+Child_Avg73613-31: 91 14 4 1 
+Random73718-2: 97 43 19 4 1 
+Random73863-4: 94 78 17 4 1 
+Random74338-18: 96 79 18 4 1 
+Random74474-15: 88 70 18 4 1 
+Child_Levy75167-4: 158 19 5 1 
+Survivor75559-1_mutated: 86 21 4 1 
+Child_Levy75880-8: 91 16 3 1 
+Random76025-13: 89 68 17 4 1 
+Survivor76083-1_mutated: 108 21 3 1 
+Survivor76238-1_mutated: 103 21 4 1 
+Random76348-25: 96 83 19 4 1 
+Child_Levy76659-44: 83 16 4 1 
+Random76882-24: 98 61 17 4 1 
+Survivor76924-1_mutated: 94 16 4 1 
+Random77280-22: 94 77 18 4 1 
+Random77373-23: 98 88 18 4 1 
+Survivor77454-1_mutated: 112 19 3 1 
+Random77809-30: 94 80 19 4 1 
+Survivor77867-1_mutated: 92 19 6 1 
+Child_Cross77868-18: 58 16 6 1 
+Survivor78074-1_mutated: 106 19 3 1 
+Random78124-14: 98 84 18 4 1 
+Random78332-16: 97 72 18 4 1 
+Survivor78373-1_mutated: 106 21 3 1 
+Survivor78547-1_mutated: 95 22 5 1 
+Child_Levy78552-52: 87 23 5 1 
+Child_Levy78804-52_mutated: 64 13 6 1 
+Survivor79630-1_mutated: 87 23 2 1 
+Random79732-6: 93 74 16 4 1 
+Survivor79872-1_mutated: 84 21 6 1 
+Random79929-31: 98 84 17 4 1 
+Survivor80251-1_mutated: 94 77 18 5 1 
+Survivor80397-1_mutated: 96 22 4 1 
+Child_Levy80490-40_mutated: 77 14 6 1 
+Child_Avg80617-43: 74 13 4 1 
+Random80874-19: 99 82 18 4 1 
+Survivor80886-1_mutated: 94 82 18 4 1 
+Child_Levy81209-56_mutated: 143 19 5 1 
+Survivor81228-1_mutated: 140 19 6 1 
+Survivor81242-1_mutated: 122 18 6 1 
+Child_Levy81243-44: 118 19 7 1 
+Survivor81311-1_mutated: 89 21 5 1 
+Random81486-21: 80 64 18 4 1 
+Survivor81654-1_mutated: 95 83 18 4 1 
+Random81656-30: 92 59 18 4 1 
+Child_Levy81662-40: 112 19 5 1 
+Survivor81681-1_mutated: 94 16 6 1 
+Survivor81766-1_mutated: 99 22 4 1 
+Random82007-34: 98 85 19 4 1 
+Survivor82009-1_mutated: 98 85 21 4 1 
+Child_Levy82098-48: 175 21 5 1 
+Survivor82101-1_mutated: 175 21 6 1 
+Survivor82117-1_mutated: 175 21 7 1 
+Random82512-26: 96 83 17 4 1 
+Survivor82672-1_mutated: 75 23 4 1 
+Random83111-3: 98 57 19 4 1 
+Child_Cross83631-34: 99 81 19 4 1 
+Survivor83632-1_mutated: 99 81 19 5 1 
+Random83864-30: 96 69 16 4 1 
+Random84040-34: 99 69 18 4 1 
+Random84751-5: 85 76 19 4 1 
+Survivor85415-1_mutated: 102 21 4 1 
+Survivor85424-1_mutated: 102 21 5 1 
+Survivor85432-1_mutated: 102 21 6 1 
+Survivor85446-1_mutated: 110 21 6 1 
+Survivor85453-1_mutated: 132 21 6 1 
+Survivor85468-1_mutated: 132 21 7 1 
+Child_Levy85469-44: 103 19 6 1 
+Survivor85723-1_mutated: 80 23 4 1 
+Survivor85870-1_mutated: 104 21 4 1 
+Child_Levy86163-60: 79 16 6 1 
+Survivor86176-1_mutated: 97 22 4 1 
+Random86319-5: 98 52 19 4 1 
+Survivor86553-1_mutated: 91 19 2 1 
+Survivor86896-1_mutated: 106 18 4 1 
+Random87414-26: 99 89 19 4 1 
+Survivor87427-1_mutated: 88 14 4 1 
+Survivor87577-1_mutated: 130 19 5 1 
+Child_Levy87828-28_mutated: 74 14 6 1 
+Child_Levy87829-28: 72 13 6 1 
+Random87890-11: 97 87 19 4 1 
+Survivor87891-1_mutated: 97 86 21 4 1 
+Survivor88206-1_mutated: 105 23 4 1 
+Survivor88230-1_mutated: 105 23 3 1 
+Child_Levy88236-40: 118 22 4 1 
+Child_Levy88273-48: 96 17 5 1 
+Child_Levy88326-60: 81 13 6 1 
+Child_Avg88637-59: 77 16 3 1 
+Random88691-17: 94 82 17 4 1 
+Survivor89094-1_mutated: 85 23 4 1 
+Survivor89795-1_mutated: 104 19 6 1 
+Survivor89833-1_mutated: 102 17 6 1 
+Survivor90232-1_mutated: 83 22 3 1 
+Survivor90300-1_mutated: 121 19 3 1 
+Random90972-6: 97 61 17 4 1 
+Child_Avg91136-11: 78 13 4 1 
+Child_Levy91856-4: 75 21 5 1 
+Survivor92415-1_mutated: 97 92 19 4 1 
+Survivor92435-1_mutated: 85 92 19 4 1 
+Survivor92453-1_mutated: 85 92 19 5 1 
+Random92491-15: 95 65 19 4 1 
+Survivor92568-1_mutated: 111 22 3 1 
+Child_Avg92572-51: 96 17 3 1 
+Random92629-34: 95 59 18 4 1 
+Random93095-11: 97 84 17 4 1 
+Survivor93097-1_mutated: 97 84 21 4 1 
+Survivor93131-1_mutated: 73 21 4 1 
+Survivor93136-1_mutated: 86 76 19 4 1 
+Random93359-15: 93 59 18 4 1 
+Random93365-13: 92 61 14 4 1 
+Survivor93520-1_mutated: 79 23 4 1 
+Survivor93527-1_mutated: 94 19 2 1 
+Child_Levy93923-8: 81 24 3 1 
+Survivor93924-1_mutated: 81 24 4 1 
+Child_Levy94029-56: 70 23 4 1 
+Child_Levy94080-28: 74 21 5 1 
+Survivor94183-1_mutated: 90 23 3 1 
+Random94312-11: 94 38 19 4 1 
+Survivor94671-1_mutated: 105 19 6 1 
+Survivor94683-1_mutated: 105 16 6 1 
+Survivor94757-1_mutated: 90 21 3 1 
+Survivor94897-1_mutated: 78 22 5 1 
+Survivor95141-1_mutated: 108 22 4 1 
+Survivor95277-1_mutated: 102 22 3 1 
+Survivor95651-1_mutated: 78 22 4 1 
+Survivor96128-1_mutated: 94 21 3 1 
+Random96475-35: 94 85 18 4 1 
+Survivor96535-1_mutated: 84 26 3 1 
+Random96580-18: 97 39 17 4 1 
+Survivor96835-1_mutated: 103 18 3 1 
+Random96970-33: 99 80 19 4 1 
+Survivor96978-1_mutated: 99 80 19 5 1 
+Random97009-14: 97 79 17 4 1 
+Survivor98144-1_mutated: 100 22 4 1 
+Survivor98147-1_mutated: 117 22 4 1 
+Survivor98161-1_mutated: 117 22 3 1 
+Child_Cross98204-50_mutated: 86 13 4 1 
+Random98774-25: 42 16 4 1 
+Survivor98834-1_mutated: 106 18 5 1 
+Child_Levy98835-28: 98 17 3 1 
+Survivor98952-1_mutated: 89 21 3 1 
+Random98982-31: 93 54 18 4 1 
+Random99054-18: 98 82 18 4 1 
+Survivor99099-1_mutated: 116 21 5 1 
+Survivor99109-1_mutated: 116 21 4 1 
+Survivor99145-1_mutated: 103 21 3 1 
+Random99424-34: 85 67 19 4 1 
+Survivor99490-1_mutated: 104 19 5 1 
+Child_Levy99873-20: 86 14 3 1 
+Random99928-6: 93 84 17 4 1 
+Random100611-30: 86 67 19 4 1 
+Child_Levy100684-28_mutated: 76 16 6 1 
+Random100708-8: 90 69 18 4 1 
+Random100838-5: 92 81 18 4 1 
+Random101221-6: 98 72 18 4 1 
+Child_Levy101675-28: 92 14 4 1 
+Random101766-19: 97 71 19 4 1 
+Random101994-33: 97 82 18 4 1 
+Random102003-6: 98 66 14 3 1 
+Random102004-25: 94 75 17 4 1 
+Random102007-5: 99 87 18 4 1 
+Survivor102282-1_mutated: 98 21 5 1 
+Survivor102287-1_mutated: 117 21 6 1 
+Survivor102288-1_mutated: 130 21 6 1 
+Survivor102326-1_mutated: 105 21 6 1 
+Survivor102328-1_mutated: 111 21 6 1 
+Survivor102493-1_mutated: 108 21 6 1 
+Survivor102504-1_mutated: 122 21 6 1 
+Survivor102543-1_mutated: 122 21 5 1 
+Random103106-23: 92 83 17 4 1 
+Random103188-23: 85 70 19 4 1 
+Child_Levy103374-28: 83 17 7 1 
+Survivor104018-1_mutated: 99 88 22 4 1 
+Survivor104226-1_mutated: 100 19 2 1 
+Survivor104933-1_mutated: 118 22 5 1 
+Child_Levy105083-16: 71 19 8 1 
+Random105480-23: 78 61 17 4 1 
+Random105482-24: 95 82 17 4 1 
+Survivor105724-1_mutated: 108 17 3 1 
+Random106192-11: 96 71 19 4 1 
+Survivor106847-1_mutated: 115 21 4 1 
+Survivor106872-1_mutated: 115 18 5 1 
+Survivor106886-1_mutated: 99 82 18 5 1 
+Survivor107443-1_mutated: 94 21 6 1 
+Survivor107626-1_mutated: 101 17 4 1 
+Random107952-6: 98 83 17 4 1 
+Child_Levy108074-44: 82 23 3 1 
+Random108922-24: 89 61 17 4 1 
+Survivor108996-1_mutated: 101 83 18 4 1 
+Survivor109074-1_mutated: 121 19 4 1 
+Survivor109076-1_mutated: 121 21 4 1 
+Child_Levy109108-28: 111 21 5 1 
+Survivor109147-1_mutated: 118 19 3 1 
+Random109249-18: 99 56 17 4 1 
+Survivor109319-1_mutated: 99 22 5 1 
+Survivor110192-1_mutated: 91 18 5 1 
+Survivor110200-1_mutated: 91 18 6 1 
+Survivor110635-1_mutated: 92 22 3 1 
+Survivor110696-1_mutated: 94 22 6 1 
+Child_Avg111000-47_mutated: 76 13 4 1 
+Child_Levy111267-4_mutated: 72 19 6 1 
+Survivor111459-1_mutated: 95 23 3 1 
+Survivor111860-1_mutated: 103 23 4 1 
+Child_Levy112432-16: 170 19 5 1 
+Child_Levy112586-44: 75 18 5 1 
+Survivor112804-1_mutated: 91 16 5 1 
+Survivor112902-1_mutated: 112 22 4 1 
+Survivor112927-1_mutated: 106 22 5 1 
+Child_Levy113064-60: 78 17 8 1 
+Survivor113069-1_mutated: 95 22 3 1 
+Child_Levy113123-12_mutated: 70 21 5 1 
+Child_Levy113195-52: 78 22 3 1 
+Random113257-19: 93 77 18 4 1 
+Random113448-8: 95 64 18 4 1 
+Survivor113705-1_mutated: 120 19 3 1 
+Random114095-15: 98 69 16 4 1 
+Child_Levy114509-56: 118 18 4 1 
+Random114583-8: 92 73 17 4 1 
+Survivor114920-1_mutated: 120 19 5 1 
+Random115140-5: 88 77 17 4 1 
+Random115298-20: 94 51 17 4 1 
+Survivor116240-1_mutated: 100 23 4 1 
+Random116701-4: 98 74 18 4 1 
+Survivor116839-1_mutated: 107 23 3 1 
+Random117471-23: 98 84 19 4 1 
+Child_Levy118431-56: 80 19 6 1 
+Random118680-14: 94 71 19 4 1 
+Child_Levy118924-28_mutated: 72 14 6 1 
+Child_Levy119006-64: 69 18 3 1 
+Survivor119619-1_mutated: 86 18 3 1 
+Random121723-27: 86 57 19 4 1 
+Survivor121759-1_mutated: 112 18 5 1 
+Survivor122003-1_mutated: 99 57 19 3 1 
+Random122570-29: 84 72 18 4 1 
+Child_Levy123118-32: 64 16 3 1 
+Random123367-34: 94 62 14 3 1 
+Random123537-12: 99 87 19 4 1 
+Survivor123671-1_mutated: 78 19 6 1 
+Survivor124049-1_mutated: 98 81 19 5 1 
+Survivor124058-1_mutated: 98 81 19 6 1 
+Survivor124182-1_mutated: 66 22 3 1 
+Survivor125256-1_mutated: 99 84 17 4 1 
+Random125496-15: 88 72 18 4 1 
+Survivor126601-1_mutated: 76 22 6 1 
+Child_Levy127052-40: 88 19 7 1 
+Survivor127069-1_mutated: 88 23 7 1 
+Survivor127696-1_mutated: 114 21 5 1 
+Survivor128354-1_mutated: 105 22 4 1 
+Survivor128376-1_mutated: 105 22 5 1 
+Random128653-2: 94 57 19 4 1 
+Survivor129368-1_mutated: 100 21 5 1 
+Survivor129441-1_mutated: 84 18 6 1 
+Survivor130470-1_mutated: 100 21 3 1 
+Random130701-9: 97 85 19 4 1 
+Random131693-25: 91 78 17 4 1 
+Child_Cross132061-25: 98 65 19 4 1 
+Survivor132253-1_mutated: 99 18 3 1 
+Child_Levy132986-24: 75 21 3 1 
+Random133697-34: 96 85 18 4 1 
+Survivor133852-1_mutated: 139 19 4 1 
+Survivor134418-1_mutated: 108 21 5 1 
+Random134891-31: 91 62 18 4 1 
+Survivor135847-1_mutated: 96 26 4 1 
+Survivor135850-1_mutated: 102 21 3 1 
+Child_Levy136025-40: 73 17 9 1 
+Random136145-34: 61 19 4 1 
+Survivor136526-1_mutated: 134 21 4 1 
+Survivor136531-1_mutated: 134 22 4 1 
+Survivor136551-1_mutated: 134 22 5 1 
+Survivor136602-1_mutated: 104 22 5 1 
+Random136675-22: 93 69 16 4 1 
+Survivor136802-1_mutated: 94 23 3 1 
+Random136859-34: 94 80 18 4 1 
+Survivor137087-1_mutated: 99 27 4 1 
+Random137137-1: 80 57 19 4 1 
+Child_Levy137138-28: 78 17 2 1 
+Random137989-33: 93 79 17 4 1 
+Survivor138060-1_mutated: 102 18 4 1 
+Survivor138564-1_mutated: 98 22 5 1 
+Survivor138572-1_mutated: 92 81 19 4 1 
+Random138615-29: 93 52 19 4 1 
+Survivor139441-1_mutated: 116 19 6 1 
+Survivor139448-1_mutated: 116 19 5 1 
+Random139552-23: 94 56 17 4 1 
+Random139555-6: 92 71 19 4 1 
+Survivor139560-1_mutated: 96 57 19 4 1 
+Random139817-32: 96 80 19 4 1 
+Survivor140262-1_mutated: 103 19 8 1 
+Survivor140354-1_mutated: 104 18 3 1 
+Random140808-31: 98 41 18 4 1 
+Random140919-33: 92 66 19 4 1 
+Survivor140936-1_mutated: 84 18 3 1 
+Random142939-13: 93 66 14 4 1 
+Survivor142995-1_mutated: 88 16 5 1 
+Random143883-21: 96 59 18 4 1 
+Random144204-20: 87 68 17 4 1 
+Survivor144323-1_mutated: 107 19 6 1 
+Survivor144340-1_mutated: 107 21 6 1 
+Survivor144364-1_mutated: 91 21 6 1 
+Survivor144883-1_mutated: 117 23 4 1 
+Child_Avg144884-3: 100 21 4 1 
+Random144918-19: 98 77 18 4 1 
+Survivor144921-1_mutated: 98 91 18 4 1 
+Random145005-1: 98 87 19 4 1 
+Child_Levy145125-28_mutated: 85 22 3 1 
+Survivor145324-1_mutated: 115 19 4 1 
+Child_Levy145372-56_mutated: 67 14 4 1 
+Survivor145898-1_mutated: 90 19 2 1 
+Survivor146341-1_mutated: 90 76 19 5 1 
+Survivor146604-1_mutated: 125 21 4 1 
+Survivor146612-1_mutated: 125 26 4 1 
+Random146693-3: 99 85 19 4 1 
+Survivor147486-1_mutated: 99 24 4 1 
+Child_Avg147505-19_mutated: 86 14 4 1 
+Child_Levy147903-52: 76 14 6 1 
+Survivor148886-1_mutated: 101 22 5 1 
+Survivor149908-1_mutated: 127 19 5 1 
+Survivor149919-1_mutated: 144 19 6 1 
+Survivor149922-1_mutated: 144 21 5 1 
+Survivor149993-1_mutated: 101 21 6 1 
+Survivor150428-1_mutated: 103 23 3 1 
+Survivor150616-1_mutated: 130 22 5 1 
+Survivor150617-1_mutated: 130 22 4 1 
+Survivor150976-1_mutated: 82 18 2 1 
+Survivor151610-1_mutated: 106 17 4 1 
+Child_Avg151614-47_mutated: 87 14 4 1 
+Child_Levy151827-40_mutated: 68 21 3 1 
+Random152133-34: 96 82 19 4 1 
+Random152388-7: 92 66 17 4 1 
+Survivor152648-1_mutated: 76 21 6 1 
+Survivor153028-1_mutated: 74 19 6 1 
+Random153035-35: 98 67 19 4 1 
+Child_Levy153220-44: 70 19 6 1 
+Survivor153936-1_mutated: 80 21 3 1 
+Random154086-25: 96 50 19 4 1 
+Child_Cross154739-6_mutated: 84 13 3 1 
+Random155490-26: 94 41 18 4 1 
+Survivor155649-1_mutated: 87 16 6 1 
+Survivor155739-1_mutated: 140 21 4 1 
+Survivor155770-1_mutated: 140 18 5 1 
+Child_Levy155883-52: 64 23 3 1 
+Child_Levy156253-28: 71 17 3 1 
+Survivor158162-1_mutated: 107 23 4 1 
+Survivor158205-1_mutated: 100 19 6 1 
+Random158755-10: 97 73 17 4 1 
+Child_Levy158813-52_mutated: 84 16 6 1 
+Random158836-23: 95 57 19 4 1 
+Random158849-23: 99 73 17 4 1 
+Survivor158855-1_mutated: 99 73 17 3 1 
+Survivor159298-1_mutated: 90 19 7 1 
+Child_Levy159315-56: 83 14 6 1 
+Random159870-12: 93 75 17 4 1 
+Random160826-17: 89 56 17 4 1 
+Child_Levy162360-28: 61 17 5 1 
+Survivor163084-1_mutated: 113 17 4 1 
+Survivor163799-1_mutated: 106 19 6 1 
+Survivor163804-1_mutated: 106 23 6 1 
+Survivor163994-1_mutated: 108 18 4 1 
+Random164130-27: 93 83 19 4 1 
+Random164579-21: 86 66 19 4 1 
+Survivor164765-1_mutated: 115 22 4 1 
+Survivor164779-1_mutated: 112 26 4 1 
+Child_Levy164781-40: 439 19 3 1 
+Random164846-13: 64 13 4 1 
+Random164873-5: 99 43 19 4 1 
+Random165246-4: 97 87 18 4 1 
+Survivor166948-1_mutated: 118 21 4 1 
+Child_Avg167129-59_mutated: 86 24 4 1 
+Survivor167330-1_mutated: 79 23 6 1 
+Survivor167605-1_mutated: 61 17 6 1 
+Survivor167807-1_mutated: 97 69 18 4 1 
+Survivor168220-1_mutated: 65 22 4 1 
+Survivor168480-1_mutated: 107 22 3 1 
+Survivor168591-1_mutated: 90 23 6 1 
+Random168788-20: 97 86 18 4 1 
+Survivor168823-1_mutated: 115 19 5 1 
+Child_Levy169830-24_mutated: 93 16 3 1 
+Random169844-12: 91 72 18 4 1 
+Survivor169860-1_mutated: 122 19 4 1 
+Survivor169866-1_mutated: 134 19 4 1 
+Survivor169867-1_mutated: 158 19 4 1 
+Survivor169878-1_mutated: 158 18 4 1 
+Survivor170604-1_mutated: 87 23 3 1 
+Random171253-10: 96 69 14 4 1 
+Survivor171325-1_mutated: 80 18 5 1 
+Random171328-18: 99 84 19 4 1 
+Survivor172678-1_mutated: 114 19 5 1 
+Survivor172682-1_mutated: 114 18 5 1 
+Survivor173744-1_mutated: 81 19 7 1 
+Random173959-32: 96 61 17 4 1 
+Survivor174264-1_mutated: 95 18 3 1 
+Survivor175593-1_mutated: 110 23 4 1 
+Survivor177476-1_mutated: 102 17 4 1 
+Survivor178094-1_mutated: 104 18 5 1 
+Survivor178540-1_mutated: 144 19 4 1 
+Survivor178542-1_mutated: 124 22 3 1 
+Child_Levy179211-28_mutated: 82 16 6 1 
+Survivor179239-1_mutated: 105 23 6 1 
+Survivor179247-1_mutated: 92 23 7 1 
+Random179294-15: 87 73 18 4 1 
+Survivor180211-1_mutated: 91 17 2 1 
+Survivor181153-1_mutated: 97 81 17 4 1 
+Child_Levy181318-28: 81 17 7 1 
+Random181880-8: 96 75 19 4 1 
+Survivor182726-1_mutated: 85 21 6 1 
+Child_Cross183559-21_mutated: 94 66 19 4 1 
+Survivor183618-1_mutated: 98 77 18 5 1 
+Survivor183653-1_mutated: 98 77 18 6 1 
+Survivor183943-1_mutated: 99 17 3 1 
+Survivor184069-1_mutated: 81 23 6 1 
+Survivor184218-1_mutated: 80 22 6 1 
+Survivor184237-1_mutated: 107 17 4 1 
+Random184270-16: 82 69 18 4 1 
+Random184973-16: 93 61 14 4 1 
+Child_Cross184979-38: 93 61 17 4 1 
+Survivor185591-1_mutated: 85 22 5 1 
+Survivor186086-1_mutated: 90 18 5 1 
+Random186429-26: 90 72 18 4 1 
+Survivor188271-1_mutated: 102 22 5 1 
+Survivor188310-1_mutated: 88 16 6 1 
+Child_Levy188314-4: 81 24 6 1 
+Random188514-23: 96 78 18 4 1 
+Survivor188960-1_mutated: 88 19 6 1 
+Survivor189033-1_mutated: 115 23 4 1 
+Survivor189444-1_mutated: 75 19 6 1 
+Child_Cross189452-26: 99 78 17 4 1 
+Random190456-32: 87 71 19 4 1 
+Survivor191596-1_mutated: 78 21 4 1 
+Child_Levy192443-36: 70 23 3 1 
+Random193562-26: 85 62 19 4 1 
+Survivor193705-1_mutated: 76 19 2 1 
+Random193978-2: 96 69 18 4 1 
+Survivor194038-1_mutated: 90 18 3 1 
+Random194039-30: 94 52 19 4 1 
+Survivor194547-1_mutated: 116 19 3 1 
+Child_Levy194561-12: 89 16 6 1 
+Child_Levy194718-8_mutated: 74 33 6 1 
+Child_Levy194720-64: 70 23 6 1 
+Random196568-16: 97 70 19 4 1 
+Survivor196698-1_mutated: 100 18 5 1 
+Random197190-4: 96 48 19 4 1 
+Random198364-34: 93 83 17 4 1 
+Survivor198368-1_mutated: 110 83 17 4 1 
+Random198860-17: 99 79 18 4 1 
+Survivor199775-1_mutated: 109 21 3 1 
+Random199825-21: 82 51 19 4 1 
+Survivor200144-1_mutated: 83 18 3 1 
+Child_Levy200553-32_mutated: 82 14 6 1 
+Child_Avg200614-11: 76 13 3 1 
+Survivor201070-1_mutated: 127 22 4 1 
+Survivor201071-1_mutated: 127 22 3 1 
+Random201080-31: 93 70 18 4 1 
+Survivor201594-1_mutated: 90 26 4 1 
+Random202255-1: 98 83 18 4 1 
+Random203189-26: 91 59 18 4 1 
+Random203557-14: 86 61 19 4 1 
+Random204219-20: 96 86 18 4 1 
+Random204484-16: 97 64 18 4 1 
+Survivor205551-1_mutated: 121 22 4 1 
+Survivor205559-1_mutated: 123 22 4 1 
+Random205830-2: 90 78 17 4 1 
+Survivor206623-1_mutated: 107 18 3 1 
+Random207125-10: 89 52 19 4 1 
+Random207306-33: 96 84 17 4 1 
+Survivor207324-1_mutated: 96 84 19 4 1 
+Survivor207325-1_mutated: 96 84 21 4 1 
+Survivor207329-1_mutated: 90 80 21 4 1 
+Random208890-6: 98 80 18 4 1 
+Survivor208933-1_mutated: 112 21 3 1 
+Random208952-30: 98 81 18 4 1 
+Random209378-5: 95 83 17 4 1 
+Survivor210207-1_mutated: 99 16 4 1 
+Random210401-4: 93 61 19 4 1 
+Random210402-16: 87 67 18 4 1 
+Survivor210507-1_mutated: 96 19 6 1 
+Survivor210509-1_mutated: 96 18 6 1 
+Random211050-11: 93 82 17 4 1 
+Survivor211750-1_mutated: 113 19 6 1 
+Child_Levy211799-12_mutated: 74 13 6 1 
+Random212289-35: 92 82 19 4 1 
+Child_Levy212535-24_mutated: 95 17 3 1 
+Survivor212860-1_mutated: 129 18 5 1 
+Survivor212872-1_mutated: 99 78 17 5 1 
+Survivor212960-1_mutated: 102 23 6 1 
+Survivor214055-1_mutated: 109 22 5 1 
+Random214433-22: 90 81 19 4 1 
+Survivor214629-1_mutated: 114 21 6 1 
+Survivor215338-1_mutated: 93 22 6 1 
+Random215867-29: 90 61 17 4 1 
+Child_Levy215986-48: 86 17 6 1 
+Survivor216771-1_mutated: 75 22 3 1 
+Random217082-14: 99 81 18 4 1 
+Survivor217200-1_mutated: 97 21 3 1 
+Random217523-29: 99 88 18 4 1 
+Random220254-31: 98 62 19 4 1 
+Child_Levy220964-16: 71 14 8 1 
+Survivor221178-1_mutated: 86 23 6 1 
+Random221182-30: 98 78 17 4 1 
+Random221515-10: 81 67 19 4 1 
+Random223385-17: 96 82 17 4 1 
+Random224009-13: 89 80 17 4 1 
+Random224086-20: 95 66 14 4 1 
+Survivor224530-1_mutated: 111 18 4 1 
+Random224821-8: 98 56 17 4 1 
+Survivor225144-1_mutated: 97 81 19 5 1 
+Random225294-4: 94 73 17 4 1 
+Survivor225296-1_mutated: 94 85 17 4 1 
+Survivor225949-1_mutated: 81 17 6 1 
+Survivor226971-1_mutated: 67 18 6 1 
+Survivor227331-1_mutated: 86 19 6 1 
+Random227578-26: 99 69 16 4 1 
+Child_Levy227822-12: 76 24 4 1 
+Survivor227992-1_mutated: 130 19 3 1 
+Survivor228003-1_mutated: 130 23 3 1 
+Survivor228719-1_mutated: 96 19 2 1 
+Child_Levy229016-32: 100 17 3 1 
+Survivor229131-1_mutated: 99 80 19 3 1 
+Survivor230558-1_mutated: 81 14 8 1 
+Survivor230712-1_mutated: 111 22 4 1 
+Random230824-7: 86 73 17 4 1 
+Survivor231249-1_mutated: 87 17 5 1 
+Child_Levy232431-56_mutated: 195 21 5 1 
+Survivor232433-1_mutated: 195 21 6 1 
+Child_Avg232440-55: 162 19 5 1 
+Random232558-18: 93 81 17 4 1 
+Survivor232836-1_mutated: 106 22 3 1 
+Survivor232900-1_mutated: 128 18 4 1 
+Random234086-32: 98 72 19 4 1 
+Survivor234641-1_mutated: 93 17 6 1 
+Survivor235266-1_mutated: 105 17 6 1 
+Survivor235701-1_mutated: 111 23 4 1 
+Survivor236624-1_mutated: 136 19 4 1 
+Survivor236635-1_mutated: 136 19 5 1 
+Survivor236637-1_mutated: 153 19 5 1 
+Random237544-16: 99 72 19 4 1 
+Random238177-35: 98 64 18 4 1 
+Random238458-20: 55 18 4 1 
+Survivor239198-1_mutated: 107 22 5 1 
+Random239217-21: 93 81 19 4 1 
+Survivor239221-1_mutated: 93 81 19 3 1 
+Survivor239361-1_mutated: 105 22 3 1 
+Survivor239443-1_mutated: 83 22 2 1 
+Survivor239714-1_mutated: 125 22 4 1 
+Child_Levy240290-48: 66 22 5 1 
+Child_Levy240374-60: 68 31 4 1 
+Child_Avg240375-59: 70 21 4 1 
+Survivor240570-1_mutated: 105 18 3 1 
+Survivor241512-1_mutated: 106 19 2 1 
+Random242394-18: 89 78 17 4 1 
+Survivor242395-1_mutated: 89 77 17 4 1 
+Random242426-27: 81 43 19 4 1 
+Child_Levy242850-16_mutated: 80 21 6 1 
+Random243905-7: 88 78 18 4 1 
+Survivor245572-1_mutated: 98 81 19 3 1 
+Random245894-20: 89 79 17 4 1 
+Random246302-19: 93 62 19 4 1 
+Survivor246827-1_mutated: 50 19 4 1 
+Random246834-14: 96 68 17 4 1 
+Child_Levy247222-36_mutated: 98 22 3 1 
+Survivor247224-1_mutated: 110 22 3 1 
+Random249542-26: 91 77 19 4 1 
+Random250386-12: 87 69 14 3 1 
+Random250594-19: 97 86 19 4 1 
+Random252314-31: 80 62 19 4 1 
+Random253993-26: 99 83 19 4 1 
+Random254016-4: 99 67 19 4 1 
+Random255210-23: 52 14 4 1 
+Survivor255663-1_mutated: 65 22 3 1 
+Survivor255842-1_mutated: 105 21 3 1 
+Survivor257859-1_mutated: 119 19 4 1 
+Survivor258560-1_mutated: 116 18 4 1 
+Survivor259391-1_mutated: 107 24 4 1 
+Random259572-4: 99 83 17 4 1 
+Random259853-12: 97 57 19 4 1 
+Survivor260002-1_mutated: 104 19 2 1 
+Survivor260154-1_mutated: 120 23 4 1 
+Random261917-33: 92 82 18 4 1 
+Survivor262608-1_mutated: 89 18 6 1 
+Child_Levy265075-52_mutated: 99 21 6 1 
+Survivor265124-1_mutated: 99 21 7 1 
+Random265594-18: 97 83 17 4 1 
+Child_Levy265808-12: 70 18 3 1 
+Survivor266293-1_mutated: 104 21 3 1 
+Random266524-18: 98 74 16 4 1 
+Survivor267605-1_mutated: 132 19 3 1 
+Survivor269039-1_mutated: 118 21 5 1 
+Survivor269042-1_mutated: 131 21 5 1 
+Survivor269053-1_mutated: 131 21 6 1 
+Survivor269110-1_mutated: 131 24 6 1 
+Child_Levy269118-4: 107 21 5 1 
+Random269142-25: 95 41 18 4 1 
+Child_Levy269519-20: 75 23 3 1 
+Survivor269818-1_mutated: 113 21 4 1 
+Survivor269820-1_mutated: 125 17 4 1 
+Survivor270782-1_mutated: 136 18 5 1 
+Random270810-19: 97 66 14 4 1 
+Survivor272189-1_mutated: 100 23 3 1 
+Random272275-7: 89 57 19 4 1 
+Random272844-4: 82 46 18 4 1 
+Survivor273003-1_mutated: 99 19 2 1 
+Survivor273425-1_mutated: 38 19 5 1 
+Random273490-28: 95 67 19 4 1 
+Survivor274009-1_mutated: 81 22 6 1 
+Survivor274390-1_mutated: 90 24 4 1 
+Survivor274588-1_mutated: 108 81 19 4 1 
+Survivor274627-1_mutated: 113 81 19 4 1 
+Survivor274629-1_mutated: 113 81 19 5 1 
+Survivor274630-1_mutated: 103 81 19 5 1 
+Survivor274639-1_mutated: 105 81 19 5 1 
+Survivor276495-1_mutated: 125 22 3 1 
+Survivor276546-1_mutated: 89 19 6 1 
+Survivor276550-1_mutated: 89 21 6 1 
+Survivor276560-1_mutated: 73 17 8 1 
+Child_Levy277392-24: 69 23 3 1 
+Survivor277566-1_mutated: 97 88 17 4 1 
+Random278554-6: 99 89 18 4 1 
+Survivor278556-1_mutated: 99 89 18 3 1 
+Survivor278848-1_mutated: 101 23 3 1 
+Random279583-13: 93 75 18 4 1 
+Random280377-22: 91 57 19 4 1 
+Survivor280560-1_mutated: 101 18 5 1 
+Random280659-23: 86 62 18 4 1 
+Survivor280973-1_mutated: 100 22 3 1 
+Random281003-24: 92 76 19 4 1 
+Survivor281205-1_mutated: 108 17 4 1 
+Random281343-16: 99 82 17 4 1 
+Random282535-33: 99 79 16 4 1 
+Survivor282563-1_mutated: 112 81 19 3 1 
+Survivor282961-1_mutated: 80 18 3 1 
+Survivor283589-1_mutated: 80 22 3 1 
+Random283660-9: 91 80 17 4 1 
+Child_Levy284623-20_mutated: 88 14 6 1 
+Survivor285034-1_mutated: 92 18 8 1 
+Survivor285083-1_mutated: 106 23 3 1 
+Survivor285151-1_mutated: 59 23 4 1 
+Random285406-16: 89 80 18 4 1 
+Survivor285494-1_mutated: 98 98 22 4 1 
+Survivor285513-1_mutated: 98 110 22 4 1 
+Survivor285521-1_mutated: 104 110 22 4 1 
+Survivor285527-1_mutated: 104 123 22 4 1 
+Child_Levy286032-24: 88 14 3 1 
+Survivor286843-1_mutated: 98 24 4 1 
+Random286984-22: 89 71 19 4 1 
+Random287212-28: 98 38 19 4 1 
+Random287328-27: 88 61 17 4 1 
+Random288685-11: 92 83 18 4 1 
+Survivor288872-1_mutated: 65 21 4 1 
+Random288977-16: 87 64 18 4 1 
+Random289370-6: 94 66 17 4 1 
+Random289683-11: 95 80 18 4 1 
+Survivor289695-1_mutated: 85 24 6 1 
+Survivor289752-1_mutated: 113 17 3 1 
+Random289986-15: 96 65 19 4 1 
+Random290146-21: 95 73 17 4 1 
+Survivor290247-1_mutated: 107 21 3 1 
+Survivor290687-1_mutated: 84 17 6 1 
+Survivor290780-1_mutated: 90 16 4 1 
+Survivor291386-1_mutated: 97 16 4 1 
+Random292003-30: 92 78 18 4 1 
+Survivor292977-1_mutated: 96 21 3 1 
+Random293200-22: 90 67 19 4 1 
+Survivor293214-1_mutated: 72 23 4 1 
+Random293529-5: 97 80 19 4 1 
+Survivor294521-1_mutated: 83 22 7 1 
+Survivor294543-1_mutated: 100 22 6 1 
+Random294608-6: 92 62 18 4 1 
+Random294613-22: 98 52 14 4 1 
+Child_Levy294707-44: 70 22 3 1 
+Random296502-16: 93 83 18 4 1 
+Survivor298043-1_mutated: 104 21 5 1 
+Survivor298076-1_mutated: 104 21 6 1 
+Random298303-15: 91 81 19 4 1 
+Random298366-33: 89 66 19 4 1 
+Random298410-26: 96 72 18 4 1 
+Survivor298414-1_mutated: 96 72 18 5 1 
+Survivor298845-1_mutated: 85 17 4 1 
+Survivor299492-1_mutated: 104 16 6 1 
+Survivor300226-1_mutated: 75 22 6 1 
+Random300246-11: 99 64 18 4 1 
+Random300864-1: 95 61 14 4 1 
+Survivor300989-1_mutated: 90 17 6 1 
+Child_Levy300990-64: 84 13 6 1 
+Survivor301685-1_mutated: 123 23 4 1 
+Child_Cross302492-46: 96 76 19 4 1 
+Survivor302519-1_mutated: 96 76 19 5 1 
+Child_Levy303383-32_mutated: 73 14 3 1 
+Survivor303467-1_mutated: 85 26 4 1 
+Survivor304497-1_mutated: 119 18 5 1 
+Survivor304810-1_mutated: 113 21 3 1 
+Random306386-12: 96 63 17 4 1 
+Survivor306548-1_mutated: 107 18 5 1 
+Survivor306650-1_mutated: 94 17 6 1 
+Survivor306659-1_mutated: 112 19 6 1 
+Survivor307674-1_mutated: 102 19 7 1 
+Random307719-19: 88 61 14 4 1 
+Random310028-5: 98 54 18 4 1 
+Random310253-21: 89 72 18 4 1 
+Random311281-27: 95 86 18 4 1 
+Random311499-3: 92 51 17 4 1 
+Survivor311735-1_mutated: 93 18 6 1 
+Random311846-14: 98 55 18 4 1 
+Survivor311861-1_mutated: 67 18 3 1 
+Random311904-17: 91 65 19 4 1 
+Survivor312803-1_mutated: 98 85 19 5 1 
+Survivor313035-1_mutated: 109 22 3 1 
+Survivor313067-1_mutated: 128 22 3 1 
+Survivor313077-1_mutated: 114 22 3 1 
+Child_Levy316795-32: 117 19 5 1 
+Survivor316802-1_mutated: 117 21 4 1 
+Survivor317275-1_mutated: 99 76 19 3 1 
+Random317974-6: 96 75 18 4 1 
+Survivor318543-1_mutated: 129 19 4 1 
+Random320339-22: 81 57 19 4 1 
+Child_Cross320815-18: 23 6 1 
+Child_Levy320818-24: 23 4 1 
+Child_Levy320820-44: 21 4 1 
+Survivor321432-1_mutated: 100 18 6 1 
+Random321494-2: 96 62 13 4 1 
+Random321498-25: 76 57 19 4 1 
+Survivor323197-1_mutated: 104 23 6 1 
+Survivor323310-1_mutated: 103 62 19 4 1 
+Survivor323856-1_mutated: 124 21 5 1 
+Random326372-20: 94 83 18 4 1 
+Random326389-18: 44 18 4 1 
+Random326594-10: 90 67 18 4 1 
+Child_Avg327407-31: 138 19 3 1 
+Survivor328015-1_mutated: 104 23 3 1 
+Survivor328295-1_mutated: 131 19 5 1 
+Child_Levy328689-28: 71 13 3 1 
+Random329389-2: 95 52 19 4 1 
+Random329520-33: 94 67 18 4 1 
+Survivor329571-1_mutated: 88 81 19 4 1 
+Random330135-12: 88 78 17 4 1 
+Survivor330181-1_mutated: 93 16 5 1 
+Survivor330182-1_mutated: 93 16 6 1 
+Survivor330885-1_mutated: 81 22 7 1 
+Random332286-2: 98 81 17 4 1 
+Random333277-7: 95 71 19 4 1 
+Random333687-16: 98 63 17 4 1 
+Child_Levy335447-24_mutated: 78 14 6 1 
+Survivor336413-1_mutated: 121 18 4 1 
+Child_Levy337177-32: 81 16 7 1 
+Random337184-15: 99 58 16 4 1 
+Survivor337497-1_mutated: 96 73 17 5 1 
+Survivor337819-1_mutated: 111 21 3 1 
+Survivor338005-1_mutated: 107 23 5 1 
+Survivor338335-1_mutated: 92 19 7 1 
+Random339429-20: 96 83 18 4 1 
+Child_Levy339470-32: 76 19 8 1 
+Random339538-32: 86 72 19 4 1 
+Survivor339743-1_mutated: 105 28 4 1 
+Random340205-14: 84 57 18 4 1 
+Random340243-7: 97 70 18 4 1 
+Child_Levy343615-44_mutated: 87 17 6 1 
+Random343901-3: 89 61 19 4 1 
+Random344122-35: 91 63 17 4 1 
+Random344485-2: 86 75 18 4 1 
+Survivor345117-1_mutated: 108 19 7 1 
+Random345686-5: 99 85 18 4 1 
+Survivor345688-1_mutated: 99 85 19 5 1 
+Survivor345793-1_mutated: 84 19 6 1 
+Random346781-19: 92 75 19 4 1 
+Survivor346918-1_mutated: 99 22 3 1 
+Random348622-14: 97 75 19 4 1 
+Random352372-3: 94 63 16 4 1 
+Random353339-16: 94 74 17 4 1 
+Survivor353888-1_mutated: 104 22 6 1 
+Survivor354303-1_mutated: 85 24 4 1 
+Survivor355144-1_mutated: 130 19 4 1 
+Survivor355147-1_mutated: 130 21 4 1 
+Survivor355159-1_mutated: 130 17 4 1 
+Random355493-12: 86 62 19 4 1 
+Survivor355903-1_mutated: 97 87 21 4 1 
+Random356246-20: 81 66 19 4 1 
+Random357582-28: 92 71 17 4 1 
+Survivor358037-1_mutated: 89 18 2 1 
+Survivor358971-1_mutated: 95 97 17 4 1 
+Random359242-27: 97 88 18 4 1 
+Survivor359255-1_mutated: 117 22 5 1 
+Random360376-6: 95 81 19 4 1 
+Random361866-20: 93 68 17 4 1 
+Random363552-32: 94 54 18 4 1 
+Random364627-17: 93 84 19 4 1 
+Random365471-10: 94 68 17 4 1 
+Survivor365813-1_mutated: 85 23 3 1 
+Random366865-30: 86 57 18 4 1 
+Survivor366966-1_mutated: 123 19 4 1 
+Random367214-32: 92 39 17 4 1 
+Random367258-1: 96 81 19 4 1 
+Child_Levy367458-40_mutated: 201 19 5 1 
+Random368212-25: 99 81 17 4 1 
+Random368722-17: 97 51 17 4 1 
+Random369712-24: 99 68 17 4 1 
+Survivor372226-1_mutated: 94 19 8 1 
+Survivor372729-1_mutated: 93 19 2 1 
+Random372987-4: 93 76 19 4 1 
+Random373022-5: 93 72 18 4 1 
+Random373085-31: 88 66 19 4 1 
+Survivor375401-1_mutated: 115 19 3 1 
+Random375641-23: 96 78 17 4 1 
+Survivor376760-1_mutated: 101 56 17 4 1 
+Child_Levy377072-12: 151 18 3 1 
+Random377440-28: 87 76 18 4 1 
+Random377446-26: 94 84 19 4 1 
+Random377578-4: 86 77 19 4 1 
+Survivor377917-1_mutated: 114 21 3 1 
+Survivor378187-1_mutated: 54 18 3 1 
+Child_Avg380049-23_mutated: 83 17 6 1 
+Random380261-14: 98 78 16 4 1 
+Child_Levy382338-12: 73 22 3 1 
+Child_Levy382362-56: 64 23 4 1 
+Random382420-35: 93 59 13 4 1 
+Survivor382506-1_mutated: 111 22 6 1 
+Survivor382577-1_mutated: 67 19 6 1 
+Survivor383280-1_mutated: 125 19 3 1 
+Survivor384960-1_mutated: 97 98 19 4 1 
+Survivor384965-1_mutated: 94 103 23 4 1 
+Random385556-25: 96 66 19 4 1 
+Survivor385570-1_mutated: 115 77 18 4 1 
+Survivor386776-1_mutated: 60 22 4 1 
+Survivor387195-1_mutated: 97 23 3 1 
+Survivor387440-1_mutated: 51 22 4 1 
+Survivor388208-1_mutated: 65 19 6 1 
+Random388883-7: 93 36 18 4 1 
+Random390995-8: 95 68 17 4 1 
+Survivor392046-1_mutated: 103 18 5 1 
+Survivor392544-1_mutated: 66 19 6 1 
+Child_Levy393227-48: 63 13 6 1 
+Survivor393638-1_mutated: 73 16 6 1 
+Random394030-1: 95 61 17 4 1 
+Random394083-4: 96 74 16 4 1 
+Random394845-13: 93 65 18 4 1 
+Survivor396779-1_mutated: 123 21 5 1 
+Survivor396782-1_mutated: 123 21 4 1 
+Random396871-20: 94 61 17 4 1 
+Child_Levy397106-32: 71 27 6 1 
+Survivor397107-1_mutated: 83 27 4 1 
+Random397408-29: 99 80 18 4 1 
+Random398102-16: 88 75 18 4 1 
+Survivor398290-1_mutated: 112 24 4 1 
+Survivor398923-1_mutated: 84 26 6 1 
+Child_Levy399140-56: 79 14 6 1 
+Random399419-21: 95 66 19 4 1 
+Survivor399434-1_mutated: 108 24 4 1 
+Survivor399593-1_mutated: 122 21 4 1 
+Random399833-33: 98 79 17 4 1 
+Random400503-7: 97 84 19 4 1 
+Child_Levy404080-56: 161 18 5 1 
+Survivor404637-1_mutated: 106 82 18 4 1 
+Random405442-13: 97 65 18 4 1 
+Child_Levy407818-52: 69 21 3 1 
+Random408083-33: 98 67 18 4 1 
+Survivor411288-1_mutated: 84 21 8 1 
+Random411527-35: 93 73 17 4 1 
+Random411796-24: 96 79 16 4 1 
+Survivor412716-1_mutated: 81 21 6 1 
+Random415244-28: 92 49 18 4 1 
+Random417841-14: 99 38 19 4 1 
+Child_Levy417900-32: 83 13 6 1 
+Survivor418532-1_mutated: 109 17 4 1 
+Survivor419230-1_mutated: 95 19 7 1 
+Survivor419688-1_mutated: 122 21 3 1 
+Survivor421487-1_mutated: 87 21 6 1 
+Random422062-8: 93 49 18 4 1 
+Survivor424221-1_mutated: 94 26 4 1 
+Child_Levy424737-32: 73 17 7 1 
+Survivor425240-1_mutated: 110 23 3 1 
+Survivor425358-1_mutated: 123 19 6 1 
+Random425610-25: 94 49 18 4 1 
+Child_Levy426188-12: 88 22 6 1 
+Survivor426206-1_mutated: 88 22 7 1 
+Survivor426215-1_mutated: 80 22 8 1 
+Survivor427798-1_mutated: 112 18 3 1 
+Random428827-30: 93 64 18 4 1 
+Child_Levy429266-8_mutated: 72 29 7 1 
+Child_Levy429269-28: 74 21 6 1 
+Child_Levy431751-16_mutated: 157 19 4 1 
+Random433267-35: 81 71 19 4 1 
+Survivor433748-1_mutated: 110 77 18 3 1 
+Random433835-24: 82 65 18 4 1 
+Random434412-18: 87 59 16 4 1 
+Survivor435519-1_mutated: 116 22 5 1 
+Survivor435597-1_mutated: 102 18 3 1 
+Survivor435892-1_mutated: 92 72 18 4 1 
+Survivor436529-1_mutated: 98 62 19 3 1 
+Survivor436583-1_mutated: 117 17 4 1 
+Survivor436584-1_mutated: 117 21 5 1 
+Survivor437595-1_mutated: 60 23 4 1 
+Survivor438330-1_mutated: 90 21 6 1 
+Survivor438348-1_mutated: 107 21 8 1 
+Child_Avg438351-3: 97 19 7 1 
+Random439619-8: 87 66 19 4 1 
+Survivor440228-1_mutated: 113 22 5 1 
+Random441428-28: 95 78 17 4 1 
+Survivor441721-1_mutated: 90 85 19 4 1 
+Random443639-35: 93 75 19 4 1 
+Random444370-25: 96 60 18 4 1 
+Random445314-3: 84 62 18 4 1 
+Random445803-26: 94 85 19 4 1 
+Child_Levy446722-40: 22 6 1 
+Child_Levy448302-60: 19 6 1 
+Child_Levy456568-12: 22 7 1 
+Child_Levy465621-64: 22 3 1 
+Child_Levy1520813-36: 19 130 1 

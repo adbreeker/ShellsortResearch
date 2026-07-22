@@ -1,0 +1,44 @@
+2|Child_Levy|32: 5 1 
+3|Child_LevyP1|9|Mutated: 8 1 
+4|Child_CrossABC2|8|Mutated|Validated: 9 1 
+8247|Child_Levy|52: 7 1 
+9774|Child_Levy|52: 6 1 
+
+2|Child_Levy|60: 5 1 
+3|Child_CrossABC1|1|Mutated: 6 1 
+4|Child_LevyP1|3: 7 1 
+5|Child_LevyABC2|12: 9 1 
+111|Child_LevyP2|10|Validated: 8 1
+
+2|Child_LevyABC2|12|Mutated: 6 1 
+3|Child_CrossABC2|8: 7 1 
+4|Child_LevyP1|3: 8 1 
+5|Child_LevyP2|4: 9 1 
+
+2|Child_LevyP2|4: 5 1 
+3|Child_CrossABC1|1: 6 1 
+4|Child_LevyABC1|11: 7 1 
+5|Child_LevyABC1|11: 9 1 
+1423|Child_CrossABC2|2: 8 1 
+
+2|Child_LevyP1|3: 5 1 
+3|Child_LevyP1|3: 6 1 
+4|Child_LevyP1|3: 7 1 
+5|Child_LevyP1|3: 8 1 
+6|Child_LevyP2|4: 9 1 
+
+2|Child_LevyP1|3: 5 1 
+3|Child_LevyP1|3: 6 1 
+4|Child_LevyP2|4|Mutated: 7 1 
+5|Child_LevyABC2|6: 9 1 
+1060|Survivor|1|Mutated: 8 1 
+
+2|Child_Levy|16: 5 1 
+3|Child_LevyP1|3: 6 1 
+4|Child_LevyP2|4: 7 1 
+5|Child_LevyABC2|12: 8 1 
+6|Child_LevyP1|3: 9 1 
+
+2|Child_LevyABC2|12: 7 1 
+3|Child_LevyABC2|12: 9 1 
+1145|Child_LevyABC1|11: 8 1 
