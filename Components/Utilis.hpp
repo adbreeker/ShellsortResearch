@@ -4,6 +4,7 @@
 #include <iostream>
 #include <random>
 #include <vector>
+#include <omp.h>
 
 namespace utilis
 {
@@ -33,15 +34,19 @@ namespace utilis
 
     std::vector<int> GetRandomSortingData(unsigned long sortingRange)
     {
-        std::random_device rd;
-        std::mt19937 gen(rd());
-        std::uniform_int_distribution<int> dist(-10000, 10000);
-
         std::vector<int> data(sortingRange);
-        #pragma omp parallel for
-        for (std::size_t i = 0; i < data.size(); ++i)
+
+        #pragma omp parallel
         {
-            data[i] = dist(gen);
+            std::random_device rd;
+            std::mt19937 gen(rd() ^ static_cast<unsigned int>(omp_get_thread_num()));
+            std::uniform_int_distribution<int> dist(-10000, 10000);
+
+            #pragma omp for
+            for (std::size_t i = 0; i < data.size(); ++i)
+            {
+                data[i] = dist(gen);
+            }
         }
 
         return data;
