@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 100; 
+const unsigned long SORTING_RANGE = 1000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -65,7 +65,7 @@ int main()
     //     }
     // }
 
-    //search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+    search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
     // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5.txt")) gapSequences.push_back(gs);
     // auto results = CompareShellSorts(SORTING_RANGE, gapSequences, 1000);
