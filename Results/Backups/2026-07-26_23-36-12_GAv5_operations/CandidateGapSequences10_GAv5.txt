@@ -1,0 +1,30 @@
+3|Child_LevyABC1|11: 6 1 
+4|Child_LevyP2|4: 7 1 
+10|Child_Levy|40: 8 1 
+70|Child_Levy|56: 9 1 
+
+3|Child_LevyABC2|12|Mutated: 7 1 
+4|Child_CrossABC2|2: 8 1 
+17|Child_Levy|36: 6 1 
+72|Child_Levy|52: 9 1 
+
+4|Child_LevyABC1|11: 6 1 
+5|Child_LevyP2|4: 7 1 
+6|Child_CrossABC2|2: 8 1 
+127|Child_LevyP1|9: 9 1 
+
+3|Child_LevyABC1|5: 6 1 
+4|Child_LevyP1|9: 7 1 
+6|Child_Levy|12: 8 1 
+22|Child_LevyP2|10: 9 1 
+
+2|Child_Levy|52: 5 1 
+3|Child_CrossABC2|8: 7 1 
+4|Child_CrossABC2|2: 8 1 
+40|Child_Levy|52: 6 1 
+75|Child_LevyP1|3: 9 1 
+
+3|Child_LevyABC1|5: 7 1 
+4|Child_LevyP2|4: 8 1 
+16|Child_Levy|44: 6 1 
+143|Child_Levy|28: 9 1 
