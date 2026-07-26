@@ -6,7 +6,6 @@
 #include <vector>
 #include <string>
 #include <fstream>
-#include <tuple>
 #include "../Utilis.hpp"
 #include "../Shellsort.hpp"
 #include "../ShellsortComparisions.hpp"
