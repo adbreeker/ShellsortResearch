@@ -9,7 +9,7 @@
 #include "Components/SearchingAlgorithms/CuckooSearch.hpp"
 #include "Components/SearchingAlgorithms/ArtificialBeeColony.hpp"
 #include "Components/Shellsort.hpp"
-#include "Components/ShellsortComparisions.hpp"
+#include "Components/ShellsortComparisons.hpp"
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 

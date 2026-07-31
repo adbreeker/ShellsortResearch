@@ -8,7 +8,7 @@
 #include <fstream>
 #include "../Utilis.hpp"
 #include "../Shellsort.hpp"
-#include "../ShellsortComparisions.hpp"
+#include "../ShellsortComparisons.hpp"
 #include "../FilesManagement.hpp"
 
 namespace search_abc

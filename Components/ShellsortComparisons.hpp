@@ -1,5 +1,5 @@
-#ifndef SHELLSORT_COMPARISIONS_HPP
-#define SHELLSORT_COMPARISIONS_HPP
+#ifndef SHELLSORT_COMPARISONS_HPP
+#define SHELLSORT_COMPARISONS_HPP
 
 
 #include <iostream>
@@ -128,4 +128,4 @@ bool IsGapSequenceIn(const GapSequence& sequence, const std::vector<GapSequence>
 }
 
 
-#endif // !SHELLSORT_COMPARISIONS_HPP
+#endif // !SHELLSORT_COMPARISONS_HPP

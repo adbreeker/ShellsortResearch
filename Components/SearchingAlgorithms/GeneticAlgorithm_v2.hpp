@@ -7,7 +7,7 @@
 #include <string>
 #include <fstream>
 #include "../Shellsort.hpp"
-#include "../ShellsortComparisions.hpp"
+#include "../ShellsortComparisons.hpp"
 #include "../FilesManagement.hpp"
 
 namespace search_genetic_v2

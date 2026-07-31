@@ -7,7 +7,7 @@
 #include <string>
 #include <fstream>
 #include "../Shellsort.hpp"
-#include "../ShellsortComparisions.hpp"
+#include "../ShellsortComparisons.hpp"
 #include "../FilesManagement.hpp"
 
 namespace search_cuckoo
@@ -30,7 +30,7 @@ namespace search_cuckoo
 
     GapSequence PerformLevyFlight(GapSequence currentSolution, double beta, double stepSizeMultiplier = 0.01)
     {
-        //std::cout << "\nLeavy in: ";
+        //std::cout << "\nLevy in: ";
         //currentSolution.PrintInstance();
 
         for (std::size_t i = 0; i + 1 < currentSolution.gaps.size(); ++i)
@@ -48,7 +48,7 @@ namespace search_cuckoo
             currentSolution.gaps[i] = static_cast<unsigned long>(newGap);
         }
 
-        //std::cout << "\nLeavy out: ";
+        //std::cout << "\nLevy out: ";
         //currentSolution.PrintInstance();
 
         return currentSolution;

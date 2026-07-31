@@ -8,7 +8,7 @@
 #include <fstream>
 #include "../Utilis.hpp"
 #include "../Shellsort.hpp"
-#include "../ShellsortComparisions.hpp"
+#include "../ShellsortComparisons.hpp"
 #include "../FilesManagement.hpp"
 #include "CuckooSearch.hpp"
 
@@ -40,7 +40,7 @@ namespace search_genetic_v5
         return gapSequence;
     }
 
-    //Best 4, unscaled - 1 survivor and 3 top pretendents crossed for exploitation of best solutions
+    //Best 4, unscaled - 1 survivor and 3 top contenders crossed for exploitation of best solutions
     std::vector<GapSequence> CrossParentsForExploitation(std::vector<GapSequence> parents, int populationIndex)
     {
         std::vector<GapSequence> childs;
