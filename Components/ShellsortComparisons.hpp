@@ -48,21 +48,13 @@ Result MeasureShellsort_Full(std::vector<int> data, GapSequence gapSequence)
     return Result{ elapsed.count(), (double)std::get<0>(stats), (double)std::get<1>(stats), (double)std::get<2>(stats), gapSequence };
 }
 
-std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<GapSequence> gapSequences, int iterations, bool debugs = false)
+std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<GapSequence> gapSequences, int iterations)
 {
     int sortsCount = gapSequences.size();
     std::vector<Result> avgResults(sortsCount);
 
-    if (debugs) { std::cout << " - Compare iterations:"; }
-
     for (int i = 0; i < iterations; i++)
     {
-        if (debugs)
-        {
-            if (i % 50 == 0) std::cout << "\n";
-            std::cout << "+";
-        }
-
         std::vector<int> data = utilis::GetRandomSortingData(sortingRange);
 
         // Use OpenMP for parallel execution
