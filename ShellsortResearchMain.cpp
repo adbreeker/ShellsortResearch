@@ -68,7 +68,7 @@ int main()
     search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
     // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5.txt")) gapSequences.push_back(gs);
-    // auto results = CompareShellSorts(SORTING_RANGE, gapSequences, 1000);
+    // auto results = CompareShellsorts(SORTING_RANGE, gapSequences, 1000);
     // PrintResults(results, 10);
     // std::vector<GapSequence> finalGroup = 
     // { 
@@ -83,7 +83,7 @@ int main()
     //     results[4].gapSequence,
     //     results[5].gapSequence
     // };
-    // auto finalResults = CompareShellSorts(SORTING_RANGE, finalGroup, 10000);
+    // auto finalResults = CompareShellsorts(SORTING_RANGE, finalGroup, 10000);
     // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
     //     return a.GetFitnessScore() < b.GetFitnessScore();
     //     });
@@ -100,7 +100,7 @@ int main()
     //     GapSequence("GAv3-10000|Top2", { 2304, 919, 390, 159, 69, 28, 12, 5, 1 }),
     //     GapSequence("GAv3-10000|Top1", { 3170, 983, 432, 191, 93, 35, 13, 5, 1 }),
     // };
-    // auto finalResults = CompareShellSorts(sortingRange, finalGroup, 10000);
+    // auto finalResults = CompareShellsorts(sortingRange, finalGroup, 10000);
     // // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
     // //     return a.time < b.time;
     // //     });

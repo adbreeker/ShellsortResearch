@@ -46,7 +46,7 @@ class GapSequence
     }
 };
 
-void ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+void Shellsort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
 {
     for (unsigned long gap : gaps)
     {
@@ -63,7 +63,7 @@ void ShellSort(std::vector<int>& arr, std::vector<unsigned long>& gaps)
     }
 }
 
-std::tuple<unsigned long, unsigned long, unsigned long> ShellSort_Stats(std::vector<int>& arr, std::vector<unsigned long>& gaps)
+std::tuple<unsigned long, unsigned long, unsigned long> Shellsort_Stats(std::vector<int>& arr, std::vector<unsigned long>& gaps)
 {
     unsigned long comparisons = 0;
     unsigned long loops = 0;

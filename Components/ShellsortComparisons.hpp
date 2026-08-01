@@ -25,30 +25,30 @@ struct Result
     }
 };
 
-double MeasureShellSort_Time(std::vector<int> data, GapSequence gapSequence)
+double MeasureShellsort_Time(std::vector<int> data, GapSequence gapSequence)
 {
     auto start = std::chrono::high_resolution_clock::now();
-    ShellSort(data, gapSequence.gaps);
+    Shellsort(data, gapSequence.gaps);
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
     return elapsed.count();
 }
 
-Result MeasureShellSort_Full(std::vector<int> data, GapSequence gapSequence)
+Result MeasureShellsort_Full(std::vector<int> data, GapSequence gapSequence)
 {
     //comparisons, loops, operations
     std::tuple<unsigned long, unsigned long, unsigned long> stats;
 
     auto start = std::chrono::high_resolution_clock::now();
-    stats = ShellSort_Stats(data, gapSequence.gaps);
+    stats = Shellsort_Stats(data, gapSequence.gaps);
     auto stop = std::chrono::high_resolution_clock::now();
 
     std::chrono::duration<double, std::milli> elapsed = stop - start;
     return Result{ elapsed.count(), (double)std::get<0>(stats), (double)std::get<1>(stats), (double)std::get<2>(stats), gapSequence };
 }
 
-std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<GapSequence> gapSequences, int iterations, bool debugs = false)
+std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<GapSequence> gapSequences, int iterations, bool debugs = false)
 {
     int sortsCount = gapSequences.size();
     std::vector<Result> avgResults(sortsCount);
@@ -71,7 +71,7 @@ std::vector<Result> CompareShellSorts(unsigned long sortingRange, std::vector<Ga
         #pragma omp parallel for
         for (int j = 0; j < sortsCount; j++)
         {
-            results[j] = MeasureShellSort_Full(data, gapSequences[j]);
+            results[j] = MeasureShellsort_Full(data, gapSequences[j]);
         }
 
         if (i == 0)

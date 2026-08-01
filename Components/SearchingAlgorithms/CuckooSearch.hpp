@@ -120,10 +120,10 @@ namespace search_cuckoo
             std::cout << "Sum of sequences: " << algorithmGapSequences.size() << "\n";
 
             std::cout << "\nCuckoo generated gaps";
-            results = CompareShellSorts(sortingRange, algorithmGapSequences, tryoutsIterations);
+            results = CompareShellsorts(sortingRange, algorithmGapSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best";
-            GapSequence best = CompareShellSorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
+            GapSequence best = CompareShellsorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
             if (best == results[0].gapSequence && !IsGapSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);

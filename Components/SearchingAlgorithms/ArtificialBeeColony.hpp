@@ -61,7 +61,7 @@ namespace search_abc
             neighborSolution.name = std::to_string(populationIndex) + "|EmployedNeighborhood|" + std::to_string(i + 1);
             currentFoodSource.name = std::to_string(populationIndex) + "|EmployedRemaining|" + std::to_string(i + 1); 
 
-            Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
+            Result better = CompareShellsorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
             if (better.gapSequence == neighborSolution)
             {
@@ -123,7 +123,7 @@ namespace search_abc
             neighborSolution.name = std::to_string(populationIndex) + "|OnlookerNeighborhood|" + std::to_string(selectedIndex + 1);
             currentFoodSource.name = std::to_string(populationIndex) + "|OnlookerRemaining|" + std::to_string(selectedIndex + 1); 
 
-            Result better = CompareShellSorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
+            Result better = CompareShellsorts(sortingRange, { currentFoodSource, neighborSolution }, 10)[0];
 
             if (better.gapSequence == neighborSolution)
             {
@@ -200,10 +200,10 @@ namespace search_abc
             std::cout << "\nABC generated gaps";
             algorithmGapSequences.clear();
             for (FoodSource& fs : foodSources) algorithmGapSequences.push_back(fs.gapSequence);
-            results = CompareShellSorts(sortingRange, algorithmGapSequences, tryoutsIterations);
+            results = CompareShellsorts(sortingRange, algorithmGapSequences, tryoutsIterations);
 
             std::cout << "\nChecking for new best";
-            GapSequence best = CompareShellSorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
+            GapSequence best = CompareShellsorts(sortingRange, { results[0].gapSequence, GetCiuraGaps(sortingRange), GetSkeanEhrenborgJaromczykGaps(sortingRange) }, tryoutsIterations, true)[0].gapSequence;
             if (best == results[0].gapSequence && !IsGapSequenceIn(best, alreadyFound))
             {
                 alreadyFound.push_back(best);
