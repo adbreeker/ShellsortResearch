@@ -55,17 +55,18 @@ std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<Ga
 
     for (int i = 0; i < iterations; i++)
     {
+        // Get random data for sorting
         std::vector<int> data = utilis::GetRandomSortingData(sortingRange);
 
-        // Use OpenMP for parallel execution
         std::vector<Result> results(sortsCount);
-
+        // Use OpenMP for parallel execution
         #pragma omp parallel for
         for (int j = 0; j < sortsCount; j++)
         {
             results[j] = MeasureShellsort_Full(data, gapSequences[j]);
         }
 
+        // Accumulate results for averaging
         if (i == 0)
         {
             for (int j = 0; j < sortsCount; j++)
@@ -84,13 +85,18 @@ std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<Ga
             }
         }
 
-        std::sort(results.begin(), results.end(), [](const Result& a, const Result& b) {
-            return a.GetFitnessScore() < b.GetFitnessScore();
-            });
+        // Getting best result for wins count
+        auto winner_it = std::min_element(results.begin(), results.end(), 
+            [](const Result& a, const Result& b) {
+                return a.GetFitnessScore() < b.GetFitnessScore();
+            }
+        );
+        Result winner = *winner_it;
 
-        for (Result& r : avgResults) if (r.gapSequence == results[0].gapSequence) { r.wins++; }
+        for (Result& r : avgResults) if (r.gapSequence == winner.gapSequence) { r.wins++; }
     }
 
+    // Average the results over the number of iterations
     for (Result& r : avgResults)
     {
         r.time = r.time / iterations;
@@ -99,7 +105,7 @@ std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<Ga
         r.operations = r.operations / iterations;
     }
 
-    // Sort results to find the fastest
+    // Sort results return order by fitness score
     std::sort(avgResults.begin(), avgResults.end(), [](const Result& a, const Result& b) {
         return a.GetFitnessScore() < b.GetFitnessScore();
         });
