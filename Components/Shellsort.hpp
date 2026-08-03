@@ -194,14 +194,9 @@ std::vector<unsigned long> GetRandomizedGaps(unsigned long sortingRange)
 {
     std::vector<unsigned long> randomizedGaps = { 1 };
 
-    std::random_device rd;
-    std::mt19937 gen(rd());
-    std::uniform_real_distribution<float> dist(1.1f, 5.0f);
-
     for (unsigned long k = 1; k < sortingRange; ++k)
     {
-
-        float x = dist(gen);
+        float x = utilis::GetRandomFloat(1.1f, 5.0f); 
         unsigned long gap;
         if (x < 2) { gap = (unsigned long)std::ceil(randomizedGaps[k - 1] * x); }
         else { gap = (unsigned long)std::floor(randomizedGaps[k - 1] * x); }
