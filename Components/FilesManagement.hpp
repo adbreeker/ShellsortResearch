@@ -5,23 +5,8 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include "Utilis.hpp"
 #include "Shellsort.hpp"
-
-std::vector<std::string> SplitString(std::string toSplit, const std::string& spliter)
-{
-    std::vector<std::string> tokens;
-    size_t start = 0, end;
-
-    while ((end = toSplit.find(spliter, start)) != std::string::npos)
-    {
-        std::string sub = toSplit.substr(start, end - start);
-        if (sub.length() > 0) tokens.push_back(sub);
-        start = end + spliter.length();
-    }
-    std::string sub = toSplit.substr(start);
-    if (sub.length() > 0) tokens.push_back(sub); // Last part after the final delimiter
-    return tokens;
-}
 
 namespace files
 {
@@ -61,11 +46,11 @@ namespace files
 
                 if (line.empty()) continue;
 
-                std::vector<std::string> splited = SplitString(line, ":");
+                std::vector<std::string> splited = utilis::SplitString(line, ":");
                 if (splited.size() < 2) continue;
 
                 std::string sequenceName = splited[0];
-                std::vector<std::string> strGaps = SplitString(splited[1], " ");
+                std::vector<std::string> strGaps = utilis::SplitString(splited[1], " ");
 
                 std::vector<unsigned long> gaps;
                 for (const std::string& gap : strGaps)
