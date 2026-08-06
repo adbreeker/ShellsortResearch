@@ -13,7 +13,7 @@ import numpy as np
 
 # --- CONFIGURATION ---
 
-RESULTS_DIR = "../Results"
+RESULTS_DIR = "../Results/Backups/"
 
 SORTING_RANGE = 10000
 
@@ -21,20 +21,16 @@ SORTING_RANGE = 10000
 # Key: Algorithm Identifier
 # Value: Filename
 FILES = {
-    "GAv1": f"CandidateGapSequences{SORTING_RANGE}_GAv1.txt",
-    "GAv2": f"CandidateGapSequences{SORTING_RANGE}_GAv2.txt",
-    "GAv3": f"CandidateGapSequences{SORTING_RANGE}_GAv3.txt",
-    "GAv4": f"CandidateGapSequences{SORTING_RANGE}_GAv4.txt",
-    "GAv5": f"CandidateGapSequences{SORTING_RANGE}_GAv5.txt"
+    "GAv1": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv1.txt",
+    "GAv2": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv2.txt",
+    "GAv3": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv3.txt",
 }
 
 # Display names for the algorithms (used in plots and text output)
 ALGO_NAMES = {
-    "GAv1": "Genetic Algorithm v1",
-    "GAv2": "Genetic Algorithm v2",
-    "GAv3": "Genetic Algorithm v3",
-    "GAv4": "Genetic Algorithm v4",
-    "GAv5": "Genetic Algorithm v5"
+    "GAv1": "Genetic Algorithm v1 (GAv1)",
+    "GAv2": "Genetic Algorithm v2 (GAv2)",
+    "GAv3": "Genetic Algorithm v3 (GAv3)",
 }
 
 # Generate output directory with current datetime

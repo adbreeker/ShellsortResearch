@@ -16,7 +16,7 @@ import numpy as np
 # The algorithm being analyzed (for titles/labels)
 TARGET_ALGO = "Genetic Algorithm v3"
 
-RESULTS_DIR = "../Results"
+RESULTS_DIR = "../Results/Backups/"
 
 # Maximum number of populations to analyze (e.g., 500000). 
 # Set to None to analyze all populations in the files.
@@ -31,16 +31,16 @@ MAX_SEQUENCES = None
 # Key: Range size (will be sorted numerically)
 # Value: Filename
 FILES = {
-    "1000": "CandidateGapSequences1000_GAv3.txt",
-    "2500": "CandidateGapSequences2500_GAv3.txt",
-    "5000": "CandidateGapSequences5000_GAv3.txt",
-    "7500": "CandidateGapSequences7500_GAv3.txt",
-    "10000": "CandidateGapSequences10000_GAv3.txt",
-    "100000": "CandidateGapSequences100000_GAv3.txt",
+    "100": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences100_GAv3.txt",
+    "1000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences1000_GAv3.txt",
+    "2500": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences2500_GAv3.txt",
+    "5000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences5000_GAv3.txt",
+    "10000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences10000_GAv3.txt",
+    "100000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences100000_GAv3.txt",
 }
 
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-OUTPUT_DIR = f'outputs/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis/{current_time}'
+OUTPUT_DIR = f'outputs/CandidateSequencesAnalysis/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis/{current_time}'
 
 # ---------------------
 
