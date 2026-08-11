@@ -21,7 +21,7 @@ struct Result
 
     double GetFitnessScore() const
     {
-        return operations;
+        return loops;
     }
 };
 

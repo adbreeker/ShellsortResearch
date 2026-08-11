@@ -21,9 +21,11 @@ SORTING_RANGE = 10000
 # Key: Algorithm Identifier
 # Value: Filename
 FILES = {
-    "GAv1": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv1.txt",
-    "GAv2": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv2.txt",
-    "GAv3": f"2026-07-17_02-13-47_GAv1-4_loops/CandidateGapSequences{SORTING_RANGE}_GAv3.txt",
+    "GAv1": f"2026-07-18_11-51-52_GAv1-5_loops/CandidateGapSequences{SORTING_RANGE}_GAv1.txt",
+    "GAv2": f"2026-07-18_11-51-52_GAv1-5_loops/CandidateGapSequences{SORTING_RANGE}_GAv2.txt",
+    "GAv3": f"2026-07-18_11-51-52_GAv1-5_loops/CandidateGapSequences{SORTING_RANGE}_GAv3.txt",
+    "GAv4": f"2026-07-18_11-51-52_GAv1-5_loops/CandidateGapSequences{SORTING_RANGE}_GAv4.txt",
+    "GAv5": f"2026-07-18_11-51-52_GAv1-5_loops/CandidateGapSequences{SORTING_RANGE}_GAv5.txt",
 }
 
 # Display names for the algorithms (used in plots and text output)
@@ -31,6 +33,8 @@ ALGO_NAMES = {
     "GAv1": "Genetic Algorithm v1 (GAv1)",
     "GAv2": "Genetic Algorithm v2 (GAv2)",
     "GAv3": "Genetic Algorithm v3 (GAv3)",
+    "GAv4": "Genetic Algorithm v4 (GAv4)",
+    "GAv5": "Genetic Algorithm v5 (GAv5)",
 }
 
 # Generate output directory with current datetime

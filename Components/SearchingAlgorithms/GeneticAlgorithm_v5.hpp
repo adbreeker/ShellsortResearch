@@ -198,7 +198,7 @@ namespace search_genetic_v5
             for (GapSequence& gs : newPopulation) { gs.ValidateSequence(sortingRange); }
         }
 
-        //Generate random solutions to fill the population with new genes (~27%-1 or 100%-1 if cataclysm event)
+        //Generate random solutions to fill the population with new genes (~28%-1 or 100%-1 if cataclysm event)
         for (std::size_t i = 0; newPopulation.size() < oldPopulation.size(); ++i)
         {
             newPopulation.push_back(GapSequence(

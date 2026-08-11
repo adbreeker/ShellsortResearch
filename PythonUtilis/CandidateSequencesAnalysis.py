@@ -14,7 +14,7 @@ import numpy as np
 # --- CONFIGURATION ---
 
 # The algorithm being analyzed (for titles/labels)
-TARGET_ALGO = "Genetic Algorithm v3"
+TARGET_ALGO = "Genetic Algorithm v5"
 
 RESULTS_DIR = "../Results/Backups/"
 
@@ -31,12 +31,12 @@ MAX_SEQUENCES = None
 # Key: Range size (will be sorted numerically)
 # Value: Filename
 FILES = {
-    "100": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences100_GAv3.txt",
-    "1000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences1000_GAv3.txt",
-    "2500": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences2500_GAv3.txt",
-    "5000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences5000_GAv3.txt",
-    "10000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences10000_GAv3.txt",
-    "100000": "2026-06-07_12-45-16_GAv3_loops/CandidateGapSequences100000_GAv3.txt",
+    "100": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences100_GAv5.txt",
+    "1000": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences1000_GAv5.txt",
+    "5000": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences5000_GAv5.txt",
+    "8000": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences8000_GAv5.txt",
+    "10000": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences10000_GAv5.txt",
+    "100000": "2026-07-22_13-13-38_GAv5_loops/CandidateGapSequences100000_GAv5.txt",
 }
 
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
