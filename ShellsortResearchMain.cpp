@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 2500; 
+const unsigned long SORTING_RANGE = 1000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -67,8 +67,8 @@ int main()
 
     search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
 
-    // for (GapSequence& gs : files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5.txt")) gapSequences.push_back(gs);
-    // auto results = CompareShellsorts(SORTING_RANGE, gapSequences, 1000);
+    // std::vector<GapSequence> filesGaps = files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5-nr2.txt");
+    // auto results = CompareShellsorts(SORTING_RANGE, filesGaps, 1000);
     // PrintResults(results, 10);
     // std::vector<GapSequence> finalGroup = 
     // { 
@@ -89,20 +89,21 @@ int main()
     //     });
     // PrintResults(finalResults, finalGroup.size()); 
 
-    // unsigned long sortingRange = 1000;
-    // std::vector<GapSequence> finalGroup = 
+    // unsigned long sortingRange = 5000;
+    // std::vector<GapSequence> finalGroup2 = 
     // { 
     //     GetTokudaGaps(sortingRange),
     //     GetCiuraGaps(sortingRange),
     //     GetLeeGaps(sortingRange),
     //     GetSkeanEhrenborgJaromczykGaps(sortingRange),
-    //     GapSequence("GAv3-10000|Top3", { 2905, 891, 355, 160, 75, 29, 11, 5, 1 }),
-    //     GapSequence("GAv3-10000|Top2", { 2304, 919, 390, 159, 69, 28, 12, 5, 1 }),
-    //     GapSequence("GAv3-10000|Top1", { 3170, 983, 432, 191, 93, 35, 13, 5, 1 }),
+    //     GapSequence("GAv5-5000-1|Top1", { 1903, 517, 209, 90, 28, 12, 5, 1 }),
+    //     GapSequence("GAv5-5000-1|Top2", { 1879, 498, 191, 69, 30, 11, 5, 1 }),
+    //     GapSequence("GAv5-5000-2|Top1", finalResults[0].gapSequence.gaps),
+    //     GapSequence("GAv5-5000-2|Top2", finalResults[1].gapSequence.gaps),
     // };
-    // auto finalResults = CompareShellsorts(sortingRange, finalGroup, 10000);
+    // auto finalResults2 = CompareShellsorts(sortingRange, finalGroup2, 10000);
     // // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
     // //     return a.time < b.time;
     // //     });
-    // PrintResults(finalResults, 7); 
+    // PrintResults(finalResults2, finalGroup2.size()); 
 }
