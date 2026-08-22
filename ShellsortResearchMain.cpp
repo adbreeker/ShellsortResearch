@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 2000; 
+const unsigned long SORTING_RANGE = 9000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
