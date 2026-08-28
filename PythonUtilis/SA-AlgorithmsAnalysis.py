@@ -39,7 +39,7 @@ ALGO_NAMES = {
 
 # Generate output directory with current datetime
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-OUTPUT_DIR = f'outputs/SearchingAlgorithmsAnalysis/{current_time}'
+OUTPUT_DIR = f'outputs/SA-AlgorithmsAnalysis/{current_time}'
 
 # ---------------------
 

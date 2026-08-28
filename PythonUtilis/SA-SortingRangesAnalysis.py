@@ -40,7 +40,7 @@ FILES = {
 }
 
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-OUTPUT_DIR = f'outputs/CandidateSequencesAnalysis/{TARGET_ALGO.replace(" ", "")}_RangeAnalysis/{current_time}'
+OUTPUT_DIR = f'outputs/SA-SortingRangesAnalysis/{TARGET_ALGO.replace(" ", "")}/{current_time}'
 
 # ---------------------
 
