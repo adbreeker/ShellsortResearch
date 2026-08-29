@@ -45,5 +45,5 @@ def remove_duplicates_inplace(filepath):
     print(f"Duplicates removed: {duplicate_count} ({duplicate_percentage:.2f}%)")
 
 if __name__ == "__main__":
-    path = "../Results/FinalSets/Criterion-Comparisons/CandidateGapSequences_100000.txt"
+    path = "../Results/FinalSets/Criterion-Comparisons/CandidateGapSequences_Merge.txt"
     remove_duplicates_inplace(path)
