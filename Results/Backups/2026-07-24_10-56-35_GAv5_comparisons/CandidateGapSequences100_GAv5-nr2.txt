@@ -1,0 +1,1561 @@
+2|Child_LevyP1|3: 83 33 9 4 1 
+4|Child_Avg|31: 29 9 4 1 
+10|Child_Cross12|9: 30 9 4 1 
+14|Child_Avg|47: 33 9 4 1 
+15|Child_CrossABC1|1: 31 10 4 1 
+18|Child_Avg|35: 28 9 4 1 
+21|Child_Avg|11|Mutated: 29 10 4 1 
+44|Child_Cross12|17|Mutated: 38 9 4 1 
+68|Random|16: 42 11 4 1 
+76|Child_Avg|47: 94 38 9 4 1 
+80|Child_Cross21|26: 39 9 4 1 
+85|Child_Cross12|5|Mutated: 34 9 4 1 
+86|Child_CrossABC2|8|Mutated: 35 11 4 1 
+103|Child_Avg|35: 37 9 4 1 
+107|Child_CrossABC1|7|Mutated: 38 11 4 1 
+121|Random|27: 42 9 4 1 
+126|Child_Avg|19: 39 11 4 1 
+160|Child_Cross12|29: 60 13 4 1 
+162|Child_Cross21|14: 28 11 4 1 
+226|Child_Levy|40: 27 10 4 1 
+276|Child_Avg|55|Mutated: 35 11 5 1 
+289|Survivor|1: 24 9 4 1 
+322|Random|26: 98 27 8 3 1 
+342|Child_Cross12|5: 43 9 4 1 
+346|Child_Levy|52: 32 10 3 1 
+372|Child_Cross12|29: 91 23 10 4 1 
+375|Child_LevyABC1|11: 35 12 5 1 
+381|Child_Cross12|9: 28 10 3 1 
+451|Child_Cross12|41: 35 10 3 1 
+464|Child_Cross21|6: 87 25 10 4 1 
+469|Child_Cross12|13: 96 29 9 4 1 
+479|Child_Avg|11: 92 29 9 4 1 
+481|Child_Cross12|5: 97 29 9 4 1 
+522|Child_Cross21|54: 40 9 4 1 
+576|Child_Cross21|6: 31 11 4 1 
+588|Random|18: 23 10 4 1 
+614|Child_LevyP1|9: 30 11 5 1 
+626|Child_Cross21|54: 97 38 9 4 1 
+641|Child_Levy|12: 36 10 3 1 
+650|Child_Levy|60: 37 10 4 1 
+691|Child_LevyP2|10: 40 11 5 1 
+738|Child_Avg|51: 35 9 4 1 
+741|Random|26: 89 25 10 4 1 
+837|Child_Cross21|34: 80 33 9 4 1 
+950|Random|29: 77 36 10 3 1 
+956|Child_Cross12|57: 99 28 9 4 1 
+976|Child_Levy|52: 38 10 3 1 
+1001|Random|12: 32 11 4 1 
+1003|Random|27: 92 33 9 4 1 
+1011|Child_Cross12|41: 91 33 9 4 1 
+1018|Child_CrossABC2|8: 90 33 9 4 1 
+1019|Child_CrossABC1|7: 88 33 9 4 1 
+1021|Child_Cross12|9: 94 33 9 4 1 
+1031|Child_Avg|15: 89 33 9 4 1 
+1034|Child_Avg|55: 90 35 9 4 1 
+1040|Child_Levy|48: 90 31 10 4 1 
+1045|Child_CrossABC1|1: 88 34 9 4 1 
+1047|Child_CrossABC1|1: 89 34 9 4 1 
+1048|Child_Avg|51: 87 33 9 4 1 
+1049|Child_Cross12|21: 79 33 9 4 1 
+1053|Child_Cross21|6: 86 33 9 4 1 
+1062|Child_Cross21|30: 85 33 9 4 1 
+1072|Child_Cross21|30: 94 29 9 4 1 
+1078|Child_Cross21|18: 93 33 9 4 1 
+1081|Child_Levy|52: 88 32 10 3 1 
+1082|Child_Avg|39: 95 33 9 4 1 
+1085|Child_CrossABC1|1: 96 33 9 4 1 
+1119|Survivor|1: 88 25 10 4 1 
+1142|Child_Cross12|13: 94 25 9 4 1 
+1170|Random|41: 45 13 4 1 
+1228|Child_CrossABC2|2: 32 13 4 1 
+1245|Random|16: 88 30 9 4 1 
+1292|Child_Cross12|29: 91 29 9 4 1 
+1300|Child_Cross12|9: 91 28 9 4 1 
+1353|Child_Avg|59: 33 10 4 1 
+1369|Child_LevyP2|10: 94 29 10 4 1 
+1382|Child_Cross12|53: 96 28 9 4 1 
+1385|Child_Cross12|21|Mutated: 95 29 9 4 1 
+1391|Random|11: 81 33 9 4 1 
+1433|Child_Cross12|45: 33 14 4 1 
+1434|Child_Levy|56: 42 12 5 1 
+1478|Child_LevyABC2|6: 36 11 5 1 
+1481|Child_LevyP2|4|Mutated: 41 11 5 1 
+1502|Random|16: 91 28 11 4 1 
+1611|Child_Cross21|34: 81 25 9 4 1 
+1619|Survivor|1: 88 28 9 4 1 
+1629|Child_Cross12|41: 91 24 9 4 1 
+1733|Child_Cross12|1: 98 37 9 4 1 
+1734|Child_Cross21|50: 91 25 9 4 1 
+1737|Child_Cross12|53: 90 29 9 4 1 
+1738|Child_CrossABC1|7: 41 13 4 1 
+1753|Child_Cross12|33: 43 10 3 1 
+1795|Random|23: 96 36 10 3 1 
+1821|Child_Levy|16: 94 27 10 4 1 
+1848|Random|12: 93 38 9 4 1 
+1876|Child_Avg|27: 31 10 3 1 
+1965|Child_CrossABC2|8|Mutated: 40 12 5 1 
+2030|Random|25: 49 11 4 1 
+2069|Child_Avg|51: 31 9 4 1 
+2087|Child_CrossABC2|2: 28 13 4 1 
+2228|Child_Cross21|58: 85 29 10 4 1 
+2229|Child_Cross21|34: 85 29 9 4 1 
+2230|Random|25: 80 29 9 4 1 
+2232|Child_CrossABC2|2: 81 29 9 4 1 
+2235|Child_Cross21|6: 82 29 9 4 1 
+2239|Child_Cross12|17: 83 29 10 4 1 
+2288|Child_Cross21|10: 83 24 9 4 1 
+2307|Survivor|1|Mutated: 82 24 9 4 1 
+2391|Random|7: 90 37 13 4 1 
+2433|Child_Avg|11: 86 34 9 4 1 
+2477|Child_Avg|35: 84 29 9 4 1 
+2480|Child_Cross21|6: 92 24 9 4 1 
+2487|Child_Cross12|21: 90 27 10 4 1 
+2490|Child_Avg|23: 87 28 9 4 1 
+2493|Child_Cross12|9: 87 25 9 4 1 
+2509|Child_Cross21|50: 88 25 9 4 1 
+2511|Child_Cross12|17: 89 24 9 4 1 
+2522|Child_Cross21|50: 88 24 9 4 1 
+2525|Child_Cross21|42: 89 25 9 4 1 
+2655|Child_Cross12|33: 93 34 9 4 1 
+2788|Random|9: 85 39 9 4 1 
+2790|Child_Cross21|38: 89 28 10 3 1 
+2796|Child_Cross12|17: 80 34 9 4 1 
+2948|Random|13: 93 36 13 4 1 
+2951|Child_Cross21|6: 39 10 4 1 
+2978|Child_Cross12|49: 39 10 3 1 
+2986|Child_Levy|36|Mutated: 49 13 4 1 
+2989|Child_LevyP2|10: 83 38 9 4 1 
+3022|Random|19: 96 27 10 4 1 
+3044|Random|73: 37 13 4 1 
+3298|Survivor|1: 36 13 4 1 
+3352|Random|12: 46 13 4 1 
+3470|Survivor|1: 99 38 9 4 1 
+3701|Random|15: 46 11 4 1 
+3730|Child_Cross21|2: 84 24 9 4 1 
+3776|Child_Avg|7: 93 29 9 4 1 
+3831|Random|2: 95 27 10 4 1 
+3935|Child_Cross12|17: 83 25 9 4 1 
+3936|Child_Cross21|26: 43 11 4 1 
+4057|Child_LevyABC2|6: 28 12 5 1 
+4103|Child_Cross12|1|Mutated: 86 30 9 4 1 
+4160|Child_CrossABC1|7: 42 10 3 1 
+4179|Random|1: 98 42 9 4 1 
+4282|Child_Cross12|33: 77 29 9 4 1 
+4418|Random|23: 72 17 10 4 1 
+4526|Child_Cross12|5|Mutated: 86 25 10 4 1 
+4528|Child_Cross12|17|Mutated: 86 25 9 4 1 
+4547|Random|19: 91 58 13 4 1 
+4755|Random|24: 69 28 11 4 1 
+4872|Child_Cross12|33: 96 36 11 5 1 
+4874|Child_Cross12|13: 85 33 10 3 1 
+5142|Child_LevyP2|10: 35 10 4 1 
+5239|Child_Levy|16|Mutated: 24 11 4 1 
+5264|Random|15: 97 31 10 4 1 
+5428|Child_CrossABC2|2: 98 31 14 4 1 
+5429|Child_Cross21|34: 78 34 9 4 1 
+5596|Child_Cross21|6: 87 24 9 4 1 
+5746|Random|80: 31 14 4 1 
+5974|Child_CrossABC1|7: 97 33 9 4 1 
+6011|Child_Cross12|41: 99 24 9 4 1 
+6106|Random|2: 83 29 9 4 1 
+6116|Random|19: 92 29 10 4 1 
+6148|Child_Cross21|26: 41 9 4 1 
+6214|Random|37: 99 29 9 4 1 
+6258|Child_Cross12|49: 93 29 10 4 1 
+6259|Child_Cross12|9|Mutated: 88 29 9 4 1 
+6267|Random|35: 96 29 14 4 1 
+6368|Child_Cross12|25: 95 24 9 4 1 
+6397|Child_Cross21|22|Mutated: 85 37 9 4 1 
+6438|Child_Cross12|41: 92 25 9 4 1 
+6507|Child_Cross12|13: 96 38 9 4 1 
+6588|Random|12: 75 29 10 4 1 
+6637|Child_Cross12|45: 75 29 9 4 1 
+6762|Child_LevyP2|10: 77 34 9 4 1 
+6771|Child_Cross12|45: 87 38 9 4 1 
+6838|Child_Avg|31: 41 10 3 1 
+6916|Child_LevyABC2|12: 30 12 5 1 
+6955|Random|4: 84 30 9 4 1 
+7140|Child_Cross21|22: 79 29 9 4 1 
+7194|Child_CrossABC2|8: 44 9 4 1 
+7245|Random|38: 98 29 10 3 1 
+7248|Child_Cross12|25: 96 31 10 4 1 
+7313|Child_Cross21|18: 99 29 10 4 1 
+7451|Child_Cross12|21|Mutated: 91 30 9 4 1 
+7562|Random|14: 90 34 9 4 1 
+7615|Child_Cross12|17: 36 11 4 1 
+7621|Random|7: 97 24 9 4 1 
+7716|Child_CrossABC2|8: 89 31 10 4 1 
+7734|Child_Cross12|49: 93 35 10 4 1 
+7811|Child_LevyP1|3: 92 38 9 4 1 
+7987|Child_Cross12|9: 91 34 9 4 1 
+8015|Child_Cross12|1: 86 24 9 4 1 
+8063|Child_Cross21|2: 37 14 4 1 
+8260|Random|25: 97 37 9 4 1 
+8354|Survivor|1: 94 35 9 4 1 
+8357|Child_Cross12|5: 94 35 11 4 1 
+8360|Child_Cross12|9: 92 34 9 4 1 
+8370|Child_Cross21|46: 92 30 9 4 1 
+8371|Child_Cross12|13: 89 29 9 4 1 
+8585|Child_Cross21|2: 86 32 13 4 1 
+8660|Random|22: 94 33 10 4 1 
+8686|Child_Avg|27: 28 8 3 1 
+8748|Random|23: 83 34 9 4 1 
+8844|Child_Cross12|41: 85 24 9 4 1 
+8845|Child_Cross12|25: 82 25 10 4 1 
+9065|Child_Avg|19: 27 8 3 1 
+9113|Random|17: 98 29 9 4 1 
+9169|Child_CrossABC2|2: 82 33 9 4 1 
+9185|Child_Levy|28: 89 32 10 3 1 
+9193|Child_Cross21|58: 86 29 9 4 1 
+9194|Child_Cross12|9: 85 33 10 4 1 
+9198|Child_LevyP1|3: 91 35 10 3 1 
+9212|Child_CrossABC2|2: 89 37 9 4 1 
+9220|Child_Avg|15|Mutated: 87 34 9 4 1 
+9222|Child_Avg|31|Mutated: 84 34 9 4 1 
+9230|Child_Cross12|33|Mutated: 92 31 10 4 1 
+9285|Child_Cross12|41: 90 33 10 4 1 
+9347|Child_Cross12|33: 92 27 10 4 1 
+9615|Random|47: 64 25 10 4 1 
+9719|Child_Cross12|1: 85 27 10 4 1 
+9831|Child_Cross12|25: 89 28 9 4 1 
+9856|Child_Levy|20: 89 29 10 4 1 
+9881|Child_Cross12|5: 97 28 9 4 1 
+10342|Child_Levy|16: 97 34 9 4 1 
+10729|Child_LevyP2|4: 37 12 5 1 
+11201|Child_Cross12|29: 89 21 10 4 1 
+11398|Random|35: 93 24 9 4 1 
+11421|Child_Cross12|45: 94 28 9 4 1 
+11559|Random|14: 92 37 9 4 1 
+11722|Random|19: 64 24 9 4 1 
+11732|Child_Cross21|10: 80 24 9 4 1 
+11736|Child_Cross21|50: 85 30 9 4 1 
+12173|Random|3: 95 39 11 4 1 
+12360|Child_Cross12|29: 89 34 10 3 1 
+12363|Random|27: 37 10 3 1 
+12424|Child_Cross12|45: 93 38 10 3 1 
+12526|Random|74: 83 27 14 4 1 
+12586|Child_Cross21|58: 95 38 9 4 1 
+12724|Random|3: 97 32 13 4 1 
+12746|Survivor|1: 84 33 9 4 1 
+12852|Child_CrossABC2|8: 40 13 4 1 
+13181|Random|26: 54 13 4 1 
+13275|Child_Cross12|17: 73 19 10 4 1 
+13340|Child_Cross12|49: 86 21 10 4 1 
+13380|Child_Cross21|58: 94 25 14 4 1 
+13691|Random|4: 87 31 10 4 1 
+13758|Child_CrossABC1|1: 82 38 9 4 1 
+13841|Random|10: 92 32 13 4 1 
+13877|Child_Cross12|33: 93 25 10 4 1 
+13879|Random|18: 86 23 10 4 1 
+14118|Random|21: 97 30 9 4 1 
+14154|Child_Cross12|37: 92 36 13 4 1 
+14528|Child_CrossABC1|7: 98 38 9 4 1 
+14542|Child_Cross12|25: 91 36 13 4 1 
+14636|Random|10: 98 31 10 4 1 
+14769|Child_Cross12|45: 95 28 9 4 1 
+14800|Random|1: 94 32 13 4 1 
+14904|Child_Avg|11: 39 14 4 1 
+15224|Child_Levy|16: 91 25 10 4 1 
+15314|Child_Levy|12: 79 24 9 4 1 
+15406|Child_Cross12|49: 90 25 9 4 1 
+15895|Child_Cross21|22: 99 38 11 4 1 
+15991|Random|70: 86 39 11 4 1 
+16017|Child_Avg|31: 84 25 10 4 1 
+16021|Child_Cross21|2: 95 25 9 4 1 
+16022|Child_LevyABC1|5: 99 28 10 3 1 
+16024|Random|6: 96 39 9 4 1 
+16138|Child_Cross21|34: 95 35 9 4 1 
+16147|Random|9: 87 32 13 4 1 
+16188|Random|19: 90 38 9 4 1 
+16211|Random|17: 96 42 9 4 1 
+16286|Child_Cross21|2: 89 38 9 4 1 
+16686|Random|26: 88 38 9 4 1 
+17223|Child_Cross21|14: 96 29 10 4 1 
+17254|Random|63: 76 20 9 4 1 
+17298|Child_Avg|15: 85 25 9 4 1 
+17301|Child_Levy|48: 92 25 10 4 1 
+17359|Child_Avg|51: 89 35 10 4 1 
+17375|Survivor|1: 93 34 10 3 1 
+17390|Child_Avg|47: 88 33 10 4 1 
+17501|Random|27: 89 35 10 3 1 
+17598|Child_Cross21|38|Mutated: 96 36 11 4 1 
+18107|Child_Cross21|42: 64 20 9 4 1 
+18261|Random|26: 88 37 10 4 1 
+18316|Random|1: 90 42 9 4 1 
+18339|Child_Cross12|37: 94 34 9 4 1 
+18573|Random|20: 90 23 10 4 1 
+18772|Random|8: 79 28 10 3 1 
+18820|Child_LevyABC2|6: 30 8 3 1 
+18910|Random|73: 40 11 3 1 
+18912|Child_Cross21|6: 67 24 9 4 1 
+19134|Child_Cross21|38: 83 27 10 4 1 
+19218|Child_Cross21|18: 98 34 9 4 1 
+19269|Child_Cross21|10: 70 21 10 4 1 
+19343|Child_Cross21|30: 91 27 10 4 1 
+19552|Child_Cross21|2: 72 29 9 4 1 
+19657|Child_Cross21|46: 75 28 11 4 1 
+19752|Child_Cross21|14: 81 34 9 4 1 
+20052|Random|2: 85 34 9 4 1 
+20234|Random|22: 91 35 9 4 1 
+20866|Random|3: 88 31 10 3 1 
+20903|Random|16: 88 34 8 3 1 
+20971|Child_Cross21|50: 74 24 9 4 1 
+20998|Random|30: 80 23 10 4 1 
+20999|Child_Cross21|14: 92 35 10 3 1 
+21045|Child_Cross12|49: 92 28 13 4 1 
+21069|Random|20: 99 35 11 4 1 
+21299|Child_Cross12|33: 89 32 9 4 1 
+21414|Child_Levy|44: 29 11 5 1 
+21555|Child_Cross21|22: 93 28 13 4 1 
+21588|Child_Levy|28: 40 13 5 1 
+21991|Random|15: 77 33 9 4 1 
+22155|Child_Cross21|58: 95 37 9 4 1 
+22181|Survivor|1|Mutated: 98 39 9 4 1 
+22255|Child_Cross21|38: 97 38 10 3 1 
+22294|Child_Avg|47: 46 10 3 1 
+22380|Child_CrossABC1|1: 95 30 9 4 1 
+22503|Child_Cross21|54: 98 28 9 4 1 
+22515|Random|26: 75 19 10 4 1 
+22732|Child_Cross12|5: 98 35 11 4 1 
+22739|Random|17: 90 31 11 4 1 
+23122|Child_Levy|20: 65 21 10 4 1 
+23165|Child_CrossABC2|2: 42 13 4 1 
+23347|Child_Cross21|46: 68 24 9 4 1 
+23368|Random|26: 97 39 9 4 1 
+23477|Child_Cross12|49|Mutated: 93 39 11 4 1 
+23610|Child_Cross21|6: 99 37 9 4 1 
+23676|Random|55: 82 30 9 4 1 
+23742|Child_Levy|52: 34 10 3 1 
+23845|Random|3: 29 14 4 1 
+23909|Random|8: 96 35 11 4 1 
+23916|Random|14: 93 45 13 4 1 
+23931|Random|19: 96 36 13 4 1 
+24075|Child_Cross12|33: 93 36 10 3 1 
+24325|Child_Cross12|1: 66 21 10 4 1 
+24451|Child_Cross21|46: 84 35 11 4 1 
+24979|Random|25: 89 35 11 4 1 
+25406|Random|51: 75 31 10 4 1 
+25408|Child_Avg|19: 33 10 3 1 
+25410|Child_Cross12|37: 88 35 10 3 1 
+25553|Random|34: 58 13 4 1 
+25607|Child_Levy|40: 29 10 3 1 
+25754|Random|19: 76 33 9 4 1 
+26072|Random|9: 87 23 10 4 1 
+26144|Child_Avg|23: 84 29 10 4 1 
+26183|Random|11: 96 35 9 4 1 
+26533|Child_Cross21|14: 94 24 9 4 1 
+26713|Random|66: 95 37 13 4 1 
+26714|Child_Avg|19: 71 24 9 4 1 
+26763|Random|55: 92 38 10 3 1 
+27179|Random|95: 97 82 28 9 4 1 
+27180|Child_LevyABC2|6: 35 13 5 1 
+27242|Child_Levy|4: 74 25 10 4 1 
+27936|Random|10: 86 27 10 4 1 
+28007|Child_Cross12|57: 93 28 11 4 1 
+28142|Random|18: 59 17 10 4 1 
+28221|Random|3: 94 42 11 4 1 
+28349|Child_Cross12|21: 93 37 13 4 1 
+28424|Child_Avg|23: 29 11 3 1 
+28593|Random|51: 92 37 13 4 1 
+28828|Random|34: 96 24 9 4 1 
+28875|Child_Cross12|5: 70 19 10 4 1 
+28954|Random|22: 93 35 11 4 1 
+29050|Child_Levy|20: 25 10 4 1 
+29051|Child_Cross21|50: 98 38 13 4 1 
+29056|Child_Cross12|49: 81 23 10 4 1 
+29145|Child_Cross12|9: 65 24 9 4 1 
+29379|Random|5: 98 38 10 3 1 
+29748|Random|25: 95 29 10 4 1 
+29936|Survivor|1: 91 38 9 4 1 
+30412|Child_Cross12|57: 77 21 10 4 1 
+30568|Child_Cross12|53: 91 34 10 3 1 
+30750|Random|13: 82 32 13 4 1 
+30852|Child_Cross12|1|Mutated: 83 25 10 4 1 
+31066|Random|15: 86 28 9 4 1 
+31256|Child_Cross12|13: 78 33 9 4 1 
+31382|Random|81: 93 31 10 4 1 
+31405|Random|8: 91 32 13 4 1 
+31553|Random|2: 89 37 13 4 1 
+31598|Child_Cross12|25: 32 9 4 1 
+31728|Random|33: 88 36 10 3 1 
+32106|Random|28: 83 39 9 4 1 
+32142|Random|15: 89 33 10 4 1 
+32781|Child_Cross12|29: 87 27 10 4 1 
+32867|Random|15: 82 42 9 4 1 
+33064|Child_Cross21|14: 97 29 10 4 1 
+33413|Child_Cross12|25: 85 31 10 4 1 
+33575|Random|4: 94 39 10 4 1 
+33747|Child_Cross12|41: 97 87 24 9 4 1 
+33933|Child_Cross21|6: 94 31 10 4 1 
+33945|Child_Cross12|45: 86 31 9 4 1 
+34034|Random|35: 93 27 10 4 1 
+34278|Child_Cross12|25: 77 24 9 4 1 
+34631|Child_Cross12|29: 98 28 11 4 1 
+34683|Child_LevyP2|10: 91 39 9 4 1 
+34703|Random|43: 93 43 9 4 1 
+35063|Random|5: 96 34 9 4 1 
+35151|Child_Avg|3: 56 21 10 4 1 
+35267|Child_Cross21|10: 25 9 4 1 
+35784|Random|78: 99 23 10 4 1 
+35990|Child_Cross12|49: 86 31 10 4 1 
+36128|Random|17: 84 38 9 4 1 
+36144|Random|95: 87 33 10 4 1 
+36163|Random|17: 97 35 10 4 1 
+36284|Random|16: 97 40 9 4 1 
+36690|Child_Cross21|58: 35 14 4 1 
+36985|Random|27: 89 31 11 4 1 
+37015|Child_LevyP2|4|Mutated: 88 37 9 4 1 
+37323|Child_Avg|31|Mutated: 82 33 10 3 1 
+37350|Child_Cross12|45: 90 24 9 4 1 
+37466|Child_Cross12|25: 96 31 11 4 1 
+37491|Child_LevyP1|9: 73 34 9 4 1 
+37497|Child_Cross12|37: 81 24 9 4 1 
+37672|Random|27: 91 28 8 3 1 
+37935|Random|13: 91 32 10 3 1 
+38071|Child_Levy|12: 91 29 10 4 1 
+38353|Child_Cross21|46: 98 30 9 4 1 
+38507|Random|26: 81 36 13 4 1 
+38683|Random|46: 99 42 9 4 1 
+38922|Random|3: 59 13 4 1 
+38962|Random|66: 63 19 10 4 1 
+38977|Random|54: 94 41 9 4 1 
+39252|Random|5: 41 10 4 1 
+39347|Child_Cross21|2: 38 8 3 1 
+39392|Child_Cross21|22: 92 35 9 4 1 
+39474|Child_Cross12|9: 93 30 9 4 1 
+39550|Random|19: 87 30 9 4 1 
+39801|Random|4: 99 32 13 4 1 
+39922|Random|1: 85 38 9 4 1 
+40169|Random|24: 84 20 9 4 1 
+40227|Random|26: 83 23 10 4 1 
+40334|Random|23: 64 29 9 4 1 
+40461|Random|18: 97 27 10 4 1 
+40629|Random|12: 88 27 10 4 1 
+40658|Child_Cross21|42: 91 33 10 3 1 
+40720|Random|26: 95 39 10 3 1 
+40798|Random|29: 84 31 10 4 1 
+40997|Random|51: 87 38 10 3 1 
+41750|Child_Cross21|54: 83 33 10 4 1 
+41841|Random|11: 97 31 11 4 1 
+41890|Random|83: 92 33 10 3 1 
+41926|Child_Cross12|17: 27 14 4 1 
+42022|Random|27: 91 37 14 4 1 
+42132|Random|13: 68 20 9 4 1 
+42524|Random|4: 70 24 9 4 1 
+42614|Child_Cross12|13: 99 27 10 4 1 
+42615|Child_Cross12|41: 80 28 9 4 1 
+43256|Random|61: 97 62 29 9 4 1 
+43682|Random|27: 99 28 11 4 1 
+44052|Child_LevyP2|4: 91 35 11 5 1 
+45104|Child_Cross21|10: 80 28 11 4 1 
+45203|Child_Cross12|1: 88 35 11 5 1 
+45382|Random|13: 86 29 10 4 1 
+45506|Random|4: 81 25 10 4 1 
+45652|Random|26: 97 37 14 4 1 
+45671|Random|25: 93 35 9 4 1 
+45889|Child_LevyP2|4|Mutated: 85 33 8 3 1 
+45941|Random|9: 93 56 13 4 1 
+46678|Child_Levy|32|Mutated: 41 11 4 1 
+46681|Random|17: 95 23 10 4 1 
+47013|Random|9: 97 41 13 4 1 
+47135|Random|63: 95 36 10 3 1 
+47389|Random|13: 99 34 9 4 1 
+48188|Child_LevyP1|9: 93 30 11 5 1 
+48293|Child_LevyP1|9: 72 20 9 4 1 
+48595|Child_Cross21|14|Mutated: 84 32 9 4 1 
+48663|Random|41: 72 19 10 4 1 
+49112|Random|17: 85 38 10 3 1 
+49319|Child_Cross12|21: 98 31 11 4 1 
+49333|Child_LevyP1|9: 44 10 3 1 
+49348|Random|18: 82 43 9 4 1 
+49713|Random|7: 93 50 13 4 1 
+49742|Random|24: 87 35 11 4 1 
+50184|Child_Avg|43: 91 31 10 4 1 
+50223|Random|14: 65 20 9 4 1 
+51082|Child_Cross21|14: 86 31 11 4 1 
+51448|Random|20: 94 28 13 4 1 
+52012|Random|25: 92 39 9 4 1 
+52454|Survivor|1: 99 35 11 5 1 
+52549|Random|13: 86 45 13 4 1 
+52558|Random|20: 90 39 9 4 1 
+52801|Random|19: 69 27 10 4 1 
+52905|Random|3: 94 36 10 3 1 
+53290|Child_Cross12|53: 90 25 14 4 1 
+54031|Child_CrossABC2|8: 91 33 10 4 1 
+54090|Child_Cross12|21: 91 35 11 4 1 
+54177|Random|16: 98 39 11 4 1 
+54196|Child_Cross21|30: 90 28 9 4 1 
+54386|Child_Cross21|34: 81 29 10 4 1 
+54711|Child_Cross12|13: 98 33 9 4 1 
+54834|Child_LevyP1|9: 90 25 10 4 1 
+55060|Child_Cross21|50: 71 19 10 4 1 
+55343|Child_Cross12|13: 88 33 10 3 1 
+55504|Random|19: 98 43 9 4 1 
+55587|Child_Cross21|2: 98 29 10 4 1 
+55612|Child_Avg|55: 89 30 9 4 1 
+55802|Random|2: 74 23 10 4 1 
+55875|Random|2: 81 43 9 4 1 
+56102|Random|36: 87 58 13 4 1 
+56764|Random|5: 95 34 9 4 1 
+56980|Child_Cross12|53: 77 42 9 4 1 
+57282|Child_Cross21|2: 87 32 10 3 1 
+57660|Child_Cross21|10: 43 10 4 1 
+57967|Child_Cross12|29: 78 24 9 4 1 
+58151|Child_Cross12|13: 96 37 9 4 1 
+58241|Child_Cross21|2: 82 27 10 4 1 
+58373|Random|8: 90 32 13 4 1 
+58420|Child_Cross12|1: 85 35 9 4 1 
+58595|Child_LevyP2|10: 93 41 9 4 1 
+58659|Random|11: 94 42 9 4 1 
+58878|Random|8: 83 32 10 3 1 
+59089|Survivor|1: 89 27 10 4 1 
+59228|Child_Cross12|53: 90 29 10 4 1 
+59342|Child_CrossABC2|2: 90 24 11 4 1 
+59625|Random|21: 71 23 10 4 1 
+59968|Random|24: 82 33 10 4 1 
+59969|Child_Levy|32: 74 34 9 4 1 
+60229|Child_Cross12|1: 81 37 9 4 1 
+60432|Child_Levy|24: 35 8 3 1 
+60524|Random|4: 98 23 10 4 1 
+60536|Child_Cross21|50: 95 35 11 4 1 
+60573|Random|13: 92 43 9 4 1 
+60676|Child_Levy|56: 66 24 9 4 1 
+60678|Random|21: 84 27 10 4 1 
+60976|Random|18: 82 34 9 4 1 
+61238|Child_Cross12|21: 33 13 4 1 
+61456|Random|8: 93 41 13 4 1 
+61883|Random|79: 99 30 9 4 1 
+62029|Random|15: 98 24 9 4 1 
+62278|Random|43: 95 41 10 3 1 
+62281|Child_Levy|28: 81 33 10 4 1 
+62744|Child_Cross21|58: 89 35 9 4 1 
+62802|Random|17: 88 29 10 4 1 
+63346|Random|63: 88 21 10 4 1 
+63824|Random|26: 89 23 10 4 1 
+63913|Random|57: 86 20 9 4 1 
+63915|Child_Levy|20: 79 29 10 4 1 
+63928|Child_Cross12|17: 93 32 13 4 1 
+64027|Child_Cross21|30: 95 31 9 4 1 
+64673|Child_Cross21|58: 99 31 10 4 1 
+64674|Child_LevyP2|4: 98 30 11 5 1 
+64810|Random|4: 95 42 11 4 1 
+64892|Random|10: 90 39 11 4 1 
+66345|Child_Cross21|46: 95 39 9 4 1 
+66352|Child_LevyABC1|11: 96 41 10 3 1 
+66370|Random|26: 99 39 9 4 1 
+66429|Child_CrossABC1|1: 94 30 9 4 1 
+66750|Survivor|1: 59 24 9 4 1 
+67361|Random|27: 80 29 8 3 1 
+67733|Child_Cross21|58: 82 29 10 4 1 
+68465|Random|15: 95 42 9 4 1 
+68748|Child_Cross12|17: 93 25 9 4 1 
+68762|Child_Cross21|10: 91 37 9 4 1 
+68963|Child_Cross12|57: 88 35 9 4 1 
+68998|Child_Cross12|53: 86 35 9 4 1 
+69092|Child_Cross21|10: 74 20 9 4 1 
+69105|Random|48: 86 36 13 4 1 
+69341|Child_Avg|11: 86 35 11 4 1 
+69603|Child_Cross12|57: 84 31 10 3 1 
+69707|Child_Avg|39: 90 37 9 4 1 
+70282|Child_Cross12|45: 99 33 9 4 1 
+71433|Random|35: 96 23 10 4 1 
+71788|Child_Levy|28: 88 35 10 4 1 
+71932|Child_Cross12|41: 98 77 24 9 4 1 
+72122|Child_Cross21|50: 82 35 9 4 1 
+72255|Child_Cross12|49: 86 28 11 4 1 
+72472|Random|5: 78 23 10 4 1 
+72912|Random|13: 87 50 13 4 1 
+72939|Survivor|1: 80 43 9 4 1 
+73394|Child_LevyP1|9|Mutated: 85 30 11 5 1 
+73421|Random|5: 97 35 11 4 1 
+73947|Child_LevyP1|3: 85 28 10 3 1 
+74152|Random|27: 95 36 13 4 1 
+74227|Random|25: 80 50 11 4 1 
+75751|Child_Cross12|29: 99 80 29 9 4 1 
+75796|Child_Levy|56: 86 34 10 3 1 
+76370|Random|27: 72 25 9 4 1 
+76495|Random|12: 44 13 4 1 
+76615|Random|19: 87 36 10 3 1 
+76878|Child_LevyP2|10|Mutated: 27 13 5 1 
+77057|Child_Cross21|18: 96 35 11 5 1 
+77541|Random|2: 89 28 13 4 1 
+77732|Child_Cross12|17: 76 27 10 4 1 
+77733|Child_Avg|39: 81 28 9 4 1 
+77901|Random|7: 97 33 10 4 1 
+78204|Child_LevyP1|9: 90 35 11 4 1 
+78299|Random|1: 73 29 9 4 1 
+78913|Random|11: 93 37 9 4 1 
+78936|Random|7: 79 35 10 3 1 
+79421|Child_Cross21|38: 84 24 11 4 1 
+79901|Child_Levy|12: 97 37 13 4 1 
+80424|Child_CrossABC2|2: 91 39 11 4 1 
+80858|Child_Cross21|58: 94 21 10 4 1 
+80924|Child_Cross12|21: 94 37 9 4 1 
+81378|Random|23: 97 23 10 4 1 
+82318|Random|23: 81 38 9 4 1 
+82836|Random|26: 79 33 10 4 1 
+82901|Random|19: 86 38 9 4 1 
+83150|Child_Avg|15: 93 23 10 4 1 
+83223|Child_Cross12|37: 83 30 9 4 1 
+83560|Random|16: 86 35 10 3 1 
+83561|Child_CrossABC1|1: 87 37 9 4 1 
+83628|Random|2: 91 37 13 4 1 
+84154|Child_Levy|28: 88 31 10 4 1 
+84537|Random|7: 85 32 13 4 1 
+84543|Child_LevyP2|10: 85 32 10 3 1 
+85306|Child_Levy|24: 94 28 11 4 1 
+85324|Child_LevyP1|9: 89 36 11 5 1 
+85826|Child_Cross21|42|Mutated: 98 42 11 4 1 
+86385|Random|14: 96 40 11 3 1 
+86455|Child_Levy|28: 32 11 3 1 
+86707|Child_Cross12|5: 91 28 13 4 1 
+87131|Random|18: 99 36 10 3 1 
+87205|Random|11: 96 41 9 4 1 
+87312|Child_Cross12|49: 96 25 9 4 1 
+87873|Child_Cross12|33: 99 42 11 4 1 
+87984|Random|10: 76 21 10 4 1 
+88194|Child_Cross21|46|Mutated: 97 21 10 4 1 
+88265|Child_Cross21|50: 97 25 9 4 1 
+88386|Child_Levy|12: 76 24 9 4 1 
+89035|Random|17: 77 27 10 4 1 
+89798|Child_LevyP2|10: 76 29 10 4 1 
+89922|Random|73: 97 42 9 4 1 
+89993|Random|16: 90 41 13 4 1 
+90599|Child_Cross21|50: 63 20 9 4 1 
+90752|Survivor|1: 86 37 9 4 1 
+91092|Child_Cross12|45: 88 35 11 4 1 
+91387|Random|87: 82 19 10 4 1 
+91868|Child_LevyABC2|6: 37 11 3 1 
+91986|Child_Cross21|30|Mutated: 96 39 11 4 1 
+92247|Random|12: 76 28 11 4 1 
+92702|Random|17: 87 35 10 4 1 
+93344|Child_Levy|56: 82 37 10 4 1 
+93838|Random|1: 89 39 9 4 1 
+93990|Child_Cross21|26: 84 23 10 4 1 
+94184|Random|86: 98 81 29 10 4 1 
+95346|Random|33: 98 41 13 4 1 
+95696|Random|24: 97 42 11 4 1 
+96642|Child_Cross21|2: 96 82 33 9 4 1 
+96780|Random|44: 93 28 9 4 1 
+96940|Random|2: 84 35 10 3 1 
+97878|Survivor|1: 98 37 10 4 1 
+98061|Child_LevyP2|4: 92 35 11 4 1 
+98329|Child_Cross21|34|Mutated: 80 24 11 4 1 
+99588|Random|17: 91 36 10 3 1 
+99666|Child_Cross21|22: 94 39 11 4 1 
+100000|Child_Cross12|53: 95 38 11 4 1 
+100203|Survivor|1: 65 23 10 4 1 
+100204|Random|24: 97 33 10 3 1 
+100952|Child_Cross12|5: 87 31 10 3 1 
+101339|Child_Cross12|57: 73 23 10 4 1 
+101405|Child_Levy|32: 31 11 5 1 
+101660|Child_LevyP2|10: 92 42 11 4 1 
+102141|Random|7: 93 33 14 4 1 
+102409|Child_Cross21|26: 94 35 10 3 1 
+102683|Child_Cross21|34: 70 29 9 4 1 
+103572|Child_Cross21|46: 92 28 9 4 1 
+103977|Child_Cross21|14: 96 30 12 5 1 
+104588|Child_Avg|11: 93 46 13 4 1 
+105622|Survivor|1: 98 27 10 4 1 
+106284|Random|23: 79 34 9 4 1 
+106560|Survivor|1: 70 19 7 3 1 
+106646|Child_CrossABC1|1: 92 33 10 4 1 
+107306|Random|84: 95 40 13 4 1 
+108053|Random|48: 98 33 14 4 1 
+108196|Child_Avg|51: 78 28 9 4 1 
+108328|Random|37: 89 37 14 4 1 
+109464|Random|1: 99 39 11 4 1 
+109613|Random|4: 95 28 10 3 1 
+109815|Random|90: 94 39 9 4 1 
+110041|Child_Cross12|45|Mutated: 96 35 10 3 1 
+110993|Child_Cross12|5: 67 23 10 4 1 
+111168|Random|66: 87 39 9 4 1 
+111312|Child_Cross21|2: 67 25 10 4 1 
+111327|Random|26: 88 20 9 4 1 
+113372|Child_Cross21|26: 85 23 10 4 1 
+113443|Child_Levy|56|Mutated: 55 13 4 1 
+114181|Child_Cross21|30: 80 25 9 4 1 
+115088|Random|15: 99 37 10 4 1 
+115533|Child_Cross21|42: 94 40 11 3 1 
+116623|Survivor|1: 93 33 10 4 1 
+117150|Random|24: 88 39 9 4 1 
+117519|Random|25: 93 39 9 4 1 
+117584|Child_Avg|3|Mutated: 96 35 10 4 1 
+117706|Survivor|1: 95 34 11 3 1 
+117811|Random|96: 91 45 13 4 1 
+117965|Child_Cross21|58: 84 25 9 4 1 
+118086|Random|45: 95 43 11 4 1 
+118205|Child_Cross21|6: 87 21 10 4 1 
+118444|Random|12: 88 28 11 4 1 
+118851|Random|56: 69 24 11 4 1 
+119152|Random|7: 85 35 11 4 1 
+119209|Random|34: 92 58 13 4 1 
+119749|Random|2: 91 31 10 3 1 
+119907|Random|6: 81 37 13 4 1 
+120734|Random|24: 96 38 10 3 1 
+120892|Child_Cross21|10: 75 33 9 4 1 
+121587|Random|15: 82 35 10 3 1 
+121600|Child_Cross12|33: 87 34 10 3 1 
+121661|Random|84: 73 33 9 4 1 
+121794|Child_CrossABC1|7: 79 51 9 4 1 
+121988|Child_Cross21|34|Mutated: 89 32 13 4 1 
+122768|Child_Cross12|45: 96 28 11 4 1 
+123768|Random|2: 97 39 11 4 1 
+123894|Random|11: 85 25 8 3 1 
+124259|Child_Cross21|58|Mutated: 39 11 3 1 
+124680|Survivor|1: 80 37 9 4 1 
+124888|Random|18: 99 46 11 4 1 
+124909|Child_Cross12|45: 79 27 10 4 1 
+125090|Child_LevyABC1|5: 46 11 5 1 
+125318|Random|85: 75 21 10 4 1 
+125362|Child_LevyP2|4: 89 30 11 5 1 
+126068|Child_Cross12|5: 70 20 9 4 1 
+126199|Child_Cross21|10: 86 33 10 4 1 
+126206|Child_LevyP2|4: 81 32 10 3 1 
+126938|Child_LevyP2|10: 93 28 10 3 1 
+127808|Random|34: 77 23 10 4 1 
+127946|Child_CrossABC1|7: 95 37 10 4 1 
+129133|Random|61: 62 24 9 4 1 
+129468|Random|25: 92 54 13 4 1 
+130043|Child_Cross12|17: 76 30 9 4 1 
+131778|Child_Cross12|45: 90 36 13 4 1 
+133781|Random|18: 94 38 10 3 1 
+134295|Random|42: 96 43 9 4 1 
+134530|Child_Cross21|54: 88 25 8 3 1 
+136455|Child_Cross12|49: 77 31 10 4 1 
+138470|Child_Cross12|17: 90 36 10 3 1 
+138976|Random|20: 93 25 14 4 1 
+139144|Child_Cross12|49: 80 30 9 4 1 
+139203|Random|14: 93 27 7 3 1 
+139500|Random|5: 99 42 10 3 1 
+140574|Child_LevyP2|10: 97 36 8 3 1 
+140947|Random|25: 99 41 13 4 1 
+140950|Random|14: 78 33 10 3 1 
+140964|Child_Cross12|49: 83 35 11 4 1 
+141192|Child_Avg|55: 80 29 10 4 1 
+141445|Child_Levy|52: 77 38 9 4 1 
+143171|Child_Cross12|45: 92 35 10 4 1 
+143418|Random|85: 97 28 11 4 1 
+143538|Random|18: 94 27 7 3 1 
+143711|Random|4: 68 19 10 4 1 
+144421|Random|92: 76 34 9 4 1 
+144976|Child_Cross21|34: 93 71 24 9 4 1 
+145102|Random|16: 87 35 10 3 1 
+145792|Child_Cross12|13: 92 28 11 4 1 
+146419|Random|64: 96 28 13 4 1 
+146421|Child_Levy|28|Mutated: 85 36 11 5 1 
+146458|Child_LevyP2|10: 88 49 9 4 1 
+146766|Survivor|1: 77 28 9 4 1 
+147027|Child_LevyP1|3: 95 38 10 3 1 
+147498|Child_Cross12|57: 92 24 11 4 1 
+149860|Child_Levy|24: 69 21 10 4 1 
+150046|Survivor|1: 98 40 9 4 1 
+150198|Random|13: 97 26 7 3 1 
+150566|Child_Cross21|58: 88 26 7 3 1 
+151091|Random|26: 90 28 13 4 1 
+151480|Child_LevyABC2|12: 96 30 9 4 1 
+151720|Random|38: 98 32 13 4 1 
+152091|Child_Cross21|34: 87 32 11 4 1 
+152303|Random|1: 89 49 11 4 1 
+153644|Random|57: 93 35 10 3 1 
+153741|Random|6: 95 40 9 4 1 
+154080|Child_LevyP1|9|Mutated: 92 35 11 5 1 
+155509|Child_Cross12|33: 83 29 10 3 1 
+155631|Random|18: 96 40 9 4 1 
+155658|Child_Cross12|17: 66 20 9 4 1 
+157035|Random|76: 95 33 10 4 1 
+157453|Random|7: 89 37 10 4 1 
+158012|Random|20: 93 39 14 4 1 
+158720|Child_Avg|19: 94 36 13 4 1 
+159715|Random|2: 93 37 10 4 1 
+159914|Random|25: 95 32 13 4 1 
+160307|Child_Levy|44: 70 23 10 4 1 
+160355|Random|59: 82 31 8 3 1 
+160783|Random|21: 99 45 13 4 1 
+160820|Random|16: 81 49 13 4 1 
+161066|Random|13: 92 42 9 4 1 
+161283|Child_LevyP2|4: 97 31 10 3 1 
+162195|Random|13: 92 50 11 4 1 
+164016|Random|25: 94 37 13 4 1 
+165252|Random|24: 82 50 13 4 1 
+165620|Child_Avg|23: 90 32 10 3 1 
+165997|Random|27: 88 31 9 4 1 
+165999|Child_LevyABC1|11: 87 31 11 4 1 
+166126|Child_Cross21|14: 80 31 10 4 1 
+166779|Child_Cross12|33: 74 29 9 4 1 
+167284|Random|13: 88 42 9 4 1 
+168291|Child_LevyABC2|12: 52 12 5 1 
+168899|Random|6: 80 39 9 4 1 
+170732|Random|11: 97 36 10 3 1 
+170971|Random|10: 76 35 11 4 1 
+171797|Child_Cross21|58: 95 24 11 5 1 
+172020|Random|27: 88 38 8 3 1 
+172945|Random|6: 90 21 10 4 1 
+173422|Child_Cross21|26: 78 29 9 4 1 
+173479|Child_Levy|4: 42 11 5 1 
+173665|Child_Levy|20: 91 40 9 4 1 
+173970|Random|25: 89 33 14 4 1 
+174467|Random|17: 86 34 11 3 1 
+175944|Random|27: 86 39 10 4 1 
+176065|Random|13: 99 43 9 4 1 
+176069|Child_CrossABC2|2: 92 30 11 5 1 
+176072|Child_LevyP2|4: 91 30 11 5 1 
+177262|Random|11: 99 36 13 4 1 
+177299|Child_Cross21|2: 98 38 11 4 1 
+177692|Child_CrossABC2|2: 47 9 4 1 
+177694|Child_CrossABC2|2: 97 35 11 5 1 
+179943|Child_Avg|27: 65 25 9 4 1 
+180394|Random|12: 97 54 13 4 1 
+181616|Child_Cross12|57: 88 28 10 3 1 
+181674|Random|17: 89 42 9 4 1 
+183122|Child_Cross12|9: 69 25 9 4 1 
+183174|Survivor|1: 93 33 10 3 1 
+183887|Random|25: 84 33 10 4 1 
+184679|Random|39: 84 39 10 3 1 
+185712|Child_Levy|28: 47 12 5 1 
+186326|Survivor|1: 88 32 11 4 1 
+186996|Random|7: 88 32 13 4 1 
+187397|Child_Cross12|25: 97 38 11 4 1 
+187770|Random|16: 68 28 9 4 1 
+188249|Random|8: 79 31 11 4 1 
+188792|Child_Cross12|37: 95 35 11 5 1 
+188819|Random|92: 97 37 10 4 1 
+189753|Child_Avg|35: 82 30 7 3 1 
+190522|Survivor|1: 90 43 9 4 1 
+190867|Random|26: 95 35 10 3 1 
+192056|Random|21: 77 30 9 4 1 
+194041|Child_Cross21|22: 80 38 9 4 1 
+194248|Random|20: 89 27 14 4 1 
+194970|Child_Cross21|26: 97 79 29 9 4 1 
+195103|Child_Cross21|2: 94 25 10 4 1 
+197104|Random|6: 67 25 10 3 1 
+198506|Random|11: 93 29 10 3 1 
+200569|Child_Cross12|33: 99 84 24 9 4 1 
+201023|Random|77: 98 28 10 3 1 
+201391|Random|94: 93 34 11 4 1 
+202215|Random|26: 91 31 14 4 1 
+203909|Random|24: 41 14 4 1 
+204730|Child_Cross21|14: 78 24 11 4 1 
+205249|Random|18: 94 43 9 4 1 
+205289|Random|24: 98 28 13 4 1 
+205716|Child_Cross12|37: 98 84 29 9 4 1 
+205869|Random|11: 87 27 8 3 1 
+206620|Random|9: 88 23 10 4 1 
+207451|Child_LevyP1|3: 90 28 10 3 1 
+207869|Random|22: 78 27 10 4 1 
+207906|Random|12: 95 37 11 3 1 
+208202|Random|54: 87 35 9 4 1 
+208548|Child_Cross12|41: 79 25 9 4 1 
+209244|Random|15: 92 32 11 4 1 
+209706|Child_Cross12|41: 97 36 13 4 1 
+210505|Survivor|1: 92 27 7 3 1 
+210733|Child_Cross21|2: 97 41 9 4 1 
+211026|Child_Cross12|9: 87 33 8 3 1 
+211209|Child_Cross21|14: 85 36 13 4 1 
+213025|Random|62: 61 29 9 4 1 
+213085|Child_Avg|47: 47 13 4 1 
+213198|Random|94: 86 28 10 3 1 
+213770|Child_LevyP1|9: 71 29 9 4 1 
+214409|Random|18: 81 32 13 4 1 
+214886|Random|1: 91 41 13 4 1 
+215679|Random|26: 92 34 10 3 1 
+216556|Child_Cross21|58|Mutated: 91 31 11 4 1 
+217458|Child_Cross12|13: 90 34 10 3 1 
+217612|Random|8: 92 23 10 4 1 
+217700|Survivor|1: 95 45 13 4 1 
+217972|Child_Cross12|41: 75 20 9 4 1 
+218270|Survivor|1: 89 25 8 3 1 
+218381|Child_Cross21|42: 91 29 10 3 1 
+219123|Random|12: 82 36 13 4 1 
+219269|Random|21: 98 85 33 9 4 1 
+219909|Child_Levy|60: 69 24 9 4 1 
+220780|Random|37: 77 20 9 4 1 
+221175|Child_LevyP1|3: 81 30 11 5 1 
+221251|Child_Cross12|5: 82 25 9 4 1 
+221653|Random|91: 95 28 13 4 1 
+222067|Child_Cross21|34: 79 30 9 4 1 
+222171|Child_Levy|28: 84 36 13 4 1 
+222358|Survivor|1: 83 30 11 5 1 
+222471|Child_Levy|20: 87 33 10 3 1 
+224245|Child_Levy|40: 43 13 5 1 
+227086|Child_Avg|7: 27 11 4 1 
+227669|Random|24: 99 31 11 4 1 
+229602|Child_Cross21|34: 66 25 10 4 1 
+231094|Child_Cross12|21: 85 29 10 3 1 
+231411|Random|8: 92 25 10 3 1 
+231743|Child_Cross21|26: 96 38 11 4 1 
+231926|Random|22: 83 36 13 4 1 
+232315|Random|36: 88 38 11 4 1 
+232405|Survivor|1|Mutated: 87 28 11 4 1 
+232733|Child_Cross12|9: 91 28 10 3 1 
+232829|Child_LevyABC2|6: 95 53 13 4 1 
+233229|Child_Avg|3: 85 28 9 4 1 
+233357|Random|9: 84 37 13 4 1 
+234799|Child_LevyP2|4: 82 27 8 3 1 
+235482|Child_Cross12|9: 81 33 10 3 1 
+235515|Child_Cross12|45: 95 30 11 5 1 
+235773|Child_Cross21|22: 97 75 29 9 4 1 
+237054|Random|9: 91 21 10 4 1 
+238006|Random|10: 75 23 10 4 1 
+238059|Child_LevyP2|4: 93 36 11 4 1 
+238242|Random|3: 74 19 10 4 1 
+238837|Child_Cross12|53: 96 84 29 9 4 1 
+238839|Child_Cross21|30|Mutated: 96 84 29 10 4 1 
+239121|Child_Cross12|9: 67 25 9 4 1 
+241078|Random|11: 83 50 13 4 1 
+242391|Child_Cross21|42: 84 32 13 4 1 
+243711|Random|24: 73 20 9 4 1 
+243818|Random|22: 98 36 13 4 1 
+243833|Random|24: 87 39 11 4 1 
+243913|Child_Cross21|2: 91 35 10 4 1 
+247330|Random|82: 82 38 10 3 1 
+247783|Random|85: 64 23 10 4 1 
+248138|Random|3: 90 38 11 4 1 
+248214|Child_Cross12|49: 79 32 9 4 1 
+249316|Random|14: 45 11 4 1 
+249858|Child_Levy|32: 68 23 10 4 1 
+250033|Child_Cross12|9: 21 10 4 1 
+250070|Child_Avg|27|Mutated: 91 42 9 4 1 
+250664|Child_Cross21|46: 89 28 11 4 1 
+251109|Random|3: 87 25 8 3 1 
+251194|Child_Cross21|10: 82 35 11 4 1 
+252913|Child_Avg|55: 64 23 8 3 1 
+253005|Child_Cross12|33: 97 30 11 5 1 
+253047|Child_Cross21|58|Mutated: 65 19 7 3 1 
+253237|Child_LevyP1|9: 87 35 11 5 1 
+254013|Random|19: 89 26 7 3 1 
+254521|Random|93: 91 42 13 4 1 
+254639|Child_Avg|3: 88 28 13 4 1 
+254885|Child_LevyABC2|6: 86 35 11 5 1 
+256646|Child_Cross12|53|Mutated: 92 31 9 4 1 
+257725|Survivor|1: 89 36 10 3 1 
+258279|Child_Cross12|9: 92 20 9 4 1 
+258315|Random|12: 98 36 10 3 1 
+260215|Random|21: 96 27 8 3 1 
+260598|Child_Cross12|25: 67 24 7 3 1 
+260640|Random|10: 63 13 4 1 
+261499|Child_Cross12|1: 87 30 8 3 1 
+263219|Random|2: 90 32 11 4 1 
+266148|Random|96: 85 42 10 3 1 
+266404|Random|17: 78 38 9 4 1 
+267073|Child_Cross12|53: 79 35 10 4 1 
+268478|Child_LevyP2|10: 93 32 11 4 1 
+268976|Random|3: 77 29 10 4 1 
+269204|Random|35: 96 37 13 4 1 
+269276|Random|14: 85 54 11 4 1 
+270173|Random|1: 68 21 10 4 1 
+270389|Random|9: 89 23 8 3 1 
+271556|Child_Cross21|46: 99 83 33 9 4 1 
+271568|Child_CrossABC2|2: 99 83 29 9 4 1 
+271569|Child_Avg|55: 99 91 33 9 4 1 
+271571|Child_Cross12|21: 99 90 33 9 4 1 
+271572|Child_Cross12|17: 99 87 33 9 4 1 
+271578|Child_Cross12|49: 99 85 29 9 4 1 
+271638|Child_LevyP2|10|Mutated: 94 36 11 3 1 
+272056|Child_Cross21|22: 95 33 13 4 1 
+273431|Random|26: 87 20 9 4 1 
+274541|Random|4: 91 33 14 4 1 
+275180|Child_Cross21|54: 99 30 11 5 1 
+275534|Child_Cross12|17: 81 28 10 3 1 
+277609|Random|12: 87 40 9 4 1 
+278051|Random|24: 96 33 14 4 1 
+278301|Random|12: 90 37 10 4 1 
+279366|Child_LevyABC2|6: 28 8 5 1 
+280044|Random|16: 83 28 9 4 1 
+280222|Child_LevyABC2|6: 83 35 10 3 1 
+282277|Random|28: 94 23 10 4 1 
+282470|Random|26: 91 38 10 3 1 
+283756|Child_Cross21|58: 99 86 33 9 4 1 
+284145|Random|21: 94 45 13 4 1 
+286115|Child_Cross12|53: 80 36 13 4 1 
+287073|Child_Avg|27: 42 11 3 1 
+288290|Child_Cross21|6: 73 24 9 4 1 
+288674|Child_Avg|31: 85 31 10 3 1 
+289751|Child_Cross21|58: 93 77 24 9 4 1 
+290138|Child_Cross21|30: 93 21 10 4 1 
+290193|Child_Cross12|13: 94 31 14 4 1 
+290816|Child_LevyP1|9: 87 35 8 3 1 
+290932|Random|19: 98 45 13 4 1 
+292466|Random|25: 90 28 11 4 1 
+292698|Random|74: 91 32 11 4 1 
+293980|Random|88: 98 83 34 9 4 1 
+294024|Child_Cross21|18: 95 31 10 4 1 
+294026|Child_LevyP1|9: 96 30 11 5 1 
+295044|Random|22: 96 66 20 9 4 1 
+295659|Child_Cross21|22: 55 23 10 4 1 
+296077|Child_Cross21|46: 93 35 12 5 1 
+296140|Random|3: 97 39 10 3 1 
+297860|Random|14: 97 45 13 4 1 
+298300|Child_LevyP1|3: 86 37 10 4 1 
+298363|Child_Cross21|38: 88 31 11 4 1 
+301225|Child_LevyP1|9: 96 33 10 4 1 
+306917|Child_Cross12|41: 94 35 11 5 1 
+306953|Random|27: 95 31 11 4 1 
+307449|Random|88: 89 49 13 4 1 
+308220|Random|4: 81 35 9 4 1 
+308797|Child_Avg|39: 66 27 10 4 1 
+310406|Random|82: 99 37 13 4 1 
+310794|Random|16: 99 21 10 4 1 
+311509|Child_LevyP1|3: 90 33 10 3 1 
+312542|Random|15: 79 38 9 4 1 
+316077|Child_Levy|16: 92 24 11 5 1 
+317617|Child_Levy|12: 75 27 10 4 1 
+320173|Random|13: 88 35 8 3 1 
+322138|Random|6: 96 25 10 4 1 
+324649|Random|81: 62 13 4 1 
+325119|Random|10: 98 42 13 4 1 
+327572|Child_Cross12|41|Mutated: 90 32 9 4 1 
+328352|Child_Cross12|33: 86 33 8 3 1 
+328522|Child_Cross21|14: 83 35 9 4 1 
+329606|Child_Cross12|25: 61 24 9 4 1 
+330120|Child_Cross12|9: 91 43 9 4 1 
+331582|Child_Cross21|54: 90 20 9 4 1 
+332266|Child_Cross21|2: 83 35 10 4 1 
+332895|Random|88: 82 49 13 4 1 
+333204|Child_Avg|31|Mutated: 87 31 9 4 1 
+333550|Child_Cross21|26: 85 32 9 4 1 
+333664|Child_LevyP2|10: 94 35 12 5 1 
+334053|Child_LevyP2|4: 88 23 8 3 1 
+334458|Child_LevyP1|3: 86 39 9 4 1 
+335489|Survivor|1: 79 21 10 4 1 
+335491|Child_LevyP2|10: 88 24 11 5 1 
+338388|Random|14: 67 20 9 4 1 
+339420|Random|34: 72 27 7 3 1 
+339493|Random|6: 97 33 14 4 1 
+340109|Random|5: 95 28 11 4 1 
+340128|Child_Cross21|6: 70 25 8 3 1 
+343501|Random|2: 97 25 10 4 1 
+343799|Child_LevyABC2|6: 99 30 12 5 1 
+346106|Random|17: 96 41 13 4 1 
+346630|Child_Cross21|42: 88 27 8 3 1 
+348593|Random|85: 92 31 14 4 1 
+348612|Survivor|1: 92 39 11 4 1 
+348805|Random|67: 84 26 10 3 1 
+349679|Random|12: 96 46 11 4 1 
+350776|Random|26: 94 58 13 4 1 
+350922|Random|16: 95 33 10 3 1 
+351589|Random|14: 67 21 10 4 1 
+351739|Random|16: 83 32 11 4 1 
+351928|Child_LevyABC2|6: 45 10 3 1 
+352381|Child_LevyP2|4: 97 35 12 5 1 
+352597|Random|62: 75 24 9 4 1 
+353250|Random|24: 95 41 13 4 1 
+354695|Child_Levy|16: 90 33 13 4 1 
+354735|Child_Cross12|13: 96 28 10 3 1 
+354795|Child_Avg|47: 85 25 10 4 1 
+355088|Random|16: 88 32 9 4 1 
+355563|Random|14: 81 39 11 4 1 
+355796|Survivor|1: 92 50 13 4 1 
+355986|Random|14: 97 35 9 4 1 
+356852|Child_Cross12|1: 91 39 10 3 1 
+357975|Child_Cross21|42: 98 25 9 4 1 
+360139|Random|8: 78 21 10 4 1 
+361794|Random|16: 98 86 27 10 4 1 
+362697|Random|9: 85 28 8 3 1 
+363307|Random|10: 85 42 9 4 1 
+363491|Child_Cross21|38: 85 28 11 4 1 
+363719|Random|65: 83 32 13 4 1 
+363997|Child_Cross21|26: 91 37 10 4 1 
+366363|Child_Avg|23: 91 26 7 3 1 
+367598|Child_Cross21|42: 89 32 11 4 1 
+367792|Random|2: 50 13 4 1 
+368000|Random|4: 92 41 13 4 1 
+368837|Random|1: 73 29 10 4 1 
+369385|Random|16: 89 43 9 4 1 
+369664|Child_Cross21|38: 94 35 10 4 1 
+369798|Random|60: 59 27 10 4 1 
+371260|Random|26: 83 46 11 4 1 
+371427|Random|27: 81 28 11 4 1 
+371667|Random|42: 98 35 11 3 1 
+371695|Child_Cross12|25: 95 32 10 3 1 
+371986|Child_Avg|23: 81 35 10 3 1 
+372334|Random|6: 79 32 13 4 1 
+372336|Random|2: 94 53 11 4 1 
+372685|Child_Cross12|49: 63 23 10 4 1 
+372875|Random|22: 79 37 9 4 1 
+372880|Child_Cross21|2: 74 29 10 4 1 
+377231|Child_LevyP1|9: 82 31 10 4 1 
+377768|Child_Levy|32: 85 39 11 4 1 
+377973|Random|27: 93 32 10 3 1 
+379714|Child_Cross12|1: 88 30 11 5 1 
+381072|Random|64: 86 29 10 3 1 
+381236|Survivor|1: 84 46 10 3 1 
+381433|Child_Levy|8: 38 11 3 1 
+381685|Random|57: 83 39 11 4 1 
+381988|Child_Cross21|42: 69 17 10 4 1 
+382037|Random|26: 87 26 8 3 1 
+384219|Child_Cross21|10: 92 33 14 4 1 
+385073|Child_Cross12|45: 71 21 10 4 1 
+388216|Child_LevyP1|3: 82 24 11 4 1 
+389326|Child_Avg|19: 79 36 13 4 1 
+389331|Child_Cross12|9: 85 30 12 5 1 
+389388|Random|68: 91 35 8 3 1 
+389879|Random|25: 94 59 13 4 1 
+391017|Random|26: 78 31 10 4 1 
+392727|Random|26: 64 13 4 1 
+393795|Random|24: 93 37 14 4 1 
+397909|Random|23: 97 41 10 3 1 
+398553|Random|59: 85 36 10 3 1 
+399182|Random|3: 79 31 10 4 1 
+399546|Random|23: 82 28 9 4 1 
+400340|Random|20: 95 35 8 3 1 
+400420|Random|10: 96 35 14 4 1 
+400795|Child_Cross12|53|Mutated: 80 27 10 4 1 
+401187|Child_Cross21|30: 87 28 10 3 1 
+403786|Random|19: 93 36 8 3 1 
+404534|Random|11: 78 25 9 4 1 
+404577|Child_Cross12|49: 84 33 14 4 1 
+406243|Random|18: 89 31 14 4 1 
+408945|Child_Cross21|18: 95 24 11 4 1 
+409136|Child_LevyP1|3: 95 35 12 5 1 
+410481|Random|81: 82 39 9 4 1 
+410682|Random|27: 71 29 10 4 1 
+411132|Child_Cross21|18|Mutated: 73 25 10 4 1 
+412214|Random|7: 90 28 8 3 1 
+412254|Random|13: 87 42 11 4 1 
+413198|Random|37: 28 11 3 1 
+413736|Child_Cross21|58: 99 70 20 9 4 1 
+414177|Child_Cross21|54: 85 26 9 4 1 
+415674|Random|20: 84 43 9 4 1 
+416173|Child_Cross21|26: 72 21 10 4 1 
+416202|Random|37: 99 33 10 4 1 
+417344|Random|7: 88 39 11 4 1 
+417736|Random|6: 84 39 9 4 1 
+418343|Child_Levy|28: 35 14 5 1 
+418479|Random|91: 99 28 13 4 1 
+420345|Child_Cross21|2: 81 45 13 4 1 
+420421|Child_Cross21|10: 85 31 11 4 1 
+421980|Child_Cross12|13: 84 19 10 4 1 
+422569|Random|30: 68 27 10 4 1 
+422796|Random|3: 97 43 9 4 1 
+424344|Child_Cross12|17: 94 30 11 5 1 
+426720|Random|15: 96 42 11 4 1 
+427231|Random|87: 65 27 10 4 1 
+429480|Child_Cross12|41: 68 29 9 4 1 
+430854|Random|11: 76 31 10 4 1 
+432050|Random|12: 90 54 13 4 1 
+434808|Child_Cross12|9: 96 32 10 3 1 
+435646|Child_Avg|39: 84 33 10 3 1 
+436487|Child_Levy|32: 83 43 9 4 1 
+437840|Random|7: 98 25 10 4 1 
+438280|Random|61: 79 42 9 4 1 
+438656|Random|3: 96 32 13 4 1 
+438719|Random|2: 62 19 10 4 1 
+438825|Child_CrossABC2|8: 94 38 11 4 1 
+439873|Child_Levy|24: 89 35 11 5 1 
+441025|Random|22: 95 49 13 4 1 
+443837|Random|18: 61 23 10 4 1 
+443900|Random|49: 80 28 13 4 1 
+444254|Random|5: 98 37 10 3 1 
+446965|Child_Cross21|34|Mutated|Validated: 79 23 10 4 1 
+447123|Child_Cross21|18: 82 28 11 4 1 
+448370|Random|20: 94 34 10 3 1 
+448863|Random|8: 92 21 10 4 1 
+451329|Random|19: 92 36 10 3 1 
+451401|Child_Cross21|54: 97 69 21 10 4 1 
+452403|Random|20: 88 41 13 4 1 
+453721|Child_Levy|40: 89 30 8 3 1 
+454226|Random|24: 83 28 11 4 1 
+454488|Child_Cross12|53: 94 74 29 9 4 1 
+457943|Child_Cross21|18|Mutated: 76 29 9 4 1 
+462398|Random|11: 79 31 10 3 1 
+462654|Child_Cross21|6: 93 28 8 3 1 
+463194|Child_LevyP1|3: 94 28 10 3 1 
+463240|Child_Cross12|1: 58 23 10 4 1 
+463542|Survivor|1: 92 32 11 3 1 
+466299|Child_LevyP2|4: 94 33 10 3 1 
+466684|Random|25: 39 8 3 1 
+467226|Random|1: 81 35 10 4 1 
+470060|Random|99: 95 70 24 9 4 1 
+470113|Random|26: 77 37 9 4 1 
+470991|Random|7: 95 39 14 4 1 
+471331|Random|26: 94 39 10 3 1 
+471749|Random|34: 78 33 8 3 1 
+473174|Child_Cross12|37: 92 35 12 5 1 
+473453|Random|20: 95 54 13 4 1 
+474553|Random|8: 45 14 4 1 
+475028|Random|42: 95 25 14 4 1 
+475908|Child_Avg|15: 30 7 3 1 
+476624|Child_Cross12|1: 90 36 8 3 1 
+479250|Child_Levy|24: 87 29 9 4 1 
+479548|Random|7: 62 25 9 4 1 
+481753|Random|65: 97 28 10 3 1 
+485572|Child_Cross21|46: 62 25 10 4 1 
+487004|Child_LevyP2|4: 96 26 10 3 1 
+487718|Child_LevyABC1|11|Validated: 71 38 9 4 1 
+488054|Child_Cross21|54: 79 25 10 4 1 
+493120|Random|1: 78 32 10 3 1 
+495655|Child_Cross21|54: 98 83 29 9 4 1 
+495912|Child_Cross12|49: 73 27 10 4 1 
+495991|Random|7: 84 39 11 4 1 
+496141|Child_Cross12|49|Mutated: 81 31 10 4 1 
+497231|Random|11: 87 36 13 4 1 
+497648|Random|92: 96 54 13 4 1 
+500855|Child_Cross12|21: 60 25 9 4 1 
+501041|Random|11: 80 28 10 3 1 
+501626|Random|19: 94 40 9 4 1 
+501659|Random|2: 98 43 11 4 1 
+503680|Random|35: 81 41 13 4 1 
+506152|Child_Cross12|5: 99 29 10 3 1 
+506307|Random|78: 87 43 9 4 1 
+509346|Random|78: 88 27 14 4 1 
+510372|Random|10: 83 39 10 4 1 
+511093|Random|60: 88 30 8 3 1 
+511287|Child_Cross12|17: 97 29 11 3 1 
+512063|Random|19: 80 42 10 3 1 
+514303|Child_Cross12|1: 98 75 29 9 4 1 
+515512|Random|12: 95 46 13 4 1 
+515583|Child_Cross12|37: 76 28 9 4 1 
+516496|Child_Cross12|45: 95 82 33 9 4 1 
+516950|Random|33: 98 41 10 3 1 
+519206|Child_Cross21|34: 89 29 10 3 1 
+519698|Child_Levy|8: 90 37 14 4 1 
+519891|Random|11: 99 32 10 3 1 
+521277|Child_Levy|32: 72 23 10 4 1 
+523179|Child_Cross12|45: 86 31 10 3 1 
+525568|Child_Cross12|13: 65 19 10 4 1 
+526030|Random|37: 85 21 10 4 1 
+526225|Child_Cross12|9: 97 30 12 5 1 
+527460|Random|72: 91 31 9 4 1 
+528612|Child_Cross21|6: 98 33 13 4 1 
+528973|Child_Cross21|38: 60 23 10 4 1 
+529530|Random|70: 99 36 11 4 1 
+530839|Child_Cross21|26: 79 32 10 3 1 
+533375|Random|24: 83 31 11 4 1 
+533455|Child_Cross21|46: 92 32 10 3 1 
+534958|Child_Avg|55|Mutated: 66 29 9 4 1 
+535312|Random|17: 96 71 29 9 4 1 
+535954|Random|10: 81 30 8 3 1 
+537782|Child_LevyP2|10: 88 36 11 5 1 
+539287|Child_Cross12|17: 99 36 11 5 1 
+539664|Child_Levy|24: 84 30 11 5 1 
+541380|Child_Cross21|22: 90 35 11 5 1 
+542278|Random|6: 91 50 11 4 1 
+543883|Random|22: 81 42 9 4 1 
+545081|Random|27: 89 33 8 3 1 
+551006|Random|29: 94 33 13 4 1 
+552330|Random|14: 95 37 14 4 1 
+555076|Child_Cross21|18: 55 24 9 4 1 
+555633|Random|14: 96 40 13 4 1 
+555756|Child_LevyP2|4: 82 48 9 4 1 
+556473|Random|21: 93 29 8 3 1 
+560897|Child_CrossABC1|1: 99 25 9 4 1 
+563233|Random|16: 91 24 7 3 1 
+564181|Child_Cross21|22: 98 40 13 4 1 
+564631|Child_Cross21|42: 94 37 10 4 1 
+570462|Child_Levy|24: 81 28 13 4 1 
+573239|Random|55: 99 41 9 4 1 
+575196|Survivor|1: 69 25 10 4 1 
+575750|Child_Cross21|46: 84 37 9 4 1 
+577336|Random|86: 84 49 10 3 1 
+582689|Child_Cross21|22: 98 81 34 9 4 1 
+582917|Child_Cross12|49: 95 36 11 5 1 
+584732|Child_Levy|48: 56 24 9 4 1 
+588135|Child_Cross12|1: 96 37 14 4 1 
+591050|Child_Cross12|45: 76 23 10 4 1 
+591426|Random|46: 92 35 8 3 1 
+592540|Random|10: 86 33 14 4 1 
+594072|Random|26: 93 49 13 4 1 
+595644|Child_LevyP1|3: 91 35 12 5 1 
+596329|Random|13: 40 15 4 1 
+599302|Random|18: 88 40 9 4 1 
+599862|Child_Avg|3: 91 37 11 3 1 
+603036|Random|63: 80 33 8 3 1 
+606677|Random|35: 93 40 9 4 1 
+607470|Random|12: 95 31 14 4 1 
+609195|Random|86: 95 33 8 3 1 
+610340|Child_Avg|39: 71 25 9 4 1 
+613457|Random|17: 82 46 13 4 1 
+613889|Random|15: 90 35 10 4 1 
+614789|Child_Cross21|46|Mutated: 90 33 14 4 1 
+614826|Child_Cross12|21: 82 32 11 3 1 
+617242|Child_Cross12|25: 79 28 9 4 1 
+618321|Random|24: 93 26 10 3 1 
+619052|Random|6: 99 87 21 10 4 1 
+621099|Random|2: 91 49 13 4 1 
+621929|Random|6: 81 39 9 4 1 
+624001|Random|12: 81 53 13 4 1 
+624972|Child_Levy|4: 93 38 11 4 1 
+625906|Child_Levy|44: 93 35 11 5 1 
+627034|Random|15: 99 83 30 9 4 1 
+628552|Random|70: 89 58 13 4 1 
+629272|Random|10: 96 34 10 3 1 
+630008|Random|13: 84 50 13 4 1 
+635620|Child_Cross21|38: 95 25 10 4 1 
+637800|Random|13: 95 31 10 3 1 
+639001|Child_Cross12|1: 95 29 14 4 1 
+640110|Random|51: 78 31 10 3 1 
+640134|Survivor|1: 97 83 29 9 4 1 
+641742|Random|16: 93 35 11 3 1 
+641894|Random|11: 94 41 13 4 1 
+642665|Random|11: 94 44 9 4 1 
+643311|Child_LevyP2|10: 92 39 10 3 1 
+643700|Random|81: 90 41 9 4 1 
+645678|Random|53: 84 54 13 4 1 
+647130|Child_LevyP1|9: 86 26 10 3 1 
+649848|Random|4: 82 32 11 4 1 
+650220|Random|19: 90 27 8 3 1 
+653348|Random|40: 61 19 10 4 1 
+653865|Random|95: 95 41 9 4 1 
+653956|Child_Cross12|5: 86 35 12 5 1 
+654087|Random|17: 87 41 13 4 1 
+655615|Random|3: 94 28 8 3 1 
+656374|Child_Cross21|38: 90 36 11 5 1 
+656640|Random|97: 79 17 10 4 1 
+656709|Child_Cross21|22: 89 24 11 4 1 
+657383|Random|99: 86 24 11 4 1 
+659601|Child_Cross12|33: 64 19 10 4 1 
+662098|Child_Cross12|9: 81 31 11 4 1 
+662634|Random|8: 85 45 13 4 1 
+664759|Random|5: 89 36 13 4 1 
+665536|Child_Cross12|45: 94 74 34 9 4 1 
+665548|Random|9: 85 30 8 3 1 
+665806|Child_Avg|27: 31 8 3 1 
+666009|Survivor|1: 84 32 11 4 1 
+666924|Random|11: 95 39 10 4 1 
+668913|Random|11: 98 33 10 4 1 
+673772|Random|25: 99 35 10 3 1 
+674923|Random|13: 98 32 11 4 1 
+675996|Child_Avg|27: 80 41 13 4 1 
+681917|Child_Levy|48: 94 40 11 5 1 
+682097|Random|8: 90 31 8 3 1 
+684452|Child_Cross12|17: 96 63 20 9 4 1 
+692971|Child_Cross12|37: 82 24 11 5 1 
+694540|Random|3: 96 39 10 3 1 
+694685|Child_Cross21|26|Mutated: 94 82 28 11 4 1 
+694793|Random|76: 97 86 38 9 4 1 
+694818|Child_CrossABC1|7: 93 39 10 3 1 
+697084|Child_Cross21|26: 96 33 10 3 1 
+698237|Child_Cross21|10: 80 33 10 3 1 
+699401|Child_Cross12|37: 99 40 9 4 1 
+701874|Random|7: 95 27 8 3 1 
+707035|Random|24: 89 41 13 4 1 
+708051|Random|38: 94 32 9 4 1 
+708403|Random|23: 98 35 10 3 1 
+711408|Child_Cross21|42: 99 86 29 9 4 1 
+712006|Random|14: 97 35 10 3 1 
+715339|Child_Levy|60: 55 20 9 4 1 
+722421|Child_Cross12|25: 77 30 11 5 1 
+723774|Random|55: 80 31 8 3 1 
+723970|Child_LevyP2|4: 89 24 11 5 1 
+724407|Random|25: 87 42 9 4 1 
+725895|Random|5: 93 29 14 4 1 
+726730|Random|36: 91 20 9 4 1 
+726758|Child_Cross12|45: 69 19 10 4 1 
+727159|Random|3: 88 25 14 4 1 
+730400|Child_Cross21|2: 90 35 10 3 1 
+731500|Child_Levy|32: 87 32 9 4 1 
+733285|Random|10: 96 36 11 3 1 
+734790|Random|31: 80 35 11 4 1 
+737568|Child_Levy|56: 36 11 3 1 
+739693|Child_Cross12|1: 99 31 9 4 1 
+740217|Child_Cross21|38: 94 29 11 3 1 
+742000|Random|5: 80 33 10 4 1 
+744944|Random|51: 93 27 8 3 1 
+745917|Child_Cross12|21|Mutated: 88 31 8 3 1 
+745991|Random|20: 83 46 13 4 1 
+746121|Random|24: 98 44 9 4 1 
+748024|Child_Cross21|14|Mutated: 78 25 10 4 1 
+750078|Random|10: 94 82 33 9 4 1 
+752985|Random|26: 63 25 9 4 1 
+753100|Random|17: 94 38 11 3 1 
+753581|Child_Cross21|54: 99 86 24 9 4 1 
+754779|Random|14: 87 44 9 4 1 
+754853|Random|98: 83 36 10 3 1 
+759749|Child_Cross12|53: 58 24 9 4 1 
+760087|Random|27: 53 13 4 1 
+760622|Child_Cross21|2: 99 78 23 10 4 1 
+767531|Random|3: 98 35 10 4 1 
+768203|Random|13: 95 32 11 4 1 
+770721|Child_Avg|11: 94 42 10 3 1 
+771049|Random|40: 93 63 13 4 1 
+771441|Child_Levy|20: 74 33 9 4 1 
+772626|Child_Cross21|42: 84 24 11 5 1 
+773756|Random|44: 82 29 10 3 1 
+777340|Child_Levy|60: 85 41 11 5 1 
+777733|Child_Levy|40: 58 25 10 4 1 
+784636|Child_Cross12|37: 93 35 14 4 1 
+789448|Random|98: 94 32 10 3 1 
+793936|Child_Cross12|25: 90 29 11 5 1 
+793949|Random|5: 92 37 10 4 1 
+794309|Child_Cross21|30: 99 32 11 4 1 
+794527|Child_Cross12|17: 84 33 13 4 1 
+795152|Random|5: 74 42 9 4 1 
+797594|Random|21: 96 33 13 4 1 
+798174|Random|26: 43 14 4 1 
+799936|Child_Cross12|21: 98 88 33 9 4 1 
+799959|Child_Cross12|9: 97 87 34 9 4 1 
+799962|Child_Cross21|2: 96 88 33 9 4 1 
+802174|Child_Levy|56: 98 40 12 5 1 
+805302|Child_Cross12|17: 67 27 10 4 1 
+807232|Child_LevyP2|4|Mutated: 93 25 11 5 1 
+810923|Random|7: 89 36 8 3 1 
+813101|Child_Cross21|14: 82 35 11 5 1 
+821343|Child_Cross12|13: 97 66 20 9 4 1 
+821624|Child_Levy|60: 72 25 10 4 1 
+821871|Random|9: 94 33 8 3 1 
+825411|Random|2: 95 59 13 4 1 
+827663|Child_LevyP1|3|Validated: 84 29 10 3 1 
+828085|Random|62: 96 21 10 4 1 
+829528|Child_LevyP2|10: 86 30 11 5 1 
+830182|Random|62: 94 38 8 3 1 
+835438|Child_Cross12|37: 83 28 10 3 1 
+836832|Random|1: 80 30 7 3 1 
+840779|Random|44: 98 39 8 3 1 
+841242|Random|64: 77 39 11 4 1 
+842235|Child_Cross12|37: 97 72 20 9 4 1 
+844959|Random|2: 83 30 8 3 1 
+845185|Random|24: 98 88 30 9 4 1 
+846034|Random|98: 81 35 11 4 1 
+846185|Random|10: 82 37 9 4 1 
+847181|Random|83: 84 34 10 3 1 
+848469|Random|19: 75 30 9 4 1 
+848490|Random|4: 83 37 10 4 1 
+849557|Child_Cross12|1: 88 47 9 4 1 
+853538|Random|25: 99 31 14 4 1 
+853937|Child_LevyP2|10: 97 40 12 5 1 
+855282|Random|16: 97 29 14 4 1 
+856057|Child_Cross12|53: 96 79 30 8 3 1 
+857392|Random|24: 86 26 7 3 1 
+857416|Random|20: 57 13 4 1 
+859033|Random|63: 98 32 9 4 1 
+859131|Random|5: 81 25 8 3 1 
+859453|Child_Cross12|9: 93 28 12 5 1 
+861440|Random|14: 87 31 14 4 1 
+865868|Random|22: 95 29 10 3 1 
+866365|Child_Cross12|17: 77 25 10 4 1 
+866480|Child_Cross12|29: 83 20 9 4 1 
+872159|Random|7: 94 54 13 4 1 
+874207|Random|12: 84 54 11 4 1 
+876674|Child_LevyP1|9|Mutated: 82 23 10 4 1 
+879047|Child_Cross21|38: 97 84 38 9 4 1 
+880839|Random|11: 85 50 13 4 1 
+883864|Child_Cross12|37: 77 28 11 4 1 
+884279|Random|13: 91 24 11 4 1 
+886168|Random|26: 88 33 14 4 1 
+888756|Random|2: 86 23 8 3 1 
+890241|Random|57: 75 33 10 3 1 
+890361|Child_LevyP2|4: 82 39 10 3 1 
+892573|Random|43: 98 39 10 3 1 
+894704|Random|1: 94 46 11 4 1 
+894781|Child_Levy|40: 87 30 11 5 1 
+901281|Survivor|1: 98 84 24 9 4 1 
+904456|Random|22: 82 21 10 4 1 
+908116|Random|85: 89 29 14 4 1 
+908456|Random|23: 99 81 24 9 4 1 
+912540|Child_Levy|12: 81 32 11 4 1 
+912784|Random|16: 76 25 10 4 1 
+914185|Random|8: 93 42 11 4 1 
+917895|Random|7: 88 33 13 4 1 
+919707|Random|24: 86 32 10 3 1 
+920175|Random|29: 66 23 7 3 1 
+921229|Random|96: 95 26 11 3 1 
+922313|Random|50: 47 11 4 1 
+922402|Random|25: 88 33 8 3 1 
+922501|Child_Cross21|18: 74 30 9 4 1 
+923591|Child_Levy|4: 80 29 14 4 1 
+924619|Random|96: 98 42 10 3 1 
+926604|Random|51: 85 39 10 3 1 
+926789|Random|11: 92 27 14 4 1 
+927990|Random|83: 95 43 9 4 1 
+928524|Child_Cross21|22: 92 39 10 4 1 
+928748|Child_Cross12|41: 84 25 8 3 1 
+933259|Child_Cross12|25: 80 32 13 4 1 
+933936|Random|18: 74 43 10 3 1 
+935101|Child_Cross12|41|Mutated: 77 44 9 4 1 
+935215|Child_Cross12|53: 85 20 9 4 1 
+935219|Random|2: 83 40 9 4 1 
+941513|Child_Cross21|54: 94 83 33 9 4 1 
+945473|Random|11: 87 45 13 4 1 
+945676|Child_Cross21|54: 92 36 11 5 1 
+947417|Child_LevyP1|9: 90 38 10 3 1 
+947720|Random|49: 83 26 10 3 1 
+950031|Child_Avg|15: 85 34 10 3 1 
+951511|Child_Cross21|18: 84 27 7 3 1 
+952186|Child_Cross12|57: 84 36 10 3 1 
+952829|Child_Cross12|9: 98 82 29 9 4 1 
+952936|Random|18: 87 27 14 4 1 
+953611|Survivor|1: 86 42 9 4 1 
+957361|Child_Cross12|37: 88 36 13 4 1 
+958675|Random|8: 83 31 10 4 1 
+960372|Random|25: 99 43 10 3 1 
+960683|Random|17: 97 32 10 3 1 
+961816|Child_Cross21|22: 99 88 33 9 4 1 
+963659|Child_Levy|20: 32 13 5 1 
+964322|Child_LevyP1|9: 87 26 9 4 1 
+969129|Random|71: 86 25 8 3 1 
+970917|Random|22: 99 40 13 4 1 
+972194|Random|20: 92 31 11 4 1 
+974927|Random|4: 99 38 10 3 1 
+975857|Child_Cross21|54: 96 37 10 4 1 
+976919|Random|62: 64 17 10 4 1 
+978158|Random|14: 99 37 14 4 1 
+983273|Random|5: 86 32 9 4 1 
+984126|Random|18: 91 25 10 3 1 
+984273|Child_Levy|36: 70 25 9 4 1 
+985353|Random|38: 80 39 11 4 1 
+991264|Random|16: 65 26 7 3 1 
+995783|Child_Cross12|37: 93 24 11 5 1 
+1000383|Child_Cross21|30: 95 70 29 9 4 1 
+1001425|Random|19: 92 38 11 4 1 
+1003937|Random|54: 99 41 10 3 1 
+1004066|Random|24: 66 17 10 4 1 
+1006104|Random|27: 78 45 13 4 1 
+1006314|Random|5: 72 34 9 4 1 
+1011202|Random|1: 80 19 10 4 1 
+1012478|Child_LevyP1|9: 94 36 11 5 1 
+1012568|Child_Cross21|30: 98 35 13 5 1 
+1015205|Random|92: 87 36 8 3 1 
+1016179|Random|38: 71 43 9 4 1 
+1016872|Random|64: 82 37 13 4 1 
+1020195|Random|3: 76 43 9 4 1 
+1024242|Child_Cross21|54: 96 31 10 3 1 
+1027389|Random|2: 87 26 10 3 1 
+1028019|Random|95: 83 33 10 3 1 
+1028428|Child_LevyP2|4: 80 47 9 4 1 
+1028647|Random|17: 80 32 10 3 1 
+1030117|Survivor|1: 85 54 13 4 1 
+1032681|Random|20: 60 19 10 4 1 
+1033265|Child_Cross12|13|Mutated: 82 23 8 3 1 
+1038311|Child_Cross21|42|Mutated: 92 29 10 3 1 
+1039017|Random|12: 82 50 11 4 1 
+1042246|Child_Cross21|6: 47 11 5 1 
+1042394|Random|22: 79 33 8 3 1 
+1045917|Child_Cross21|34: 99 81 25 9 4 1 
+1046890|Child_Cross21|18: 89 31 10 3 1 
+1053320|Random|9: 80 36 10 3 1 
+1056261|Child_Cross12|49: 94 32 13 5 1 
+1061436|Random|58: 81 50 11 4 1 
+1062013|Random|69: 91 27 8 3 1 
+1062022|Random|4: 70 27 10 4 1 
+1067751|Random|40: 85 38 11 4 1 
+1067934|Random|17: 93 27 14 4 1 
+1069605|Random|13: 99 81 20 9 4 1 
+1071926|Child_CrossABC1|1: 23 13 4 1 
+1073827|Random|23: 36 15 4 1 
+1075611|Child_LevyP2|4: 90 35 12 5 1 
+1076282|Child_Cross21|18: 98 65 24 9 4 1 
+1078411|Random|17: 90 26 8 3 1 
+1080097|Child_Cross21|14: 99 82 37 10 4 1 
+1080149|Child_Cross12|13: 96 31 9 4 1 
+1084338|Child_Cross21|10: 97 85 32 13 4 1 
+1087128|Child_Levy|16: 48 13 5 1 
+1093435|Survivor|1: 82 31 9 4 1 
+1096795|Random|11: 98 81 29 9 4 1 
+1101366|Child_Cross12|57: 99 75 29 9 4 1 
+1105779|Child_Levy|4|Mutated: 77 24 11 4 1 
+1106290|Child_Cross21|58: 96 58 24 9 4 1 
+1110030|Random|26: 84 26 7 3 1 
+1113874|Random|24: 87 38 11 4 1 
+1122469|Child_Cross12|57: 88 43 9 4 1 
+1123710|Random|87: 73 30 9 4 1 
+1124854|Random|55: 95 62 13 4 1 
+1126564|Random|23: 88 37 13 4 1 
+1128860|Child_Cross21|38|Mutated: 96 35 12 5 1 
+1131849|Random|7: 99 64 19 10 4 1 
+1131993|Child_Cross12|9: 79 19 10 4 1 
+1132520|Random|3: 89 37 10 3 1 
+1132542|Child_LevyP2|4: 86 48 9 4 1 
+1135547|Child_Cross12|33: 99 25 10 4 1 
+1135944|Random|7: 95 38 11 3 1 

@@ -1,6 +1,4 @@
 # Makefile for ShellsortResearch Project
-# Author: GitHub Copilot
-# Date: January 24, 2026
 
 # Compiler settings
 CXX = g++

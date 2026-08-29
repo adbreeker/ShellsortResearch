@@ -1,0 +1,2081 @@
+5|Child_Cross12|53: 97 28 11 4 1 
+6|Child_Avg|31: 93 29 10 4 1 
+12|Child_Cross12|37: 77 23 10 4 1 
+13|Child_CrossABC2|2: 93 23 10 4 1 
+15|Child_Cross21|22|Mutated: 89 27 10 4 1 
+17|Child_Cross12|13: 74 23 10 4 1 
+27|Child_CrossABC2|8: 100 23 10 4 1 
+32|Child_CrossABC1|1: 70 23 10 4 1 
+34|Child_Cross12|45: 81 23 10 4 1 
+37|Child_Cross12|5: 71 23 10 4 1 
+39|Child_Cross21|42: 70 19 10 4 1 
+50|Child_Cross21|18: 80 23 10 4 1 
+51|Child_Cross21|54: 100 21 10 4 1 
+52|Child_Avg|27: 94 23 10 4 1 
+54|Child_Cross12|1: 77 21 10 4 1 
+62|Child_CrossABC1|1: 78 21 10 4 1 
+69|Child_Cross12|13: 88 21 10 4 1 
+70|Child_Cross12|29: 67 21 10 4 1 
+72|Child_Cross12|5: 80 21 10 4 1 
+75|Child_Cross21|2: 70 21 10 4 1 
+84|Child_Avg|47: 79 21 10 4 1 
+89|Child_LevyABC1|5: 75 24 11 5 1 
+93|Child_CrossABC1|1: 66 21 10 4 1 
+104|Child_Cross12|17: 69 21 10 4 1 
+148|Child_Cross12|33: 68 21 10 4 1 
+162|Child_Avg|11: 76 21 10 4 1 
+190|Child_Avg|7: 72 19 10 4 1 
+201|Child_Cross21|50: 71 21 10 4 1 
+210|Child_Avg|47: 91 24 9 4 1 
+233|Child_Cross21|42: 71 19 10 4 1 
+238|Child_Cross12|29: 73 19 10 4 1 
+241|Child_Avg|31: 69 19 10 4 1 
+289|Child_Cross12|1: 72 20 9 4 1 
+323|Child_Avg|7|Mutated: 70 20 9 4 1 
+409|Survivor|1: 100 31 10 4 1 
+411|Child_CrossABC1|7: 100 27 10 4 1 
+412|Child_Avg|39: 104 28 11 4 1 
+413|Child_Avg|55: 102 27 10 4 1 
+419|Child_Levy|12: 77 24 11 5 1 
+421|Child_Avg|27: 73 24 9 4 1 
+437|Child_Cross21|54|Mutated: 84 23 10 4 1 
+462|Child_Cross12|49: 90 21 10 4 1 
+480|Random|7: 217 67 21 10 4 1 
+490|Child_Cross21|30: 204 67 21 10 4 1 
+494|Child_Cross21|42: 208 67 21 10 4 1 
+512|Child_Cross12|21: 222 80 21 10 4 1 
+514|Child_Cross21|30|Mutated: 231 67 21 10 4 1 
+517|Child_Cross21|58: 224 67 21 10 4 1 
+518|Child_CrossABC1|7: 221 77 21 10 4 1 
+520|Child_Avg|3: 220 79 21 10 4 1 
+521|Child_Cross12|25: 216 67 21 10 4 1 
+524|Child_Cross21|42: 219 67 21 10 4 1 
+525|Child_Avg|19: 223 77 21 10 4 1 
+526|Child_Cross12|33: 218 78 21 10 4 1 
+529|Child_Cross21|34: 221 67 21 10 4 1 
+532|Child_Cross12|5: 220 77 21 10 4 1 
+535|Child_Avg|55: 218 79 21 10 4 1 
+536|Child_Cross21|10: 221 80 21 10 4 1 
+537|Child_Avg|31: 215 78 21 10 4 1 
+538|Child_Cross12|17: 217 78 21 10 4 1 
+540|Child_Avg|19: 223 78 21 10 4 1 
+541|Child_Avg|11: 216 77 21 10 4 1 
+545|Child_Avg|59: 215 77 21 10 4 1 
+546|Child_Cross12|53: 212 77 21 10 4 1 
+548|Child_Cross12|45: 208 77 21 10 4 1 
+553|Child_Cross21|10: 214 77 21 10 4 1 
+555|Child_Cross21|22: 214 79 21 10 4 1 
+557|Child_Cross12|53: 222 77 21 10 4 1 
+558|Child_Cross12|29: 225 77 21 10 4 1 
+567|Child_CrossABC2|8: 215 80 21 10 4 1 
+569|Child_Avg|11: 214 78 21 10 4 1 
+572|Child_Avg|7|Mutated: 232 70 21 10 4 1 
+573|Child_Avg|7: 213 77 21 10 4 1 
+575|Child_CrossABC1|1: 209 77 21 10 4 1 
+581|Child_Cross12|29: 218 77 21 10 4 1 
+588|Child_Cross21|6: 248 69 21 10 4 1 
+593|Child_Cross21|30: 219 77 21 10 4 1 
+605|Child_Avg|39: 211 77 21 10 4 1 
+614|Child_Cross21|26: 225 79 21 10 4 1 
+620|Child_Cross12|37: 234 77 21 10 4 1 
+621|Child_Cross12|57: 212 79 21 10 4 1 
+622|Child_Cross12|9: 213 78 21 10 4 1 
+623|Child_Cross12|41: 217 80 21 10 4 1 
+624|Child_Cross12|45: 212 78 21 10 4 1 
+625|Child_Cross21|34: 214 66 21 10 4 1 
+635|Child_Avg|35: 204 77 21 10 4 1 
+677|Child_Avg|35: 217 77 21 10 4 1 
+715|Child_Avg|47: 210 71 19 10 4 1 
+768|Child_Levy|12: 79 29 9 4 1 
+770|Child_Cross21|50|Mutated: 65 24 9 4 1 
+774|Child_Cross12|5: 68 20 9 4 1 
+812|Child_Avg|35: 107 27 10 4 1 
+813|Child_Cross21|54: 211 79 21 10 4 1 
+852|Child_CrossABC2|2: 75 27 10 4 1 
+856|Child_Avg|27: 92 27 10 4 1 
+857|Child_CrossABC1|7: 76 24 9 4 1 
+902|Child_Cross21|30: 78 24 11 4 1 
+924|Child_Avg|27: 106 24 9 4 1 
+925|Child_Avg|27: 86 27 10 4 1 
+928|Child_Cross21|18: 71 24 9 4 1 
+950|Random|42: 195 76 24 9 4 1 
+955|Child_Cross21|10: 70 24 9 4 1 
+959|Child_Cross12|57: 77 24 9 4 1 
+961|Child_Avg|23: 67 24 9 4 1 
+994|Child_Cross12|9|Mutated: 78 23 10 4 1 
+1024|Child_Cross12|17: 93 24 11 5 1 
+1026|Child_LevyABC2|12|Mutated: 93 28 12 5 1 
+1029|Child_CrossABC1|1: 90 23 10 4 1 
+1033|Child_Avg|39: 96 27 10 4 1 
+1038|Child_CrossABC2|2|Mutated: 97 23 10 4 1 
+1040|Survivor|1|Mutated: 104 24 11 5 1 
+1049|Child_Cross21|14: 89 21 10 4 1 
+1062|Child_Cross21|54: 98 21 10 4 1 
+1080|Child_Avg|19: 87 21 10 4 1 
+1182|Child_Avg|55: 103 29 10 4 1 
+1193|Child_Avg|19: 68 24 9 4 1 
+1220|Child_Cross21|54: 175 50 19 10 4 1 
+1259|Child_Cross21|42: 245 73 19 10 4 1 
+1291|Survivor|1: 80 27 10 4 1 
+1353|Survivor|1: 99 29 10 4 1 
+1354|Child_Levy|24: 70 29 9 4 1 
+1355|Child_Cross21|6: 79 24 9 4 1 
+1358|Child_Levy|16|Mutated: 72 27 10 4 1 
+1415|Survivor|1: 78 24 11 5 1 
+1428|Child_CrossABC2|2: 77 20 9 4 1 
+1501|Survivor|1: 101 29 10 4 1 
+1507|Child_Avg|59: 80 24 9 4 1 
+1511|Child_Cross21|38: 75 20 9 4 1 
+1516|Child_Avg|19|Mutated: 79 27 10 4 1 
+1518|Child_CrossABC2|8: 85 24 9 4 1 
+1519|Child_Cross21|26: 99 27 10 4 1 
+1569|Random|24: 107 31 10 4 1 
+1631|Child_Avg|43: 66 20 9 4 1 
+1661|Survivor|1: 93 29 9 4 1 
+1665|Child_Levy|56: 68 23 10 4 1 
+1672|Child_Cross12|9: 87 23 10 4 1 
+1715|Child_Cross12|53: 104 29 10 4 1 
+1720|Child_LevyP2|10: 99 30 11 5 1 
+1808|Child_CrossABC2|8: 220 60 21 10 4 1 
+1809|Child_CrossABC1|7: 221 60 23 10 4 1 
+1820|Child_Avg|51: 97 27 10 4 1 
+1822|Survivor|1: 84 29 9 4 1 
+1892|Survivor|1: 74 20 9 4 1 
+1897|Child_Avg|51: 94 24 9 4 1 
+1930|Child_Avg|19: 89 31 10 4 1 
+1934|Child_Cross21|38: 116 27 10 4 1 
+1946|Child_Cross21|6: 72 25 9 4 1 
+1965|Survivor|1: 79 20 9 4 1 
+2034|Child_Avg|15: 97 24 11 4 1 
+2067|Survivor|1: 97 24 11 5 1 
+2073|Child_CrossABC1|7: 82 24 9 4 1 
+2078|Child_Avg|35: 64 24 9 4 1 
+2126|Random|27: 242 72 20 9 4 1 
+2128|Child_CrossABC2|2|Mutated: 66 27 10 4 1 
+2132|Survivor|1: 201 70 21 10 4 1 
+2136|Survivor|1: 91 24 11 5 1 
+2152|Child_CrossABC2|8: 73 25 10 4 1 
+2161|Child_CrossABC2|8: 91 21 10 4 1 
+2241|Child_Levy|52: 90 29 10 4 1 
+2242|Child_CrossABC2|2: 90 27 10 4 1 
+2411|Random|26: 243 102 27 10 4 1 
+2427|Survivor|1: 104 29 9 4 1 
+2429|Child_Avg|23: 82 27 10 4 1 
+2447|Child_Avg|3: 88 24 9 4 1 
+2449|Child_Avg|3: 60 23 10 4 1 
+2517|Survivor|1: 73 27 10 4 1 
+2526|Child_Levy|20: 74 24 9 4 1 
+2558|Child_Avg|43: 71 29 10 4 1 
+2595|Child_CrossABC2|8|Mutated: 92 29 10 4 1 
+2607|Child_Avg|15: 95 24 9 4 1 
+2609|Child_Cross21|18: 97 24 9 4 1 
+2628|Child_Cross12|49: 81 21 10 4 1 
+2673|Child_Avg|19: 72 29 9 4 1 
+2733|Child_Levy|32: 81 32 13 4 1 
+2735|Child_Cross12|1: 220 63 19 10 4 1 
+2758|Child_Avg|43: 83 24 9 4 1 
+2767|Random|15: 98 28 11 4 1 
+2844|Child_LevyP1|9: 95 24 11 5 1 
+2874|Child_CrossABC2|8: 98 24 9 4 1 
+2877|Child_CrossABC1|1: 67 23 10 4 1 
+2902|Survivor|1: 199 85 24 9 4 1 
+2903|Child_Avg|27|Mutated: 92 24 9 4 1 
+2906|Child_Avg|7: 89 24 9 4 1 
+3037|Child_Avg|11: 91 23 10 4 1 
+3057|Child_Avg|59: 103 23 10 4 1 
+3094|Child_CrossABC1|7: 69 27 10 4 1 
+3149|Child_Levy|24|Mutated: 101 23 10 4 1 
+3153|Child_Levy|36: 102 28 11 4 1 
+3240|Child_Levy|40|Mutated: 103 30 11 5 1 
+3245|Child_CrossABC2|8: 103 27 10 4 1 
+3300|Random|21: 86 24 9 4 1 
+3346|Survivor|1: 94 28 13 4 1 
+3417|Child_LevyP1|3: 94 30 11 5 1 
+3423|Child_CrossABC1|1: 76 27 10 4 1 
+3439|Child_Cross12|37: 244 79 24 9 4 1 
+3442|Child_Cross21|54: 200 86 24 9 4 1 
+3443|Child_CrossABC2|2: 219 88 24 9 4 1 
+3488|Survivor|1: 61 24 9 4 1 
+3592|Survivor|1: 73 23 10 4 1 
+3630|Child_Levy|28: 93 24 11 4 1 
+3633|Child_Levy|16|Mutated: 102 29 10 4 1 
+3642|Child_CrossABC2|8: 100 24 9 4 1 
+3647|Child_Avg|19: 103 24 9 4 1 
+3654|Child_Avg|39: 88 23 10 4 1 
+3665|Child_CrossABC2|2: 83 23 10 4 1 
+3697|Child_Levy|8: 70 29 10 4 1 
+3701|Survivor|1: 88 29 9 4 1 
+3734|Child_Levy|4: 216 71 24 9 4 1 
+3851|Child_Avg|47: 99 29 9 4 1 
+3889|Child_Levy|12: 67 24 11 4 1 
+3890|Child_CrossABC1|1: 80 24 11 4 1 
+4009|Child_CrossABC2|2: 59 21 10 4 1 
+4025|Child_Levy|60: 80 24 11 5 1 
+4174|Child_Levy|8: 94 25 9 4 1 
+4260|Child_LevyABC1|5: 106 24 11 5 1 
+4361|Random|87: 113 32 13 4 1 
+4377|Child_LevyP1|9: 105 30 11 5 1 
+4379|Child_CrossABC1|7: 99 24 11 5 1 
+4401|Child_Levy|36: 82 24 11 5 1 
+4418|Child_Levy|20: 75 29 9 4 1 
+4420|Survivor|1: 93 27 10 4 1 
+4512|Survivor|1|Mutated: 103 31 11 4 1 
+4562|Child_CrossABC1|1: 75 29 10 4 1 
+4566|Child_Avg|27: 74 29 10 4 1 
+4625|Survivor|1: 202 89 21 10 4 1 
+4645|Child_Avg|11: 237 76 28 11 4 1 
+4857|Child_Avg|7: 110 23 10 4 1 
+4858|Child_CrossABC2|2: 113 29 10 4 1 
+4869|Child_Levy|12|Mutated: 95 29 9 4 1 
+4888|Child_Levy|12|Mutated: 104 23 10 4 1 
+4906|Child_CrossABC1|7: 109 27 10 4 1 
+4931|Child_Levy|48: 72 30 11 5 1 
+4935|Child_Levy|20: 83 27 10 4 1 
+5089|Child_Levy|48: 100 29 10 4 1 
+5096|Random|24: 77 28 11 4 1 
+5147|Child_Levy|24: 91 24 11 4 1 
+5159|Survivor|1: 219 79 20 9 4 1 
+5172|Child_Levy|48: 219 78 21 10 4 1 
+5219|Child_Cross12|21: 175 68 21 10 4 1 
+5509|Child_Cross12|25: 77 24 11 4 1 
+5544|Child_Cross12|17: 242 75 20 9 4 1 
+5555|Child_Cross12|5: 201 82 19 10 4 1 
+5785|Survivor|1: 92 28 11 4 1 
+5800|Child_CrossABC1|1: 99 21 10 4 1 
+5872|Survivor|1: 247 186 52 20 9 4 1 
+5921|Child_Avg|59: 81 29 10 4 1 
+5931|Random|55: 104 32 13 4 1 
+5985|Survivor|1: 158 55 20 9 4 1 
+6003|Child_Levy|60: 100 30 11 5 1 
+6062|Child_Cross21|30: 238 67 24 9 4 1 
+6113|Child_CrossABC1|1|Mutated: 60 21 10 4 1 
+6172|Child_Cross12|9: 240 94 23 10 4 1 
+6230|Child_Avg|43: 81 25 9 4 1 
+6246|Survivor|1: 110 27 10 4 1 
+6268|Random|23: 247 57 23 10 4 1 
+6456|Child_LevyP2|4: 88 24 11 5 1 
+6463|Child_Levy|60: 92 25 9 4 1 
+6501|Survivor|1: 103 33 9 4 1 
+6505|Child_Cross12|9: 102 28 13 4 1 
+6538|Survivor|1: 90 29 9 4 1 
+6738|Survivor|1: 101 28 12 5 1 
+6790|Child_CrossABC2|8: 237 70 29 9 4 1 
+7114|Child_Levy|12: 107 23 10 4 1 
+7131|Survivor|1: 107 30 11 5 1 
+7204|Child_Cross21|14: 221 59 24 9 4 1 
+7240|Survivor|1: 231 79 27 10 4 1 
+7317|Child_Avg|43: 97 29 9 4 1 
+7350|Child_CrossABC2|2: 73 23 12 5 1 
+7389|Survivor|1: 242 74 23 10 4 1 
+7391|Child_Cross12|25: 228 81 23 10 4 1 
+7395|Survivor|1: 243 80 23 10 4 1 
+7398|Child_Cross12|41: 224 70 23 10 4 1 
+7399|Child_Avg|3: 229 73 23 10 4 1 
+7400|Child_Cross12|25: 238 70 23 10 4 1 
+7401|Child_Cross12|5: 238 80 23 10 4 1 
+7405|Child_Cross12|9: 241 71 23 10 4 1 
+7408|Child_Cross12|33: 237 67 23 10 4 1 
+7410|Child_Cross12|45: 239 71 23 10 4 1 
+7411|Child_Cross21|22: 237 71 23 10 4 1 
+7440|Child_Avg|31: 76 28 11 4 1 
+7446|Child_LevyABC1|5: 86 24 11 5 1 
+7519|Child_Cross21|26|Mutated: 236 88 24 9 4 1 
+7555|Child_Avg|47: 94 29 10 4 1 
+7626|Child_Levy|28: 110 29 10 4 1 
+7748|Survivor|1: 99 28 11 4 1 
+7913|Child_Cross21|50: 218 70 19 10 4 1 
+7915|Survivor|1: 218 72 19 10 4 1 
+8041|Child_Cross12|53: 95 27 10 4 1 
+8072|Child_Avg|55|Mutated: 208 62 19 10 4 1 
+8080|Child_Avg|55: 69 25 9 4 1 
+8099|Child_Cross12|5: 73 17 10 4 1 
+8104|Child_Avg|23: 74 19 13 4 1 
+8108|Random|26: 103 28 11 4 1 
+8276|Child_Avg|47: 95 24 11 4 1 
+8309|Survivor|1: 220 61 20 9 4 1 
+8358|Child_Cross21|6: 79 19 10 4 1 
+8490|Child_Avg|51: 74 21 9 4 1 
+8515|Survivor|1|Mutated: 86 29 9 4 1 
+8696|Random|21: 57 23 10 4 1 
+8764|Child_Avg|7: 93 28 11 4 1 
+8827|Survivor|1: 200 67 21 10 4 1 
+8906|Random|4: 80 29 10 4 1 
+9007|Child_Avg|55: 101 24 9 4 1 
+9072|Child_Cross12|49: 219 67 24 9 4 1 
+9141|Child_Avg|27: 102 29 9 4 1 
+9285|Child_Levy|36: 91 29 9 4 1 
+9409|Survivor|1: 81 19 10 4 1 
+9803|Survivor|1: 240 91 21 10 4 1 
+10000|Survivor|1: 91 27 14 4 1 
+10060|Survivor|1: 79 32 13 4 1 
+10090|Survivor|1: 209 73 19 10 4 1 
+10342|Child_Cross21|54: 88 32 13 4 1 
+10478|Child_LevyP2|10: 89 24 11 5 1 
+10501|Child_Levy|56: 75 24 11 4 1 
+10556|Child_Cross12|5: 80 19 10 4 1 
+10657|Child_Avg|11: 101 32 13 4 1 
+10697|Child_Levy|40: 94 27 10 4 1 
+10698|Child_Avg|43: 74 23 10 3 1 
+10730|Child_Cross21|34: 217 89 21 10 4 1 
+10747|Child_Cross21|42|Mutated: 243 89 21 10 4 1 
+10752|Child_Cross21|10: 230 89 21 10 4 1 
+10771|Child_Avg|55|Mutated: 89 33 9 4 1 
+10985|Child_Levy|40: 98 28 13 4 1 
+11039|Child_Avg|55: 96 23 10 4 1 
+11043|Child_Avg|3: 97 21 10 4 1 
+11054|Child_Cross12|1|Mutated: 216 56 21 10 4 1 
+11151|Child_LevyP1|3|Mutated: 241 87 33 10 4 1 
+11154|Child_LevyP1|3: 89 28 12 5 1 
+11160|Child_LevyP1|3: 73 24 11 5 1 
+11368|Child_Cross21|42: 158 57 21 10 4 1 
+11512|Child_Cross21|42: 104 24 11 4 1 
+11520|Child_CrossABC1|1: 106 27 10 4 1 
+11596|Child_Levy|40: 191 71 19 10 4 1 
+11598|Child_LevyABC1|11: 92 30 11 5 1 
+11710|Child_CrossABC2|2: 92 28 13 4 1 
+11718|Child_Cross12|13: 95 29 10 4 1 
+11759|Survivor|1: 197 113 27 10 4 1 
+11763|Child_CrossABC2|2|Mutated: 100 28 9 4 1 
+11808|Child_Levy|32: 106 28 13 4 1 
+12005|Child_Cross12|29: 99 19 10 4 1 
+12036|Child_Avg|55: 64 19 10 4 1 
+12222|Child_Avg|11: 101 29 9 4 1 
+12262|Child_Cross21|18: 104 28 13 4 1 
+12265|Child_Levy|16: 100 29 11 5 1 
+12298|Child_CrossABC1|1: 98 23 12 5 1 
+12311|Child_Cross21|46: 233 66 21 10 4 1 
+12329|Child_Cross21|50: 223 66 21 10 4 1 
+12332|Child_Cross21|6: 239 66 21 10 4 1 
+12333|Child_Cross12|5: 218 66 21 10 4 1 
+12334|Child_Cross12|29: 232 66 21 10 4 1 
+12335|Child_Avg|7|Mutated: 231 66 21 10 4 1 
+12337|Child_Avg|3: 229 66 21 10 4 1 
+12338|Child_Avg|55: 234 66 21 10 4 1 
+12339|Child_Avg|7: 226 66 21 10 4 1 
+12341|Child_Cross12|21: 227 66 21 10 4 1 
+12342|Child_Avg|11|Mutated: 232 67 21 10 4 1 
+12343|Child_Avg|55: 228 66 21 10 4 1 
+12344|Child_Avg|23: 233 67 21 10 4 1 
+12345|Child_Cross12|9: 232 69 21 10 4 1 
+12350|Child_Cross21|18: 214 67 21 10 4 1 
+12358|Child_Avg|15: 230 66 21 10 4 1 
+12359|Child_Cross21|38: 227 70 21 10 4 1 
+12362|Child_Avg|7: 228 68 21 10 4 1 
+12363|Child_Cross12|49: 227 67 21 10 4 1 
+12366|Child_Avg|31: 230 67 21 10 4 1 
+12371|Child_Cross21|14: 234 67 21 10 4 1 
+12374|Child_Cross21|38: 228 67 21 10 4 1 
+12378|Child_CrossABC1|7: 229 67 21 10 4 1 
+12379|Child_CrossABC2|8: 237 67 21 10 4 1 
+12391|Child_Cross21|30: 225 66 21 10 4 1 
+12393|Child_Avg|23: 235 67 21 10 4 1 
+12394|Child_Cross21|22: 236 66 21 10 4 1 
+12400|Child_Cross21|6: 213 66 21 10 4 1 
+12414|Child_Avg|39: 238 67 21 10 4 1 
+12444|Child_Cross12|13: 208 63 19 10 4 1 
+12465|Child_Avg|27: 88 28 11 4 1 
+12478|Child_LevyP2|4|Mutated: 94 32 13 4 1 
+12517|Child_Levy|4: 100 28 13 4 1 
+12639|Child_Levy|20: 79 25 9 4 1 
+12800|Child_Cross21|30: 243 70 21 10 4 1 
+12861|Survivor|1: 101 33 9 4 1 
+12937|Child_Avg|15: 188 57 23 10 4 1 
+13049|Child_Avg|15: 211 68 23 10 4 1 
+13052|Child_Levy|16|Mutated: 188 68 23 10 4 1 
+13290|Child_LevyABC2|12: 104 25 14 4 1 
+13295|Child_CrossABC2|2|Mutated: 88 24 11 4 1 
+13458|Child_Cross12|29: 209 68 23 10 4 1 
+13488|Child_Avg|27: 63 27 10 4 1 
+13531|Survivor|1: 228 80 21 10 4 1 
+13539|Child_Cross21|38: 206 70 21 10 4 1 
+13633|Survivor|1: 225 67 24 9 4 1 
+13673|Child_Levy|28: 91 28 11 4 1 
+13675|Child_Avg|47: 87 27 10 4 1 
+13731|Child_Levy|32: 115 28 11 4 1 
+13740|Child_Levy|48: 100 27 13 5 1 
+13863|Survivor|1: 106 29 9 4 1 
+13991|Child_Levy|44: 105 28 12 5 1 
+14042|Child_Cross12|29: 220 79 19 10 4 1 
+14091|Child_LevyABC2|6: 102 24 11 5 1 
+14092|Child_CrossABC1|1: 101 24 11 5 1 
+14349|Survivor|1: 101 24 11 4 1 
+14402|Child_Avg|51: 58 24 9 4 1 
+14599|Random|9: 198 71 19 10 4 1 
+14636|Random|7: 202 59 24 9 4 1 
+14774|Child_Cross12|21: 153 61 19 10 4 1 
+14856|Child_Cross12|41: 206 60 21 10 4 1 
+14931|Survivor|1|Mutated: 78 25 9 4 1 
+14982|Random|13: 237 70 24 9 4 1 
+15149|Child_Levy|44: 116 30 11 5 1 
+15371|Child_Cross12|45: 175 59 21 10 4 1 
+15429|Child_CrossABC1|1: 95 23 14 4 1 
+15653|Child_Cross21|58|Mutated: 90 19 10 4 1 
+15656|Child_Cross12|21: 240 88 21 10 4 1 
+15800|Child_Avg|11: 110 35 11 4 1 
+15898|Child_Cross12|5: 58 23 10 4 1 
+16090|Child_Cross12|45: 217 88 21 10 4 1 
+16102|Child_CrossABC2|8: 226 88 21 10 4 1 
+16104|Child_Avg|51: 221 88 21 10 4 1 
+16109|Child_Cross21|54: 219 88 21 10 4 1 
+16110|Child_Cross21|10: 230 88 21 10 4 1 
+16113|Child_Cross12|53: 220 88 21 10 4 1 
+16114|Child_Cross21|30: 207 88 21 10 4 1 
+16115|Child_Avg|39: 225 88 21 10 4 1 
+16117|Survivor|1: 227 88 21 10 4 1 
+16132|Child_CrossABC2|2: 235 82 27 10 4 1 
+16133|Child_Cross21|58: 227 87 21 10 4 1 
+16140|Child_Cross21|34: 233 88 21 10 4 1 
+16144|Child_Cross21|38: 224 88 21 10 4 1 
+16146|Child_Avg|51: 218 87 21 10 4 1 
+16148|Child_Avg|3|Mutated: 228 87 23 10 4 1 
+16149|Child_Avg|55: 225 87 21 10 4 1 
+16150|Child_CrossABC1|7: 224 87 21 10 4 1 
+16152|Child_Avg|11: 228 87 21 10 4 1 
+16153|Child_CrossABC2|2: 230 87 21 10 4 1 
+16154|Child_Avg|59: 223 87 21 10 4 1 
+16156|Child_Cross21|58: 220 87 21 10 4 1 
+16158|Child_Cross21|46: 229 87 21 10 4 1 
+16159|Child_Avg|11: 222 87 21 10 4 1 
+16162|Child_Cross12|57: 226 87 21 10 4 1 
+16163|Child_Cross21|6|Mutated: 226 70 21 10 4 1 
+16164|Child_Cross12|29: 221 87 21 10 4 1 
+16167|Child_Avg|3: 224 68 21 10 4 1 
+16172|Child_Avg|47: 223 79 21 10 4 1 
+16174|Child_Cross12|29|Mutated: 221 78 21 10 4 1 
+16177|Child_Cross12|29: 222 78 21 10 4 1 
+16178|Child_Cross21|46: 224 78 21 10 4 1 
+16190|Child_Avg|59: 211 78 21 10 4 1 
+16199|Child_Cross21|38|Mutated: 212 80 21 10 4 1 
+16212|Child_Cross21|22: 227 77 21 10 4 1 
+16214|Child_Cross21|46: 227 80 21 10 4 1 
+16221|Child_Avg|51: 220 78 21 10 4 1 
+16225|Child_Cross12|37: 219 81 21 10 4 1 
+16228|Child_Cross12|49|Mutated: 203 77 21 10 4 1 
+16229|Child_Cross12|53: 226 77 21 10 4 1 
+16230|Child_Cross12|21: 217 70 21 10 4 1 
+16232|Child_Cross21|58: 202 77 21 10 4 1 
+16241|Child_Cross21|46|Mutated: 219 69 21 10 4 1 
+16249|Child_Cross21|6|Mutated: 218 70 21 10 4 1 
+16254|Child_Avg|11: 201 77 21 10 4 1 
+16267|Child_Avg|55|Mutated: 219 79 21 10 4 1 
+16286|Child_Cross21|2: 215 79 21 10 4 1 
+16287|Child_Cross21|10: 214 69 21 10 4 1 
+16291|Child_Cross12|57: 224 77 21 10 4 1 
+16308|Child_CrossABC2|8: 222 79 19 10 4 1 
+16313|Child_Cross12|9: 200 77 21 10 4 1 
+16317|Child_Cross21|26: 222 77 20 9 4 1 
+16325|Child_Cross12|41: 224 79 20 9 4 1 
+16326|Child_Avg|19: 221 77 20 9 4 1 
+16328|Child_Avg|19: 222 79 20 9 4 1 
+16337|Child_CrossABC1|1: 218 81 20 9 4 1 
+16338|Child_Cross12|29: 220 81 20 9 4 1 
+16339|Child_Avg|27: 217 77 20 9 4 1 
+16340|Child_Avg|51: 219 77 20 9 4 1 
+16342|Child_Cross21|30: 218 77 20 9 4 1 
+16344|Child_Cross12|33: 215 79 20 9 4 1 
+16345|Child_Cross21|50: 218 74 20 9 4 1 
+16348|Child_Avg|27: 216 77 20 9 4 1 
+16350|Child_Cross21|10: 221 83 20 9 4 1 
+16353|Child_Cross21|38: 220 77 20 9 4 1 
+16361|Child_Cross21|26|Mutated: 217 92 20 9 4 1 
+16365|Child_Cross21|58: 221 79 20 9 4 1 
+16368|Child_Cross12|57|Mutated: 226 77 20 9 4 1 
+16371|Child_Cross21|42: 220 79 20 9 4 1 
+16374|Child_Cross21|54: 207 77 20 9 4 1 
+16376|Child_Cross12|49|Mutated: 218 77 24 9 4 1 
+16378|Child_Cross21|14: 215 81 20 9 4 1 
+16379|Child_Cross12|41: 213 79 20 9 4 1 
+16381|Child_Cross21|30: 212 79 20 9 4 1 
+16383|Child_Avg|23|Mutated: 213 66 20 9 4 1 
+16389|Child_Cross12|17|Mutated: 217 77 24 9 4 1 
+16390|Child_CrossABC1|7: 219 80 24 9 4 1 
+16392|Child_CrossABC2|8|Mutated: 221 64 24 9 4 1 
+16393|Child_Cross21|18: 217 63 20 9 4 1 
+16397|Child_Cross21|34: 204 79 20 9 4 1 
+16399|Child_Cross21|14: 231 63 20 9 4 1 
+16403|Child_Cross21|2: 216 86 20 9 4 1 
+16404|Child_Cross12|37: 209 68 20 9 4 1 
+16413|Child_Avg|15: 213 75 20 9 4 1 
+16414|Child_Cross12|9: 215 66 20 9 4 1 
+16417|Child_Avg|55: 213 72 20 9 4 1 
+16420|Child_Cross12|45: 217 72 20 9 4 1 
+16421|Child_Cross21|38: 215 74 20 9 4 1 
+16424|Child_CrossABC1|7: 219 68 20 9 4 1 
+16430|Child_Cross21|26: 211 79 20 9 4 1 
+16433|Child_Avg|31: 214 72 20 9 4 1 
+16434|Child_Avg|3: 219 66 20 9 4 1 
+16435|Child_Cross21|54: 213 68 20 9 4 1 
+16437|Child_CrossABC1|1: 216 66 20 9 4 1 
+16439|Child_Avg|51: 214 66 20 9 4 1 
+16440|Child_Cross21|6: 220 66 20 9 4 1 
+16445|Child_Cross21|26: 218 68 20 9 4 1 
+16448|Child_Cross21|18: 222 68 20 9 4 1 
+16450|Child_Avg|27: 220 68 20 9 4 1 
+16452|Child_Cross12|53: 219 63 20 9 4 1 
+16453|Child_Cross21|54: 217 68 20 9 4 1 
+16459|Child_Levy|28|Mutated: 216 69 21 10 4 1 
+16461|Child_Avg|59: 214 68 20 9 4 1 
+16463|Child_Avg|39: 217 66 20 9 4 1 
+16466|Child_Avg|51: 215 68 20 9 4 1 
+16470|Child_Avg|43: 217 70 20 9 4 1 
+16486|Child_Cross12|37: 221 66 20 9 4 1 
+16496|Child_Cross12|37: 207 66 20 9 4 1 
+16497|Child_CrossABC1|7: 210 66 20 9 4 1 
+16498|Child_Avg|51: 221 68 20 9 4 1 
+16513|Child_Cross21|38: 219 72 20 9 4 1 
+16514|Child_Cross12|41: 220 72 20 9 4 1 
+16517|Child_Cross12|21: 210 68 20 9 4 1 
+16520|Child_Cross12|53: 218 63 20 9 4 1 
+16531|Child_Cross21|58: 223 72 20 9 4 1 
+16539|Child_Avg|23: 218 70 20 9 4 1 
+16547|Child_Avg|55: 227 68 20 9 4 1 
+16549|Child_Avg|31: 223 68 20 9 4 1 
+16556|Child_Cross12|29|Mutated: 225 68 20 9 4 1 
+16559|Child_Avg|11: 235 68 20 9 4 1 
+16560|Child_Cross21|10: 234 68 20 9 4 1 
+16561|Child_Cross21|58|Mutated: 243 68 24 9 4 1 
+16567|Child_Avg|59|Mutated: 228 68 20 9 4 1 
+16568|Child_Cross12|41: 207 63 20 9 4 1 
+16570|Child_Cross12|1: 207 57 20 9 4 1 
+16576|Child_LevyP2|10: 217 69 21 10 4 1 
+16581|Child_Cross21|18: 236 68 20 9 4 1 
+16582|Child_Cross21|10: 227 66 20 9 4 1 
+16589|Child_Cross21|2: 226 68 20 9 4 1 
+16596|Child_CrossABC1|1: 237 68 20 9 4 1 
+16601|Child_Avg|59: 229 68 20 9 4 1 
+16603|Child_Cross12|25: 231 68 20 9 4 1 
+16649|Child_CrossABC2|2: 63 19 10 4 1 
+16666|Child_LevyP2|10: 77 27 13 5 1 
+16687|Child_Cross21|54: 69 28 11 4 1 
+16767|Child_Levy|8|Mutated: 89 30 11 5 1 
+16825|Child_Cross12|41: 72 19 11 5 1 
+16956|Child_Cross21|22: 219 68 24 9 4 1 
+16958|Child_CrossABC1|1: 235 73 24 9 4 1 
+16962|Child_CrossABC2|2: 213 67 24 9 4 1 
+16963|Child_CrossABC2|8: 219 70 24 9 4 1 
+16964|Child_Cross12|25: 217 65 24 9 4 1 
+16968|Child_Avg|55: 213 64 24 9 4 1 
+16972|Child_CrossABC1|7: 212 64 24 9 4 1 
+16973|Child_CrossABC1|1: 217 64 24 9 4 1 
+16977|Child_Levy|32: 212 68 24 9 4 1 
+17020|Child_Cross12|49: 105 28 13 4 1 
+17128|Child_LevyP2|10: 102 30 11 5 1 
+17129|Child_Cross21|26|Mutated: 205 61 19 10 4 1 
+17141|Child_Cross12|17: 224 61 19 10 4 1 
+17142|Child_CrossABC1|1: 218 61 19 10 4 1 
+17145|Child_Cross12|49: 199 61 19 10 4 1 
+17147|Child_Avg|47: 201 61 19 10 4 1 
+17148|Child_Cross21|58: 212 61 19 10 4 1 
+17152|Child_Cross21|26: 213 61 19 10 4 1 
+17155|Child_Avg|59: 215 61 19 10 4 1 
+17156|Child_Cross21|22: 214 61 19 10 4 1 
+17161|Child_Cross12|21: 209 61 19 10 4 1 
+17162|Child_CrossABC1|1: 211 61 19 10 4 1 
+17163|Child_Cross21|6: 219 79 19 10 4 1 
+17165|Child_Cross12|45: 221 71 19 10 4 1 
+17167|Child_Cross12|17: 217 61 19 10 4 1 
+17169|Child_Cross12|29|Mutated: 219 61 19 10 4 1 
+17171|Child_Cross21|46: 208 61 19 10 4 1 
+17172|Child_Cross21|50: 215 70 19 10 4 1 
+17179|Child_Avg|55: 210 61 19 10 4 1 
+17183|Child_Avg|27: 209 60 19 10 4 1 
+17184|Child_CrossABC2|8: 211 62 19 10 4 1 
+17186|Child_Avg|43: 210 60 19 10 4 1 
+17188|Child_Cross21|22: 197 61 19 10 4 1 
+17189|Child_Avg|47|Mutated: 210 61 23 10 4 1 
+17201|Child_Cross12|57: 213 63 19 10 4 1 
+17222|Child_Cross12|41: 210 63 19 10 4 1 
+17230|Child_Cross21|10: 211 63 19 10 4 1 
+17239|Child_Cross12|21: 244 70 19 10 4 1 
+17246|Child_Cross21|18: 218 62 19 10 4 1 
+17262|Child_Avg|39: 203 61 19 10 4 1 
+17277|Child_Cross12|45: 227 61 19 10 4 1 
+17281|Child_Cross21|30|Mutated: 210 64 19 10 4 1 
+17288|Child_CrossABC1|7: 211 60 19 10 4 1 
+17295|Child_Cross12|21: 223 61 19 10 4 1 
+17297|Child_Avg|3: 222 61 19 10 4 1 
+17300|Child_CrossABC1|7: 200 61 19 10 4 1 
+17303|Child_CrossABC2|8: 215 61 23 10 4 1 
+17309|Child_CrossABC1|1: 202 61 19 10 4 1 
+17312|Child_Avg|15: 220 61 19 10 4 1 
+17319|Child_Cross21|34: 216 61 19 10 4 1 
+17321|Survivor|1: 207 61 19 10 4 1 
+17338|Child_CrossABC2|2: 212 64 19 10 4 1 
+17342|Child_Avg|3: 204 61 19 10 4 1 
+17349|Child_Avg|47|Mutated: 212 60 19 10 4 1 
+17368|Child_Avg|3|Mutated: 218 60 19 10 4 1 
+17485|Survivor|1: 91 28 13 4 1 
+17646|Child_Cross21|6: 183 58 24 9 4 1 
+17718|Child_Cross12|49: 201 56 21 10 4 1 
+17773|Child_Cross12|45: 208 76 24 9 4 1 
+17928|Random|13: 193 59 24 9 4 1 
+17943|Child_CrossABC1|7: 74 19 10 4 1 
+18147|Random|21: 88 33 9 4 1 
+18189|Random|27: 198 69 21 10 4 1 
+18192|Child_Cross21|58: 56 21 10 4 1 
+18250|Survivor|1: 80 30 11 5 1 
+18284|Child_CrossABC2|2: 70 27 10 4 1 
+18500|Child_Cross21|26: 240 83 24 9 4 1 
+18547|Child_Cross12|33: 96 28 9 4 1 
+18783|Child_LevyP1|3: 78 30 11 5 1 
+18802|Child_Avg|59: 91 29 10 4 1 
+19070|Child_Avg|23: 65 25 9 4 1 
+19072|Child_Avg|19: 97 28 9 4 1 
+19181|Child_Cross12|45: 93 25 12 5 1 
+19471|Child_Cross12|49: 235 67 23 10 4 1 
+19478|Child_CrossABC2|8|Mutated: 241 67 23 10 4 1 
+19528|Child_Cross12|45: 97 30 11 5 1 
+19607|Child_LevyP1|9: 93 35 13 5 1 
+19999|Child_Cross12|25: 217 81 23 10 4 1 
+20004|Child_CrossABC2|8|Mutated: 217 77 23 10 4 1 
+20005|Child_Avg|35: 231 81 23 10 4 1 
+20009|Child_Cross21|46: 217 84 23 10 4 1 
+20014|Child_Cross12|29: 203 81 23 10 4 1 
+20041|Child_Cross12|33: 157 70 21 10 4 1 
+20071|Child_CrossABC2|8: 77 25 11 5 1 
+20480|Child_Cross21|46: 73 29 10 4 1 
+20591|Child_Avg|55: 75 28 11 4 1 
+20654|Random|17: 152 70 19 10 4 1 
+20690|Random|14: 219 64 23 10 4 1 
+20965|Child_Avg|35: 77 29 9 4 1 
+21018|Child_CrossABC2|2: 101 21 10 4 1 
+21034|Child_Cross21|42: 245 69 21 10 4 1 
+21041|Child_CrossABC1|7: 245 70 21 10 4 1 
+21047|Child_Avg|51: 244 67 21 10 4 1 
+21048|Child_Avg|39: 244 69 21 10 4 1 
+21051|Child_Avg|59: 244 67 23 10 4 1 
+21053|Child_Avg|19: 237 68 21 10 4 1 
+21055|Child_Cross21|54: 244 70 21 10 4 1 
+21056|Child_Cross12|53: 225 67 21 10 4 1 
+21057|Child_Avg|23: 241 67 21 10 4 1 
+21063|Child_Cross12|25: 236 67 21 10 4 1 
+21071|Child_Cross12|49|Mutated: 223 67 21 10 4 1 
+21073|Child_CrossABC1|1: 215 67 21 10 4 1 
+21077|Child_Cross21|18|Mutated: 215 69 21 10 4 1 
+21078|Child_CrossABC1|1: 220 67 21 10 4 1 
+21081|Child_CrossABC1|1: 213 67 21 10 4 1 
+21085|Child_Avg|27: 210 67 21 10 4 1 
+21091|Child_Cross21|38: 216 78 21 10 4 1 
+21099|Child_Cross21|54: 212 68 21 10 4 1 
+21100|Child_Cross12|41: 213 68 21 10 4 1 
+21104|Child_Cross21|42: 221 66 21 10 4 1 
+21118|Child_CrossABC1|7: 226 69 21 10 4 1 
+21123|Child_Cross12|33: 207 66 21 10 4 1 
+21126|Survivor|1: 218 67 21 10 4 1 
+21135|Child_Cross21|26: 203 59 21 10 4 1 
+21246|Child_Avg|59: 99 28 9 4 1 
+21404|Child_CrossABC1|1: 81 29 9 4 1 
+21501|Child_Cross12|9: 236 91 24 9 4 1 
+21509|Child_Cross12|41: 108 29 9 4 1 
+21511|Child_Avg|3: 82 24 11 4 1 
+21700|Child_Cross21|18: 217 80 24 9 4 1 
+21701|Child_LevyP1|3|Mutated: 219 81 23 10 4 1 
+21883|Child_Cross12|41: 72 23 14 4 1 
+21886|Child_LevyP1|9: 235 62 24 9 4 1 
+21887|Child_Avg|47: 59 24 9 4 1 
+22001|Child_Levy|4: 84 30 11 5 1 
+22007|Child_Avg|19: 106 31 10 4 1 
+22159|Random|60: 233 104 29 9 4 1 
+22231|Child_Avg|55: 82 29 9 4 1 
+22374|Random|20: 214 60 23 10 4 1 
+22394|Random|20: 219 80 23 10 4 1 
+22551|Child_Avg|19: 75 23 10 4 1 
+22611|Child_Levy|4: 75 28 13 4 1 
+22622|Random|24: 233 96 27 10 4 1 
+22650|Random|8: 202 74 24 9 4 1 
+22659|Child_Cross12|17: 186 77 21 10 4 1 
+22811|Child_Cross21|18: 205 63 19 10 4 1 
+22883|Survivor|1: 187 52 20 9 4 1 
+22901|Survivor|1: 74 25 9 4 1 
+22907|Child_Avg|31: 90 25 9 4 1 
+23225|Child_CrossABC1|7: 103 25 10 4 1 
+23283|Child_Cross21|26: 77 23 12 5 1 
+23609|Child_Cross12|29: 158 64 19 10 4 1 
+23756|Survivor|1: 109 29 10 4 1 
+23923|Survivor|1: 61 23 10 4 1 
+24057|Random|7: 109 28 13 4 1 
+24285|Child_Cross21|10: 235 80 21 10 4 1 
+24287|Child_CrossABC2|2: 218 80 21 10 4 1 
+24291|Child_CrossABC2|2: 235 70 21 10 4 1 
+24297|Child_Cross12|9: 232 80 21 10 4 1 
+24302|Child_Avg|31: 227 78 21 10 4 1 
+24315|Child_Cross21|42|Mutated: 215 70 21 10 4 1 
+24336|Child_Avg|19: 197 77 23 10 4 1 
+24344|Child_Avg|7: 214 77 23 10 4 1 
+24355|Child_Cross21|6: 212 66 21 10 4 1 
+24359|Child_Cross21|38: 212 70 21 10 4 1 
+24373|Child_Cross12|37: 213 79 21 10 4 1 
+24394|Child_Avg|11: 203 77 23 10 4 1 
+24399|Child_CrossABC1|1: 213 77 23 10 4 1 
+24407|Child_CrossABC2|2: 210 77 21 10 4 1 
+24409|Child_CrossABC1|7: 211 77 23 10 4 1 
+24424|Child_Cross12|37: 205 77 21 10 4 1 
+24426|Child_Avg|55: 211 80 21 10 4 1 
+24437|Child_Avg|51: 206 77 21 10 4 1 
+24445|Child_Avg|43: 207 77 21 10 4 1 
+24446|Child_Avg|59: 212 76 21 10 4 1 
+24449|Child_Avg|31: 212 81 21 10 4 1 
+24460|Child_Avg|51: 212 77 23 10 4 1 
+24486|Child_Levy|60: 230 77 23 10 4 1 
+24487|Survivor|1|Mutated: 230 81 23 10 4 1 
+24492|Child_Avg|19: 225 77 20 9 4 1 
+24603|Child_Cross21|10: 229 68 24 9 4 1 
+24616|Child_Cross21|14: 208 79 24 9 4 1 
+24622|Child_Cross12|45: 221 80 23 10 4 1 
+24633|Child_CrossABC2|2: 233 80 23 10 4 1 
+24637|Child_Cross21|46: 224 80 23 10 4 1 
+24703|Child_Levy|56|Mutated: 99 25 9 4 1 
+24947|Child_Cross21|42: 160 64 19 10 4 1 
+25029|Child_Cross12|29: 62 24 9 4 1 
+25464|Child_CrossABC2|8|Mutated: 99 31 10 4 1 
+25488|Child_Cross12|37: 173 57 20 9 4 1 
+25535|Random|54: 219 57 23 10 4 1 
+25586|Survivor|1: 190 81 20 9 4 1 
+25759|Child_Cross12|53: 147 54 20 9 4 1 
+25924|Child_LevyABC1|5: 98 25 14 4 1 
+26050|Random|14: 242 91 21 10 4 1 
+26091|Random|14: 240 69 21 10 4 1 
+26095|Child_Avg|15: 176 61 20 9 4 1 
+26330|Child_LevyABC2|12: 122 30 11 5 1 
+26399|Child_Levy|28: 69 24 11 4 1 
+26513|Child_Levy|8: 90 24 11 5 1 
+26598|Child_Cross21|22: 236 78 21 10 4 1 
+26645|Random|12: 204 79 27 10 4 1 
+26691|Child_LevyABC2|12: 69 24 11 5 1 
+26756|Child_Avg|35: 86 24 11 4 1 
+26812|Random|17: 100 27 14 4 1 
+26865|Child_CrossABC1|7: 65 21 10 4 1 
+26936|Child_Cross12|21: 90 24 11 4 1 
+27109|Child_Avg|3|Mutated: 107 24 9 4 1 
+27164|Random|14: 212 81 23 10 4 1 
+27183|Random|26: 217 89 27 10 4 1 
+27269|Child_Cross12|17: 213 79 19 10 4 1 
+27530|Survivor|1: 92 29 9 4 1 
+27716|Child_Cross12|45: 215 81 21 10 4 1 
+27878|Child_Cross21|26: 203 66 17 10 4 1 
+27885|Random|16: 238 96 27 10 4 1 
+27892|Child_CrossABC1|7: 238 97 27 10 4 1 
+27894|Child_CrossABC1|7: 238 106 27 10 4 1 
+27895|Child_CrossABC1|1|Mutated: 238 89 27 10 4 1 
+27969|Child_Cross12|13: 61 19 10 4 1 
+28093|Child_CrossABC1|1: 104 33 9 4 1 
+28096|Child_LevyABC2|6: 104 29 11 5 1 
+28324|Child_Cross12|9: 232 87 21 10 4 1 
+28344|Child_Cross21|18: 217 79 21 10 4 1 
+28366|Child_Cross21|10: 218 81 21 10 4 1 
+28377|Child_Avg|35: 216 80 21 10 4 1 
+28381|Child_Cross21|18|Mutated: 216 77 24 9 4 1 
+28385|Child_Cross12|33: 213 70 21 10 4 1 
+28387|Child_Avg|47: 214 80 21 10 4 1 
+28404|Child_Avg|15: 215 77 23 10 4 1 
+28418|Child_Cross21|30: 222 70 21 10 4 1 
+28434|Child_Avg|59: 223 70 21 10 4 1 
+28442|Child_Avg|47|Mutated: 213 76 21 10 4 1 
+28444|Child_Avg|39: 213 80 19 10 4 1 
+28460|Child_LevyABC1|11|Mutated: 222 69 24 11 4 1 
+28482|Survivor|1: 221 81 21 10 4 1 
+28483|Child_Levy|12: 224 80 21 10 4 1 
+28489|Child_Cross12|53: 223 80 21 10 4 1 
+28499|Child_CrossABC2|8: 190 77 21 10 4 1 
+28500|Child_CrossABC1|1: 198 77 21 10 4 1 
+28509|Child_CrossABC2|2: 197 77 21 10 4 1 
+28687|Survivor|1: 119 32 13 4 1 
+28958|Child_Avg|15: 72 29 10 4 1 
+28984|Child_Cross21|34: 77 23 14 4 1 
+28987|Random|7: 198 87 23 10 4 1 
+29486|Survivor|1: 247 79 27 10 4 1 
+29513|Random|18: 199 80 23 10 4 1 
+29588|Survivor|1: 228 63 19 10 4 1 
+29612|Child_Cross12|49: 153 63 19 10 4 1 
+29613|Child_CrossABC1|1: 207 62 19 10 4 1 
+29623|Child_Cross12|33: 222 62 19 10 4 1 
+29624|Child_CrossABC2|2: 179 62 19 10 4 1 
+29628|Child_Avg|51: 221 62 19 10 4 1 
+29632|Child_Avg|39: 232 63 19 10 4 1 
+29639|Child_Cross21|26: 214 60 19 10 4 1 
+29641|Child_Cross12|37: 233 61 19 10 4 1 
+29643|Child_CrossABC1|7: 239 67 23 10 4 1 
+29651|Child_Cross21|46: 212 62 19 10 4 1 
+29656|Child_Cross12|57: 213 70 19 10 4 1 
+29659|Child_Avg|23: 211 70 19 10 4 1 
+29660|Child_CrossABC2|8: 213 81 19 10 4 1 
+29671|Child_Avg|55: 199 70 19 10 4 1 
+29672|Child_CrossABC2|2: 212 63 19 10 4 1 
+29677|Child_Cross12|45: 216 62 19 10 4 1 
+29678|Child_Cross12|41: 225 72 19 10 4 1 
+29683|Child_Cross12|5: 213 73 19 10 4 1 
+29692|Child_Cross12|41: 228 60 19 10 4 1 
+29694|Child_Avg|7: 221 60 19 10 4 1 
+29700|Child_Cross12|33: 216 60 19 10 4 1 
+29701|Child_Avg|19: 221 61 19 10 4 1 
+29711|Child_Avg|59: 219 60 19 10 4 1 
+29718|Child_Cross12|21: 222 60 19 10 4 1 
+29723|Child_Avg|19: 213 60 19 10 4 1 
+29731|Child_Cross12|41: 220 60 19 10 4 1 
+29736|Child_Cross21|58: 226 61 19 10 4 1 
+29739|Child_Avg|51: 223 62 19 10 4 1 
+29740|Child_Cross12|41: 224 63 19 10 4 1 
+29749|Child_Avg|7: 222 63 19 10 4 1 
+29752|Child_Avg|7: 234 61 19 10 4 1 
+29792|Child_Avg|55|Mutated: 231 93 29 10 4 1 
+29796|Child_CrossABC2|2: 180 57 23 10 4 1 
+29801|Survivor|1: 71 28 11 4 1 
+30101|Child_Cross12|5: 244 93 23 10 4 1 
+30270|Child_Levy|44: 108 30 11 5 1 
+30310|Child_CrossABC1|7: 90 31 10 4 1 
+31261|Random|16: 198 79 27 10 4 1 
+31264|Child_Levy|44: 80 28 11 4 1 
+31470|Child_Cross12|17: 216 63 20 9 4 1 
+31804|Child_Cross12|9: 65 23 10 4 1 
+32033|Child_LevyABC2|12: 86 23 12 5 1 
+32232|Child_Cross12|53: 168 60 21 10 4 1 
+32258|Child_Levy|24: 97 31 14 4 1 
+32260|Child_Levy|12: 67 24 11 5 1 
+32315|Child_Levy|4: 110 30 11 5 1 
+32363|Child_Levy|40: 86 28 11 4 1 
+32368|Child_CrossABC1|1: 90 28 9 4 1 
+32422|Random|14: 208 85 24 9 4 1 
+32471|Survivor|1: 234 99 25 14 4 1 
+32482|Random|17: 218 65 24 9 4 1 
+32669|Random|1: 207 93 29 9 4 1 
+33214|Child_LevyP2|4: 88 30 11 5 1 
+33271|Child_Cross21|10: 241 80 21 10 4 1 
+33329|Child_Cross21|22: 199 57 23 10 4 1 
+33366|Child_Levy|32: 89 28 13 4 1 
+33503|Child_LevyP2|10: 108 24 11 5 1 
+34063|Child_Cross21|6: 186 56 25 9 4 1 
+34112|Child_LevyP1|9: 95 30 11 5 1 
+34296|Survivor|1: 223 57 23 10 4 1 
+34442|Child_Levy|28: 170 55 24 9 4 1 
+34446|Child_Cross12|9: 208 88 21 10 4 1 
+34450|Child_Cross12|5: 165 49 21 10 4 1 
+34498|Child_Cross12|53: 208 54 20 9 4 1 
+34814|Random|12: 209 79 24 9 4 1 
+35071|Random|24: 198 77 24 9 4 1 
+35204|Child_Levy|44: 94 25 14 4 1 
+35369|Child_Cross21|10: 150 56 21 10 4 1 
+35714|Child_Avg|11: 91 28 12 5 1 
+35790|Child_Cross12|9: 187 57 23 10 4 1 
+36011|Survivor|1: 88 20 9 4 1 
+36054|Survivor|1: 105 31 14 4 1 
+36112|Child_Levy|60: 84 29 10 4 1 
+36115|Random|13: 202 79 21 10 4 1 
+36222|Child_Cross12|57: 230 71 23 10 4 1 
+36226|Random|10: 91 33 9 4 1 
+36327|Child_Avg|19|Mutated: 86 20 9 4 1 
+36343|Random|32: 217 82 19 10 4 1 
+36349|Survivor|1: 188 52 17 10 4 1 
+36698|Child_Avg|43: 227 67 24 9 4 1 
+36832|Child_Cross12|9: 176 52 19 10 4 1 
+36867|Child_Cross12|37: 87 32 13 4 1 
+37048|Child_Levy|44: 91 25 11 5 1 
+37477|Survivor|1: 165 68 21 10 4 1 
+37520|Child_Cross12|53|Mutated: 157 61 19 10 4 1 
+37523|Child_Cross21|34|Mutated: 157 61 20 9 4 1 
+37586|Child_CrossABC1|7: 111 29 10 4 1 
+37770|Child_Cross12|57: 210 59 21 10 4 1 
+37817|Child_Levy|16: 217 68 24 9 4 1 
+37931|Child_Cross21|18: 191 74 24 9 4 1 
+37975|Child_CrossABC1|1: 102 27 14 4 1 
+38084|Random|7: 236 93 27 10 4 1 
+38168|Child_CrossABC2|8: 73 29 9 4 1 
+38272|Child_Avg|47|Mutated: 91 30 9 4 1 
+38446|Survivor|1|Mutated: 215 71 23 10 4 1 
+38447|Child_Avg|55: 216 66 21 10 4 1 
+38452|Child_Cross21|10: 214 62 19 10 4 1 
+38488|Child_Cross12|33: 217 64 19 10 4 1 
+38495|Child_Cross12|13: 209 63 19 10 4 1 
+38498|Child_Cross21|58: 213 62 19 10 4 1 
+38512|Child_Cross21|14: 209 72 19 10 4 1 
+38516|Child_Cross12|49|Mutated: 207 63 19 10 4 1 
+38520|Child_Cross21|26: 242 70 19 10 4 1 
+38533|Child_Avg|11: 216 61 20 9 4 1 
+38541|Child_Cross21|42: 166 61 19 10 4 1 
+38557|Child_CrossABC1|7: 216 63 19 10 4 1 
+38626|Child_Cross21|58: 167 51 19 10 4 1 
+38651|Random|20: 237 97 23 10 4 1 
+38825|Child_Cross21|42: 90 27 14 4 1 
+38826|Child_CrossABC2|8: 98 27 14 4 1 
+38921|Random|29: 244 73 24 9 4 1 
+38967|Child_Levy|48: 73 24 11 4 1 
+39173|Survivor|1: 227 93 28 11 4 1 
+39305|Random|11: 230 92 27 10 4 1 
+39469|Survivor|1|Mutated: 85 27 10 4 1 
+39566|Survivor|1: 71 24 11 5 1 
+39783|Child_LevyP2|10: 96 30 11 5 1 
+40045|Child_Cross12|57: 229 77 21 10 4 1 
+40292|Child_Levy|60: 100 32 13 4 1 
+40333|Child_Cross21|22: 92 21 10 4 1 
+40422|Child_Levy|60: 113 27 10 4 1 
+40700|Child_Cross12|33: 227 64 24 9 4 1 
+40899|Child_Cross12|45: 241 70 24 9 4 1 
+40949|Child_Cross12|21: 236 69 21 10 4 1 
+41119|Child_Cross21|30: 101 27 14 4 1 
+41795|Child_Cross21|26: 79 24 11 5 1 
+41909|Child_Cross21|18: 99 24 11 4 1 
+42182|Child_Avg|43: 104 24 9 4 1 
+42184|Child_CrossABC1|7: 85 33 9 4 1 
+42342|Random|96: 111 32 13 4 1 
+42686|Survivor|1: 102 21 10 4 1 
+42763|Child_Cross12|9: 171 51 19 10 4 1 
+43138|Survivor|1: 214 70 21 10 4 1 
+43329|Child_Cross21|42: 184 53 19 10 4 1 
+43452|Random|2: 81 28 13 4 1 
+43454|Survivor|1: 71 30 9 4 1 
+43493|Child_Cross21|34: 245 89 21 10 4 1 
+43498|Child_Cross12|37: 234 89 21 10 4 1 
+43501|Child_CrossABC1|7: 228 89 21 10 4 1 
+43502|Child_Cross21|34: 224 89 21 10 4 1 
+43504|Child_Cross12|57|Mutated: 239 89 21 10 4 1 
+43506|Child_Cross12|9: 238 89 21 10 4 1 
+43507|Child_Cross12|49|Mutated: 231 89 21 10 4 1 
+43508|Child_Cross21|26: 223 89 21 10 4 1 
+43510|Survivor|1: 238 88 21 10 4 1 
+43512|Child_Cross12|13: 229 89 21 10 4 1 
+43516|Child_Avg|7: 231 88 21 10 4 1 
+43518|Child_Cross21|30: 232 88 21 10 4 1 
+43520|Child_Cross12|25: 234 88 21 10 4 1 
+43527|Child_CrossABC2|8: 236 88 21 10 4 1 
+43528|Child_Avg|59: 229 88 21 10 4 1 
+43530|Child_Avg|27: 232 89 21 10 4 1 
+43531|Child_Avg|51: 228 88 21 10 4 1 
+43532|Child_Cross21|54: 235 89 21 10 4 1 
+43534|Child_Cross21|42: 228 90 21 10 4 1 
+43537|Child_Cross21|46: 226 89 21 10 4 1 
+43551|Child_Cross21|54: 235 87 21 10 4 1 
+43552|Child_Avg|47: 225 80 21 10 4 1 
+43557|Child_Cross12|53: 233 87 21 10 4 1 
+43563|Child_Avg|11: 231 87 21 10 4 1 
+43573|Child_Avg|43: 237 88 21 10 4 1 
+43576|Child_Cross21|6: 231 90 21 10 4 1 
+43580|Child_Cross12|49: 223 88 21 10 4 1 
+43587|Child_Avg|43: 238 84 23 10 4 1 
+43592|Child_Cross21|58: 226 79 21 10 4 1 
+43622|Child_Cross12|21: 231 91 21 10 4 1 
+43623|Child_Cross21|54: 216 88 21 10 4 1 
+43631|Child_Levy|12|Mutated: 238 89 24 9 4 1 
+43635|Child_Cross21|38: 205 80 21 10 4 1 
+43655|Child_Cross21|10: 222 88 21 10 4 1 
+43657|Child_CrossABC2|2|Mutated: 227 89 21 10 4 1 
+43666|Child_Cross21|42: 224 70 21 10 4 1 
+43675|Child_Avg|7: 213 88 21 10 4 1 
+43691|Child_Cross12|9: 225 90 21 10 4 1 
+43984|Survivor|1: 98 30 9 4 1 
+44219|Child_LevyP1|3: 81 30 11 5 1 
+44309|Random|18: 235 88 30 9 4 1 
+44429|Child_CrossABC2|2: 106 23 10 4 1 
+44633|Child_Avg|39: 202 75 29 9 4 1 
+44717|Child_Levy|28: 85 25 9 4 1 
+44974|Survivor|1: 76 23 12 5 1 
+45020|Survivor|1|Mutated: 224 68 20 9 4 1 
+45430|Survivor|1: 106 32 13 4 1 
+45844|Child_Cross12|1: 148 57 21 10 4 1 
+45987|Child_Cross12|33: 212 61 23 10 4 1 
+46038|Child_CrossABC2|2: 175 61 24 9 4 1 
+46081|Child_Cross21|34|Mutated: 68 25 11 5 1 
+46180|Child_LevyABC2|6: 73 30 11 5 1 
+46277|Child_CrossABC1|1: 96 31 10 4 1 
+46374|Random|2: 221 65 24 9 4 1 
+46445|Child_Cross12|37: 91 30 11 5 1 
+46450|Child_Cross12|53: 76 25 14 4 1 
+46497|Survivor|1: 214 113 30 11 5 1 
+46498|Child_CrossABC2|2: 215 102 30 11 5 1 
+46766|Child_Cross12|37: 157 66 20 9 4 1 
+46782|Child_Cross21|42|Mutated: 60 19 10 4 1 
+46880|Child_Cross21|50: 203 59 20 9 4 1 
+46892|Child_Cross21|18: 227 83 20 9 4 1 
+46940|Child_Cross12|13: 214 83 25 9 4 1 
+46944|Child_Cross12|9: 217 90 21 10 4 1 
+46948|Child_Cross21|22|Mutated: 230 90 21 10 4 1 
+46962|Child_CrossABC2|8: 109 24 9 4 1 
+47036|Child_CrossABC2|2: 109 31 10 4 1 
+47105|Child_Cross21|46: 198 80 23 10 4 1 
+47106|Child_Cross12|41|Mutated: 198 70 23 10 4 1 
+47774|Child_Levy|48: 88 31 10 4 1 
+47892|Child_Cross21|30: 187 51 19 10 4 1 
+47906|Child_Cross21|50: 189 51 19 10 4 1 
+47914|Child_Cross12|1: 188 51 19 10 4 1 
+47917|Child_Cross12|25|Mutated: 180 51 19 10 4 1 
+47920|Child_Cross21|38: 184 51 19 10 4 1 
+47924|Survivor|1: 183 51 19 10 4 1 
+47928|Child_Avg|15|Mutated: 179 51 19 10 4 1 
+47933|Child_Cross21|46: 174 51 19 10 4 1 
+47935|Child_Cross21|26: 182 51 19 10 4 1 
+47936|Child_Avg|51: 177 51 19 10 4 1 
+47943|Child_CrossABC1|7: 170 51 19 10 4 1 
+47947|Child_Cross12|29: 186 51 19 10 4 1 
+47952|Child_Cross21|6: 178 51 19 10 4 1 
+47953|Child_Cross12|41: 181 51 19 10 4 1 
+47955|Child_Cross12|5: 181 53 19 10 4 1 
+47958|Child_Cross21|58: 169 51 19 10 4 1 
+47963|Child_Cross12|53: 175 51 19 10 4 1 
+47984|Child_Avg|35: 168 51 19 10 4 1 
+47987|Child_Avg|15: 165 51 19 10 4 1 
+48000|Child_Avg|27: 173 51 19 10 4 1 
+48028|Child_Cross21|22: 176 51 19 10 4 1 
+48062|Child_Cross12|33: 205 70 19 10 4 1 
+48131|Survivor|1: 111 30 11 5 1 
+48340|Child_LevyP1|3: 84 24 11 5 1 
+48560|Random|12: 234 90 29 9 4 1 
+48596|Random|10: 233 70 24 9 4 1 
+48605|Child_Cross12|49|Mutated: 213 77 24 9 4 1 
+48610|Child_Cross12|41: 219 94 24 9 4 1 
+48725|Child_Cross12|17: 71 28 9 4 1 
+48764|Child_Cross12|29: 87 28 13 4 1 
+48919|Child_Levy|44: 98 28 9 4 1 
+49103|Child_Cross12|21: 213 85 20 9 4 1 
+49424|Child_Levy|8: 72 28 9 4 1 
+49456|Child_Cross12|53: 177 52 19 10 4 1 
+49907|Random|34: 205 84 23 10 4 1 
+50016|Survivor|1|Mutated: 74 23 12 5 1 
+50516|Child_CrossABC2|8: 96 34 9 4 1 
+50780|Child_Cross21|14: 199 62 19 10 4 1 
+51192|Child_Cross12|21: 230 68 29 9 4 1 
+51220|Child_Cross21|18: 203 63 19 10 4 1 
+51248|Child_LevyP2|10: 235 65 24 9 4 1 
+51519|Child_Levy|16: 97 31 10 4 1 
+51798|Random|49: 106 29 14 4 1 
+52416|Random|44: 187 84 23 10 4 1 
+52418|Child_CrossABC2|2: 198 73 24 11 5 1 
+52781|Child_CrossABC2|8: 99 23 14 4 1 
+52813|Random|26: 207 86 27 10 4 1 
+53166|Survivor|1: 188 50 24 9 4 1 
+53268|Random|12: 239 88 27 14 4 1 
+53317|Survivor|1: 230 80 19 10 4 1 
+53432|Child_LevyP2|10: 96 23 12 5 1 
+53437|Child_Cross12|29: 100 23 12 5 1 
+53496|Survivor|1: 169 62 19 10 4 1 
+53502|Child_Cross21|30: 171 61 19 10 4 1 
+53629|Random|14: 207 73 23 10 4 1 
+53843|Child_Cross21|42: 179 46 20 9 4 1 
+53912|Survivor|1: 196 79 24 9 4 1 
+53919|Child_Avg|19: 227 60 21 10 4 1 
+54034|Child_Levy|24: 98 32 13 4 1 
+54093|Random|24: 223 60 21 10 4 1 
+54247|Child_Cross12|17: 99 32 13 4 1 
+54344|Child_Cross12|21: 219 61 23 10 4 1 
+54474|Random|18: 64 23 10 4 1 
+54540|Child_Cross21|30: 110 24 11 5 1 
+54542|Child_Cross12|21: 212 56 21 10 4 1 
+54654|Random|17: 187 55 24 9 4 1 
+54758|Child_Cross12|45: 227 63 19 10 4 1 
+55239|Child_Cross12|57: 197 80 21 10 4 1 
+55378|Random|1: 214 90 23 10 4 1 
+55482|Random|6: 230 58 24 9 4 1 
+55651|Random|3: 247 105 31 10 4 1 
+55782|Child_Cross12|5: 61 20 9 4 1 
+55800|Child_Cross21|58: 243 66 20 9 4 1 
+56202|Child_LevyP1|3: 113 30 11 5 1 
+56453|Child_Cross12|53: 232 64 23 10 4 1 
+56642|Child_Cross21|26: 205 80 24 9 4 1 
+56880|Random|90: 177 56 21 10 4 1 
+57017|Random|79: 200 57 21 10 4 1 
+57231|Survivor|1: 65 27 10 4 1 
+57235|Child_CrossABC2|2: 68 27 10 4 1 
+57434|Survivor|1: 161 51 19 10 4 1 
+57481|Survivor|1: 100 29 9 4 1 
+57524|Survivor|1: 192 75 29 9 4 1 
+57529|Random|17: 202 61 23 10 4 1 
+57920|Child_Levy|32: 105 31 11 4 1 
+58060|Child_Cross12|33: 220 69 21 10 4 1 
+58066|Child_Cross21|22: 227 69 21 10 4 1 
+58070|Child_Avg|43: 221 69 21 10 4 1 
+58072|Child_Avg|39: 231 69 21 10 4 1 
+58076|Child_Cross21|26: 230 69 21 10 4 1 
+58078|Child_Avg|7: 224 69 21 10 4 1 
+58080|Child_Cross12|41: 225 69 21 10 4 1 
+58091|Child_Cross21|38: 235 69 21 10 4 1 
+58093|Child_Cross12|17: 233 69 21 10 4 1 
+58101|Child_Cross21|10: 212 69 21 10 4 1 
+58106|Child_Cross21|46: 233 78 21 10 4 1 
+58110|Child_CrossABC2|8: 222 67 21 10 4 1 
+58116|Child_Cross21|42: 237 69 21 10 4 1 
+58117|Child_Cross12|33: 233 68 21 10 4 1 
+58119|Child_Cross21|14: 219 68 21 10 4 1 
+58135|Child_Cross21|14: 223 69 21 10 4 1 
+58143|Child_CrossABC1|1: 217 66 21 10 4 1 
+58157|Child_Cross12|29: 215 66 21 10 4 1 
+58159|Child_Avg|31: 235 66 21 10 4 1 
+58162|Child_Avg|3: 220 66 21 10 4 1 
+58176|Child_Avg|47: 224 66 21 10 4 1 
+58228|Child_Avg|31: 90 31 11 4 1 
+58336|Child_Avg|31: 71 24 11 4 1 
+58365|Child_Cross21|30: 218 64 23 10 4 1 
+58409|Random|24: 203 65 25 9 4 1 
+58414|Child_Avg|51: 81 28 11 4 1 
+58575|Random|19: 214 80 30 9 4 1 
+58596|Child_Cross12|57: 91 19 10 4 1 
+58598|Child_LevyABC2|6: 88 25 11 5 1 
+58634|Child_Cross12|17: 183 54 20 9 4 1 
+58958|Child_Cross12|29: 164 50 21 10 4 1 
+59069|Survivor|1: 238 93 29 9 4 1 
+59111|Child_Cross21|42: 239 69 21 10 4 1 
+59344|Child_Levy|32: 87 28 9 4 1 
+59399|Child_CrossABC1|1: 172 53 19 10 4 1 
+59552|Survivor|1: 103 27 14 4 1 
+59578|Random|4: 216 59 17 10 4 1 
+59580|Child_Cross12|45: 224 79 21 10 4 1 
+59663|Child_Cross21|2: 190 81 25 9 4 1 
+59818|Survivor|1: 246 71 29 10 4 1 
+59913|Child_Cross12|33: 195 89 21 10 4 1 
+59914|Child_Avg|11: 83 29 10 4 1 
+60092|Child_Cross12|25: 75 19 11 5 1 
+60308|Child_Avg|43: 209 59 21 10 4 1 
+60312|Child_CrossABC2|8: 216 59 21 10 4 1 
+60313|Child_CrossABC1|7: 202 59 21 10 4 1 
+60316|Child_Cross21|38: 212 59 21 10 4 1 
+60318|Child_Avg|47: 214 59 21 10 4 1 
+60319|Child_CrossABC2|8: 217 59 21 10 4 1 
+60320|Child_Cross21|26|Mutated: 221 59 21 10 4 1 
+60321|Child_Cross12|41: 211 70 21 10 4 1 
+60322|Child_Cross21|2: 225 59 21 10 4 1 
+60331|Child_Cross12|13: 217 76 21 10 4 1 
+60344|Child_CrossABC2|2: 210 77 23 10 4 1 
+60347|Child_Cross12|29: 217 68 21 10 4 1 
+60365|Child_Cross12|53: 218 68 21 10 4 1 
+60391|Child_Avg|59: 210 69 21 10 4 1 
+60396|Child_Cross12|37: 211 69 21 10 4 1 
+60416|Child_Cross21|42: 206 80 21 10 4 1 
+60419|Child_Cross12|49: 208 78 21 10 4 1 
+60422|Child_Cross21|58: 212 67 21 10 4 1 
+60423|Child_CrossABC1|1: 209 67 21 10 4 1 
+60427|Child_Avg|39: 211 67 21 10 4 1 
+60430|Child_Avg|31: 202 78 21 10 4 1 
+60496|Child_CrossABC1|1: 220 81 21 10 4 1 
+60553|Random|12: 221 68 23 10 4 1 
+60574|Child_Cross21|14: 179 54 20 9 4 1 
+60744|Random|16: 197 55 24 9 4 1 
+60745|Survivor|1|Mutated: 197 61 24 9 4 1 
+60814|Child_Cross21|46|Mutated: 96 25 11 5 1 
+60988|Child_Cross12|57: 237 93 23 10 4 1 
+61080|Random|9: 181 64 24 9 4 1 
+61259|Survivor|1: 87 28 11 4 1 
+61302|Child_Cross21|38: 192 53 19 10 4 1 
+61425|Child_Cross12|29: 175 67 21 10 4 1 
+61490|Survivor|1: 89 19 10 4 1 
+61494|Child_Cross21|50: 96 25 14 4 1 
+61593|Child_Cross12|21: 243 74 24 9 4 1 
+61679|Child_Cross21|54: 233 66 20 9 4 1 
+61704|Child_Cross12|53: 207 61 23 10 4 1 
+61901|Child_Levy|40: 78 28 9 4 1 
+62136|Child_Cross21|46: 222 59 20 9 4 1 
+62185|Survivor|1: 209 103 27 10 4 1 
+62266|Child_Levy|24: 100 35 11 5 1 
+62988|Random|4: 222 92 24 9 4 1 
+63067|Survivor|1: 192 71 19 10 4 1 
+63609|Child_Avg|47: 93 36 13 4 1 
+63753|Random|3: 241 99 28 11 4 1 
+63882|Child_Levy|48: 103 28 13 4 1 
+64141|Survivor|1: 106 33 9 4 1 
+64312|Random|2: 237 71 19 10 4 1 
+64398|Child_LevyP2|4: 190 49 24 9 4 1 
+64401|Survivor|1|Mutated: 204 77 20 9 4 1 
+64456|Child_Cross21|22: 213 58 23 10 4 1 
+64506|Child_Cross21|18: 204 63 19 10 4 1 
+64547|Random|7: 239 78 21 10 4 1 
+64811|Survivor|1: 203 72 19 10 4 1 
+65340|Child_Levy|8: 93 35 11 5 1 
+65505|Child_Cross21|46: 112 29 10 4 1 
+65559|Child_Cross21|42: 90 28 13 4 1 
+65594|Child_CrossABC1|1: 98 23 10 4 1 
+65767|Child_LevyP2|4: 240 78 30 11 5 1 
+65810|Child_Cross21|54: 247 73 24 9 4 1 
+65811|Survivor|1|Mutated|Validated: 187 73 24 9 4 1 
+65813|Child_Cross12|17: 115 33 9 4 1 
+66063|Survivor|1: 198 90 21 10 4 1 
+66784|Child_Avg|39: 70 17 10 4 1 
+66842|Child_Avg|55|Mutated: 108 29 14 4 1 
+66898|Random|46: 170 64 24 9 4 1 
+67062|Survivor|1: 97 33 9 4 1 
+67292|Child_Levy|36: 97 30 9 4 1 
+67405|Child_Avg|15: 110 29 14 4 1 
+67863|Child_Levy|56: 99 31 11 4 1 
+68043|Child_Cross12|9: 228 79 19 10 4 1 
+68047|Child_CrossABC2|8: 228 80 19 10 4 1 
+68048|Child_CrossABC2|2: 228 81 19 10 4 1 
+68060|Child_Cross21|26: 220 82 19 10 4 1 
+68064|Survivor|1: 219 80 19 10 4 1 
+68065|Child_Cross21|58|Mutated: 222 81 19 10 4 1 
+68066|Child_Cross12|57: 221 81 19 10 4 1 
+68067|Child_Avg|27: 220 81 19 10 4 1 
+68069|Child_Cross12|37: 225 81 19 10 4 1 
+68072|Child_Cross12|57: 216 81 19 10 4 1 
+68074|Child_CrossABC2|8: 213 82 19 10 4 1 
+68076|Child_Cross21|42: 220 80 19 10 4 1 
+68080|Child_Cross21|42: 208 81 19 10 4 1 
+68082|Child_CrossABC2|8: 222 80 19 10 4 1 
+68083|Child_Cross21|30: 215 80 19 10 4 1 
+68085|Child_Avg|39: 212 80 19 10 4 1 
+68086|Child_Cross21|58: 214 80 19 10 4 1 
+68087|Child_Avg|59: 216 80 19 10 4 1 
+68093|Child_CrossABC1|1: 218 80 19 10 4 1 
+68098|Child_Avg|39: 200 80 19 10 4 1 
+68696|Child_Avg|7: 201 65 24 9 4 1 
+68699|Child_CrossABC1|7: 188 74 24 9 4 1 
+68924|Child_Avg|7: 100 33 10 4 1 
+68980|Child_Cross21|30: 215 106 27 10 4 1 
+69561|Survivor|1: 191 70 21 10 4 1 
+69680|Child_Cross12|25: 172 55 21 10 4 1 
+70037|Child_Cross21|50|Mutated: 202 70 21 10 4 1 
+70140|Child_Cross21|6: 229 72 19 10 4 1 
+70305|Survivor|1: 233 88 23 12 5 1 
+70306|Child_Avg|7: 212 70 23 10 4 1 
+70770|Child_Cross12|1: 164 70 21 10 4 1 
+71167|Child_Levy|16: 71 25 9 4 1 
+71170|Child_Cross21|54|Mutated: 104 23 13 4 1 
+71265|Child_Cross12|29: 234 56 21 10 4 1 
+71574|Child_Cross21|6: 185 80 19 10 4 1 
+71669|Child_Cross21|42: 157 60 21 10 4 1 
+71832|Random|11: 233 90 23 10 4 1 
+72170|Child_Cross12|1: 77 23 13 4 1 
+72404|Child_Cross12|45: 218 71 19 10 4 1 
+72639|Child_Cross21|18: 227 65 25 9 4 1 
+72802|Random|7: 220 71 19 10 4 1 
+72849|Random|20: 203 82 27 10 4 1 
+72928|Child_Cross21|18: 226 73 19 10 4 1 
+73724|Random|17: 239 83 27 10 4 1 
+74771|Random|16: 198 82 27 10 4 1 
+75138|Random|16: 240 74 24 9 4 1 
+75313|Survivor|1: 246 104 29 9 4 1 
+75722|Random|12: 224 102 29 10 4 1 
+75825|Child_Levy|60: 110 31 10 4 1 
+76130|Child_Cross12|45: 218 86 24 9 4 1 
+76169|Child_Cross21|10: 246 71 19 10 4 1 
+76170|Child_LevyABC1|11|Mutated: 240 70 19 10 4 1 
+76201|Child_Levy|44: 105 28 11 4 1 
+76520|Survivor|1: 192 70 23 10 4 1 
+76689|Child_Cross12|1: 207 80 24 9 4 1 
+76696|Child_Levy|8: 214 65 24 9 4 1 
+76697|Child_CrossABC2|2|Validated: 240 70 24 9 4 1 
+76698|Child_Cross12|57: 211 74 23 10 4 1 
+76699|Child_CrossABC1|7: 227 82 24 9 4 1 
+76841|Child_Cross21|38: 220 71 24 9 4 1 
+76952|Child_CrossABC2|8: 62 19 10 4 1 
+77045|Child_Cross21|18: 105 29 10 4 1 
+77187|Child_Cross21|10: 154 52 19 10 4 1 
+77578|Child_Cross21|46: 182 68 24 9 4 1 
+78053|Child_Cross12|45: 143 55 20 9 4 1 
+78188|Child_Cross12|37: 171 52 20 9 4 1 
+78291|Child_Cross21|14: 221 75 27 10 4 1 
+78619|Child_Cross21|54: 233 84 23 10 4 1 
+78666|Child_Cross21|34: 106 25 9 4 1 
+78810|Random|67: 107 32 13 4 1 
+78880|Survivor|1: 239 67 21 10 4 1 
+79218|Child_Levy|36: 96 28 13 4 1 
+79501|Random|14: 238 90 21 10 4 1 
+79507|Child_Avg|43: 227 84 23 10 4 1 
+79514|Child_Cross12|5: 228 91 21 10 4 1 
+79516|Child_Cross12|9: 235 91 21 10 4 1 
+79518|Child_Cross12|25: 234 90 21 10 4 1 
+79527|Child_Cross12|17: 225 89 21 10 4 1 
+79537|Survivor|1: 228 97 23 10 4 1 
+79548|Child_Cross21|2: 209 88 21 10 4 1 
+79553|Child_Cross12|13|Mutated: 232 88 23 10 4 1 
+79560|Child_Cross21|38: 227 90 21 10 4 1 
+79564|Child_Cross12|13: 226 90 21 10 4 1 
+79575|Child_Cross12|33: 225 91 21 10 4 1 
+79586|Child_Cross21|22: 226 71 19 10 4 1 
+79587|Child_Cross21|38: 226 91 21 10 4 1 
+79607|Child_Cross21|2: 214 88 21 10 4 1 
+79615|Child_Cross21|18: 235 88 21 10 4 1 
+79617|Child_CrossABC1|1: 232 91 21 10 4 1 
+79641|Child_Cross21|54: 228 70 21 10 4 1 
+79664|Child_Cross12|49: 219 80 21 10 4 1 
+79849|Child_LevyABC2|12: 95 35 11 5 1 
+79876|Child_Cross12|25: 207 79 21 10 4 1 
+79957|Child_Cross21|6: 237 89 21 10 4 1 
+79965|Survivor|1: 236 90 21 10 4 1 
+79968|Child_Cross21|6: 233 89 21 10 4 1 
+79982|Child_Cross21|26: 228 89 19 10 4 1 
+80014|Child_Avg|55: 212 88 21 10 4 1 
+80023|Child_Cross12|1: 227 91 21 10 4 1 
+80036|Child_Cross21|30: 215 87 21 10 4 1 
+80039|Child_Cross21|34: 236 70 21 10 4 1 
+80050|Survivor|1: 211 81 21 10 4 1 
+80085|Random|23: 204 57 20 9 4 1 
+80169|Random|3: 222 86 27 10 4 1 
+80247|Survivor|1: 223 70 23 10 4 1 
+80297|Child_Avg|3|Mutated: 201 91 19 10 4 1 
+80472|Child_CrossABC2|2: 222 89 21 10 4 1 
+80482|Child_Cross12|29: 236 89 21 10 4 1 
+80497|Child_Cross12|1: 218 89 21 10 4 1 
+80508|Child_Cross12|25: 216 89 21 10 4 1 
+80509|Child_Cross21|14: 219 89 21 10 4 1 
+80518|Child_Cross12|37: 170 71 23 10 4 1 
+80573|Survivor|1: 99 27 14 4 1 
+80596|Child_Cross12|17: 169 52 17 10 4 1 
+80703|Child_Cross21|30: 197 60 21 10 4 1 
+80779|Child_CrossABC1|1|Mutated: 80 30 9 4 1 
+80899|Child_Cross12|9: 185 54 19 10 4 1 
+80943|Child_CrossABC1|7: 82 19 10 4 1 
+81008|Child_Levy|48: 192 58 24 9 4 1 
+81083|Child_LevyP1|3|Mutated: 219 92 30 11 5 1 
+81202|Child_Avg|27: 89 24 11 4 1 
+81252|Child_Cross21|34: 218 80 27 10 4 1 
+81258|Child_Cross12|33: 192 90 23 10 4 1 
+81555|Child_Cross21|54: 224 64 23 10 4 1 
+81754|Child_Avg|15|Mutated: 113 28 13 4 1 
+81836|Child_Cross12|13: 225 64 19 10 4 1 
+81896|Random|22: 225 80 24 9 4 1 
+82117|Survivor|1: 231 70 19 10 4 1 
+82241|Child_Cross12|5|Mutated: 214 103 24 9 4 1 
+82338|Child_Cross12|17: 191 87 23 10 4 1 
+82413|Child_Cross12|13: 205 67 24 9 4 1 
+82453|Child_CrossABC1|7: 87 25 14 4 1 
+82550|Child_Cross12|5: 209 80 21 10 4 1 
+82564|Child_Cross21|46: 195 80 21 10 4 1 
+82628|Random|6: 216 82 33 9 4 1 
+82637|Child_CrossABC2|8: 197 77 29 9 4 1 
+82643|Child_Cross12|21: 66 24 11 4 1 
+82779|Child_Cross12|33|Mutated: 236 91 23 10 4 1 
+83010|Random|48: 199 82 19 10 4 1 
+83012|Child_LevyP1|3|Mutated: 96 29 14 4 1 
+83909|Survivor|1: 150 55 24 9 4 1 
+83989|Child_Cross12|25: 90 20 9 4 1 
+84034|Child_Cross21|50: 184 58 23 10 4 1 
+85648|Child_Cross12|37: 212 69 17 10 4 1 
+86339|Random|6: 228 60 21 10 4 1 
+86385|Child_CrossABC1|1: 80 28 9 4 1 
+86499|Child_Levy|60: 95 33 9 4 1 
+87059|Random|47: 246 93 28 11 4 1 
+87081|Child_Cross12|29: 195 77 23 10 4 1 
+87087|Child_Cross21|2: 190 76 24 9 4 1 
+87406|Child_Cross21|58: 172 56 21 10 4 1 
+88002|Child_Avg|39: 203 80 23 10 4 1 
+88048|Child_Cross12|33: 206 77 23 10 4 1 
+88323|Survivor|1: 216 85 25 9 4 1 
+88447|Random|4: 211 66 21 10 4 1 
+88496|Random|5: 201 69 27 10 4 1 
+88939|Random|95: 212 79 29 9 4 1 
+88944|Child_CrossABC2|8: 79 33 9 4 1 
+89124|Child_Cross21|14: 112 24 11 5 1 
+89207|Child_CrossABC1|1: 78 25 10 4 1 
+89268|Survivor|1: 109 33 9 4 1 
+89682|Survivor|1: 99 25 11 5 1 
+89692|Survivor|1: 228 80 24 9 4 1 
+89823|Child_Cross12|5: 82 28 11 4 1 
+89938|Survivor|1: 89 23 12 5 1 
+90399|Child_Cross12|17: 102 24 11 4 1 
+90588|Child_Cross21|10: 218 70 23 10 4 1 
+90798|Child_Cross21|14: 94 29 14 4 1 
+90998|Child_Cross21|54: 207 71 23 10 4 1 
+91458|Child_Cross12|57: 215 81 23 10 4 1 
+91636|Random|21: 87 31 11 4 1 
+91958|Random|7: 234 90 19 10 4 1 
+91999|Child_Levy|56: 241 77 23 10 4 1 
+92362|Child_Cross21|6: 237 92 33 9 4 1 
+92460|Survivor|1: 149 55 20 9 4 1 
+92724|Child_Levy|40|Mutated: 106 28 12 5 1 
+92788|Survivor|1: 76 33 9 4 1 
+92892|Child_Cross21|46: 224 91 24 9 4 1 
+93086|Child_CrossABC2|8: 81 23 13 4 1 
+93512|Survivor|1: 212 89 24 9 4 1 
+93831|Random|1: 97 35 11 4 1 
+93836|Child_Cross21|54: 179 49 21 10 4 1 
+93848|Survivor|1: 234 82 25 14 4 1 
+94001|Survivor|1: 166 48 20 9 4 1 
+94012|Child_Cross21|50: 167 49 17 10 4 1 
+94417|Child_Levy|28: 75 31 10 4 1 
+94518|Child_Cross21|38: 241 101 29 10 4 1 
+94760|Random|15: 103 30 9 4 1 
+95429|Survivor|1: 221 63 19 10 4 1 
+95432|Child_Cross21|10: 57 20 9 4 1 
+95494|Random|13: 210 74 24 9 4 1 
+95744|Child_Avg|51: 82 29 10 4 1 
+96082|Child_Cross12|41|Mutated: 215 86 24 9 4 1 
+96171|Child_Cross12|5: 205 78 21 10 4 1 
+96363|Child_Avg|7: 199 81 19 10 4 1 
+96860|Child_Cross12|33: 201 59 21 10 4 1 
+97057|Child_CrossABC2|8: 77 33 9 4 1 
+97127|Child_Cross21|22: 137 51 19 10 4 1 
+97302|Survivor|1: 181 56 21 10 4 1 
+97367|Survivor|1: 220 80 27 10 4 1 
+97758|Random|3: 219 59 24 9 4 1 
+98219|Survivor|1: 220 103 23 10 4 1 
+98460|Child_LevyABC1|11: 96 35 12 5 1 
+98537|Random|2: 170 57 20 9 4 1 
+98546|Random|3: 222 81 23 10 4 1 
+98588|Random|21: 212 90 23 10 4 1 
+98595|Survivor|1: 214 91 21 10 4 1 
+98672|Child_Cross21|2: 97 35 12 5 1 
+98977|Random|2: 229 66 17 10 4 1 
+98996|Child_Cross12|37: 228 66 20 9 4 1 
+99001|Random|26: 232 90 28 9 4 1 
+99248|Child_Cross21|58|Mutated: 198 67 23 10 4 1 
+99257|Random|20: 90 25 14 4 1 
+99262|Survivor|1: 118 30 11 5 1 
+99317|Child_LevyABC2|6: 90 25 11 5 1 
+99367|Child_Cross12|45: 169 47 21 10 4 1 
+99560|Survivor|1: 206 79 21 10 4 1 
+99745|Survivor|1: 80 25 14 4 1 
+100090|Random|2: 216 70 20 9 4 1 
+100094|Random|25: 107 33 9 4 1 
+100316|Child_CrossABC1|1: 81 20 9 4 1 
+100400|Child_Cross12|57: 95 29 14 4 1 
+100572|Child_Cross12|53: 209 98 24 9 4 1 
+100642|Survivor|1: 77 28 13 4 1 
+100698|Child_Avg|23: 106 30 11 5 1 
+100742|Random|19: 240 85 24 9 4 1 
+100979|Random|25: 233 90 29 9 4 1 
+101040|Survivor|1|Mutated: 86 30 11 5 1 
+101140|Child_Cross12|45: 198 68 21 10 4 1 
+101323|Random|4: 222 75 27 10 4 1 
+101388|Survivor|1: 218 98 21 10 4 1 
+101723|Random|51: 242 101 23 10 4 1 
+101864|Child_Cross12|25: 95 23 12 5 1 
+102087|Child_Cross21|46: 213 76 24 9 4 1 
+102184|Child_Avg|35: 97 25 9 4 1 
+102213|Random|24: 237 90 27 10 4 1 
+102399|Survivor|1: 235 98 24 9 4 1 
+102628|Child_Cross12|37: 92 31 11 4 1 
+102717|Random|21: 184 54 23 10 4 1 
+102855|Random|3: 232 67 25 9 4 1 
+102898|Child_Cross21|30: 234 75 29 9 4 1 
+103004|Child_Levy|36: 80 33 9 4 1 
+103010|Survivor|1: 232 84 29 9 4 1 
+103045|Child_Cross21|18: 238 77 24 9 4 1 
+103613|Child_Cross21|18: 176 59 21 10 4 1 
+103782|Child_Levy|16: 180 61 24 9 4 1 
+104145|Survivor|1: 206 64 19 10 4 1 
+104224|Survivor|1: 212 90 25 9 4 1 
+104324|Child_Cross12|41: 236 70 19 10 4 1 
+104337|Child_Cross12|49: 226 70 19 10 4 1 
+104340|Child_Cross12|21: 222 70 19 10 4 1 
+104341|Child_Avg|39: 227 70 19 10 4 1 
+104343|Child_Cross12|21: 225 70 19 10 4 1 
+104344|Child_Cross21|50: 228 62 19 10 4 1 
+104346|Child_Avg|19: 234 70 19 10 4 1 
+104348|Child_Cross12|33: 224 70 19 10 4 1 
+104355|Child_Avg|23: 209 70 19 10 4 1 
+104356|Child_Avg|43: 219 70 19 10 4 1 
+104358|Child_Avg|43: 233 70 19 10 4 1 
+104360|Child_Cross12|37|Mutated: 233 70 23 10 4 1 
+104363|Child_Cross12|5|Mutated|Validated: 230 70 23 10 4 1 
+104364|Child_Avg|11: 229 70 21 10 4 1 
+104367|Child_Avg|19: 228 70 19 10 4 1 
+104375|Child_Avg|55: 223 70 19 10 4 1 
+104378|Child_Cross21|38|Mutated: 206 70 19 10 4 1 
+104384|Child_Avg|19: 220 70 19 10 4 1 
+104387|Child_LevyP2|10: 203 71 24 9 4 1 
+104392|Child_Cross12|5: 221 70 19 10 4 1 
+104394|Child_CrossABC1|1|Mutated: 215 82 19 10 4 1 
+104396|Child_Avg|11: 239 70 19 10 4 1 
+104400|Child_Cross21|10|Mutated: 231 63 19 10 4 1 
+104407|Child_CrossABC2|2: 225 70 21 10 4 1 
+104411|Child_Cross21|54: 230 70 19 10 4 1 
+104426|Child_CrossABC1|1|Mutated: 248 70 23 10 4 1 
+104428|Child_Avg|15: 234 70 21 10 4 1 
+104438|Child_Cross12|29: 235 70 19 10 4 1 
+104444|Child_Cross21|50: 232 70 19 10 4 1 
+104445|Child_CrossABC2|2: 243 70 19 10 4 1 
+104446|Child_Cross21|38: 237 70 19 10 4 1 
+104510|Child_Cross21|10: 170 54 19 10 4 1 
+104513|Child_Cross21|38: 169 54 19 10 4 1 
+104522|Child_Cross21|30: 168 54 19 10 4 1 
+104558|Child_Cross12|57: 217 100 23 10 4 1 
+104741|Child_Cross21|14|Mutated: 235 92 19 10 4 1 
+104775|Random|27: 247 90 23 10 4 1 
+104787|Random|27: 233 99 23 14 4 1 
+105149|Random|18: 238 63 19 10 4 1 
+105855|Child_Cross21|26: 228 77 23 10 4 1 
+105997|Child_Cross21|2: 154 46 21 10 4 1 
+106083|Child_Avg|35: 90 33 10 4 1 
+106188|Random|9: 81 28 9 4 1 
+106249|Child_Cross12|53: 246 164 64 19 10 4 1 
+106365|Random|32: 234 89 30 9 4 1 
+106367|Survivor|1: 229 75 29 9 4 1 
+106369|Child_Avg|27|Mutated: 227 83 24 9 4 1 
+106712|Random|25: 227 102 29 10 4 1 
+106761|Random|64: 167 56 21 10 4 1 
+107329|Child_Cross21|38: 214 82 19 10 4 1 
+107333|Child_Cross12|53|Mutated: 214 79 19 10 4 1 
+107336|Child_Cross21|30: 214 81 19 10 4 1 
+107352|Child_Cross12|1: 224 64 19 10 4 1 
+107354|Child_Avg|15|Mutated: 213 72 19 10 4 1 
+107504|Child_Cross21|10: 218 59 21 10 4 1 
+107701|Child_Cross12|25: 231 83 27 10 4 1 
+107702|Child_Cross21|38|Mutated: 94 33 9 4 1 
+107784|Child_Cross21|54: 196 67 21 10 4 1 
+107858|Random|2: 239 82 29 10 4 1 
+108201|Child_Cross12|37: 156 59 17 10 4 1 
+108218|Child_Cross12|13: 220 59 21 10 4 1 
+108334|Random|14: 220 77 23 10 4 1 
+108396|Child_Cross21|18|Mutated: 208 66 20 9 4 1 
+108491|Child_Cross21|42: 246 209 70 23 10 4 1 
+108516|Child_Cross12|57: 96 25 9 4 1 
+108679|Child_Avg|11: 216 80 23 10 4 1 
+108681|Child_Cross21|22: 221 91 21 10 4 1 
+108721|Child_CrossABC1|1: 208 80 21 10 4 1 
+108726|Child_CrossABC1|1: 213 80 21 10 4 1 
+108728|Child_Cross21|22: 220 80 21 10 4 1 
+108743|Child_Cross21|26: 210 80 21 10 4 1 
+108746|Child_Cross12|1: 206 90 21 10 4 1 
+108748|Child_Cross21|34|Mutated: 213 89 21 10 4 1 
+108784|Child_Avg|11: 213 69 21 10 4 1 
+108790|Child_Cross21|34: 213 56 21 10 4 1 
+108798|Child_CrossABC2|2: 221 89 21 10 4 1 
+108810|Child_CrossABC1|7: 201 78 21 10 4 1 
+108812|Child_CrossABC1|7: 210 78 21 10 4 1 
+108816|Child_Cross21|6: 206 78 21 10 4 1 
+108818|Child_Cross21|34: 208 87 21 10 4 1 
+109615|Child_Avg|55: 172 52 19 10 4 1 
+109800|Child_Cross21|22|Mutated: 180 59 21 10 4 1 
+110000|Survivor|1: 213 70 27 10 4 1 
+110148|Child_Cross21|38: 233 104 28 11 4 1 
+110438|Child_Cross12|9: 238 80 19 10 4 1 
+110459|Child_Cross12|45: 215 68 21 10 4 1 
+110591|Child_Avg|43: 94 28 11 4 1 
+110802|Random|20: 103 23 14 4 1 
+111277|Child_Avg|55: 94 23 13 4 1 
+111367|Random|2: 220 93 29 9 4 1 
+111486|Survivor|1: 207 89 24 9 4 1 
+111487|Child_CrossABC1|7: 203 99 27 10 4 1 
+111488|Child_Cross12|57: 208 87 23 10 4 1 
+111492|Child_LevyP2|10: 215 88 24 11 5 1 
+111498|Child_Cross12|1: 218 87 23 10 4 1 
+111506|Child_Cross21|26: 206 89 21 10 4 1 
+111968|Child_Levy|40: 88 28 9 4 1 
+112363|Survivor|1: 187 53 17 10 4 1 
+112537|Random|43: 221 68 24 9 4 1 
+112945|Survivor|1: 106 30 9 4 1 
+113134|Random|5: 248 101 29 10 4 1 
+113154|Child_Cross21|38|Mutated: 154 46 20 9 4 1 
+113163|Child_Levy|24|Mutated: 93 25 14 4 1 
+113290|Child_Avg|11: 199 71 23 10 4 1 
+113291|Survivor|1|Mutated: 225 71 23 10 4 1 
+113314|Child_LevyP2|4|Mutated: 102 28 12 5 1 
+113781|Random|26: 232 83 24 9 4 1 
+113918|Survivor|1: 99 23 12 5 1 
+113995|Random|13: 223 72 27 10 4 1 
+114293|Child_Cross21|6|Mutated: 207 91 23 10 4 1 
+115092|Child_Cross12|5: 76 27 14 4 1 
+115128|Random|5: 120 27 10 4 1 
+115152|Child_Cross21|58: 167 67 21 10 4 1 
+115227|Survivor|1: 205 123 27 10 4 1 
+115461|Survivor|1: 85 32 13 4 1 
+115619|Survivor|1: 92 20 9 4 1 
+115941|Child_Cross12|41: 241 91 23 10 4 1 
+115984|Child_CrossABC1|1: 76 31 10 4 1 
+115988|Child_CrossABC1|1: 86 31 10 4 1 
+116049|Child_Cross21|50: 225 85 24 9 4 1 
+116053|Child_Cross12|53: 234 81 23 10 4 1 
+116055|Child_CrossABC2|2: 228 79 24 9 4 1 
+116505|Child_Cross21|10: 226 89 19 10 4 1 
+116550|Child_Levy|40: 99 30 12 5 1 
+116584|Child_Cross21|46: 179 59 21 10 4 1 
+116613|Child_Cross12|1: 200 87 23 10 4 1 
+116696|Child_Cross12|9: 206 64 24 11 4 1 
+116922|Random|17: 232 103 29 10 4 1 
+117032|Child_Cross21|42: 236 84 23 10 4 1 
+117316|Random|20: 107 25 14 4 1 
+117467|Random|17: 232 61 23 10 4 1 
+117498|Child_LevyP1|9: 215 82 24 11 4 1 
+117502|Child_Cross12|21: 219 56 21 10 4 1 
+117777|Child_Cross21|22: 164 57 23 10 4 1 
+117896|Random|2: 117 27 10 4 1 
+118786|Child_Avg|11|Mutated: 240 68 23 10 4 1 
+118841|Random|21: 71 29 9 4 1 
+119065|Child_Cross21|2: 235 77 21 10 4 1 
+119167|Child_Avg|27: 168 52 24 9 4 1 
+119221|Child_Levy|12: 97 35 11 5 1 
+119275|Survivor|1: 99 35 11 5 1 
+119363|Random|9: 186 87 27 10 4 1 
+119596|Child_Cross12|21: 222 86 21 10 4 1 
+119600|Child_CrossABC2|8: 222 87 23 10 4 1 
+119627|Child_CrossABC2|2: 220 62 19 10 4 1 
+119651|Child_Cross21|22: 196 61 19 10 4 1 
+119655|Child_Avg|15: 214 70 19 10 4 1 
+119658|Child_Cross21|42: 206 60 19 10 4 1 
+119680|Child_Levy|32: 100 32 13 5 1 
+119960|Child_Levy|52: 99 28 12 5 1 
+120021|Random|23: 223 93 29 10 4 1 
+120023|Child_LevyP2|10|Mutated: 235 94 30 11 5 1 
+120028|Child_LevyABC1|11: 103 24 11 5 1 
+120517|Random|17: 242 67 21 10 4 1 
+120712|Child_Cross12|9: 182 61 23 10 4 1 
+120743|Random|5: 166 67 24 9 4 1 
+120873|Random|9: 232 61 24 9 4 1 
+121301|Random|14: 176 61 24 9 4 1 
+121576|Random|13: 244 101 29 9 4 1 
+121613|Child_Cross21|46: 208 89 21 10 4 1 
+121942|Child_Levy|4: 98 27 13 5 1 
+122108|Survivor|1: 222 66 21 10 4 1 
+122113|Child_Cross21|38: 193 80 21 10 4 1 
+122406|Child_Cross21|38: 173 52 19 10 4 1 
+122670|Random|24: 242 103 27 10 4 1 
+122721|Child_Cross21|50: 230 78 21 10 4 1 
+123040|Survivor|1: 236 80 24 11 5 1 
+123410|Child_LevyP1|3: 242 86 24 11 5 1 
+123632|Random|8: 204 76 27 10 4 1 
+124047|Random|8: 228 87 27 10 4 1 
+125110|Random|67: 186 76 24 9 4 1 
+125119|Child_Cross12|53: 197 74 24 9 4 1 
+125447|Survivor|1: 207 68 20 9 4 1 
+125482|Random|14: 217 70 29 9 4 1 
+125567|Child_Cross21|6: 200 119 29 14 4 1 
+125770|Child_Cross12|1: 242 93 24 11 4 1 
+126941|Child_Cross21|38: 198 79 19 10 4 1 
+126984|Random|4: 237 101 25 14 4 1 
+127061|Child_Cross21|58: 245 77 21 10 4 1 
+127066|Child_Cross21|26: 232 77 21 10 4 1 
+127988|Child_CrossABC2|8|Mutated: 110 21 10 4 1 
+129129|Child_Cross12|17: 156 60 19 10 4 1 
+129436|Child_Cross21|34: 107 28 13 4 1 
+129476|Child_Cross21|6: 215 59 21 10 4 1 
+130509|Random|11: 207 72 27 10 4 1 
+131324|Child_Cross12|5|Mutated: 109 28 11 4 1 
+131407|Child_Avg|47: 177 65 21 10 4 1 
+131578|Child_Cross21|38: 234 72 20 9 4 1 
+131953|Random|76: 115 29 9 4 1 
+131995|Child_Cross12|1: 186 70 21 10 4 1 
+132198|Random|25: 228 98 31 14 4 1 
+132811|Survivor|1|Mutated: 218 121 29 10 4 1 
+132888|Child_Avg|51: 76 25 9 4 1 
+132959|Random|20: 98 35 11 4 1 
+133282|Survivor|1: 81 23 14 4 1 
+133310|Child_Cross12|29: 215 90 21 10 4 1 
+133422|Child_Cross21|10: 169 57 20 9 4 1 
+133841|Random|10: 212 68 20 9 4 1 
+133888|Random|11: 222 64 24 9 4 1 
+134808|Child_CrossABC1|7: 163 52 20 9 4 1 
+135087|Child_Avg|11: 103 32 10 3 1 
+135156|Random|13: 204 78 21 10 4 1 
+135283|Child_Levy|48: 120 35 12 5 1 
+135341|Child_Cross21|34: 208 55 21 10 4 1 
+135579|Child_Cross21|6: 241 93 29 14 4 1 
+135995|Child_Cross12|13: 230 65 24 9 4 1 
+136174|Random|1: 158 54 19 10 4 1 
+136496|Survivor|1: 87 25 11 5 1 
+136557|Survivor|1: 223 59 24 9 4 1 
+136615|Child_Levy|8: 69 30 11 5 1 
+137018|Child_Cross12|21: 183 88 24 9 4 1 
+137421|Survivor|1: 247 106 24 9 4 1 
+137638|Child_Cross21|34: 248 70 21 10 4 1 
+137661|Child_Cross21|14|Mutated: 248 70 19 10 4 1 
+137826|Child_Cross12|41: 241 69 21 10 4 1 
+138006|Random|20: 230 70 20 9 4 1 
+138271|Survivor|1: 188 55 20 9 4 1 
+138306|Child_Cross21|50: 191 80 21 10 4 1 
+138441|Child_Cross21|38: 223 67 23 10 4 1 
+138561|Child_Cross12|41: 153 57 23 10 4 1 
+138990|Child_Avg|23: 106 24 11 4 1 
+139108|Survivor|1: 218 68 24 9 4 1 
+139138|Random|10: 228 83 27 10 4 1 
+139193|Child_Cross12|33: 88 25 14 4 1 
+139246|Random|19: 218 90 27 10 4 1 
+139399|Survivor|1: 155 46 20 9 4 1 
+139457|Survivor|1: 100 30 12 5 1 
+139458|Child_Levy|20: 105 32 13 4 1 
+139535|Random|18: 246 94 23 10 4 1 
+139666|Random|1: 226 65 24 9 4 1 
+139857|Child_Cross12|29: 231 78 21 10 4 1 
+140970|Child_Cross12|53: 243 101 24 9 4 1 
+141124|Child_CrossABC2|2: 103 29 11 5 1 
+141140|Child_Cross21|30: 231 73 19 10 4 1 
+141310|Child_Cross12|33|Mutated: 161 59 21 10 4 1 
+141347|Child_Cross21|6: 205 55 21 10 4 1 
+141367|Random|14: 168 45 21 10 4 1 
+141398|Child_Cross12|53: 190 53 19 10 4 1 
+141799|Survivor|1: 246 93 24 11 4 1 
+141865|Child_Cross12|17: 76 23 14 4 1 
+141906|Child_Avg|39: 93 25 10 4 1 
+142155|Survivor|1: 106 29 11 5 1 
+142382|Child_Cross12|37: 208 67 23 10 4 1 
+142445|Child_Cross12|21: 66 24 11 5 1 
+143091|Child_Cross21|46: 241 63 20 9 4 1 
+143321|Random|20: 219 74 24 9 4 1 
+143345|Random|2: 189 52 24 9 4 1 
+143474|Child_Cross21|38|Mutated: 117 28 13 4 1 
+144341|Survivor|1: 218 57 20 9 4 1 
+144347|Child_Cross21|26|Mutated: 225 63 20 9 4 1 
+144374|Child_Avg|39: 104 27 13 5 1 
+144376|Child_Levy|32: 97 23 12 5 1 
+144377|Random|15: 206 59 21 10 4 1 
+144848|Survivor|1: 162 51 19 10 4 1 
+144899|Child_Cross21|54: 95 28 12 5 1 
+145479|Random|23: 220 92 29 10 4 1 
+145665|Child_LevyP2|4: 222 70 23 10 4 1 
+145952|Child_Cross12|49: 98 29 14 4 1 
+146143|Child_Cross21|18: 248 77 21 10 4 1 
+146649|Child_Cross12|37: 231 64 24 9 4 1 
+147053|Child_Cross21|10: 204 66 21 10 4 1 
+147105|Random|6: 217 61 24 9 4 1 
+147362|Child_Cross21|18: 247 97 28 11 4 1 
+148037|Child_Cross12|1: 201 55 21 10 4 1 
+148066|Child_Avg|55: 66 28 11 4 1 
+148120|Random|22: 239 97 29 9 4 1 
+148177|Child_Cross21|50: 68 29 9 4 1 
+148319|Child_Cross21|18: 214 64 19 10 4 1 
+148432|Child_Cross12|41: 162 56 21 10 4 1 
+148831|Random|73: 235 93 29 9 4 1 
+149225|Child_Levy|32: 214 70 24 9 4 1 
+149426|Survivor|1: 240 61 24 9 4 1 
+149475|Child_Cross21|58: 237 72 19 10 4 1 
+149912|Child_Avg|51: 208 68 23 10 4 1 
+150151|Random|2: 200 81 29 9 4 1 
+150264|Random|26: 208 73 27 10 4 1 
+150734|Child_Avg|23: 99 20 9 4 1 
+150930|Random|13: 223 60 19 10 4 1 
+150980|Child_Cross12|9: 217 80 23 10 4 1 
+151094|Child_Cross21|18: 248 224 64 23 10 4 1 
+151262|Child_Cross21|26: 181 52 20 9 4 1 
+151473|Survivor|1: 74 33 9 4 1 
+152443|Child_Avg|7: 98 28 12 5 1 
+152754|Child_Cross12|41: 232 74 24 9 4 1 
+152855|Child_Cross12|17: 63 20 9 4 1 
+152922|Random|2: 230 65 27 10 4 1 
+153017|Random|35: 202 58 24 9 4 1 
+153263|Child_Cross12|17: 193 71 29 10 4 1 
+153266|Child_Cross12|21: 208 71 23 10 4 1 
+153746|Survivor|1: 239 79 29 9 4 1 
+154607|Child_Cross21|22: 186 56 21 10 4 1 
+154717|Random|3: 236 80 23 10 4 1 
+155156|Child_Avg|19: 83 25 9 4 1 
+155318|Child_Avg|55: 76 30 9 4 1 
+155728|Child_Cross12|41: 167 61 19 10 4 1 
+155974|Random|10: 232 92 28 13 4 1 
+156021|Random|9: 90 29 14 4 1 
+156057|Child_Cross21|50|Mutated: 241 94 23 10 4 1 
+156063|Child_CrossABC1|7: 216 94 23 10 4 1 
+156066|Child_Avg|15: 229 94 23 10 4 1 
+156068|Child_Cross21|38: 227 94 23 10 4 1 
+156070|Child_LevyABC2|6: 221 86 24 11 5 1 
+156071|Child_Avg|55|Mutated: 238 90 23 10 4 1 
+156073|Child_Levy|12: 239 93 24 11 5 1 
+156075|Child_Avg|27: 240 93 23 10 4 1 
+156076|Child_Cross21|42|Mutated: 235 93 27 10 4 1 
+156077|Child_Cross21|50: 238 91 23 10 4 1 
+156079|Child_Cross12|45: 234 93 23 10 4 1 
+156080|Child_Cross12|21: 238 93 23 10 4 1 
+156081|Child_Cross12|5: 236 90 23 10 4 1 
+156085|Child_Avg|31: 237 90 23 10 4 1 
+156086|Child_Cross21|10: 235 93 23 10 4 1 
+156087|Child_Avg|19: 235 91 23 10 4 1 
+156092|Child_Cross12|33: 234 91 23 10 4 1 
+156095|Child_Cross21|50: 220 90 23 10 4 1 
+156098|Child_LevyP2|4: 234 88 24 11 5 1 
+156100|Child_Cross21|42: 235 90 23 10 4 1 
+156102|Child_Cross12|29: 231 90 23 10 4 1 
+156103|Child_LevyP2|4: 229 88 24 11 5 1 
+156104|Child_Avg|19: 234 90 23 10 4 1 
+156107|Child_Cross21|38: 234 87 23 10 4 1 
+156114|Child_Avg|19: 234 88 23 10 4 1 
+156119|Child_Levy|48: 234 91 24 11 5 1 
+156120|Child_Cross21|30: 235 87 23 10 4 1 
+156122|Child_Cross12|9: 233 87 23 10 4 1 
+156125|Child_Cross21|30: 233 90 21 10 4 1 
+156129|Child_Levy|56: 236 91 24 11 5 1 
+156131|Child_Cross12|33: 240 90 23 10 4 1 
+156138|Child_Cross21|30: 232 90 23 10 4 1 
+156139|Child_Cross21|26: 233 94 23 10 4 1 
+156142|Child_Cross12|33: 211 90 23 10 4 1 
+156145|Child_CrossABC2|2: 232 94 23 10 4 1 
+156146|Child_LevyABC2|6: 225 88 24 11 5 1 
+156148|Child_Avg|23: 230 90 23 10 4 1 
+156150|Child_Avg|39: 222 90 23 10 4 1 
+156151|Child_Cross21|26: 229 90 23 10 4 1 
+156154|Child_Avg|27|Mutated: 231 87 23 10 4 1 
+156158|Child_Cross21|2: 232 81 23 10 4 1 
+156161|Child_Cross21|58: 230 80 23 10 4 1 
+156170|Child_Avg|59: 219 90 23 10 4 1 
+156173|Child_Cross21|30: 231 91 23 10 4 1 
+156183|Child_Cross21|34: 227 90 23 10 4 1 
+156207|Child_Avg|43: 234 90 25 9 4 1 
+156212|Child_Cross21|38: 232 90 21 10 4 1 
+156213|Child_Levy|40: 233 91 24 11 5 1 
+156227|Child_Avg|7: 233 83 23 10 4 1 
+156231|Child_Avg|43: 232 87 23 10 4 1 
+156422|Child_CrossABC1|7: 104 27 10 4 1 
+156479|Random|13: 211 75 29 10 4 1 
+156723|Survivor|1: 100 33 9 4 1 
+156800|Survivor|1: 230 79 20 9 4 1 
+156849|Child_Cross12|9: 249 67 21 10 4 1 
+156979|Random|94: 197 62 24 9 4 1 
+157032|Random|19: 118 32 13 4 1 
+157135|Child_Cross21|10: 100 35 11 4 1 
+157180|Child_Cross21|14: 226 67 21 10 4 1 
+157225|Child_Cross12|1: 220 67 24 9 4 1 
+157296|Survivor|1: 208 93 23 10 4 1 
+157300|Child_Cross21|2: 211 89 24 9 4 1 
+157316|Child_Cross21|54: 236 89 19 10 4 1 
+157333|Child_Cross12|1: 217 81 19 10 4 1 
+157351|Child_CrossABC1|7: 217 81 21 10 4 1 
+157356|Child_CrossABC1|1: 225 81 21 10 4 1 
+157357|Child_CrossABC2|2: 216 79 19 10 4 1 
+157367|Child_Cross12|49|Mutated: 226 80 19 10 4 1 
+157368|Child_CrossABC2|8: 211 80 19 10 4 1 
+157379|Child_Avg|27: 217 80 19 10 4 1 
+157389|Child_LevyABC1|5: 226 79 24 9 4 1 
+157394|Child_CrossABC1|7: 214 80 23 10 4 1 
+157396|Child_Cross21|46: 211 81 19 10 4 1 
+157400|Child_Cross21|34: 209 80 19 10 4 1 
+157414|Child_Cross21|26: 229 90 19 10 4 1 
+157426|Child_Cross21|26: 223 80 19 10 4 1 
+157427|Child_Cross12|57: 212 81 19 10 4 1 
+157439|Child_Avg|47: 201 80 19 10 4 1 
+157449|Child_LevyP2|10: 217 82 24 11 5 1 
+157450|Child_Cross12|37: 204 80 19 10 4 1 
+157452|Child_CrossABC2|2: 215 80 23 10 4 1 
+157454|Child_Cross21|58: 209 79 19 10 4 1 
+157458|Child_Cross12|41: 210 80 19 10 4 1 
+157638|Child_Levy|36: 148 59 21 10 4 1 
+158496|Random|18: 199 91 23 10 4 1 
+158575|Child_Cross21|14: 231 88 24 9 4 1 
+158620|Child_Avg|39: 199 72 27 10 4 1 
+158761|Child_Cross12|17: 193 69 21 10 4 1 
+159140|Child_Cross21|2: 246 68 24 9 4 1 
+159318|Survivor|1: 220 92 24 9 4 1 
+159319|Child_Levy|4: 180 66 21 10 4 1 
+159740|Child_Cross21|6: 221 72 19 10 4 1 
+159953|Child_CrossABC1|7: 205 59 21 10 4 1 
+159963|Child_Cross12|33: 237 64 19 10 4 1 
+160008|Random|3: 240 67 21 10 4 1 
+160094|Child_Cross12|9: 214 76 21 10 4 1 
+160095|Child_Cross21|2: 211 76 21 10 4 1 
+160134|Survivor|1|Mutated: 233 77 21 10 4 1 
+160136|Child_Avg|27: 202 57 21 10 4 1 
+160439|Child_Levy|28: 235 64 24 9 4 1 
+160442|Child_CrossABC1|7: 235 67 24 9 4 1 
+160447|Child_Levy|16: 221 70 24 9 4 1 
+160834|Child_Cross12|25: 229 98 24 9 4 1 
+161107|Random|9: 242 64 24 9 4 1 
+161213|Child_Cross21|18|Mutated: 206 57 20 9 4 1 
+161221|Child_Cross12|5: 236 77 23 10 4 1 
+161429|Child_CrossABC1|1: 225 70 23 10 4 1 
+161430|Child_Cross21|30: 187 70 21 10 4 1 
+161439|Child_Cross12|29: 225 78 21 10 4 1 
+161443|Child_Cross21|46: 184 78 21 10 4 1 
+161458|Child_Cross12|41: 222 69 21 10 4 1 
+161467|Child_CrossABC1|7: 236 68 21 10 4 1 
+161470|Child_Cross21|42|Mutated: 218 69 21 10 4 1 
+161471|Child_Cross21|42: 219 70 21 10 4 1 
+161483|Child_Cross21|14|Mutated: 216 77 23 10 4 1 
+161517|Child_Cross12|21: 214 73 24 9 4 1 
+161724|Child_Avg|43: 111 31 10 4 1 
+161873|Child_Cross21|54: 221 65 21 10 4 1 
+162069|Random|17: 169 55 21 10 4 1 
+162259|Child_Cross21|34: 102 25 14 4 1 
+162278|Random|28: 234 61 23 10 4 1 
+162706|Random|10: 234 82 29 9 4 1 
+162719|Child_Cross12|37: 213 59 21 10 4 1 
+162795|Random|20: 232 67 24 9 4 1 
+163254|Child_Cross12|17: 98 19 10 4 1 
+163494|Child_Cross12|17: 219 82 29 10 4 1 
+163496|Child_LevyP2|10: 225 83 30 11 5 1 
+163547|Child_Cross21|22: 219 76 21 10 4 1 
+163620|Survivor|1: 191 52 20 9 4 1 
+163762|Child_Cross12|57: 230 91 24 9 4 1 
+163798|Child_Cross21|30: 242 86 24 9 4 1 
+163799|Child_Cross21|38: 237 87 23 10 4 1 
+163951|Child_Levy|24: 202 69 21 10 4 1 
+163957|Survivor|1: 204 69 21 10 4 1 
+163963|Child_Cross21|10: 204 62 19 10 4 1 
+163964|Child_CrossABC2|8: 233 70 21 10 4 1 
+163968|Child_Cross12|53: 190 80 21 10 4 1 
+163975|Child_Avg|19: 222 68 21 10 4 1 
+163980|Child_Cross12|57: 221 68 21 10 4 1 
+163984|Child_Cross12|25: 229 68 21 10 4 1 
+163992|Child_Avg|59: 220 68 21 10 4 1 
+163999|Child_Cross12|1: 220 70 21 10 4 1 
+164007|Child_Avg|35: 234 69 21 10 4 1 
+164014|Child_Avg|31: 226 68 21 10 4 1 
+164018|Child_Cross12|53: 223 68 21 10 4 1 
+164045|Survivor|1: 231 89 23 14 4 1 
+164323|Child_Cross12|29: 247 85 24 9 4 1 
+164414|Child_Levy|40: 215 57 20 9 4 1 
+164683|Child_Cross12|53: 163 51 19 10 4 1 
+164703|Child_Cross21|50: 174 50 19 10 4 1 
+164753|Child_Cross12|25: 166 53 19 10 4 1 
+164775|Child_Cross12|53: 164 51 19 10 4 1 
+164792|Child_Avg|35: 182 52 19 10 4 1 
+165091|Child_Cross21|46: 158 62 19 10 4 1 
+165151|Survivor|1: 101 30 9 4 1 
+165154|Random|15: 230 108 29 9 4 1 
+165278|Random|19: 160 58 23 10 4 1 
+165344|Child_Avg|7: 206 78 23 10 4 1 
+165356|Child_Avg|23: 146 59 21 10 4 1 
+165403|Random|6: 248 161 58 24 9 4 1 
+165407|Child_Cross21|26: 167 52 24 9 4 1 
+165411|Child_Avg|23: 165 52 24 9 4 1 
+165659|Child_Cross12|53: 90 23 13 4 1 
+165743|Child_Levy|4: 167 58 21 10 4 1 
+166298|Child_Cross12|25: 225 57 21 10 4 1 
+166474|Survivor|1: 92 33 9 4 1 
+166723|Child_Cross12|25: 235 81 23 10 4 1 
+167239|Child_Cross12|37: 220 70 17 10 4 1 
+167240|Child_CrossABC2|2: 221 74 23 10 4 1 
+167600|Survivor|1: 73 23 13 4 1 
+167815|Child_Levy|4: 216 83 20 9 4 1 
+167857|Random|5: 100 23 14 4 1 
+167920|Child_Cross12|21: 218 71 23 10 4 1 
+168003|Child_Cross21|18: 246 73 27 10 4 1 
+168544|Child_Cross12|5: 230 63 19 10 4 1 
+168548|Child_Cross12|53|Mutated: 225 63 19 10 4 1 
+168550|Child_CrossABC2|8: 223 63 19 10 4 1 
+168560|Child_Cross12|57: 217 62 19 10 4 1 
+168569|Child_Cross12|13: 226 82 19 10 4 1 
+168610|Child_CrossABC1|1: 167 54 19 10 4 1 
+168611|Child_CrossABC2|2: 168 52 19 10 4 1 
+168613|Child_CrossABC2|8: 189 54 19 10 4 1 
+169335|Child_Cross21|14: 205 73 24 9 4 1 
+169483|Survivor|1: 203 88 21 10 4 1 
+169519|Child_Cross21|18: 220 77 24 9 4 1 
+169575|Child_Cross21|34: 238 71 24 9 4 1 
+169837|Child_Cross12|5: 223 66 20 9 4 1 
+170185|Child_Cross12|5: 170 60 19 10 4 1 
+170583|Child_LevyABC1|5: 115 25 11 5 1 
+170958|Child_CrossABC2|2: 101 31 10 4 1 
+171192|Child_Avg|19: 93 29 14 4 1 
+171437|Child_Cross21|18: 238 63 20 9 4 1 
+171577|Child_Avg|15: 108 28 11 4 1 
+171705|Survivor|1: 238 73 29 9 4 1 
+171903|Child_Cross21|34: 210 76 24 9 4 1 
+171911|Survivor|1: 218 82 29 9 4 1 
+171921|Child_Cross12|29: 229 99 29 9 4 1 
+172291|Child_Cross21|30: 207 74 19 10 4 1 
+173359|Survivor|1: 103 27 13 5 1 
+173536|Child_Levy|36: 180 55 21 10 4 1 
+173644|Random|27: 244 72 20 9 4 1 
+173655|Child_CrossABC1|1: 211 72 20 9 4 1 
+173688|Child_Avg|11: 207 60 19 10 4 1 
+173783|Random|1: 249 104 23 10 4 1 
+174288|Child_Cross21|10: 159 61 19 10 4 1 
+174297|Random|17: 92 34 9 4 1 
+174884|Child_Avg|35: 108 24 11 4 1 
+175157|Child_CrossABC1|1: 86 33 9 4 1 
+175219|Survivor|1: 193 83 24 9 4 1 
+175601|Survivor|1: 233 86 20 9 4 1 
+175647|Child_CrossABC2|8: 231 71 21 10 4 1 
+175652|Child_Cross12|53: 243 68 21 10 4 1 
+175660|Child_Cross12|9: 229 69 21 10 4 1 
+175663|Child_Cross12|9: 239 68 21 10 4 1 
+175668|Child_Avg|19: 234 68 21 10 4 1 
+175670|Child_CrossABC2|2: 237 70 21 10 4 1 
+175671|Child_CrossABC1|7: 237 66 21 10 4 1 
+175685|Child_Avg|47: 232 68 21 10 4 1 
+175718|Child_Cross21|10: 221 70 21 10 4 1 
+175802|Child_Cross21|34: 228 77 21 10 4 1 
+175827|Child_CrossABC2|8|Mutated: 190 77 23 10 4 1 
+175839|Child_CrossABC2|2: 214 60 21 10 4 1 
+175861|Child_Cross21|10: 247 77 21 10 4 1 
+176031|Child_Cross12|57: 181 46 20 9 4 1 
+176160|Child_LevyABC1|5: 112 35 12 5 1 
+176565|Child_Cross12|53: 235 68 23 10 4 1 
+177068|Child_Cross12|13: 247 71 24 9 4 1 
+177193|Child_CrossABC2|2: 96 29 11 5 1 
+177204|Child_Cross21|58: 176 63 20 9 4 1 
+177447|Child_Cross21|42: 235 71 19 10 4 1 
+177788|Child_Cross12|57: 246 210 84 23 10 4 1 
+178276|Child_Cross12|29: 242 186 52 20 9 4 1 
+178298|Child_Cross21|38: 243 182 51 19 10 4 1 
+178304|Child_Avg|31: 241 182 50 19 10 4 1 
+178311|Child_Cross21|14: 247 178 50 19 10 4 1 
+178313|Child_Cross12|53: 242 179 50 19 10 4 1 
+178315|Child_CrossABC2|8|Mutated: 245 182 50 19 10 4 1 
+178318|Child_Cross21|42: 243 173 50 19 10 4 1 
+178320|Child_Cross12|41: 244 173 50 19 10 4 1 
+178323|Child_Cross21|10: 243 172 50 19 10 4 1 
+178329|Child_Avg|23: 242 173 50 19 10 4 1 
+178332|Child_Avg|39: 190 70 24 9 4 1 
+178335|Child_CrossABC1|1: 205 64 24 9 4 1 
+178343|Child_Cross12|21: 248 172 50 19 10 4 1 
+178357|Survivor|1: 245 172 50 19 10 4 1 
+178369|Child_Avg|27: 248 171 50 19 10 4 1 
+178373|Child_Avg|19: 247 172 50 19 10 4 1 
+178374|Child_CrossABC2|2: 246 172 50 19 10 4 1 
+178383|Child_Avg|47: 247 171 52 19 10 4 1 
+178385|Survivor|1: 246 173 51 19 10 4 1 
+178391|Child_Avg|27|Mutated: 246 174 51 19 10 4 1 
+178392|Child_CrossABC2|2: 246 163 52 19 10 4 1 
+178393|Child_Avg|43: 246 168 51 19 10 4 1 
+178396|Child_CrossABC2|2|Mutated: 245 165 61 19 10 4 1 
+178402|Child_Cross21|46: 247 166 50 19 10 4 1 
+178405|Child_Cross12|57: 245 175 50 19 10 4 1 
+178413|Child_CrossABC1|1: 243 167 50 19 10 4 1 
+178419|Child_Cross21|18: 244 165 50 19 10 4 1 
+178424|Child_CrossABC1|7: 243 164 51 19 10 4 1 
+178432|Child_Avg|19|Mutated: 243 151 50 19 10 4 1 
+178436|Child_Cross21|10: 243 165 50 19 10 4 1 
+178440|Child_Avg|39: 243 164 50 19 10 4 1 
+178442|Child_Cross21|30: 244 164 50 19 10 4 1 
+178459|Child_Cross12|1: 241 167 50 19 10 4 1 
+178460|Child_CrossABC1|1: 245 167 50 19 10 4 1 
+178463|Child_Cross21|54: 247 165 50 19 10 4 1 
+178467|Child_Avg|7: 243 165 50 21 10 4 1 
+178469|Child_Cross21|10: 244 167 50 21 10 4 1 
+178478|Child_Avg|7: 243 171 51 19 10 4 1 
+178480|Child_CrossABC1|7: 245 158 51 19 10 4 1 
+178481|Child_CrossABC2|8: 241 175 51 19 10 4 1 
+178487|Child_Cross21|2: 247 167 50 19 10 4 1 
+178489|Child_Cross12|53: 248 165 50 19 10 4 1 
+178492|Child_Avg|55: 245 165 51 19 10 4 1 
+178495|Survivor|1: 243 165 51 19 10 4 1 
+178496|Child_CrossABC2|2: 247 163 51 19 10 4 1 
+178502|Child_Avg|47: 242 163 51 19 10 4 1 
+178506|Child_Cross21|30|Mutated: 242 163 54 19 10 4 1 
+178509|Child_Avg|59: 242 163 52 19 10 4 1 
+178510|Child_CrossABC1|1: 243 177 51 19 10 4 1 
+178515|Child_Avg|15: 242 165 51 19 10 4 1 
+178519|Child_Cross12|33: 243 163 50 19 10 4 1 
+178522|Child_Cross21|54: 244 163 50 19 10 4 1 
+178523|Child_Avg|51: 242 167 51 19 10 4 1 
+178526|Child_Avg|35: 241 164 51 19 10 4 1 
+178529|Child_Cross12|57: 243 166 50 19 10 4 1 
+178530|Child_Avg|59: 242 165 50 19 10 4 1 
+178537|Child_Avg|39: 244 164 51 19 10 4 1 
+178539|Child_Avg|3: 241 163 51 19 10 4 1 
+178541|Child_Avg|19: 241 163 50 19 10 4 1 
+178543|Child_Avg|15: 242 164 51 19 10 4 1 
+178559|Survivor|1: 243 163 54 19 10 4 1 
+178563|Child_Cross21|46: 241 165 50 19 10 4 1 
+178566|Child_Cross12|21|Mutated: 240 154 50 19 10 4 1 
+178573|Child_CrossABC1|7: 239 164 51 19 10 4 1 
+178575|Child_Avg|19: 240 165 50 19 10 4 1 
+178578|Child_Avg|19: 240 161 50 19 10 4 1 
+178581|Survivor|1: 240 164 50 19 10 4 1 
+178586|Child_Avg|7: 239 163 50 19 10 4 1 
+178589|Child_CrossABC2|8: 240 163 52 19 10 4 1 
+178595|Child_Cross21|54: 239 172 50 19 10 4 1 
+178602|Child_CrossABC2|2: 239 170 51 19 10 4 1 
+178603|Child_Avg|19: 239 161 51 19 10 4 1 
+178607|Child_CrossABC1|1: 239 163 51 19 10 4 1 
+178617|Survivor|1: 245 163 51 19 10 4 1 
+178620|Child_Cross21|6: 245 163 50 19 10 4 1 
+178623|Child_Avg|27|Mutated: 242 174 50 19 10 4 1 
+178625|Child_Avg|47: 237 163 51 19 10 4 1 
+178632|Child_Cross21|42: 247 163 50 19 10 4 1 
+178636|Child_CrossABC1|1: 243 161 50 19 10 4 1 
+178637|Child_Avg|11|Mutated: 244 163 51 19 10 4 1 
+178639|Child_Cross21|22: 244 175 50 19 10 4 1 
+178642|Child_CrossABC1|1: 242 176 50 19 10 4 1 
+178644|Child_Avg|55: 242 163 50 19 10 4 1 
+178656|Child_Avg|3: 243 172 52 19 10 4 1 
+178669|Child_CrossABC1|1: 245 176 51 19 10 4 1 
+178689|Child_Cross21|14: 242 175 50 19 10 4 1 
+178692|Child_Cross12|5: 248 155 50 19 10 4 1 
+178698|Child_Cross21|46: 242 177 50 19 10 4 1 
+178709|Child_Avg|47: 244 165 51 19 10 4 1 
+178710|Child_CrossABC1|1: 247 164 52 19 10 4 1 
+178712|Child_Avg|15: 243 167 51 19 10 4 1 
+178713|Child_Avg|15: 245 165 50 19 10 4 1 
+179685|Child_Cross12|1: 204 81 19 10 4 1 
+180006|Child_Cross21|34|Mutated: 215 88 24 9 4 1 
+180072|Random|10: 242 93 27 10 4 1 
+180306|Survivor|1: 166 57 20 9 4 1 
+180491|Child_CrossABC1|1|Mutated: 113 23 10 4 1 
+180551|Child_Cross21|34: 199 70 21 10 4 1 
+181842|Child_LevyP1|3: 231 75 24 11 4 1 
+182019|Survivor|1: 241 110 31 10 4 1 
+182062|Random|14: 237 99 27 10 4 1 
+182076|Random|3: 239 92 27 10 4 1 
+182772|Random|2: 248 90 29 9 4 1 
+182846|Child_Cross21|14: 231 91 24 9 4 1 
+182898|Child_Cross21|6|Mutated: 94 28 12 5 1 
+182941|Child_CrossABC2|8: 184 74 24 9 4 1 
+182943|Child_CrossABC2|8: 199 88 24 9 4 1 
+183222|Survivor|1: 229 86 24 11 4 1 
+183224|Child_CrossABC1|1: 231 87 23 12 5 1 
+183387|Child_Cross21|10: 208 76 21 10 4 1 
+183680|Child_Cross12|1: 75 21 10 4 1 
+183763|Random|24: 231 80 23 10 4 1 
+183919|Child_Cross21|46|Mutated: 192 77 21 10 4 1 
