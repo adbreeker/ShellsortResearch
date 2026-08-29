@@ -40,5 +40,5 @@ def create_merge_set(directory_path):
     print(f"Total sequences merged: {total_lines_merged}")
 
 if __name__ == "__main__":
-    directory_path = "../Results/FinalSets/Criterion-Comparisons/"
+    directory_path = "../Results/FinalSets/Criterion-Loops/"
     create_merge_set(directory_path)
