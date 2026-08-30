@@ -42,7 +42,7 @@ namespace files
             while (std::getline(file, line))
             {
                 if (!line.empty() && line.back() == '\r') { line.pop_back(); }
-
+                if (line == "###") { std::cout << "Reading from file " << path << " forced break." << std::endl; break; } // Reading break condition
                 if (line.empty()) continue;
 
                 std::vector<std::string> splited = utilis::SplitString(line, ":");

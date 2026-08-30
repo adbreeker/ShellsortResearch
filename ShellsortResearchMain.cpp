@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 750; 
+const unsigned long SORTING_RANGE = 500; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -30,59 +30,10 @@ void PrintResults(std::vector<Result>& results, int topN = 10)
 
 int main() 
 {
-    int ranges[] = {100, 500, 1000, 5000, 8000, 10000, 100000};
-    for(int range : ranges)
-    {
-        std::cout << "------------------------------------------------- " << range << " --------------------------------------------------" << std::endl;
-        std::string path = "Results/FinalSets/Criterion-Loops/CandidateGapSequences_" + std::to_string(range) + ".txt";
-        std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
-        auto results = CompareShellsorts(range, filesGaps, 10000);
-        PrintResults(results, 10);
-
-        std::vector<GapSequence> finalGroup;
-        for(int i = 0; i < std::min(10, static_cast<int>(results.size())); ++i)
-        {
-            finalGroup.push_back(results[i].gapSequence);
-        }
-
-        results = CompareShellsorts(range, finalGroup, 100000);
-        std::cout << "! Best:";
-        PrintResults(results, 1);
-    }
-
-    std::cout << "------------------------------------------------- Dynamic Ranges --------------------------------------------------" << std::endl;
-    std::string path = "Results/FinalSets/Criterion-Loops/CandidateGapSequences_Merge.txt";
+    std::string path = "Results/FinalSets/CompEval-WinningSequences.txt";
     std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
-    auto results = CompareShellsorts_DynamicRanges(filesGaps, 100);
-    std::cout << "Iteration 1";
-    PrintResults(results, 10);
-    
-    std::vector<GapSequence> reducedGroup1;
-    for(int i = 0; i < std::min(10000, static_cast<int>(results.size())); ++i)
-    {
-        reducedGroup1.push_back(results[i].gapSequence);
-    }
-    results = CompareShellsorts_DynamicRanges(reducedGroup1, 1000);
-    std::cout << "Iteration 2";
-    PrintResults(results, 10);
-
-    std::vector<GapSequence> reducedGroup2;
-    for(int i = 0; i < std::min(1000, static_cast<int>(results.size())); ++i)
-    {
-        reducedGroup2.push_back(results[i].gapSequence);
-    }
-    results = CompareShellsorts_DynamicRanges(reducedGroup2, 10000);
-    std::cout << "Iteration 3";
-    PrintResults(results, 10);
-
-    std::vector<GapSequence> finalGroup;
-    for(int i = 0; i < std::min(10, static_cast<int>(results.size())); ++i)
-    {
-        finalGroup.push_back(results[i].gapSequence);
-    }
-    results = CompareShellsorts_DynamicRanges(finalGroup, 100000);
-    std::cout << "! Best (iteration 4 - final):";
-    PrintResults(results, 1);
+    auto results = CompareShellsorts(SORTING_RANGE, filesGaps, 100000);
+    PrintResults(results, results.size());
 }
 
 
