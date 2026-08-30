@@ -113,6 +113,72 @@ std::vector<Result> CompareShellsorts(unsigned long sortingRange, std::vector<Ga
     return avgResults;
 }
 
+std::vector<Result> CompareShellsorts_DynamicRanges(std::vector<GapSequence> gapSequences, int iterations)
+{
+    int sortsCount = gapSequences.size();
+    std::vector<Result> avgResults(sortsCount);
+
+    for (int i = 0; i < iterations; i++)
+    {
+        // Get random data for sorting
+        int sortingRange = utilis::GetRandomInt(100, 10000);
+        std::vector<int> data = utilis::GetRandomSortingData(sortingRange);
+
+        std::vector<Result> results(sortsCount);
+        // Use OpenMP for parallel execution
+        #pragma omp parallel for
+        for (int j = 0; j < sortsCount; j++)
+        {
+            results[j] = MeasureShellsort_Full(data, gapSequences[j]);
+        }
+
+        // Accumulate results for averaging
+        if (i == 0)
+        {
+            for (int j = 0; j < sortsCount; j++)
+            {
+                avgResults[j] = results[j];
+            }
+        }
+        else
+        {
+            for (int j = 0; j < sortsCount; j++)
+            {
+                avgResults[j].time += results[j].time;
+                avgResults[j].comparisons += results[j].comparisons;
+                avgResults[j].loops += results[j].loops;
+                avgResults[j].operations += results[j].operations;
+            }
+        }
+
+        // Getting best result for wins count
+        auto winner_it = std::min_element(results.begin(), results.end(), 
+            [](const Result& a, const Result& b) {
+                return a.GetFitnessScore() < b.GetFitnessScore();
+            }
+        );
+        Result winner = *winner_it;
+
+        for (Result& r : avgResults) if (r.gapSequence == winner.gapSequence) { r.wins++; }
+    }
+
+    // Average the results over the number of iterations
+    for (Result& r : avgResults)
+    {
+        r.time = r.time / iterations;
+        r.comparisons = r.comparisons / iterations;
+        r.loops = r.loops / iterations;
+        r.operations = r.operations / iterations;
+    }
+
+    // Sort results return order by fitness score
+    std::sort(avgResults.begin(), avgResults.end(), [](const Result& a, const Result& b) {
+        return a.GetFitnessScore() < b.GetFitnessScore();
+        });
+
+    return avgResults;
+}
+
 bool IsGapSequenceIn(const GapSequence& sequence, const std::vector<GapSequence>& listOfSequences)
 {
     for (const GapSequence& gs : listOfSequences)

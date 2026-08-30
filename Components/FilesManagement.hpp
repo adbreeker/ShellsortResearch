@@ -31,11 +31,10 @@ namespace files
     }
 
 
-    std::vector<GapSequence> GetGapsFromFile(std::string fileName)
+    std::vector<GapSequence> GetGapsFromFile(std::string path)
     {
         std::vector<GapSequence> gapsFromFile;
 
-        std::string path = "Results/" + fileName;
         std::ifstream file(path);
         if (file.is_open())
         {

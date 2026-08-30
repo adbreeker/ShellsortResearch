@@ -17,7 +17,7 @@ const unsigned long SORTING_RANGE = 750;
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
-    std::cout << "\n\nResults:\n";
+    std::cout << "\nResults:\n";
     for (int i = 0; i < std::min(topN, static_cast<int>(results.size())); ++i)
     {
         auto& r = results[i];
@@ -30,17 +30,76 @@ void PrintResults(std::vector<Result>& results, int topN = 10)
 
 int main() 
 {
-    std::vector<GapSequence> gapSequences = 
-    { 
-        GetTokudaGaps(SORTING_RANGE),
-        GetCiuraGaps(SORTING_RANGE),
-        GetLeeGaps(SORTING_RANGE),
-        GetSkeanEhrenborgJaromczykGaps(SORTING_RANGE)
-    };
+    int ranges[] = {100, 500, 1000, 5000, 8000, 10000, 100000};
+    for(int range : ranges)
+    {
+        std::cout << "------------------------------------------------- " << range << " --------------------------------------------------" << std::endl;
+        std::string path = "Results/FinalSets/Criterion-Loops/CandidateGapSequences_" + std::to_string(range) + ".txt";
+        std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
+        auto results = CompareShellsorts(range, filesGaps, 10000);
+        PrintResults(results, 10);
 
+        std::vector<GapSequence> finalGroup;
+        for(int i = 0; i < std::min(10, static_cast<int>(results.size())); ++i)
+        {
+            finalGroup.push_back(results[i].gapSequence);
+        }
 
-    for (int i = gapSequences.size(); i<100; i++) gapSequences.push_back(GapSequence("1|Random|" + std::to_string(i + 1), GetRandomizedGaps(SORTING_RANGE)));
+        results = CompareShellsorts(range, finalGroup, 100000);
+        std::cout << "! Best:";
+        PrintResults(results, 1);
+    }
+
+    std::cout << "------------------------------------------------- Dynamic Ranges --------------------------------------------------" << std::endl;
+    std::string path = "Results/FinalSets/Criterion-Loops/CandidateGapSequences_Merge.txt";
+    std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
+    auto results = CompareShellsorts_DynamicRanges(filesGaps, 100);
+    std::cout << "Iteration 1";
+    PrintResults(results, 10);
     
+    std::vector<GapSequence> reducedGroup1;
+    for(int i = 0; i < std::min(10000, static_cast<int>(results.size())); ++i)
+    {
+        reducedGroup1.push_back(results[i].gapSequence);
+    }
+    results = CompareShellsorts_DynamicRanges(reducedGroup1, 1000);
+    std::cout << "Iteration 2";
+    PrintResults(results, 10);
+
+    std::vector<GapSequence> reducedGroup2;
+    for(int i = 0; i < std::min(1000, static_cast<int>(results.size())); ++i)
+    {
+        reducedGroup2.push_back(results[i].gapSequence);
+    }
+    results = CompareShellsorts_DynamicRanges(reducedGroup2, 10000);
+    std::cout << "Iteration 3";
+    PrintResults(results, 10);
+
+    std::vector<GapSequence> finalGroup;
+    for(int i = 0; i < std::min(10, static_cast<int>(results.size())); ++i)
+    {
+        finalGroup.push_back(results[i].gapSequence);
+    }
+    results = CompareShellsorts_DynamicRanges(finalGroup, 100000);
+    std::cout << "! Best (iteration 4 - final):";
+    PrintResults(results, 1);
+}
+
+
+// Backups of previous runs
+
+    // std::vector<GapSequence> gapSequences = 
+    // { 
+    //     GetTokudaGaps(SORTING_RANGE),
+    //     GetCiuraGaps(SORTING_RANGE),
+    //     GetLeeGaps(SORTING_RANGE),
+    //     GetSkeanEhrenborgJaromczykGaps(SORTING_RANGE)
+    // };
+
+    // for (int i = gapSequences.size(); i<100; i++) gapSequences.push_back(GapSequence("1|Random|" + std::to_string(i + 1), GetRandomizedGaps(SORTING_RANGE)));
+    
+    // search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+
     // #pragma omp parallel sections num_threads(5) firstprivate(gapSequences)
     // {
     //     #pragma omp section
@@ -65,7 +124,7 @@ int main()
     //     }
     // }
 
-    search_genetic_v5::EndlessGapSeeking(SORTING_RANGE, gapSequences, 100);
+
 
     // std::vector<GapSequence> filesGaps = files::GetGapsFromFile("CandidateGapSequences" + std::to_string(SORTING_RANGE) + "_GAv5-nr2.txt");
     // auto results = CompareShellsorts(SORTING_RANGE, filesGaps, 1000);
@@ -105,5 +164,60 @@ int main()
     // // std::sort(finalResults.begin(), finalResults.end(), [](const Result& a, const Result& b) {
     // //     return a.time < b.time;
     // //     });
-    // PrintResults(finalResults2, finalGroup2.size()); 
-}
+    // PrintResults(finalResults2, finalGroup2.size());
+
+
+
+    // int ranges[] = {100, 250, 500, 750, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 100000};
+    // for(int range : ranges)
+    // {
+    //     std::cout << "------------------------------------------------- " << range << " --------------------------------------------------" << std::endl;
+    //     std::string path = "Results/FinalSets/Criterion-Comparisons/CandidateGapSequences_" + std::to_string(range) + ".txt";
+    //     std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
+    //     auto results = CompareShellsorts(range, filesGaps, 10000);
+    //     PrintResults(results, 10);
+
+    //     std::vector<GapSequence> finalGroup;
+    //     for(int i = 0; i < std::min(10, static_cast<int>(results.size())); ++i)
+    //     {
+    //         finalGroup.push_back(results[i].gapSequence);
+    //     }
+
+    //     results = CompareShellsorts(range, finalGroup, 100000);
+    //     std::cout << "! Best:";
+    //     PrintResults(results, 1);
+    // }
+
+    // std::cout << "------------------------------------------------- Dynamic Ranges --------------------------------------------------" << std::endl;
+    // std::string path = "Results/FinalSets/CandidateGapSequences_CL-Merge.txt";
+    // std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
+    // auto results = CompareShellsorts_DynamicRanges(filesGaps, 100);
+    // std::cout << "Iteration 1";
+    // PrintResults(results, 15);
+    
+    // std::vector<GapSequence> reducedGroup1;
+    // for(int i = 0; i < std::min(10000, static_cast<int>(results.size())); ++i)
+    // {
+    //     reducedGroup1.push_back(results[i].gapSequence);
+    // }
+    // results = CompareShellsorts_DynamicRanges(reducedGroup1, 1000);
+    // std::cout << "Iteration 2";
+    // PrintResults(results, 15);
+
+    // std::vector<GapSequence> reducedGroup2;
+    // for(int i = 0; i < std::min(1000, static_cast<int>(results.size())); ++i)
+    // {
+    //     reducedGroup2.push_back(results[i].gapSequence);
+    // }
+    // results = CompareShellsorts_DynamicRanges(reducedGroup2, 10000);
+    // std::cout << "Iteration 3";
+    // PrintResults(results, 15);
+
+    // std::vector<GapSequence> finalGroup;
+    // for(int i = 0; i < std::min(15, static_cast<int>(results.size())); ++i)
+    // {
+    //     finalGroup.push_back(results[i].gapSequence);
+    // }
+    // results = CompareShellsorts_DynamicRanges(finalGroup, 100000);
+    // std::cout << "! Best (iteration 4 - final):";
+    // PrintResults(results, 3);

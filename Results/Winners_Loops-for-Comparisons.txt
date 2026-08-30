@@ -1,0 +1,482 @@
+Compiling ShellsortResearch...
+g++ -std=c++17 -O3 -Wall -Wextra -fopenmp -o ShellsortResearch ShellsortResearchMain.cpp
+Compilation successful!
+echo "Running ShellsortResearch..."; 
+Running ShellsortResearch...
+./ShellsortResearch; 
+------------------------------------------------- 100 --------------------------------------------------
+
+Results:
+525480|Random|20: 38 9 4 1 
+  Time: 0.00379262ms | Wins: 101
+  Comparisons: 726.622 | Loops: 1078.62 | Operations: 3688.61
+
+2373673|Child_Cross|14: 39 11 4 1 
+  Time: 0.00347678ms | Wins: 102
+  Comparisons: 729.374 | Loops: 1078.37 | Operations: 3695.54
+
+568385|Random|5: 58 13 4 1 
+  Time: 0.00329649ms | Wins: 135
+  Comparisons: 733.535 | Loops: 1061.54 | Operations: 3667.11
+
+611391|Random|29: 59 13 4 1 
+  Time: 0.00332045ms | Wins: 112
+  Comparisons: 734.312 | Loops: 1061.31 | Operations: 3667.38
+
+582068|Random|1: 42 13 4 1 
+  Time: 0.00347575ms | Wins: 112
+  Comparisons: 734.766 | Loops: 1078.77 | Operations: 3707.51
+
+1196|Child_Levy|20: 62 13 4 1 
+  Time: 0.00331266ms | Wins: 126
+  Comparisons: 735.816 | Loops: 1059.82 | Operations: 3664.58
+
+1116780|Child_Levy|24: 67 13 4 1 
+  Time: 0.00338996ms | Wins: 94
+  Comparisons: 736.225 | Loops: 1055.22 | Operations: 3651.22
+
+363834|Random|18: 63 13 4 1 
+  Time: 0.00343367ms | Wins: 114
+  Comparisons: 736.315 | Loops: 1059.32 | Operations: 3663.67
+
+819559|Child_Levy|24: 68 13 4 1 
+  Time: 0.00333865ms | Wins: 100
+  Comparisons: 736.736 | Loops: 1054.74 | Operations: 3650.03
+
+611404|Random|26: 64 13 4 1 
+  Time: 0.00310996ms | Wins: 102
+  Comparisons: 737.077 | Loops: 1059.08 | Operations: 3663.51
+
+! Best:
+Results:
+525480|Random|20: 38 9 4 1 
+  Time: 0.00321976ms | Wins: 13935
+  Comparisons: 726.405 | Loops: 1078.4 | Operations: 3687.63
+
+------------------------------------------------- 500 --------------------------------------------------
+
+Results:
+15887|Child_Cross12|13|Mutated: 199 57 23 10 4 1 
+  Time: 0.0289723ms | Wins: 13
+  Comparisons: 5571.78 | Loops: 8283.78 | Operations: 28137.7
+
+9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0291402ms | Wins: 10
+  Comparisons: 5571.81 | Loops: 8280.81 | Operations: 28131.2
+
+9046|Child|33|Mutated: 201 57 23 10 4 1 
+  Time: 0.0286062ms | Wins: 10
+  Comparisons: 5572.5 | Loops: 8282.5 | Operations: 28136.1
+
+803|Child|4|Mutated: 189 57 23 10 4 1 
+  Time: 0.0290018ms | Wins: 12
+  Comparisons: 5572.78 | Loops: 8294.78 | Operations: 28164.4
+
+8100|Child|27|Mutated: 203 57 23 10 4 1 
+  Time: 0.0289374ms | Wins: 14
+  Comparisons: 5574.14 | Loops: 8282.14 | Operations: 28138.2
+
+9711|Child_ABC1|4: 200 57 23 10 4 1 
+  Time: 0.0290091ms | Wins: 7
+  Comparisons: 5574.23 | Loops: 8285.23 | Operations: 28145.5
+
+22094|Survivor|2|Mutated: 198 57 23 10 4 1 
+  Time: 0.0296942ms | Wins: 8
+  Comparisons: 5574.76 | Loops: 8287.76 | Operations: 28152.1
+
+15633|Child_ABC1|4|Mutated: 190 57 23 10 4 1 
+  Time: 0.0294589ms | Wins: 10
+  Comparisons: 5574.88 | Loops: 8295.88 | Operations: 28170.4
+
+11739|Child_LevyABC2|24|Mutated: 199 61 24 9 4 1 
+  Time: 0.0284109ms | Wins: 12
+  Comparisons: 5575.36 | Loops: 8283.36 | Operations: 28148.2
+
+6808|Child|2: 210 57 23 10 4 1 
+  Time: 0.0290379ms | Wins: 22
+  Comparisons: 5576.04 | Loops: 8277.04 | Operations: 28130.9
+
+! Best:
+Results:
+9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0260069ms | Wins: 10077
+  Comparisons: 5571.61 | Loops: 8280.61 | Operations: 28130.1
+
+------------------------------------------------- 1000 --------------------------------------------------
+
+Results:
+31113|Child_Cross12|25|Mutated: 594 155 57 23 10 4 1 
+  Time: -0.0684824ms | Wins: 1
+  Comparisons: 12928.7 | Loops: 19091.7 | Operations: 64899.5
+
+7765|Child_Cross21|14|Mutated: 600 155 57 23 10 4 1 
+  Time: 0.101943ms | Wins: 1
+  Comparisons: 12929.6 | Loops: 19086.6 | Operations: 64885.5
+
+62323|Child|1: 455 138 61 24 9 4 1 
+  Time: 0.0999156ms | Wins: 1
+  Comparisons: 12929.6 | Loops: 19244.6 | Operations: 65251.9
+
+36318|Child_ABC1|52|Mutated: 584 156 57 23 10 4 1 
+  Time: 0.093648ms | Wins: 1
+  Comparisons: 12929.8 | Loops: 19101.8 | Operations: 64932.8
+
+61694|Child_ABC1|4|Mutated: 592 156 57 23 10 4 1 
+  Time: 0.0833761ms | Wins: 1
+  Comparisons: 12930.1 | Loops: 19094.1 | Operations: 64910.1
+
+14609|Child_Cross12|1|Mutated: 605 155 57 23 10 4 1 
+  Time: 0.102759ms | Wins: 1
+  Comparisons: 12930.3 | Loops: 19082.3 | Operations: 64873.4
+
+36356|Child_Cross21|50|Mutated: 588 156 57 23 10 4 1 
+  Time: 0.0986158ms | Wins: 3
+  Comparisons: 12930.9 | Loops: 19098.9 | Operations: 64924.9
+
+16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.101107ms | Wins: 0
+  Comparisons: 12930.9 | Loops: 19087.9 | Operations: 64892.5
+
+40897|Child_Cross12|37|Mutated: 396 142 57 23 10 4 1 
+  Time: 0.0997571ms | Wins: 0
+  Comparisons: 12931.5 | Loops: 19305.5 | Operations: 65369
+
+36989|Child_Cross12|13|Mutated: 607 156 57 23 10 4 1 
+  Time: 0.0932484ms | Wins: 0
+  Comparisons: 12932.7 | Loops: 19081.7 | Operations: 64875.3
+
+! Best:
+Results:
+16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.0860442ms | Wins: 9629
+  Comparisons: 12927.8 | Loops: 19084.8 | Operations: 64879.9
+
+------------------------------------------------- 5000 --------------------------------------------------
+
+Results:
+3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.537978ms | Wins: 40
+  Comparisons: 85565.5 | Loops: 127368 | Operations: 430406
+
+1782|Child|35|Mutated: 1940 721 301 132 57 23 10 4 1 
+  Time: 0.536727ms | Wins: 42
+  Comparisons: 85571.1 | Loops: 127391 | Operations: 430472
+
+3629|Child|28|Mutated: 1937 701 301 132 57 23 10 4 1 
+  Time: 0.543221ms | Wins: 28
+  Comparisons: 85572.6 | Loops: 127416 | Operations: 430520
+
+1226|Child|29|Mutated: 1974 701 301 132 57 23 10 4 1 
+  Time: 0.533996ms | Wins: 37
+  Comparisons: 85576.1 | Loops: 127382 | Operations: 430456
+
+6838|Child|22|Mutated: 1922 701 301 132 57 23 10 4 1 
+  Time: 0.369539ms | Wins: 43
+  Comparisons: 85580.6 | Loops: 127439 | Operations: 430585
+
+7742|Child|30|Mutated: 1957 701 301 132 57 23 10 4 1 
+  Time: 0.534898ms | Wins: 28
+  Comparisons: 85581.6 | Loops: 127405 | Operations: 430515
+
+8655|Child|30: 1941 701 301 132 57 23 10 4 1 
+  Time: 0.379282ms | Wins: 40
+  Comparisons: 85585.2 | Loops: 127424 | Operations: 430563
+
+1406|Survivor|4|Mutated: 1939 701 301 132 57 23 10 4 1 
+  Time: 0.54319ms | Wins: 33
+  Comparisons: 85585.9 | Loops: 127427 | Operations: 430569
+
+4658|Survivor|2|Mutated: 2014 701 301 132 57 23 10 4 1 
+  Time: 0.535412ms | Wins: 29
+  Comparisons: 85587.5 | Loops: 127354 | Operations: 430419
+
+423|Survivor|2|Mutated: 2036 701 301 132 57 23 10 4 1 
+  Time: 0.539082ms | Wins: 43
+  Comparisons: 85587.8 | Loops: 127332 | Operations: 430375
+
+! Best:
+Results:
+3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.408884ms | Wins: 10300
+  Comparisons: 85569.1 | Loops: 127372 | Operations: 430421
+
+------------------------------------------------- 8000 --------------------------------------------------
+
+Results:
+480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.881339ms | Wins: 215
+  Comparisons: 147378 | Loops: 216373 | Operations: 733567
+
+44266|Child_Cross21|14: 5847 1547 720 323 122 57 23 10 4 1 
+  Time: 0.913721ms | Wins: 178
+  Comparisons: 147381 | Loops: 218737 | Operations: 738693
+
+479|Child|12|Mutated: 1895 701 301 132 57 23 10 4 1 
+  Time: 0.714381ms | Wins: 193
+  Comparisons: 147444 | Loops: 216329 | Operations: 733762
+
+231|Survivor|10: 1801 701 301 132 57 23 10 4 1 
+  Time: 0.732134ms | Wins: 171
+  Comparisons: 147446 | Loops: 216425 | Operations: 733820
+
+386|Survivor|9: 1819 701 301 132 57 23 10 4 1 
+  Time: 0.882042ms | Wins: 179
+  Comparisons: 147464 | Loops: 216425 | Operations: 733873
+
+31909|Child_CrossABC2|2: 2323 803 365 154 78 30 11 5 1 
+  Time: 0.88227ms | Wins: 114
+  Comparisons: 147502 | Loops: 215741 | Operations: 733155
+
+25135|Child_Cross12|49: 2232 817 328 122 67 23 10 4 1 
+  Time: 0.878107ms | Wins: 146
+  Comparisons: 147505 | Loops: 215910 | Operations: 733398
+
+37228|Child_Avg|39: 2304 746 298 127 69 27 10 4 1 
+  Time: 0.891314ms | Wins: 160
+  Comparisons: 147518 | Loops: 215941 | Operations: 733444
+
+26195|Survivor|1: 2408 949 374 150 66 27 10 4 1 
+  Time: 0.88892ms | Wins: 187
+  Comparisons: 147539 | Loops: 215559 | Operations: 732993
+
+33517|Child_CrossABC2|8: 2177 786 322 149 64 29 10 4 1 
+  Time: 0.896932ms | Wins: 100
+  Comparisons: 147560 | Loops: 216027 | Operations: 733732
+
+! Best:
+Results:
+480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.695568ms | Wins: 12065
+  Comparisons: 147375 | Loops: 216370 | Operations: 733553
+
+------------------------------------------------- 10000 --------------------------------------------------
+
+Results:
+17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 1.16107ms | Wins: 139
+  Comparisons: 189875 | Loops: 280342 | Operations: 948979
+
+40550|Child_Cross|5: 6640 1835 678 322 145 63 27 10 4 1 
+  Time: 1.15396ms | Wins: 134
+  Comparisons: 189937 | Loops: 280222 | Operations: 948725
+
+4409|Child_Cross21|26: 4230 1237 547 223 106 51 23 10 4 1 
+  Time: 1.1221ms | Wins: 89
+  Comparisons: 189951 | Loops: 283529 | Operations: 955786
+
+41967|Child_Cross21|18: 9348 3340 1267 490 227 109 57 23 10 4 1 
+  Time: 1.17285ms | Wins: 57
+  Comparisons: 189980 | Loops: 285115 | Operations: 959112
+
+42624|Child_Avg|55: 5340 1713 670 304 119 67 23 10 4 1 
+  Time: 1.15789ms | Wins: 84
+  Comparisons: 190033 | Loops: 281792 | Operations: 953217
+
+40743|Child_CrossABC2|2: 6998 1651 631 269 108 59 24 9 4 1 
+  Time: 1.14482ms | Wins: 76
+  Comparisons: 190074 | Loops: 280330 | Operations: 948650
+
+40915|Child_Avg|55|Mutated: 4217 1284 562 266 109 64 23 10 4 1 
+  Time: 1.13601ms | Wins: 32
+  Comparisons: 190160 | Loops: 283630 | Operations: 956503
+
+41962|Child_Cross12|41: 9348 4326 1267 490 227 109 57 23 10 4 1 
+  Time: 1.16904ms | Wins: 25
+  Comparisons: 190171 | Loops: 284320 | Operations: 957832
+
+10902|Child_Levy|40|Mutated: 5858 1627 734 301 134 58 24 9 4 1 
+  Time: 1.16361ms | Wins: 81
+  Comparisons: 190182 | Loops: 281442 | Operations: 952223
+
+11075|Child_Avg|51: 3925 1255 520 231 108 57 23 10 4 1 
+  Time: 1.18233ms | Wins: 32
+  Comparisons: 190191 | Loops: 284067 | Operations: 957447
+
+! Best:
+Results:
+17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.925098ms | Wins: 14333
+  Comparisons: 189878 | Loops: 280345 | Operations: 948990
+
+------------------------------------------------- 100000 --------------------------------------------------
+
+Results:
+60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 13.538ms | Wins: 705
+  Comparisons: 2.44513e+06 | Loops: 3.60464e+06 | Operations: 1.21782e+07
+
+5436|Child_CrossABC2|2: 21949 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.0088ms | Wins: 325
+  Comparisons: 2.44632e+06 | Loops: 3.61059e+06 | Operations: 1.21886e+07
+
+5443|Child_Cross21|14: 21958 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.004ms | Wins: 335
+  Comparisons: 2.44634e+06 | Loops: 3.6106e+06 | Operations: 1.21887e+07
+
+5431|Child_Cross12|37: 21959 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.0304ms | Wins: 294
+  Comparisons: 2.44639e+06 | Loops: 3.61064e+06 | Operations: 1.21888e+07
+
+5437|Child_Cross12|41: 21844 7807 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 13.7063ms | Wins: 290
+  Comparisons: 2.44644e+06 | Loops: 3.61082e+06 | Operations: 1.21892e+07
+
+5428|Child_Cross21|18: 21993 7818 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.3026ms | Wins: 358
+  Comparisons: 2.44648e+06 | Loops: 3.6107e+06 | Operations: 1.21892e+07
+
+5434|Child_Cross21|42: 21973 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 13.8335ms | Wins: 359
+  Comparisons: 2.44649e+06 | Loops: 3.61073e+06 | Operations: 1.21892e+07
+
+5439|Child_Cross21|2: 21929 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.1581ms | Wins: 294
+  Comparisons: 2.4465e+06 | Loops: 3.61079e+06 | Operations: 1.21893e+07
+
+5446|Child_Cross21|2: 21960 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 14.4702ms | Wins: 316
+  Comparisons: 2.4467e+06 | Loops: 3.61095e+06 | Operations: 1.219e+07
+
+5427|Child_Cross12|53: 22011 7817 3340 1453 689 265 132 62 24 11 5 1 
+  Time: 13.6924ms | Wins: 309
+  Comparisons: 2.44671e+06 | Loops: 3.61091e+06 | Operations: 1.21901e+07
+
+! Best:
+Results:
+60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 11.6433ms | Wins: 17149
+  Comparisons: 2.44514e+06 | Loops: 3.60465e+06 | Operations: 1.21783e+07
+
+------------------------------------------------- Dynamic Ranges --------------------------------------------------
+Iteration 1
+Results:
+5000-15912|Child|34|Mutated: 2245 701 301 132 57 23 10 4 1 
+  Time: 0.539227ms | Wins: 1
+  Comparisons: 86305.9 | Loops: 127389 | Operations: 431578
+
+10000-5944|Survivor|10|Mutated: 2081 783 313 132 57 23 10 4 1 
+  Time: 0.487075ms | Wins: 0
+  Comparisons: 86338 | Loops: 127462 | Operations: 431829
+
+10000-1685|Child|33|Mutated: 2080 783 313 132 57 23 10 4 1 
+  Time: 0.516116ms | Wins: 0
+  Comparisons: 86345.3 | Loops: 127470 | Operations: 431851
+
+5000-12856|Child|10|Mutated: 2315 701 301 132 57 23 10 4 1 
+  Time: 0.528848ms | Wins: 0
+  Comparisons: 86365.9 | Loops: 127394 | Operations: 431700
+
+10000-4645|Child|15|Mutated: 2213 832 313 132 57 23 10 4 1 
+  Time: 0.501903ms | Wins: 0
+  Comparisons: 86372.5 | Loops: 127346 | Operations: 431698
+
+10000-1063|Child|3|Mutated: 2090 764 301 132 57 23 10 4 1 
+  Time: 0.544606ms | Wins: 1
+  Comparisons: 86373.7 | Loops: 127520 | Operations: 431996
+
+10000-2124|Child|21|Mutated: 2213 834 313 132 57 23 10 4 1 
+  Time: 0.48547ms | Wins: 1
+  Comparisons: 86384.4 | Loops: 127356 | Operations: 431744
+
+5000-4148|Child|49|Mutated: 1937 719 301 132 57 23 10 4 1 
+  Time: 0.529929ms | Wins: 1
+  Comparisons: 86389.1 | Loops: 127699 | Operations: 432332
+
+10000-1031|Survivor|7|Mutated: 2090 783 301 132 57 23 10 4 1 
+  Time: 0.489181ms | Wins: 0
+  Comparisons: 86389.4 | Loops: 127518 | Operations: 432037
+
+5000-2343|Child|7|Mutated: 2275 701 301 132 57 23 10 4 1 
+  Time: 0.509279ms | Wins: 1
+  Comparisons: 86398.2 | Loops: 127458 | Operations: 431904
+
+Iteration 2
+Results:
+10000-4645|Child|15|Mutated: 2213 832 313 132 57 23 10 4 1 
+  Time: 0.494795ms | Wins: 6
+  Comparisons: 89138.1 | Loops: 131249 | Operations: 445109
+
+10000-3207|Child|34: 2171 783 313 132 57 23 10 4 1 
+  Time: 0.502778ms | Wins: 7
+  Comparisons: 89169.9 | Loops: 131360 | Operations: 445365
+
+10000-2353|Child|50|Mutated: 2213 808 313 132 57 23 10 4 1 
+  Time: 0.515774ms | Wins: 1
+  Comparisons: 89173.7 | Loops: 131307 | Operations: 445288
+
+10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.514602ms | Wins: 3
+  Comparisons: 89175.6 | Loops: 131038 | Operations: 444750
+
+10000-3592|Child|21|Mutated: 2213 865 313 132 57 23 10 4 1 
+  Time: 0.499236ms | Wins: 3
+  Comparisons: 89175.9 | Loops: 131257 | Operations: 445211
+
+10000-2866|Child|24|Mutated: 2237 783 313 132 57 23 10 4 1 
+  Time: 0.496003ms | Wins: 0
+  Comparisons: 89178.5 | Loops: 131316 | Operations: 445315
+
+5000-15476|Child|19|Mutated: 2223 701 301 132 57 23 10 4 1 
+  Time: 0.508265ms | Wins: 2
+  Comparisons: 89182.7 | Loops: 131420 | Operations: 445466
+
+10000-2679|Child|33|Mutated: 2173 783 313 132 57 23 10 4 1 
+  Time: 0.501128ms | Wins: 1
+  Comparisons: 89187.1 | Loops: 131375 | Operations: 445429
+
+5000-11026|Child|16: 2298 701 301 132 57 23 10 4 1 
+  Time: 0.508227ms | Wins: 1
+  Comparisons: 89191.5 | Loops: 131370 | Operations: 445387
+
+10000-1108|Child|24|Mutated: 2090 783 313 132 57 23 10 4 1 
+  Time: 0.506421ms | Wins: 1
+  Comparisons: 89192.2 | Loops: 131446 | Operations: 445557
+
+Iteration 3
+Results:
+10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.499633ms | Wins: 34
+  Comparisons: 88811.8 | Loops: 130514 | Operations: 442956
+
+10000-3224|Child|19|Mutated: 2147 783 313 132 57 23 10 4 1 
+  Time: 0.503284ms | Wins: 33
+  Comparisons: 88842 | Loops: 130891 | Operations: 443746
+
+10000-6535|Survivor|3|Mutated: 2106 783 313 132 57 23 10 4 1 
+  Time: 0.507462ms | Wins: 29
+  Comparisons: 88843.4 | Loops: 130925 | Operations: 443805
+
+10000-4645|Child|15|Mutated: 2213 832 313 132 57 23 10 4 1 
+  Time: 0.500222ms | Wins: 55
+  Comparisons: 88846.9 | Loops: 130799 | Operations: 443604
+
+10000-5944|Survivor|10|Mutated: 2081 783 313 132 57 23 10 4 1 
+  Time: 0.167867ms | Wins: 27
+  Comparisons: 88847.6 | Loops: 130949 | Operations: 443854
+
+10000-2866|Child|24|Mutated: 2237 783 313 132 57 23 10 4 1 
+  Time: 0.502813ms | Wins: 29
+  Comparisons: 88848.9 | Loops: 130828 | Operations: 443655
+
+10000-1108|Child|24|Mutated: 2090 783 313 132 57 23 10 4 1 
+  Time: 0.504266ms | Wins: 40
+  Comparisons: 88850.6 | Loops: 130945 | Operations: 443854
+
+10000-2124|Child|21|Mutated: 2213 834 313 132 57 23 10 4 1 
+  Time: 0.337458ms | Wins: 59
+  Comparisons: 88853.2 | Loops: 130804 | Operations: 443626
+
+10000-2962|Survivor|6|Mutated: 2279 783 313 132 57 23 10 4 1 
+  Time: 0.500283ms | Wins: 31
+  Comparisons: 88853.5 | Loops: 130800 | Operations: 443618
+
+10000-6168|Child|10|Mutated: 2148 783 313 132 57 23 10 4 1 
+  Time: 0.504991ms | Wins: 38
+  Comparisons: 88854.9 | Loops: 130903 | Operations: 443797
+
+! Best (iteration 4 - final):
+Results:
+10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.46271ms | Wins: 19733
+  Comparisons: 89386.8 | Loops: 131352 | Operations: 445810
+
