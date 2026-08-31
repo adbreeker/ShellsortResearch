@@ -1,0 +1,1559 @@
+echo "Running ShellsortResearch..."; 
+Running ShellsortResearch...
+./ShellsortResearch; 
+Reading from file Results/FinalSets/CompEval-WinningSequences.txt forced break.
+------------------------------------------------- 100 --------------------------------------------------
+
+Results:
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.00366886ms | Wins: 139654
+  Comparisons: 725.026 | Loops: 1095.03 | Operations: 3716.89
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.00364402ms | Wins: 137665
+  Comparisons: 726.36 | Loops: 1078.36 | Operations: 3687.45
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.00375942ms | Wins: 84146
+  Comparisons: 729.638 | Loops: 1117.64 | Operations: 3765.66
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.00382539ms | Wins: 72003
+  Comparisons: 730.455 | Loops: 1139.46 | Operations: 3823.35
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.00383886ms | Wins: 0
+  Comparisons: 730.455 | Loops: 1141.46 | Operations: 3825.35
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.00378761ms | Wins: 66737
+  Comparisons: 730.912 | Loops: 1137.91 | Operations: 3812.17
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.00376365ms | Wins: 81369
+  Comparisons: 731.283 | Loops: 1130.28 | Operations: 3798.81
+
+SEJ: 72 27 10 4 1 
+  Time: 0.00368791ms | Wins: 77572
+  Comparisons: 731.817 | Loops: 1122.82 | Operations: 3788.03
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.00381379ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1145.16 | Operations: 3845.62
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.00380323ms | Wins: 55432
+  Comparisons: 733.159 | Loops: 1145.16 | Operations: 3845.62
+
+Ciura: 57 23 10 4 1 
+  Time: 0.00379769ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1143.16 | Operations: 3843.62
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.00375724ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.00379185ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1145.16 | Operations: 3845.62
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.00381167ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.00375725ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.00380078ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.00375444ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1144.16 | Operations: 3844.62
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.002591ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1148.16 | Operations: 3848.62
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.00292283ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.00379157ms | Wins: 0
+  Comparisons: 733.159 | Loops: 1147.16 | Operations: 3847.62
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.00341404ms | Wins: 52161
+  Comparisons: 733.367 | Loops: 1151.37 | Operations: 3855.79
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.0037285ms | Wins: 52974
+  Comparisons: 733.659 | Loops: 1148.66 | Operations: 3852.25
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.00332254ms | Wins: 0
+  Comparisons: 733.659 | Loops: 1149.66 | Operations: 3853.25
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.0037741ms | Wins: 69162
+  Comparisons: 734.329 | Loops: 1131.33 | Operations: 3804.37
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.00321915ms | Wins: 48032
+  Comparisons: 735.147 | Loops: 1150.15 | Operations: 3862.82
+
+Tokuda: 46 20 9 4 1 
+  Time: 0.00388808ms | Wins: 34161
+  Comparisons: 736.007 | Loops: 1161.01 | Operations: 3886.36
+
+Lee: 45 20 9 4 1 
+  Time: 0.00389231ms | Wins: 28932
+  Comparisons: 738.341 | Loops: 1164.34 | Operations: 3897.05
+
+------------------------------------------------- 250 --------------------------------------------------
+
+Results:
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.012063ms | Wins: 124895
+  Comparisons: 2355.93 | Loops: 3522.93 | Operations: 11958.6
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0121436ms | Wins: 67470
+  Comparisons: 2365.92 | Loops: 3574.92 | Operations: 12069.2
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.0124253ms | Wins: 63629
+  Comparisons: 2367.32 | Loops: 3590.32 | Operations: 12107.1
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.0123096ms | Wins: 59009
+  Comparisons: 2368.48 | Loops: 3627.48 | Operations: 12212.3
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.0125196ms | Wins: 0
+  Comparisons: 2368.56 | Loops: 3624.56 | Operations: 12207.7
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.012276ms | Wins: 60738
+  Comparisons: 2368.56 | Loops: 3624.56 | Operations: 12207.7
+
+SEJ: 187 72 27 10 4 1 
+  Time: 0.0120319ms | Wins: 82632
+  Comparisons: 2370.01 | Loops: 3575.01 | Operations: 12096.8
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.0118148ms | Wins: 96398
+  Comparisons: 2371.68 | Loops: 3491.68 | Operations: 11940.2
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.012582ms | Wins: 0
+  Comparisons: 2374.28 | Loops: 3647.28 | Operations: 12281.5
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.012412ms | Wins: 53817
+  Comparisons: 2374.28 | Loops: 3645.28 | Operations: 12279.5
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.0107474ms | Wins: 54939
+  Comparisons: 2374.86 | Loops: 3641.86 | Operations: 12262.6
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.0123447ms | Wins: 0
+  Comparisons: 2376.85 | Loops: 3658.85 | Operations: 12314.4
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.0125723ms | Wins: 0
+  Comparisons: 2376.85 | Loops: 3658.85 | Operations: 12314.4
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.0123176ms | Wins: 0
+  Comparisons: 2376.85 | Loops: 3658.85 | Operations: 12314.4
+
+Ciura: 132 57 23 10 4 1 
+  Time: 0.0123587ms | Wins: 0
+  Comparisons: 2376.85 | Loops: 3655.85 | Operations: 12311.4
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.0123646ms | Wins: 40523
+  Comparisons: 2376.85 | Loops: 3658.85 | Operations: 12314.4
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.0123477ms | Wins: 51975
+  Comparisons: 2377.55 | Loops: 3643.55 | Operations: 12277.3
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.0113203ms | Wins: 0
+  Comparisons: 2378.57 | Loops: 3667.57 | Operations: 12338.9
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.0123803ms | Wins: 39913
+  Comparisons: 2378.57 | Loops: 3666.57 | Operations: 12337.9
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.0112247ms | Wins: 32107
+  Comparisons: 2382.5 | Loops: 3674.5 | Operations: 12361.5
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.0113053ms | Wins: 33866
+  Comparisons: 2382.67 | Loops: 3685.67 | Operations: 12376.6
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.0108797ms | Wins: 31410
+  Comparisons: 2383.97 | Loops: 3679.97 | Operations: 12372.2
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.0122869ms | Wins: 41310
+  Comparisons: 2388.05 | Loops: 3625.05 | Operations: 12245.1
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.0125417ms | Wins: 36249
+  Comparisons: 2388.64 | Loops: 3660.64 | Operations: 12352.6
+
+Lee: 230 102 45 20 9 4 1 
+  Time: 0.0128645ms | Wins: 11533
+  Comparisons: 2400.4 | Loops: 3746.4 | Operations: 12521.7
+
+Tokuda: 233 103 46 20 9 4 1 
+  Time: 0.0129122ms | Wins: 11548
+  Comparisons: 2400.68 | Loops: 3741.68 | Operations: 12514
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.0113511ms | Wins: 6039
+  Comparisons: 2480.04 | Loops: 3432.04 | Operations: 11966.2
+
+------------------------------------------------- 500 --------------------------------------------------
+
+Results:
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.029909ms | Wins: 116451
+  Comparisons: 5569.81 | Loops: 8330.81 | Operations: 28222.6
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0291885ms | Wins: 112151
+  Comparisons: 5571.53 | Loops: 8280.53 | Operations: 28130
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.0300095ms | Wins: 77809
+  Comparisons: 5584.77 | Loops: 8340.77 | Operations: 28272.7
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.0298304ms | Wins: 67616
+  Comparisons: 5587.47 | Loops: 8434.47 | Operations: 28468.4
+
+SEJ: 488 187 72 27 10 4 1 
+  Time: 0.0291694ms | Wins: 102579
+  Comparisons: 5588.15 | Loops: 8306.15 | Operations: 28228.5
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.0288349ms | Wins: 89983
+  Comparisons: 5592.81 | Loops: 8259.81 | Operations: 28152.1
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.02588ms | Wins: 70744
+  Comparisons: 5597.67 | Loops: 8364.67 | Operations: 28335.3
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.0300764ms | Wins: 38723
+  Comparisons: 5610.05 | Loops: 8563.05 | Operations: 28789.7
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.0301623ms | Wins: 35220
+  Comparisons: 5617.98 | Loops: 8547.98 | Operations: 28773.7
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.0302349ms | Wins: 29735
+  Comparisons: 5618.34 | Loops: 8587.34 | Operations: 28872.8
+
+Ciura: 301 132 57 23 10 4 1 
+  Time: 0.0301896ms | Wins: 0
+  Comparisons: 5618.63 | Loops: 8597.63 | Operations: 28908.2
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.0306001ms | Wins: 0
+  Comparisons: 5618.63 | Loops: 8599.63 | Operations: 28910.2
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.0303346ms | Wins: 28798
+  Comparisons: 5618.63 | Loops: 8599.63 | Operations: 28910.2
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.030205ms | Wins: 29398
+  Comparisons: 5618.72 | Loops: 8594.72 | Operations: 28895.4
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.0300738ms | Wins: 29637
+  Comparisons: 5622.74 | Loops: 8557.74 | Operations: 28823.2
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.0274437ms | Wins: 23301
+  Comparisons: 5626.54 | Loops: 8637.54 | Operations: 29026.8
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.0306427ms | Wins: 20784
+  Comparisons: 5636.18 | Loops: 8624.18 | Operations: 29014.3
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.030071ms | Wins: 25027
+  Comparisons: 5637.69 | Loops: 8555.69 | Operations: 28825.3
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.0274798ms | Wins: 17361
+  Comparisons: 5638.56 | Loops: 8661.56 | Operations: 29109.6
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.025747ms | Wins: 15745
+  Comparisons: 5641.5 | Loops: 8674.5 | Operations: 29135.5
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.030539ms | Wins: 16177
+  Comparisons: 5652.27 | Loops: 8625.27 | Operations: 29038.9
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.026652ms | Wins: 10355
+  Comparisons: 5656.75 | Loops: 8700.75 | Operations: 29239.5
+
+Lee: 230 102 45 20 9 4 1 
+  Time: 0.0311526ms | Wins: 8016
+  Comparisons: 5657.87 | Loops: 8753.87 | Operations: 29314.2
+
+Tokuda: 233 103 46 20 9 4 1 
+  Time: 0.0312333ms | Wins: 7265
+  Comparisons: 5662.28 | Loops: 8753.28 | Operations: 29325.4
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.0299614ms | Wins: 15438
+  Comparisons: 5664.64 | Loops: 8549.64 | Operations: 28883.1
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.0278825ms | Wins: 11687
+  Comparisons: 5734.31 | Loops: 8104.31 | Operations: 28002.2
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.0263784ms | Wins: 0
+  Comparisons: 6500.25 | Loops: 8452.25 | Operations: 30097.8
+
+------------------------------------------------- 750 --------------------------------------------------
+
+Results:
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.0490539ms | Wins: 89067
+  Comparisons: 9145.02 | Loops: 13742 | Operations: 46494.5
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.0430107ms | Wins: 93082
+  Comparisons: 9152.65 | Loops: 13659.7 | Operations: 46240.7
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.0501419ms | Wins: 83942
+  Comparisons: 9159.18 | Loops: 13670.2 | Operations: 46335.2
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.0492596ms | Wins: 61992
+  Comparisons: 9163.01 | Loops: 13866 | Operations: 46760
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.0499153ms | Wins: 69812
+  Comparisons: 9169.58 | Loops: 13576.6 | Operations: 46046.1
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.0495619ms | Wins: 52345
+  Comparisons: 9170.9 | Loops: 13889.9 | Operations: 46815.5
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.0499748ms | Wins: 57240
+  Comparisons: 9171.45 | Loops: 13851.5 | Operations: 46761.5
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.0498983ms | Wins: 55022
+  Comparisons: 9172.19 | Loops: 13857.2 | Operations: 46777.7
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.0483105ms | Wins: 42849
+  Comparisons: 9180.56 | Loops: 13949.6 | Operations: 46952.7
+
+Ciura: 701 301 132 57 23 10 4 1 
+  Time: 0.0500677ms | Wins: 0
+  Comparisons: 9182.77 | Loops: 13961.8 | Operations: 46981.6
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.0498264ms | Wins: 40034
+  Comparisons: 9182.77 | Loops: 13962.8 | Operations: 46982.6
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.0508541ms | Wins: 0
+  Comparisons: 9182.77 | Loops: 13962.8 | Operations: 46982.6
+
+SEJ: 488 187 72 27 10 4 1 
+  Time: 0.0483784ms | Wins: 70453
+  Comparisons: 9183.6 | Loops: 13651.6 | Operations: 46336.5
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0474282ms | Wins: 64246
+  Comparisons: 9187.49 | Loops: 13396.5 | Operations: 45747.7
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.0436625ms | Wins: 31628
+  Comparisons: 9194.1 | Loops: 14003.1 | Operations: 47079.2
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.0498218ms | Wins: 41460
+  Comparisons: 9197.28 | Loops: 13865.3 | Operations: 46849.3
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.0470655ms | Wins: 61911
+  Comparisons: 9203.95 | Loops: 13371 | Operations: 45755.8
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.0510313ms | Wins: 17654
+  Comparisons: 9226.69 | Loops: 14061.7 | Operations: 47275.8
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.0454ms | Wins: 15170
+  Comparisons: 9231.12 | Loops: 14120.1 | Operations: 47391.1
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.0508146ms | Wins: 18763
+  Comparisons: 9234.72 | Loops: 14012.7 | Operations: 47191
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.0458817ms | Wins: 7366
+  Comparisons: 9257.12 | Loops: 14235.1 | Operations: 47698.9
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.0439644ms | Wins: 8148
+  Comparisons: 9258.26 | Loops: 14192.3 | Operations: 47592.5
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.0499595ms | Wins: 14140
+  Comparisons: 9263.13 | Loops: 13950.1 | Operations: 47172.3
+
+Tokuda: 525 233 103 46 20 9 4 1 
+  Time: 0.0520969ms | Wins: 1857
+  Comparisons: 9308.05 | Loops: 14375.1 | Operations: 48059.4
+
+Lee: 516 230 102 45 20 9 4 1 
+  Time: 0.0520663ms | Wins: 1787
+  Comparisons: 9308.36 | Loops: 14389.4 | Operations: 48089.6
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.04459ms | Wins: 32
+  Comparisons: 9733.49 | Loops: 13353.5 | Operations: 46566.4
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.0430969ms | Wins: 0
+  Comparisons: 11689.3 | Loops: 14641.3 | Operations: 52884.3
+
+------------------------------------------------- 1000 --------------------------------------------------
+
+Results:
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.0687559ms | Wins: 127312
+  Comparisons: 12916.6 | Loops: 19263.6 | Operations: 65260.9
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.0704875ms | Wins: 125248
+  Comparisons: 12927.7 | Loops: 19084.7 | Operations: 64879.7
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.070532ms | Wins: 96227
+  Comparisons: 12958.4 | Loops: 19219.4 | Operations: 65295.9
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.0703763ms | Wins: 76034
+  Comparisons: 12960.1 | Loops: 19390.1 | Operations: 65606.2
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.0672731ms | Wins: 69686
+  Comparisons: 12964.4 | Loops: 19417.4 | Operations: 65661.1
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.0706219ms | Wins: 63291
+  Comparisons: 12970 | Loops: 19537 | Operations: 65906.2
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.0590413ms | Wins: 78315
+  Comparisons: 12976.8 | Loops: 19233.8 | Operations: 65352.7
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.0699867ms | Wins: 50034
+  Comparisons: 12979.3 | Loops: 19665.3 | Operations: 66172.1
+
+SEJ: 488 187 72 27 10 4 1 
+  Time: 0.0678668ms | Wins: 83454
+  Comparisons: 12981.7 | Loops: 19199.7 | Operations: 65338.9
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.0686596ms | Wins: 55449
+  Comparisons: 12986.3 | Loops: 19518.3 | Operations: 65897.1
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.0710312ms | Wins: 24505
+  Comparisons: 13026.1 | Loops: 19795.1 | Operations: 66550.6
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.0703369ms | Wins: 21587
+  Comparisons: 13030.2 | Loops: 19810.2 | Operations: 66587.6
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.0721258ms | Wins: 0
+  Comparisons: 13030.2 | Loops: 19810.2 | Operations: 66587.6
+
+Ciura: 701 301 132 57 23 10 4 1 
+  Time: 0.0710566ms | Wins: 0
+  Comparisons: 13030.2 | Loops: 19809.2 | Operations: 66586.6
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.0625177ms | Wins: 19815
+  Comparisons: 13035.5 | Loops: 19844.5 | Operations: 66652
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.0627343ms | Wins: 15651
+  Comparisons: 13047.8 | Loops: 19936.8 | Operations: 66915.9
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.072442ms | Wins: 12338
+  Comparisons: 13066.1 | Loops: 19901.1 | Operations: 66878.3
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.0612582ms | Wins: 10186
+  Comparisons: 13067.9 | Loops: 20045.9 | Operations: 67250.9
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.0603696ms | Wins: 9511
+  Comparisons: 13076.5 | Loops: 20010.5 | Operations: 67139.9
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.0720418ms | Wins: 9184
+  Comparisons: 13097.3 | Loops: 19875.3 | Operations: 66858.9
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.0633906ms | Wins: 26765
+  Comparisons: 13112.1 | Loops: 18779.1 | Operations: 64509
+
+Lee: 516 230 102 45 20 9 4 1 
+  Time: 0.073535ms | Wins: 4077
+  Comparisons: 13114.2 | Loops: 20195.2 | Operations: 67654.3
+
+Tokuda: 525 233 103 46 20 9 4 1 
+  Time: 0.0736852ms | Wins: 4053
+  Comparisons: 13115.6 | Loops: 20182.6 | Operations: 67627.8
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.0660485ms | Wins: 13880
+  Comparisons: 13139.8 | Loops: 18848.8 | Operations: 64669.6
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.0708461ms | Wins: 3398
+  Comparisons: 13168.1 | Loops: 19855.1 | Operations: 67020.9
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.061905ms | Wins: 0
+  Comparisons: 14312.8 | Loops: 19182.8 | Operations: 67432.6
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.0607009ms | Wins: 0
+  Comparisons: 17971.7 | Loops: 21923.7 | Operations: 80034.9
+
+------------------------------------------------- 2000 --------------------------------------------------
+
+Results:
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.160761ms | Wins: 126814
+  Comparisons: 29451.2 | Loops: 43685.2 | Operations: 148038
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.159368ms | Wins: 97438
+  Comparisons: 29467.1 | Loops: 44153.1 | Operations: 149071
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.149728ms | Wins: 114547
+  Comparisons: 29469.2 | Loops: 43738.2 | Operations: 148177
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.16123ms | Wins: 88773
+  Comparisons: 29490.4 | Loops: 44057.4 | Operations: 148961
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.159618ms | Wins: 58111
+  Comparisons: 29511.3 | Loops: 44314.3 | Operations: 149498
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.165289ms | Wins: 51085
+  Comparisons: 29520.4 | Loops: 44515.4 | Operations: 149884
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.162026ms | Wins: 63396
+  Comparisons: 29520.6 | Loops: 44424.6 | Operations: 149710
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.141146ms | Wins: 55750
+  Comparisons: 29536.8 | Loops: 44345.8 | Operations: 149596
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.162403ms | Wins: 43118
+  Comparisons: 29537.7 | Loops: 44567.7 | Operations: 150022
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.161116ms | Wins: 49728
+  Comparisons: 29574.7 | Loops: 44231.7 | Operations: 149507
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.142294ms | Wins: 36372
+  Comparisons: 29577.5 | Loops: 44721.5 | Operations: 150376
+
+SEJ: 1272 488 187 72 27 10 4 1 
+  Time: 0.155157ms | Wins: 56741
+  Comparisons: 29606.4 | Loops: 43553.4 | Operations: 148130
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.165161ms | Wins: 24809
+  Comparisons: 29643.3 | Loops: 44587.3 | Operations: 150282
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.166142ms | Wins: 16570
+  Comparisons: 29658.4 | Loops: 44873.4 | Operations: 150883
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.140667ms | Wins: 10724
+  Comparisons: 29689.6 | Loops: 45109.6 | Operations: 151361
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.159267ms | Wins: 34467
+  Comparisons: 29698.2 | Loops: 42855.2 | Operations: 146685
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.153942ms | Wins: 24632
+  Comparisons: 29719.5 | Loops: 43066.5 | Operations: 147021
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.134762ms | Wins: 7450
+  Comparisons: 29727.5 | Loops: 45223.5 | Operations: 151724
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.159655ms | Wins: 20643
+  Comparisons: 29792 | Loops: 43053 | Operations: 147203
+
+Tokuda: 1182 525 233 103 46 20 9 4 1 
+  Time: 0.169214ms | Wins: 1769
+  Comparisons: 29833.6 | Loops: 45719.6 | Operations: 153078
+
+Lee: 1158 516 230 102 45 20 9 4 1 
+  Time: 0.168969ms | Wins: 1843
+  Comparisons: 29833.6 | Loops: 45757.6 | Operations: 153178
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.128373ms | Wins: 12813
+  Comparisons: 29866.5 | Loops: 43123.5 | Operations: 147522
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.162057ms | Wins: 2407
+  Comparisons: 29878.6 | Loops: 44816.6 | Operations: 151267
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.138588ms | Wins: 0
+  Comparisons: 31316.1 | Loops: 42983.1 | Operations: 149624
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.143905ms | Wins: 0
+  Comparisons: 31553.8 | Loops: 43262.8 | Operations: 150589
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.137391ms | Wins: 0
+  Comparisons: 37901.6 | Loops: 47771.6 | Operations: 171908
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.142788ms | Wins: 0
+  Comparisons: 53342.2 | Loops: 61294.2 | Operations: 229569
+
+------------------------------------------------- 3000 --------------------------------------------------
+
+Results:
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.25691ms | Wins: 123241
+  Comparisons: 47372 | Loops: 70458 | Operations: 238091
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.258161ms | Wins: 140469
+  Comparisons: 47379.1 | Loops: 69613.1 | Operations: 236583
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.257608ms | Wins: 76961
+  Comparisons: 47435.2 | Loops: 71238.2 | Operations: 240046
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.243291ms | Wins: 105585
+  Comparisons: 47453.1 | Loops: 69722.1 | Operations: 236936
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.265178ms | Wins: 65884
+  Comparisons: 47457.7 | Loops: 71452.7 | Operations: 240697
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.261573ms | Wins: 62710
+  Comparisons: 47463.4 | Loops: 71493.4 | Operations: 240826
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.260515ms | Wins: 70488
+  Comparisons: 47485.3 | Loops: 70808.3 | Operations: 239192
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.261172ms | Wins: 60586
+  Comparisons: 47485.9 | Loops: 71389.9 | Operations: 240550
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.223646ms | Wins: 62746
+  Comparisons: 47486.4 | Loops: 70965.4 | Operations: 239303
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.229571ms | Wins: 48179
+  Comparisons: 47513.1 | Loops: 71657.1 | Operations: 241226
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.225992ms | Wins: 26819
+  Comparisons: 47591.4 | Loops: 72011.4 | Operations: 242211
+
+SEJ: 1272 488 187 72 27 10 4 1 
+  Time: 0.249447ms | Wins: 57405
+  Comparisons: 47604.7 | Loops: 69551.7 | Operations: 237055
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.267991ms | Wins: 26049
+  Comparisons: 47605.4 | Loops: 71820.4 | Operations: 241868
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.222374ms | Wins: 21427
+  Comparisons: 47632.8 | Loops: 72128.8 | Operations: 242541
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.267003ms | Wins: 23067
+  Comparisons: 47651.4 | Loops: 71595.4 | Operations: 241322
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.259315ms | Wins: 22917
+  Comparisons: 47668 | Loops: 71325 | Operations: 240853
+
+Tokuda: 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.272541ms | Wins: 1823
+  Comparisons: 47909.5 | Loops: 73136.5 | Operations: 244917
+
+Lee: 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.272012ms | Wins: 1428
+  Comparisons: 47932.4 | Loops: 73258.4 | Operations: 245202
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.262887ms | Wins: 1819
+  Comparisons: 47982.9 | Loops: 71920.9 | Operations: 242784
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.252849ms | Wins: 215
+  Comparisons: 48560.2 | Loops: 68717.2 | Operations: 236613
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.241539ms | Wins: 48
+  Comparisons: 48665.2 | Loops: 69012.2 | Operations: 237107
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.25581ms | Wins: 104
+  Comparisons: 48727.7 | Loops: 68988.7 | Operations: 237300
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.209763ms | Wins: 30
+  Comparisons: 48907.2 | Loops: 69164.2 | Operations: 238064
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.22068ms | Wins: 0
+  Comparisons: 52959.9 | Loops: 70626.9 | Operations: 248369
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.227195ms | Wins: 0
+  Comparisons: 53750 | Loops: 71459 | Operations: 251531
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.223667ms | Wins: 0
+  Comparisons: 69352.9 | Loops: 84222.9 | Operations: 307783
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.247553ms | Wins: 0
+  Comparisons: 104414 | Loops: 116366 | Operations: 441888
+
+------------------------------------------------- 4000 --------------------------------------------------
+
+Results:
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.348696ms | Wins: 138076
+  Comparisons: 66126.3 | Loops: 98212.3 | Operations: 332145
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.317279ms | Wins: 99131
+  Comparisons: 66201.4 | Loops: 98680.4 | Operations: 333391
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.35986ms | Wins: 87184
+  Comparisons: 66205.3 | Loops: 99235.3 | Operations: 334677
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.364385ms | Wins: 87060
+  Comparisons: 66209.4 | Loops: 99204.4 | Operations: 334643
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.3592ms | Wins: 77691
+  Comparisons: 66247.7 | Loops: 99151.7 | Operations: 334679
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.362128ms | Wins: 74214
+  Comparisons: 66248.5 | Loops: 99051.5 | Operations: 334585
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.32088ms | Wins: 69323
+  Comparisons: 66262.6 | Loops: 99406.6 | Operations: 335072
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.354719ms | Wins: 76505
+  Comparisons: 66282.1 | Loops: 98605.1 | Operations: 333660
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.321708ms | Wins: 48784
+  Comparisons: 66320.6 | Loops: 99740.6 | Operations: 335789
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.356936ms | Wins: 39768
+  Comparisons: 66372.6 | Loops: 99587.6 | Operations: 335641
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.350727ms | Wins: 56148
+  Comparisons: 66417.3 | Loops: 96651.3 | Operations: 329353
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.338591ms | Wins: 26069
+  Comparisons: 66448.9 | Loops: 99944.9 | Operations: 336502
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.366593ms | Wins: 30043
+  Comparisons: 66452.3 | Loops: 99396.3 | Operations: 335545
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.357868ms | Wins: 19071
+  Comparisons: 66553.7 | Loops: 99353.7 | Operations: 335856
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.337094ms | Wins: 35293
+  Comparisons: 66557.7 | Loops: 96826.7 | Operations: 329963
+
+SEJ: 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.339661ms | Wins: 32829
+  Comparisons: 66567.8 | Loops: 97202.8 | Operations: 331010
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.359347ms | Wins: 2222
+  Comparisons: 66874.4 | Loops: 99913.4 | Operations: 337438
+
+Lee: 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.372573ms | Wins: 316
+  Comparisons: 67004.1 | Loops: 102330 | Operations: 342476
+
+Tokuda: 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.374882ms | Wins: 273
+  Comparisons: 67014.8 | Loops: 102242 | Operations: 342289
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.344773ms | Wins: 0
+  Comparisons: 68839.2 | Loops: 95996.2 | Operations: 332035
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.345748ms | Wins: 0
+  Comparisons: 69492.9 | Loops: 96753.9 | Operations: 334622
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.324538ms | Wins: 0
+  Comparisons: 69553.6 | Loops: 96900.6 | Operations: 334894
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.287144ms | Wins: 0
+  Comparisons: 69760.8 | Loops: 97017.8 | Operations: 335753
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.302078ms | Wins: 0
+  Comparisons: 77856.5 | Loops: 101523 | Operations: 360081
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.306806ms | Wins: 0
+  Comparisons: 79400.6 | Loops: 103110 | Operations: 366247
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.312229ms | Wins: 0
+  Comparisons: 108197 | Loops: 128067 | Operations: 473210
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.362126ms | Wins: 0
+  Comparisons: 170606 | Loops: 186558 | Operations: 714676
+
+------------------------------------------------- 5000 --------------------------------------------------
+
+Results:
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.471094ms | Wins: 144171
+  Comparisons: 85568.3 | Loops: 127371 | Operations: 430418
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.467242ms | Wins: 97810
+  Comparisons: 85678.1 | Loops: 127673 | Operations: 431281
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.464271ms | Wins: 99737
+  Comparisons: 85686.5 | Loops: 127590 | Operations: 431117
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.460736ms | Wins: 90447
+  Comparisons: 85693.2 | Loops: 127723 | Operations: 431416
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.405059ms | Wins: 101261
+  Comparisons: 85696.7 | Loops: 127176 | Operations: 430333
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.451136ms | Wins: 101569
+  Comparisons: 85698.2 | Loops: 126784 | Operations: 429708
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.458825ms | Wins: 104766
+  Comparisons: 85703.8 | Loops: 127027 | Operations: 430190
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.417152ms | Wins: 74267
+  Comparisons: 85758.7 | Loops: 127903 | Operations: 431845
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.405448ms | Wins: 44677
+  Comparisons: 85865.1 | Loops: 128285 | Operations: 432641
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.454874ms | Wins: 40243
+  Comparisons: 85906.7 | Loops: 128122 | Operations: 432560
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.471255ms | Wins: 36443
+  Comparisons: 85949.7 | Loops: 127894 | Operations: 432255
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.450802ms | Wins: 21196
+  Comparisons: 86019.3 | Loops: 129458 | Operations: 435297
+
+SEJ: 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.441458ms | Wins: 22453
+  Comparisons: 86215.2 | Loops: 125850 | Operations: 428587
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.459706ms | Wins: 5014
+  Comparisons: 86351.8 | Loops: 129152 | Operations: 435806
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.450345ms | Wins: 9669
+  Comparisons: 86419.9 | Loops: 124654 | Operations: 425883
+
+Lee: 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.482201ms | Wins: 657
+  Comparisons: 86556.1 | Loops: 131882 | Operations: 442092
+
+Tokuda: 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.484521ms | Wins: 631
+  Comparisons: 86580.2 | Loops: 131807 | Operations: 441962
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.425962ms | Wins: 4433
+  Comparisons: 86649 | Loops: 124918 | Operations: 426833
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.465472ms | Wins: 556
+  Comparisons: 86690 | Loops: 129729 | Operations: 437524
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.441487ms | Wins: 0
+  Comparisons: 90709.5 | Loops: 124866 | Operations: 433765
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.445367ms | Wins: 0
+  Comparisons: 91951.3 | Loops: 126212 | Operations: 438659
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.41433ms | Wins: 0
+  Comparisons: 92191.2 | Loops: 126538 | Operations: 439619
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.352737ms | Wins: 0
+  Comparisons: 92266 | Loops: 126523 | Operations: 439990
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.373956ms | Wins: 0
+  Comparisons: 105687 | Loops: 135354 | Operations: 483499
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.397029ms | Wins: 0
+  Comparisons: 108355 | Loops: 138064 | Operations: 494153
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.417543ms | Wins: 0
+  Comparisons: 154265 | Loops: 179135 | Operations: 667519
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.494092ms | Wins: 0
+  Comparisons: 251712 | Loops: 271664 | Operations: 1.04712e+06
+
+------------------------------------------------- 6000 --------------------------------------------------
+
+Results:
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.556022ms | Wins: 135361
+  Comparisons: 105627 | Loops: 155713 | Operations: 527979
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.582761ms | Wins: 102333
+  Comparisons: 105693 | Loops: 156688 | Operations: 529861
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.495961ms | Wins: 112655
+  Comparisons: 105696 | Loops: 156175 | Operations: 529001
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.567578ms | Wins: 115054
+  Comparisons: 105697 | Loops: 156020 | Operations: 528885
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.570019ms | Wins: 92194
+  Comparisons: 105724 | Loops: 156754 | Operations: 530025
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.581366ms | Wins: 88965
+  Comparisons: 105743 | Loops: 156546 | Operations: 529934
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.57115ms | Wins: 87908
+  Comparisons: 105760 | Loops: 156664 | Operations: 530044
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.525502ms | Wins: 70917
+  Comparisons: 105824 | Loops: 156968 | Operations: 530593
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.498525ms | Wins: 57356
+  Comparisons: 105842 | Loops: 157829 | Operations: 532156
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.56426ms | Wins: 50520
+  Comparisons: 105901 | Loops: 157718 | Operations: 532176
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.547262ms | Wins: 26903
+  Comparisons: 106034 | Loops: 159473 | Operations: 536367
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.583214ms | Wins: 33238
+  Comparisons: 106038 | Loops: 156982 | Operations: 531193
+
+SEJ: 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.542753ms | Wins: 20559
+  Comparisons: 106339 | Loops: 154974 | Operations: 528437
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.596704ms | Wins: 1617
+  Comparisons: 106584 | Loops: 161827 | Operations: 542715
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.598075ms | Wins: 1365
+  Comparisons: 106586 | Loops: 162082 | Operations: 543173
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.565944ms | Wins: 2409
+  Comparisons: 106603 | Loops: 159403 | Operations: 537912
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.578417ms | Wins: 197
+  Comparisons: 107018 | Loops: 160057 | Operations: 539845
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.543741ms | Wins: 354
+  Comparisons: 107327 | Loops: 153561 | Operations: 525952
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.516418ms | Wins: 95
+  Comparisons: 107642 | Loops: 153911 | Operations: 527239
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.543248ms | Wins: 0
+  Comparisons: 114123 | Loops: 155280 | Operations: 541644
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.546133ms | Wins: 0
+  Comparisons: 116005 | Loops: 157266 | Operations: 549040
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.431037ms | Wins: 0
+  Comparisons: 116343 | Loops: 157600 | Operations: 550475
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.511145ms | Wins: 0
+  Comparisons: 116498 | Loops: 157845 | Operations: 550992
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.433784ms | Wins: 0
+  Comparisons: 136480 | Loops: 172147 | Operations: 618752
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.490145ms | Wins: 0
+  Comparisons: 140500 | Loops: 176209 | Operations: 634806
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.546237ms | Wins: 0
+  Comparisons: 207349 | Loops: 237219 | Operations: 889887
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.648358ms | Wins: 0
+  Comparisons: 347574 | Loops: 371526 | Operations: 1.43858e+06
+
+------------------------------------------------- 7000 --------------------------------------------------
+
+Results:
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.656456ms | Wins: 169966
+  Comparisons: 126101 | Loops: 185187 | Operations: 628672
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.687969ms | Wins: 146305
+  Comparisons: 126140 | Loops: 185943 | Operations: 629942
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.665681ms | Wins: 119773
+  Comparisons: 126256 | Loops: 185579 | Operations: 629826
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.686581ms | Wins: 79767
+  Comparisons: 126364 | Loops: 186359 | Operations: 631157
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.671037ms | Wins: 80583
+  Comparisons: 126380 | Loops: 186284 | Operations: 631073
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.613766ms | Wins: 60948
+  Comparisons: 126403 | Loops: 188390 | Operations: 635040
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.688712ms | Wins: 57377
+  Comparisons: 126477 | Loops: 186944 | Operations: 632481
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.69699ms | Wins: 53864
+  Comparisons: 126478 | Loops: 188295 | Operations: 635151
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.671921ms | Wins: 56205
+  Comparisons: 126481 | Loops: 186511 | Operations: 631684
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.5654ms | Wins: 46258
+  Comparisons: 126490 | Loops: 189929 | Operations: 639547
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.593388ms | Wins: 56759
+  Comparisons: 126535 | Loops: 186014 | Operations: 631173
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.615157ms | Wins: 33225
+  Comparisons: 126677 | Loops: 186821 | Operations: 632625
+
+SEJ: 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.643578ms | Wins: 28384
+  Comparisons: 126884 | Loops: 184519 | Operations: 629576
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.666108ms | Wins: 8072
+  Comparisons: 127003 | Loops: 189803 | Operations: 640878
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.70617ms | Wins: 911
+  Comparisons: 127365 | Loops: 193608 | Operations: 648518
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.708795ms | Wins: 630
+  Comparisons: 127376 | Loops: 193872 | Operations: 649051
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.681692ms | Wins: 957
+  Comparisons: 127439 | Loops: 190478 | Operations: 642967
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.644226ms | Wins: 14
+  Comparisons: 128823 | Loops: 183057 | Operations: 628268
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.605797ms | Wins: 2
+  Comparisons: 129342 | Loops: 183611 | Operations: 630383
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.639327ms | Wins: 0
+  Comparisons: 138546 | Loops: 186703 | Operations: 653507
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.606663ms | Wins: 0
+  Comparisons: 141495 | Loops: 189756 | Operations: 665137
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.56278ms | Wins: 0
+  Comparisons: 141909 | Loops: 190166 | Operations: 666892
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.600269ms | Wins: 0
+  Comparisons: 142497 | Loops: 190844 | Operations: 669112
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.516246ms | Wins: 0
+  Comparisons: 170041 | Loops: 211708 | Operations: 765061
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.59063ms | Wins: 0
+  Comparisons: 175756 | Loops: 217465 | Operations: 787890
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.661896ms | Wins: 0
+  Comparisons: 267310 | Loops: 302180 | Operations: 1.13976e+06
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.807009ms | Wins: 0
+  Comparisons: 457948 | Loops: 485900 | Operations: 1.88809e+06
+
+------------------------------------------------- 8000 --------------------------------------------------
+
+Results:
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.752878ms | Wins: 147169
+  Comparisons: 146989 | Loops: 218976 | Operations: 738614
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.79809ms | Wins: 129669
+  Comparisons: 147073 | Loops: 218890 | Operations: 738753
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.757461ms | Wins: 119102
+  Comparisons: 147169 | Loops: 215492 | Operations: 731934
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.772019ms | Wins: 102924
+  Comparisons: 147226 | Loops: 215312 | Operations: 731890
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.686173ms | Wins: 58005
+  Comparisons: 147351 | Loops: 220790 | Operations: 744271
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.682436ms | Wins: 78177
+  Comparisons: 147373 | Loops: 215852 | Operations: 732898
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.790908ms | Wins: 66103
+  Comparisons: 147374 | Loops: 216369 | Operations: 733550
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.789725ms | Wins: 64017
+  Comparisons: 147390 | Loops: 216193 | Operations: 733541
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.796287ms | Wins: 58825
+  Comparisons: 147394 | Loops: 217861 | Operations: 736748
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.772659ms | Wins: 55211
+  Comparisons: 147464 | Loops: 216368 | Operations: 733838
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.775965ms | Wins: 51712
+  Comparisons: 147466 | Loops: 216496 | Operations: 733959
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.757755ms | Wins: 25651
+  Comparisons: 147745 | Loops: 216889 | Operations: 735239
+
+SEJ: 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.736832ms | Wins: 29878
+  Comparisons: 147836 | Loops: 214471 | Operations: 731897
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.774245ms | Wins: 9874
+  Comparisons: 147920 | Loops: 220720 | Operations: 745708
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.788404ms | Wins: 2562
+  Comparisons: 148234 | Loops: 221273 | Operations: 747255
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.820749ms | Wins: 664
+  Comparisons: 148433 | Loops: 225676 | Operations: 755790
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.815747ms | Wins: 457
+  Comparisons: 148446 | Loops: 225942 | Operations: 756348
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.719082ms | Wins: 0
+  Comparisons: 151025 | Loops: 213259 | Operations: 733358
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.71205ms | Wins: 0
+  Comparisons: 151706 | Loops: 213975 | Operations: 736123
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.734247ms | Wins: 0
+  Comparisons: 164372 | Loops: 219529 | Operations: 770959
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.688158ms | Wins: 0
+  Comparisons: 168466 | Loops: 223727 | Operations: 787137
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.677948ms | Wins: 0
+  Comparisons: 168904 | Loops: 224161 | Operations: 789006
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.685002ms | Wins: 0
+  Comparisons: 169977 | Loops: 225324 | Operations: 793139
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.592796ms | Wins: 0
+  Comparisons: 206423 | Loops: 254090 | Operations: 922647
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.696065ms | Wins: 0
+  Comparisons: 214077 | Loops: 261786 | Operations: 953227
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.781517ms | Wins: 0
+  Comparisons: 334149 | Loops: 374019 | Operations: 1.41714e+06
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.977071ms | Wins: 0
+  Comparisons: 582760 | Loops: 614712 | Operations: 2.39534e+06
+
+------------------------------------------------- 9000 --------------------------------------------------
+
+Results:
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.763878ms | Wins: 195422
+  Comparisons: 168107 | Loops: 250094 | Operations: 844334
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.881287ms | Wins: 171527
+  Comparisons: 168206 | Loops: 250023 | Operations: 844558
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.873742ms | Wins: 122722
+  Comparisons: 168330 | Loops: 251769 | Operations: 848684
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.856182ms | Wins: 123734
+  Comparisons: 168423 | Loops: 245509 | Operations: 835095
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.90944ms | Wins: 95714
+  Comparisons: 168478 | Loops: 248945 | Operations: 842089
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.903258ms | Wins: 59754
+  Comparisons: 168734 | Loops: 246537 | Operations: 837254
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.897689ms | Wins: 60056
+  Comparisons: 168765 | Loops: 246088 | Operations: 836947
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.878386ms | Wins: 20929
+  Comparisons: 169020 | Loops: 251820 | Operations: 850618
+
+SEJ: 8627 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.865274ms | Wins: 40934
+  Comparisons: 169038 | Loops: 245047 | Operations: 836210
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.780096ms | Wins: 30883
+  Comparisons: 169087 | Loops: 246566 | Operations: 838373
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.881634ms | Wins: 24107
+  Comparisons: 169111 | Loops: 247015 | Operations: 838882
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.900963ms | Wins: 20450
+  Comparisons: 169140 | Loops: 247135 | Operations: 839096
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.8767ms | Wins: 19305
+  Comparisons: 169156 | Loops: 247186 | Operations: 839151
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.89844ms | Wins: 6716
+  Comparisons: 169336 | Loops: 252375 | Operations: 852182
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.824143ms | Wins: 6381
+  Comparisons: 169580 | Loops: 247724 | Operations: 840999
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.936723ms | Wins: 759
+  Comparisons: 169739 | Loops: 258235 | Operations: 864541
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.937477ms | Wins: 607
+  Comparisons: 169849 | Loops: 258092 | Operations: 864396
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.831364ms | Wins: 0
+  Comparisons: 173975 | Loops: 244209 | Operations: 841418
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.80246ms | Wins: 0
+  Comparisons: 174834 | Loops: 245103 | Operations: 844887
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.823076ms | Wins: 0
+  Comparisons: 191614 | Loops: 253771 | Operations: 894074
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.825216ms | Wins: 0
+  Comparisons: 196912 | Loops: 259173 | Operations: 915028
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.709865ms | Wins: 0
+  Comparisons: 197297 | Loops: 259554 | Operations: 916694
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.784141ms | Wins: 0
+  Comparisons: 199186 | Loops: 261533 | Operations: 924070
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.681271ms | Wins: 0
+  Comparisons: 245492 | Loops: 299159 | Operations: 1.09098e+06
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.775896ms | Wins: 0
+  Comparisons: 255410 | Loops: 309119 | Operations: 1.13061e+06
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.913625ms | Wins: 0
+  Comparisons: 407680 | Loops: 452550 | Operations: 1.72128e+06
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 1.16757ms | Wins: 0
+  Comparisons: 722027 | Loops: 757979 | Operations: 2.96042e+06
+
+------------------------------------------------- 10000 --------------------------------------------------
+
+Results:
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.896296ms | Wins: 197813
+  Comparisons: 189693 | Loops: 283132 | Operations: 954763
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.901311ms | Wins: 186265
+  Comparisons: 189725 | Loops: 281712 | Operations: 952111
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 1.01997ms | Wins: 194411
+  Comparisons: 189738 | Loops: 281555 | Operations: 951992
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 1.02293ms | Wins: 149194
+  Comparisons: 189874 | Loops: 280341 | Operations: 948972
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.992224ms | Wins: 64046
+  Comparisons: 190387 | Loops: 276710 | Operations: 941735
+
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.969505ms | Wins: 62173
+  Comparisons: 190407 | Loops: 276493 | Operations: 941649
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.993453ms | Wins: 23969
+  Comparisons: 190631 | Loops: 283722 | Operations: 958284
+
+SEJ: 8627 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.985369ms | Wins: 37034
+  Comparisons: 190733 | Loops: 276742 | Operations: 943713
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 1.02848ms | Wins: 10675
+  Comparisons: 190887 | Loops: 283926 | Operations: 959042
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.989991ms | Wins: 17660
+  Comparisons: 190920 | Loops: 277723 | Operations: 944466
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.908159ms | Wins: 19224
+  Comparisons: 191005 | Loops: 277484 | Operations: 944399
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 1.00752ms | Wins: 10892
+  Comparisons: 191085 | Loops: 278080 | Operations: 945169
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 1.03939ms | Wins: 3277
+  Comparisons: 191097 | Loops: 290593 | Operations: 973365
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.980737ms | Wins: 11502
+  Comparisons: 191123 | Loops: 278027 | Operations: 945247
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.990148ms | Wins: 7775
+  Comparisons: 191196 | Loops: 278226 | Operations: 945646
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 1.03116ms | Wins: 2537
+  Comparisons: 191238 | Loops: 290481 | Operations: 973282
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.914983ms | Wins: 1553
+  Comparisons: 191808 | Loops: 278952 | Operations: 948253
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.942836ms | Wins: 0
+  Comparisons: 197668 | Loops: 275902 | Operations: 952428
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.86029ms | Wins: 0
+  Comparisons: 198712 | Loops: 276981 | Operations: 956633
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.883282ms | Wins: 0
+  Comparisons: 219708 | Loops: 288865 | Operations: 1.02057e+06
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.918622ms | Wins: 0
+  Comparisons: 226809 | Loops: 296070 | Operations: 1.04872e+06
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.819802ms | Wins: 0
+  Comparisons: 227067 | Loops: 296324 | Operations: 1.04988e+06
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.909704ms | Wins: 0
+  Comparisons: 229692 | Loops: 299039 | Operations: 1.06018e+06
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.780809ms | Wins: 0
+  Comparisons: 287266 | Loops: 346933 | Operations: 1.27012e+06
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.935429ms | Wins: 0
+  Comparisons: 299728 | Loops: 359437 | Operations: 1.31992e+06
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 1.0517ms | Wins: 0
+  Comparisons: 487884 | Loops: 537754 | Operations: 2.05212e+06
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 1.37038ms | Wins: 0
+  Comparisons: 875558 | Loops: 915510 | Operations: 3.58255e+06
+
+------------------------------------------------- 100000 --------------------------------------------------

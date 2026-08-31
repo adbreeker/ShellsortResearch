@@ -13,7 +13,7 @@
 #include "Components/FilesManagement.hpp"
 #include "omp.h"
 
-const unsigned long SORTING_RANGE = 500; 
+const unsigned long SORTING_RANGE = 1000; 
 
 void PrintResults(std::vector<Result>& results, int topN = 10)
 {
@@ -32,8 +32,40 @@ int main()
 {
     std::string path = "Results/FinalSets/CompEval-WinningSequences.txt";
     std::vector<GapSequence> filesGaps = files::GetGapsFromFile(path);
-    auto results = CompareShellsorts(SORTING_RANGE, filesGaps, 100000);
+    int ranges[] = {100, 250, 500, 750, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 100000};
+
+    for(int range : ranges)
+    {
+        std::cout << "------------------------------------------------- " << range << " --------------------------------------------------" << std::endl;
+        std::vector<GapSequence> finalGroup = filesGaps;
+        finalGroup.push_back(GetTokudaGaps(range));
+        finalGroup.push_back(GetCiuraGaps(range));
+        finalGroup.push_back(GetLeeGaps(range));
+        finalGroup.push_back(GetSkeanEhrenborgJaromczykGaps(range));
+        auto results = CompareShellsorts(range, finalGroup, 1000000);
+        PrintResults(results, results.size());
+    }
+
+    std::cout << "------------------------------------------------- Dynamic Ranges --------------------------------------------------" << std::endl;
+    std::vector<GapSequence> finalGroup = filesGaps;
+    finalGroup.push_back(GetTokudaGaps(10000));
+    finalGroup.push_back(GetCiuraGaps(10000));
+    finalGroup.push_back(GetLeeGaps(10000));
+    finalGroup.push_back(GetSkeanEhrenborgJaromczykGaps(10000));
+    auto results = CompareShellsorts_DynamicRanges(finalGroup, 1000000);
     PrintResults(results, results.size());
+
+
+    std::cout << " ---------------------------------- Final Dynamic Benchmark ----------------------------------" << std::endl;
+    std::vector<GapSequence> finalBenchmarkGroup = 
+    {
+        GetTokudaGaps(10000),
+        GetCiuraGaps(10000),
+        GetLeeGaps(10000),
+        GetSkeanEhrenborgJaromczykGaps(10000)
+    };
+    auto benchmarkResults = CompareShellsorts_DynamicRanges(finalBenchmarkGroup, 100000);
+    PrintResults(benchmarkResults, 4);
 }
 
 
