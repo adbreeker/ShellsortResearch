@@ -1557,3 +1557,116 @@ L100_525480|Random|20: 38 9 4 1
   Comparisons: 875558 | Loops: 915510 | Operations: 3.58255e+06
 
 ------------------------------------------------- 100000 --------------------------------------------------
+
+
+
+------------------------------------------------- Dynamic Ranges --------------------------------------------------
+
+Results:
+Lmerge_10000-3715|Child|2|Mutated: 2600 783 313 132 57 23 10 4 1 
+  Time: 0.461889ms | Wins: 110028
+  Comparisons: 89130.4 | Loops: 130980 | Operations: 444542
+
+C8000_42369|Child_CrossABC2|2: 5433 1558 555 270 115 56 21 10 4 1 
+  Time: 0.461095ms | Wins: 73111
+  Comparisons: 89179.3 | Loops: 133193 | Operations: 449116
+
+C7000_40037|Child_CrossABC1|1: 2244 868 324 155 57 23 10 4 1 
+  Time: 0.461489ms | Wins: 89574
+  Comparisons: 89207.5 | Loops: 131217 | Operations: 445218
+
+C9000_19647|Child_Cross12|25: 5398 1620 653 285 138 61 24 9 4 1 
+  Time: 0.471534ms | Wins: 67285
+  Comparisons: 89217.1 | Loops: 133056 | Operations: 449012
+
+L5000_3266|Child|2|Mutated: 1977 701 301 132 57 23 10 4 1 
+  Time: 0.480376ms | Wins: 76964
+  Comparisons: 89233.2 | Loops: 131656 | Operations: 445994
+
+L8000_480|Child|18: 1785 701 301 132 57 23 10 4 1 
+  Time: 0.471264ms | Wins: 56138
+  Comparisons: 89307 | Loops: 131888 | Operations: 446522
+
+C10000_13416|Child_CrossABC1|1: 4057 1438 610 252 119 57 23 10 4 1 
+  Time: 0.462022ms | Wins: 43968
+  Comparisons: 89312.5 | Loops: 134117 | Operations: 451593
+
+C6000_12081|Child_CrossABC1|7: 2330 702 278 127 57 21 10 4 1 
+  Time: 0.424928ms | Wins: 67351
+  Comparisons: 89319.7 | Loops: 131492 | Operations: 445864
+
+L10000_17024|Child_Avg|15: 6477 1834 695 299 127 69 27 10 4 1 
+  Time: 0.485125ms | Wins: 45535
+  Comparisons: 89334.8 | Loops: 132498 | Operations: 447965
+
+Ciura: 1750 701 301 132 57 23 10 4 1 
+  Time: 0.489571ms | Wins: 50623
+  Comparisons: 89337.8 | Loops: 131947 | Operations: 446688
+
+C5000_21257|Child_Avg|11: 1865 707 306 132 57 23 10 4 1 
+  Time: 0.481512ms | Wins: 59206
+  Comparisons: 89342.9 | Loops: 131847 | Operations: 446552
+
+C4000_50875|Survivor|1: 1745 634 269 122 57 23 10 4 1 
+  Time: 0.437834ms | Wins: 40990
+  Comparisons: 89493.5 | Loops: 132212 | Operations: 447479
+
+SEJ: 8627 3313 1272 488 187 72 27 10 4 1 
+  Time: 0.468317ms | Wins: 43905
+  Comparisons: 89565.3 | Loops: 130317 | Operations: 444386
+
+L100000_60|Child_CrossABC2|8: 23583 9709 3857 1875 886 348 141 67 23 10 4 1 
+  Time: 0.484903ms | Wins: 20404
+  Comparisons: 89642.9 | Loops: 133823 | Operations: 451977
+
+Lee: 5831 2599 1158 516 230 102 45 20 9 4 1 
+  Time: 0.499531ms | Wins: 1738
+  Comparisons: 89935 | Loops: 136989 | Operations: 458724
+
+C100000_1494|Child_Avg|59: 26712 10322 3899 1749 698 352 160 71 28 11 4 1 
+  Time: 0.480164ms | Wins: 4551
+  Comparisons: 89941.8 | Loops: 134338 | Operations: 453502
+
+Tokuda: 5985 2660 1182 525 233 103 46 20 9 4 1 
+  Time: 0.500321ms | Wins: 1853
+  Comparisons: 89956.3 | Loops: 136866 | Operations: 458507
+
+C3000_72159|Child_CrossABC2|8: 1196 341 138 61 24 9 4 1 
+  Time: 0.465722ms | Wins: 39541
+  Comparisons: 90982.3 | Loops: 129655 | Operations: 444650
+
+C2000_13244|Child_CrossABC2|2: 1184 335 127 57 21 10 4 1 
+  Time: 0.43083ms | Wins: 32974
+  Comparisons: 91320.7 | Loops: 130027 | Operations: 446045
+
+L1000_16915|Child_ABC1|16|Mutated: 599 156 57 23 10 4 1 
+  Time: 0.462643ms | Wins: 13795
+  Comparisons: 97644.8 | Loops: 132143 | Operations: 461952
+
+C500_416614|Child_Cross12|13: 462 189 57 23 10 4 1 
+  Time: 0.454529ms | Wins: 14122
+  Comparisons: 99655.1 | Loops: 134251 | Operations: 469938
+
+C750_598|Child_CrossABC2|8: 510 148 54 23 10 4 1 
+  Time: 0.39847ms | Wins: 13140
+  Comparisons: 99917 | Loops: 134511 | Operations: 471049
+
+C1000_402399|Child_CrossABC2|2: 409 156 57 23 10 4 1 
+  Time: 0.431469ms | Wins: 15981
+  Comparisons: 100337 | Loops: 135017 | Operations: 472684
+
+C250_24622|Child_Cross12|45: 221 80 23 10 4 1 
+  Time: 0.354322ms | Wins: 7509
+  Comparisons: 119104 | Loops: 149053 | Operations: 537624
+
+L500_9714|Child_ABC1|28: 202 57 23 10 4 1 
+  Time: 0.44856ms | Wins: 5951
+  Comparisons: 123010 | Loops: 153001 | Operations: 553239
+
+C100_1019|Child_CrossABC1|7: 88 33 9 4 1 
+  Time: 0.490328ms | Wins: 2963
+  Comparisons: 185515 | Loops: 210619 | Operations: 792944
+
+L100_525480|Random|20: 38 9 4 1 
+  Time: 0.573151ms | Wins: 800
+  Comparisons: 316214 | Loops: 336354 | Operations: 1.30548e+06
