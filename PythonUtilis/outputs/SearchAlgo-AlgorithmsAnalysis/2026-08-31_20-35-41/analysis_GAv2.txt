@@ -1,0 +1,127 @@
+============================================================
+  GAv2 Analysis
+============================================================
+
+1. Number of sequences generated: 55
+
+2. Population Intervals Between Sequences:
+   Average: 119.80
+   Median:  75.00
+   Minimum: 1
+   Maximum: 594
+   Std Dev: 131.28
+
+3. Sequence Statistics:
+   Min sequence: [1750, 692, 301, 132, 57, 23, 10, 4, 1]
+   Avg sequence: [2138.6, 779.35, 310.16, 132.0, 57.0, 23.0, 10.0, 4.0, 1.0]
+   Max sequence: [2600, 881, 313, 132, 57, 23, 10, 4, 1]
+
+   Position-by-position (Aligned from End):
+   Pos     Min        Avg          Max       
+   ---------------------------------------
+   1       1          1.00         1         
+   2       4          4.00         4         
+   3       10         10.00        10        
+   4       23         23.00        23        
+   5       57         57.00        57        
+   6       132        132.00       132       
+   7       301        310.16       313       
+   8       692        779.35       881       
+   9       1750       2138.60      2600      
+
+4. Sequence Endings (from 1):
+
+   Last 1 element(s) - 55 sequences, 1 unique patterns:
+      [1]: 55 times (100.00%)
+
+   Last 2 element(s) - 55 sequences, 1 unique patterns:
+      [4, 1]: 55 times (100.00%)
+
+   Last 3 element(s) - 55 sequences, 1 unique patterns:
+      [10, 4, 1]: 55 times (100.00%)
+
+   Last 4 element(s) - 55 sequences, 1 unique patterns:
+      [23, 10, 4, 1]: 55 times (100.00%)
+
+   Last 5 element(s) - 55 sequences, 1 unique patterns:
+      [57, 23, 10, 4, 1]: 55 times (100.00%)
+
+   Last 6 element(s) - 55 sequences, 1 unique patterns:
+      [132, 57, 23, 10, 4, 1]: 55 times (100.00%)
+
+   Last 7 element(s) - 55 sequences, 2 unique patterns:
+      [313, 132, 57, 23, 10, 4, 1]: 42 times (76.36%)
+      [301, 132, 57, 23, 10, 4, 1]: 13 times (23.64%)
+
+   Last 8 element(s) - 55 sequences, 22 unique patterns:
+      [783, 313, 132, 57, 23, 10, 4, 1]: 27 times (49.09%)
+      [701, 301, 132, 57, 23, 10, 4, 1]: 6 times (10.91%)
+      [783, 301, 132, 57, 23, 10, 4, 1]: 2 times (3.64%)
+      [858, 313, 132, 57, 23, 10, 4, 1]: 2 times (3.64%)
+      [692, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [726, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [738, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [786, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [764, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [818, 313, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+
+   Last 9 element(s) - 55 sequences, 55 unique patterns:
+      [1750, 692, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [2019, 726, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [1772, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [1863, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [2085, 738, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [1841, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [1922, 786, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [2085, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [1997, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+      [2087, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (1.82%)
+
+5. Most Common Gaps by Position (from 1):
+
+   Position 1 (from end) - 55 valid gaps, 1 unique values:
+      Gap [1]: 55 times (100.00%)
+
+   Position 2 (from end) - 55 valid gaps, 1 unique values:
+      Gap [4]: 55 times (100.00%)
+
+   Position 3 (from end) - 55 valid gaps, 1 unique values:
+      Gap [10]: 55 times (100.00%)
+
+   Position 4 (from end) - 55 valid gaps, 1 unique values:
+      Gap [23]: 55 times (100.00%)
+
+   Position 5 (from end) - 55 valid gaps, 1 unique values:
+      Gap [57]: 55 times (100.00%)
+
+   Position 6 (from end) - 55 valid gaps, 1 unique values:
+      Gap [132]: 55 times (100.00%)
+
+   Position 7 (from end) - 55 valid gaps, 2 unique values:
+      Gap [313]: 42 times (76.36%)
+      Gap [301]: 13 times (23.64%)
+
+   Position 8 (from end) - 55 valid gaps, 21 unique values:
+      Gap [783]: 29 times (52.73%)
+      Gap [701]: 6 times (10.91%)
+      Gap [858]: 2 times (3.64%)
+      Gap [692]: 1 times (1.82%)
+      Gap [726]: 1 times (1.82%)
+
+   Position 9 (from end) - 55 valid gaps, 37 unique values:
+      Gap [2213]: 14 times (25.45%)
+      Gap [2090]: 4 times (7.27%)
+      Gap [2085]: 2 times (3.64%)
+      Gap [2087]: 2 times (3.64%)
+      Gap [1750]: 1 times (1.82%)
+
+6. Sequence Types & Flags:
+   Total Unique Types: 2
+   ---------------------------------------
+   Child                   43 ( 78.2%)
+   Survivor                12 ( 21.8%)
+
+   Flags Detected:
+   ---------------------------------------
+   Contains |Mutated:      46 ( 83.6%)
+   Contains |Validated:     0 (  0.0%)

@@ -1,0 +1,105 @@
+============================================================
+  GAv1 Analysis
+============================================================
+
+1. Number of sequences generated: 1
+
+2. Population Intervals Between Sequences:
+   Average: 0.00
+   Median:  0.00
+   Minimum: 0
+   Maximum: 0
+   Std Dev: 0.00
+
+3. Sequence Statistics:
+   Min sequence: [7064, 2034, 795, 290, 125, 67, 23, 10, 4, 1]
+   Avg sequence: [7064.0, 2034.0, 795.0, 290.0, 125.0, 67.0, 23.0, 10.0, 4.0, 1.0]
+   Max sequence: [7064, 2034, 795, 290, 125, 67, 23, 10, 4, 1]
+
+   Position-by-position (Aligned from End):
+   Pos     Min        Avg          Max       
+   ---------------------------------------
+   1       1          1.00         1         
+   2       4          4.00         4         
+   3       10         10.00        10        
+   4       23         23.00        23        
+   5       67         67.00        67        
+   6       125        125.00       125       
+   7       290        290.00       290       
+   8       795        795.00       795       
+   9       2034       2034.00      2034      
+   10      7064       7064.00      7064      
+
+4. Sequence Endings (from 1):
+
+   Last 1 element(s) - 1 sequences, 1 unique patterns:
+      [1]: 1 times (100.00%)
+
+   Last 2 element(s) - 1 sequences, 1 unique patterns:
+      [4, 1]: 1 times (100.00%)
+
+   Last 3 element(s) - 1 sequences, 1 unique patterns:
+      [10, 4, 1]: 1 times (100.00%)
+
+   Last 4 element(s) - 1 sequences, 1 unique patterns:
+      [23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 5 element(s) - 1 sequences, 1 unique patterns:
+      [67, 23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 6 element(s) - 1 sequences, 1 unique patterns:
+      [125, 67, 23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 7 element(s) - 1 sequences, 1 unique patterns:
+      [290, 125, 67, 23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 8 element(s) - 1 sequences, 1 unique patterns:
+      [795, 290, 125, 67, 23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 9 element(s) - 1 sequences, 1 unique patterns:
+      [2034, 795, 290, 125, 67, 23, 10, 4, 1]: 1 times (100.00%)
+
+   Last 10 element(s) - 1 sequences, 1 unique patterns:
+      [7064, 2034, 795, 290, 125, 67, 23, 10, 4, 1]: 1 times (100.00%)
+
+5. Most Common Gaps by Position (from 1):
+
+   Position 1 (from end) - 1 valid gaps, 1 unique values:
+      Gap [1]: 1 times (100.00%)
+
+   Position 2 (from end) - 1 valid gaps, 1 unique values:
+      Gap [4]: 1 times (100.00%)
+
+   Position 3 (from end) - 1 valid gaps, 1 unique values:
+      Gap [10]: 1 times (100.00%)
+
+   Position 4 (from end) - 1 valid gaps, 1 unique values:
+      Gap [23]: 1 times (100.00%)
+
+   Position 5 (from end) - 1 valid gaps, 1 unique values:
+      Gap [67]: 1 times (100.00%)
+
+   Position 6 (from end) - 1 valid gaps, 1 unique values:
+      Gap [125]: 1 times (100.00%)
+
+   Position 7 (from end) - 1 valid gaps, 1 unique values:
+      Gap [290]: 1 times (100.00%)
+
+   Position 8 (from end) - 1 valid gaps, 1 unique values:
+      Gap [795]: 1 times (100.00%)
+
+   Position 9 (from end) - 1 valid gaps, 1 unique values:
+      Gap [2034]: 1 times (100.00%)
+
+   Position 10 (from end) - 1 valid gaps, 1 unique values:
+      Gap [7064]: 1 times (100.00%)
+
+6. Sequence Types & Flags:
+   Total Unique Types: 1
+   ---------------------------------------
+   Child                    1 (100.0%)
+
+   Flags Detected:
+   ---------------------------------------
+   Contains |Mutated:       0 (  0.0%)
+   Contains |Validated:     0 (  0.0%)
