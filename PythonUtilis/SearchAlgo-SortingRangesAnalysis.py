@@ -62,6 +62,8 @@ def parse_file(filepath, max_pops=None, max_seqs=None):
     with open(filepath, 'r') as f:
         for line in f:
             line = line.strip()
+            if line == "###":
+                break  # Stop parsing at the end marker
             if not line: continue
             
             # Check strictly for the NEW format: {population}|{type}|{index}...
@@ -84,6 +86,7 @@ def parse_file(filepath, max_pops=None, max_seqs=None):
                 header_parts = header.split('|')
                 type_val = header_parts[1].strip() if len(header_parts) > 1 else "Unknown"
                 
+                # Check for mutated and validated flags
                 is_mutated = 'Mutated' in header
                 is_validated = 'Validated' in header
                 

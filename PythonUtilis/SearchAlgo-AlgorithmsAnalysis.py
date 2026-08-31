@@ -54,6 +54,8 @@ def parse_file(filepath):
     with open(filepath, 'r') as f:
         for line in f:
             line = line.strip()
+            if line == "###":
+                break  # Stop parsing at the end marker
             if not line: 
                 continue
             
