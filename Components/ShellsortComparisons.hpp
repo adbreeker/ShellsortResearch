@@ -25,6 +25,18 @@ struct Result
     }
 };
 
+void PrintResults(std::vector<Result>& results, int topN = 10)
+{
+    std::cout << "\nResults:\n";
+    for (int i = 0; i < std::min(topN, static_cast<int>(results.size())); ++i)
+    {
+        auto& r = results[i];
+        r.gapSequence.PrintInstance();
+        std::cout << "\n  Time: " << r.time << "ms | Wins: " << r.wins
+            << "\n  Comparisons: " << r.comparisons << " | Loops: " << r.loops << " | Operations: " << r.operations << "\n\n";
+    }
+}
+
 double MeasureShellsort_Time(std::vector<int> data, GapSequence gapSequence)
 {
     auto start = std::chrono::high_resolution_clock::now();
