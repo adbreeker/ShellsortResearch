@@ -3,6 +3,7 @@ import re
 from datetime import datetime
 from collections import Counter
 import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
 import numpy as np
 
 # --- CONFIGURATION ---
@@ -27,10 +28,19 @@ FILES = {
     "8000": "CandidateGapSequences_8000.txt",
     "9000": "CandidateGapSequences_9000.txt",
     "10000": "CandidateGapSequences_10000.txt",
-    "100000": "CandidateGapSequences_100000.txt",
-    "Merge": "CandidateGapSequences_Merge.txt",
-    "Supreme": "GapSequences_Supreme.txt",
+    # "100000": "CandidateGapSequences_100000.txt",
+    # "Merge": "CandidateGapSequences_Merge.txt",
+    # "Supreme": "GapSequences_Supreme.txt",
 }
+
+# --- HELPER FUNCTIONS ---
+def strike(text):
+    """Applies a unicode strikethrough to the text string."""
+    return ''.join([c + '\u0336' for c in text])
+
+def sort_key(k):
+    """Global sorting key for ordering numeric ranges first, then custom strings."""
+    return (0, int(k)) if k.isdigit() else (1, k)
 
 # --- BASE LOGIC ---
 def parse_file(filepath):
@@ -146,42 +156,109 @@ def export_to_txt(results_dict):
 
 # --- CHARTS ---
 def plot_ratios(results_dict):
-    """Histogram of ratios between gaps."""
+    """Histogram of ratios between gaps (Absolute)."""
     plt.figure(figsize=(10, 6))
     
+    # Sort for plotting: Largest amounts first, so they are drawn at the back
     sorted_items = sorted(results_dict.items(), key=lambda x: len(x[1]['ratios']['all_ratios']), reverse=True)
     
-    for range_val, data in sorted_items:
+    cmap = plt.get_cmap('tab20')
+    colors = [cmap(i % 20) for i in range(len(sorted_items))]
+    
+    handles_dict = {}
+    labels_dict = {}
+    
+    for i, (range_val, data) in enumerate(sorted_items):
         ratios = data['ratios']['all_ratios']
         ratios = [r for r in ratios if r < 5.0] 
-        plt.hist(ratios, bins=50, alpha=0.75, label=f'Range {range_val}', edgecolor='black')
         
-    plt.title('Distribution of Gaps Ratios (Absolute Counts, Excluding Final Gap)')
+        label_text = f'Range {range_val}'
+        plt.hist(ratios, bins=50, edgecolor='black', color=colors[i])
+        
+        # Save a proxy patch for the legend
+        handles_dict[range_val] = mpatches.Patch(facecolor=colors[i], edgecolor='black')
+        labels_dict[range_val] = label_text
+        
+    # Sort legend items by range size instead of rendering order
+    ordered_keys = sorted(results_dict.keys(), key=sort_key)
+    ordered_handles = [handles_dict[k] for k in ordered_keys]
+    ordered_labels = [labels_dict[k] for k in ordered_keys]
+        
+    plt.title('Distribution of Gaps Ratios (Absolute Counts, Excluding Final Gap [1])')
     plt.xlabel('Gap Ratio (h[i] / h[i+1])')
     plt.ylabel('Frequency')
-    plt.legend()
+    plt.legend(ordered_handles, ordered_labels)
     plt.grid(alpha=0.3)
     plt.savefig(f'{OUTPUT_DIR}/plot_ratios_absolute.png')
     plt.close()
 
 def plot_ratios_normalized(results_dict):
-    """Normalized histogram of ratios between gaps."""
+    """Normalized histogram of ratios between gaps (Percentage)."""
     plt.figure(figsize=(10, 6))
     
+    # Sortujemy by przypisać kolory w tej samej kolejności co na wykresie absolutnym
     sorted_items = sorted(results_dict.items(), key=lambda x: len(x[1]['ratios']['all_ratios']), reverse=True)
     
+    all_valid_ratios = []
+    for _, data in sorted_items:
+        all_valid_ratios.extend([r for r in data['ratios']['all_ratios'] if r < 5.0])
+        
+    if not all_valid_ratios:
+        return
+        
+    shared_bins = np.linspace(min(all_valid_ratios), max(all_valid_ratios), 100)
+    bin_widths = np.diff(shared_bins)
+    bin_centers = shared_bins[:-1] + bin_widths / 2
+    
+    cmap = plt.get_cmap('tab20')
+    # Przypisujemy stały kolor dla danego zakresu
+    colors_dict = {range_val: cmap(i % 20) for i, (range_val, _) in enumerate(sorted_items)}
+    
+    handles_dict = {}
+    labels_dict = {}
+    hist_data = {}
+    
+    # 1. Obliczanie wysokości słupków dla każdego zestawu (bez ich rysowania)
     for range_val, data in sorted_items:
         ratios = data['ratios']['all_ratios']
         ratios = [r for r in ratios if r < 5.0] 
         
-        # density=True normalizes the data so the area under the histogram equals 1
-        plt.hist(ratios, bins=50, alpha=0.6, label=f'Range {range_val}', edgecolor='black', density=True)
+        label_text = f'Range {range_val}'
         
-    plt.title('Normalized Distribution of Gaps Ratios (Excluding Final Gap)')
+        if data['num_seqs'] < 100:
+            label_text = strike(label_text)
+            hist_data[range_val] = np.zeros(len(bin_centers)) # Zera, żeby pominąć na wykresie
+        else:
+            weights = np.ones(len(ratios)) / len(ratios) * 100
+            counts, _ = np.histogram(ratios, bins=shared_bins, weights=weights)
+            hist_data[range_val] = counts
+            
+        handles_dict[range_val] = mpatches.Patch(facecolor=colors_dict[range_val], edgecolor='black')
+        labels_dict[range_val] = label_text
+        
+    # 2. Rysowanie ręczne przedział po przedziale (wymusza odpowiedni Z-index per przedział)
+    for bin_idx in range(len(bin_centers)):
+        # Pobierz wszystkie wartości w tym konkretnym słupku/koszyku
+        bin_heights = [(r_val, hist_data[r_val][bin_idx]) for r_val in hist_data]
+        
+        # Posortuj słupki w tym koszyku malejąco (najwyższy będzie narysowany jako pierwszy - na samym dole)
+        bin_heights.sort(key=lambda x: x[1], reverse=True)
+        
+        for r_val, height in bin_heights:
+            if height > 0:
+                plt.bar(bin_centers[bin_idx], height, width=bin_widths[bin_idx], 
+                        color=colors_dict[r_val], edgecolor='black', zorder=3)
+        
+    # Sortowanie legendy po kluczu Range
+    ordered_keys = sorted(results_dict.keys(), key=sort_key)
+    ordered_handles = [handles_dict[k] for k in ordered_keys]
+    ordered_labels = [labels_dict[k] for k in ordered_keys]
+        
+    plt.title('Normalized Distribution of Gaps Ratios (Excluding Final Gap [1])')
     plt.xlabel('Gap Ratio (h[i] / h[i+1])')
-    plt.ylabel('Density (Relative Frequency)')
-    plt.legend()
-    plt.grid(alpha=0.3)
+    plt.ylabel('Percentage (%)')
+    plt.legend(ordered_handles, ordered_labels)
+    plt.grid(alpha=0.3, zorder=0) # Zorder 0 trzyma siatkę pod słupkami
     plt.savefig(f'{OUTPUT_DIR}/plot_ratios_normalized.png')
     plt.close()
 
@@ -195,12 +272,16 @@ def plot_knuth_bounds(results_dict):
     
     avg_gaps = [results_dict[str(r)]['bounds']['avg_largest_gap'] for r in ranges]
     knuth_bounds = [r / 3.0 for r in ranges]
+    half_bounds = [r / 2.0 for r in ranges]
+    same_bounds = [r for r in ranges]
     
     plt.figure(figsize=(10, 6))
     plt.plot(ranges, avg_gaps, marker='o', linestyle='-', linewidth=2, label='Average largest generated gap')
-    plt.plot(ranges, knuth_bounds, marker='x', linestyle='--', linewidth=2, color='red', label="Knuth's bound (N/3)")
+    plt.plot(ranges, knuth_bounds, marker=None, linestyle='--', linewidth=2, color='red', label="Knuth's bound (N/3)")
+    plt.plot(ranges, half_bounds, marker=None, linestyle='--', linewidth=2, color='orange', label="Half of range (N/2)")
+    plt.plot(ranges, same_bounds, marker=None, linestyle='--', linewidth=2, color='purple', label="Full range (N)")
     
-    plt.title('Relationship of the largest gap to the sorting range')
+    plt.title('Relationship of the average largest increment to the sorting range')
     plt.xlabel('Range size (N)')
     plt.ylabel('Value of the initial gap (Largest Gap)')
     plt.legend()
@@ -210,10 +291,6 @@ def plot_knuth_bounds(results_dict):
 
 def plot_largest_gaps_stats(results_dict):
     """Plot of the Smallest, Average, and Biggest initial gap for all files."""
-    # Sort keys: numeric strings numerically first, then alphabetical strings
-    def sort_key(k):
-        return (0, int(k)) if k.isdigit() else (1, k)
-        
     categories = sorted(results_dict.keys(), key=sort_key)
     
     mins = [results_dict[k]['bounds']['min_largest_gap'] for k in categories]
@@ -222,26 +299,50 @@ def plot_largest_gaps_stats(results_dict):
     
     plt.figure(figsize=(14, 7))
     
+    # Główne linie (wygenerowane odstępy)
     plt.plot(categories, maxs, marker='^', linestyle='-', color='red', label='Biggest Gap')
     plt.plot(categories, avgs, marker='o', linestyle='-', color='blue', label='Average Gap')
     plt.plot(categories, mins, marker='v', linestyle='-', color='green', label='Smallest Gap')
     
-    # Annotate values directly on the plot
-    y_max = max(maxs) if maxs else 100
-    offset = y_max * 0.02
+    # -------------------------------------------------------------
+    # Dodanie przerywanych linii dla 1/1, 1/2 i 1/3 zakresu sortowania
+    # -------------------------------------------------------------
+    x_numeric = []
+    y_1_1 = []
+    y_1_2 = []
+    y_1_3 = []
     
+    for cat in categories:
+        if cat.isdigit():
+            n = int(cat)
+            x_numeric.append(cat) # Używamy stringa, by idealnie wpasowało się w oś X
+            y_1_1.append(n)
+            y_1_2.append(n / 2.0)
+            y_1_3.append(n / 3.0)
+            
+    if x_numeric:
+        plt.plot(x_numeric, y_1_1, linestyle='--', color='purple', alpha=0.5, label='1/1 Sorting Range (N)')
+        plt.plot(x_numeric, y_1_2, linestyle='--', color='orange', alpha=0.5, label='1/2 Sorting Range (N/2)')
+        plt.plot(x_numeric, y_1_3, linestyle='--', color='gray', alpha=0.5, label='1/3 Sorting Range (N/3)')
+    
+    # Obliczenie odpowiedniego limitu osi Y i offsetu na adnotacje 
+    # (uwzględnia nową, bardzo wysoką linię 1/1 N)
+    max_generated = max(maxs) if maxs else 0
+    absolute_max = max(y_1_1) if y_1_1 and max(y_1_1) > max_generated else max_generated
+    offset = max_generated * 0.03  # Offset bazujemy na wygenerowanych danych, by nie odleciał w kosmos
+    
+    # Anotacje wartości bezpośednio nad/pod punktami
     for i, cat in enumerate(categories):
-        plt.text(i, maxs[i] + offset, f"{maxs[i]:.0f}", ha='center', va='bottom', fontsize=8, color='darkred')
+        plt.text(i, maxs[i] + 2*offset, f"{maxs[i]:.0f}", ha='center', va='bottom', fontsize=8, color='darkred')
         plt.text(i, avgs[i] + offset, f"{avgs[i]:.0f}", ha='center', va='bottom', fontsize=8, color='darkblue')
         plt.text(i, mins[i] - offset, f"{mins[i]:.0f}", ha='center', va='top', fontsize=8, color='darkgreen')
         
-    plt.title('Smallest, Average, and Biggest Initial Gap (First Element)')
+    plt.title('Smallest, Average, and Biggest Initial Gap vs Theoretical Bounds')
     plt.xlabel('File / Range')
     plt.ylabel('Gap Value')
     plt.xticks(rotation=45)
     
-    # Increase y-limit slightly to fit the top annotations
-    plt.ylim(bottom=-offset*2, top=y_max + (offset * 3))
+    plt.ylim(bottom=-offset*2, top=absolute_max * 1.1)
     plt.legend()
     plt.grid(alpha=0.3)
     plt.tight_layout()
