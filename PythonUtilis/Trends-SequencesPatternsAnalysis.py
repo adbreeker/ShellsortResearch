@@ -196,7 +196,7 @@ def plot_ratios_normalized(results_dict):
     """Normalized histogram of ratios between gaps (Percentage)."""
     plt.figure(figsize=(10, 6))
     
-    # Sortujemy by przypisać kolory w tej samej kolejności co na wykresie absolutnym
+    # Sort to assign colors in the same order as in the absolute plot
     sorted_items = sorted(results_dict.items(), key=lambda x: len(x[1]['ratios']['all_ratios']), reverse=True)
     
     all_valid_ratios = []
@@ -211,14 +211,14 @@ def plot_ratios_normalized(results_dict):
     bin_centers = shared_bins[:-1] + bin_widths / 2
     
     cmap = plt.get_cmap('tab20')
-    # Przypisujemy stały kolor dla danego zakresu
+    # Assign fixed color for each range
     colors_dict = {range_val: cmap(i % 20) for i, (range_val, _) in enumerate(sorted_items)}
     
     handles_dict = {}
     labels_dict = {}
     hist_data = {}
     
-    # 1. Obliczanie wysokości słupków dla każdego zestawu (bez ich rysowania)
+    # 1. Calculate bar heights for each dataset (without drawing them)
     for range_val, data in sorted_items:
         ratios = data['ratios']['all_ratios']
         ratios = [r for r in ratios if r < 5.0] 
@@ -227,7 +227,7 @@ def plot_ratios_normalized(results_dict):
         
         if data['num_seqs'] < 100:
             label_text = strike(label_text)
-            hist_data[range_val] = np.zeros(len(bin_centers)) # Zera, żeby pominąć na wykresie
+            hist_data[range_val] = np.zeros(len(bin_centers)) # Zeros to skip in chart
         else:
             weights = np.ones(len(ratios)) / len(ratios) * 100
             counts, _ = np.histogram(ratios, bins=shared_bins, weights=weights)
@@ -236,12 +236,12 @@ def plot_ratios_normalized(results_dict):
         handles_dict[range_val] = mpatches.Patch(facecolor=colors_dict[range_val], edgecolor='black')
         labels_dict[range_val] = label_text
         
-    # 2. Rysowanie ręczne przedział po przedziale (wymusza odpowiedni Z-index per przedział)
+    # 2. Manual per-bin drawing (enforces proper Z-index per bin)
     for bin_idx in range(len(bin_centers)):
-        # Pobierz wszystkie wartości w tym konkretnym słupku/koszyku
+        # Get all values in this specific bin
         bin_heights = [(r_val, hist_data[r_val][bin_idx]) for r_val in hist_data]
         
-        # Posortuj słupki w tym koszyku malejąco (najwyższy będzie narysowany jako pierwszy - na samym dole)
+        # Sort bars in this bin descending (highest drawn first - at bottom)
         bin_heights.sort(key=lambda x: x[1], reverse=True)
         
         for r_val, height in bin_heights:
@@ -249,7 +249,7 @@ def plot_ratios_normalized(results_dict):
                 plt.bar(bin_centers[bin_idx], height, width=bin_widths[bin_idx], 
                         color=colors_dict[r_val], edgecolor='black', zorder=3)
         
-    # Sortowanie legendy po kluczu Range
+    # Sort legend by Range key
     ordered_keys = sorted(results_dict.keys(), key=sort_key)
     ordered_handles = [handles_dict[k] for k in ordered_keys]
     ordered_labels = [labels_dict[k] for k in ordered_keys]
@@ -258,7 +258,7 @@ def plot_ratios_normalized(results_dict):
     plt.xlabel('Gap Ratio (h[i] / h[i+1])')
     plt.ylabel('Percentage (%)')
     plt.legend(ordered_handles, ordered_labels)
-    plt.grid(alpha=0.3, zorder=0) # Zorder 0 trzyma siatkę pod słupkami
+    plt.grid(alpha=0.3, zorder=0) # Zorder 0 keeps grid behind bars
     plt.savefig(f'{OUTPUT_DIR}/plot_ratios_normalized.png')
     plt.close()
 
@@ -304,9 +304,9 @@ def plot_largest_gaps_stats(results_dict):
     plt.plot(categories, avgs, marker='o', linestyle='-', color='blue', label='Average Gap')
     plt.plot(categories, mins, marker='v', linestyle='-', color='green', label='Smallest Gap')
     
-    # -------------------------------------------------------------
-    # Dodanie przerywanych linii dla 1/1, 1/2 i 1/3 zakresu sortowania
-    # -------------------------------------------------------------
+    # -------------------------------------------------------
+    # Add dashed lines for 1/1, 1/2 and 1/3 of the sorting range
+    # -------------------------------------------------------
     x_numeric = []
     y_1_1 = []
     y_1_2 = []
@@ -315,7 +315,7 @@ def plot_largest_gaps_stats(results_dict):
     for cat in categories:
         if cat.isdigit():
             n = int(cat)
-            x_numeric.append(cat) # Używamy stringa, by idealnie wpasowało się w oś X
+            x_numeric.append(cat) # We use a string to perfectly fit the X-axis
             y_1_1.append(n)
             y_1_2.append(n / 2.0)
             y_1_3.append(n / 3.0)
@@ -325,13 +325,13 @@ def plot_largest_gaps_stats(results_dict):
         plt.plot(x_numeric, y_1_2, linestyle='--', color='orange', alpha=0.5, label='1/2 Sorting Range (N/2)')
         plt.plot(x_numeric, y_1_3, linestyle='--', color='gray', alpha=0.5, label='1/3 Sorting Range (N/3)')
     
-    # Obliczenie odpowiedniego limitu osi Y i offsetu na adnotacje 
-    # (uwzględnia nową, bardzo wysoką linię 1/1 N)
+    # Calculate appropriate Y-axis limit and offset for annotations
+    # (accounts for the new, very high 1/1 N line)
     max_generated = max(maxs) if maxs else 0
     absolute_max = max(y_1_1) if y_1_1 and max(y_1_1) > max_generated else max_generated
-    offset = max_generated * 0.03  # Offset bazujemy na wygenerowanych danych, by nie odleciał w kosmos
+    offset = max_generated * 0.03  # Offset based on generated data to avoid going off the charts
     
-    # Anotacje wartości bezpośednio nad/pod punktami
+    # Annotate values directly above/below data points
     for i, cat in enumerate(categories):
         plt.text(i, maxs[i] + 2*offset, f"{maxs[i]:.0f}", ha='center', va='bottom', fontsize=8, color='darkred')
         plt.text(i, avgs[i] + offset, f"{avgs[i]:.0f}", ha='center', va='bottom', fontsize=8, color='darkblue')
