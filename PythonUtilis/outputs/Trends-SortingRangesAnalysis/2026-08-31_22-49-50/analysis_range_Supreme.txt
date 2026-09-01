@@ -1,0 +1,183 @@
+============================================================
+  Final datasets — Comparisons - Supreme Analysis
+  (Max Sequences: 100)
+============================================================
+
+1. Number of sequences generated: 10
+
+2. Population Intervals Between Sequences:
+   Average: 0.00
+   Median:  0.00
+   Minimum: 0
+   Maximum: 0
+   Std Dev: 0.00
+   (Max Pop Recorded: 0)
+
+3. Sequence Statistics:
+   Min sequence: [26712, 10322, 3899, 1438, 555, 252, 115, 56, 21, 9, 4, 1]
+   Avg sequence: [26712.0, 10322.0, 4463.0, 1864.4, 757.17, 337.5, 151.33, 64.1, 24.4, 9.9, 4.0, 1.0]
+   Max sequence: [26712, 10322, 5433, 2600, 1196, 462, 221, 88, 33, 11, 4, 1]
+
+   Position-by-position (Aligned from End):
+   Pos     Min        Avg          Max       
+   ---------------------------------------
+   1       1          1.00         1         
+   2       4          4.00         4         
+   3       9          9.90         11        
+   4       21         24.40        33        
+   5       56         64.10        88        
+   6       115        151.33       221       
+   7       252        337.50       462       
+   8       555        757.17       1196      
+   9       1438       1864.40      2600      
+   10      3899       4463.00      5433      
+   11      10322      10322.00     10322     
+   12      26712      26712.00     26712     
+
+4. Sequence Endings (from 1):
+
+   Last 1 element(s) - 10 sequences, 1 unique patterns:
+      [1]: 10 times (100.00%)
+
+   Last 2 element(s) - 10 sequences, 1 unique patterns:
+      [4, 1]: 10 times (100.00%)
+
+   Last 3 element(s) - 10 sequences, 3 unique patterns:
+      [10, 4, 1]: 7 times (70.00%)
+      [9, 4, 1]: 2 times (20.00%)
+      [11, 4, 1]: 1 times (10.00%)
+
+   Last 4 element(s) - 10 sequences, 5 unique patterns:
+      [23, 10, 4, 1]: 6 times (60.00%)
+      [33, 9, 4, 1]: 1 times (10.00%)
+      [24, 9, 4, 1]: 1 times (10.00%)
+      [21, 10, 4, 1]: 1 times (10.00%)
+      [28, 11, 4, 1]: 1 times (10.00%)
+
+   Last 5 element(s) - 10 sequences, 6 unique patterns:
+      [57, 23, 10, 4, 1]: 5 times (50.00%)
+      [88, 33, 9, 4, 1]: 1 times (10.00%)
+      [80, 23, 10, 4, 1]: 1 times (10.00%)
+      [61, 24, 9, 4, 1]: 1 times (10.00%)
+      [56, 21, 10, 4, 1]: 1 times (10.00%)
+      [71, 28, 11, 4, 1]: 1 times (10.00%)
+
+   Last 6 element(s) - 9 sequences, 8 unique patterns:
+      [132, 57, 23, 10, 4, 1]: 2 times (22.22%)
+      [221, 80, 23, 10, 4, 1]: 1 times (11.11%)
+      [189, 57, 23, 10, 4, 1]: 1 times (11.11%)
+      [156, 57, 23, 10, 4, 1]: 1 times (11.11%)
+      [138, 61, 24, 9, 4, 1]: 1 times (11.11%)
+      [115, 56, 21, 10, 4, 1]: 1 times (11.11%)
+      [119, 57, 23, 10, 4, 1]: 1 times (11.11%)
+      [160, 71, 28, 11, 4, 1]: 1 times (11.11%)
+
+   Last 7 element(s) - 8 sequences, 8 unique patterns:
+      [462, 189, 57, 23, 10, 4, 1]: 1 times (12.50%)
+      [409, 156, 57, 23, 10, 4, 1]: 1 times (12.50%)
+      [341, 138, 61, 24, 9, 4, 1]: 1 times (12.50%)
+      [313, 132, 57, 23, 10, 4, 1]: 1 times (12.50%)
+      [301, 132, 57, 23, 10, 4, 1]: 1 times (12.50%)
+      [270, 115, 56, 21, 10, 4, 1]: 1 times (12.50%)
+      [252, 119, 57, 23, 10, 4, 1]: 1 times (12.50%)
+      [352, 160, 71, 28, 11, 4, 1]: 1 times (12.50%)
+
+   Last 8 element(s) - 6 sequences, 6 unique patterns:
+      [1196, 341, 138, 61, 24, 9, 4, 1]: 1 times (16.67%)
+      [783, 313, 132, 57, 23, 10, 4, 1]: 1 times (16.67%)
+      [701, 301, 132, 57, 23, 10, 4, 1]: 1 times (16.67%)
+      [555, 270, 115, 56, 21, 10, 4, 1]: 1 times (16.67%)
+      [610, 252, 119, 57, 23, 10, 4, 1]: 1 times (16.67%)
+      [698, 352, 160, 71, 28, 11, 4, 1]: 1 times (16.67%)
+
+   Last 9 element(s) - 5 sequences, 5 unique patterns:
+      [2600, 783, 313, 132, 57, 23, 10, 4, 1]: 1 times (20.00%)
+      [1977, 701, 301, 132, 57, 23, 10, 4, 1]: 1 times (20.00%)
+      [1558, 555, 270, 115, 56, 21, 10, 4, 1]: 1 times (20.00%)
+      [1438, 610, 252, 119, 57, 23, 10, 4, 1]: 1 times (20.00%)
+      [1749, 698, 352, 160, 71, 28, 11, 4, 1]: 1 times (20.00%)
+
+   Last 10 element(s) - 3 sequences, 3 unique patterns:
+      [5433, 1558, 555, 270, 115, 56, 21, 10, 4, 1]: 1 times (33.33%)
+      [4057, 1438, 610, 252, 119, 57, 23, 10, 4, 1]: 1 times (33.33%)
+      [3899, 1749, 698, 352, 160, 71, 28, 11, 4, 1]: 1 times (33.33%)
+
+   Last 11 element(s) - 1 sequences, 1 unique patterns:
+      [10322, 3899, 1749, 698, 352, 160, 71, 28, 11, 4, 1]: 1 times (100.00%)
+
+   Last 12 element(s) - 1 sequences, 1 unique patterns:
+      [26712, 10322, 3899, 1749, 698, 352, 160, 71, 28, 11, 4, 1]: 1 times (100.00%)
+
+5. Most Common Gaps by Position (from 1):
+
+   Position 1 (from end) - 10 valid gaps, 1 unique values:
+      Gap [1]: 10 times (100.00%)
+
+   Position 2 (from end) - 10 valid gaps, 1 unique values:
+      Gap [4]: 10 times (100.00%)
+
+   Position 3 (from end) - 10 valid gaps, 3 unique values:
+      Gap [10]: 7 times (70.00%)
+      Gap [9]: 2 times (20.00%)
+      Gap [11]: 1 times (10.00%)
+
+   Position 4 (from end) - 10 valid gaps, 5 unique values:
+      Gap [23]: 6 times (60.00%)
+      Gap [33]: 1 times (10.00%)
+      Gap [24]: 1 times (10.00%)
+      Gap [21]: 1 times (10.00%)
+      Gap [28]: 1 times (10.00%)
+
+   Position 5 (from end) - 10 valid gaps, 6 unique values:
+      Gap [57]: 5 times (50.00%)
+      Gap [88]: 1 times (10.00%)
+      Gap [80]: 1 times (10.00%)
+      Gap [61]: 1 times (10.00%)
+      Gap [56]: 1 times (10.00%)
+
+   Position 6 (from end) - 9 valid gaps, 8 unique values:
+      Gap [132]: 2 times (22.22%)
+      Gap [221]: 1 times (11.11%)
+      Gap [189]: 1 times (11.11%)
+      Gap [156]: 1 times (11.11%)
+      Gap [138]: 1 times (11.11%)
+
+   Position 7 (from end) - 8 valid gaps, 8 unique values:
+      Gap [462]: 1 times (12.50%)
+      Gap [409]: 1 times (12.50%)
+      Gap [341]: 1 times (12.50%)
+      Gap [313]: 1 times (12.50%)
+      Gap [301]: 1 times (12.50%)
+
+   Position 8 (from end) - 6 valid gaps, 6 unique values:
+      Gap [1196]: 1 times (16.67%)
+      Gap [783]: 1 times (16.67%)
+      Gap [701]: 1 times (16.67%)
+      Gap [555]: 1 times (16.67%)
+      Gap [610]: 1 times (16.67%)
+
+   Position 9 (from end) - 5 valid gaps, 5 unique values:
+      Gap [2600]: 1 times (20.00%)
+      Gap [1977]: 1 times (20.00%)
+      Gap [1558]: 1 times (20.00%)
+      Gap [1438]: 1 times (20.00%)
+      Gap [1749]: 1 times (20.00%)
+
+   Position 10 (from end) - 3 valid gaps, 3 unique values:
+      Gap [5433]: 1 times (33.33%)
+      Gap [4057]: 1 times (33.33%)
+      Gap [3899]: 1 times (33.33%)
+
+6. Sequence Types & Flags:
+   Total Unique Types: 5
+   ---------------------------------------
+   Child_CrossABC2          3 ( 30.0%)
+   Child_CrossABC1          2 ( 20.0%)
+   Child_Cross12            2 ( 20.0%)
+   Child                    2 ( 20.0%)
+   Child_Avg                1 ( 10.0%)
+
+   Flags Detected:
+   ---------------------------------------
+   Contains |Mutated:       2 ( 20.0%)
+   Contains |Validated:     0 (  0.0%)

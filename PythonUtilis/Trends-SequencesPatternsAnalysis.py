@@ -7,30 +7,29 @@ import numpy as np
 
 # --- CONFIGURATION ---
 TARGET_ALGO = "Trends Analysis"
-RESULTS_DIR = "../Results/FinalSets/"  # Change to the directory path with your files
+RESULTS_DIR = "../Results/FinalSets/Criterion-Comparisons/"  # Change to the directory path with your files
 OUTPUT_DIR = f'outputs/Trends-SequencesPatternsAnalysis/{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}'
 
 # Dictionary of input files. 
 # Key: Sorting range size (N) or text identifier, Value: file path.
 FILES = {
-    "100": "Criterion-Comparisons/CandidateGapSequences_100.txt",
-    "250": "Criterion-Comparisons/CandidateGapSequences_250.txt",
-    "500": "Criterion-Comparisons/CandidateGapSequences_500.txt",
-    "750": "Criterion-Comparisons/CandidateGapSequences_750.txt",
-    "1000": "Criterion-Comparisons/CandidateGapSequences_1000.txt",
-    "2000": "Criterion-Comparisons/CandidateGapSequences_2000.txt",
-    "3000": "Criterion-Comparisons/CandidateGapSequences_3000.txt",
-    "4000": "Criterion-Comparisons/CandidateGapSequences_4000.txt",
-    "5000": "Criterion-Comparisons/CandidateGapSequences_5000.txt",
-    "6000": "Criterion-Comparisons/CandidateGapSequences_6000.txt",
-    "7000": "Criterion-Comparisons/CandidateGapSequences_7000.txt",
-    "8000": "Criterion-Comparisons/CandidateGapSequences_8000.txt",
-    "9000": "Criterion-Comparisons/CandidateGapSequences_9000.txt",
-    "10000": "Criterion-Comparisons/CandidateGapSequences_10000.txt",
-    "100000": "Criterion-Comparisons/CandidateGapSequences_100000.txt",
-    "Merge": "Criterion-Comparisons/CandidateGapSequences_Merge.txt",
-    "Master": "CandidateGapSequences_CL-Merge.txt",
-    "Winners": "CompEval-WinningSequences.txt"
+    "100": "CandidateGapSequences_100.txt",
+    "250": "CandidateGapSequences_250.txt",
+    "500": "CandidateGapSequences_500.txt",
+    "750": "CandidateGapSequences_750.txt",
+    "1000": "CandidateGapSequences_1000.txt",
+    "2000": "CandidateGapSequences_2000.txt",
+    "3000": "CandidateGapSequences_3000.txt",
+    "4000": "CandidateGapSequences_4000.txt",
+    "5000": "CandidateGapSequences_5000.txt",
+    "6000": "CandidateGapSequences_6000.txt",
+    "7000": "CandidateGapSequences_7000.txt",
+    "8000": "CandidateGapSequences_8000.txt",
+    "9000": "CandidateGapSequences_9000.txt",
+    "10000": "CandidateGapSequences_10000.txt",
+    "100000": "CandidateGapSequences_100000.txt",
+    "Merge": "CandidateGapSequences_Merge.txt",
+    "Supreme": "GapSequences_Supreme.txt",
 }
 
 # --- BASE LOGIC ---

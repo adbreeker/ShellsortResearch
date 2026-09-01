@@ -1,0 +1,133 @@
+============================================================
+  Final datasets — Comparisons - Range 250 Analysis
+  (Max Sequences: 100)
+============================================================
+
+1. Number of sequences generated: 100
+
+2. Population Intervals Between Sequences:
+   Average: 9.32
+   Median:  3.00
+   Minimum: 1
+   Maximum: 86
+   Std Dev: 14.40
+   (Max Pop Recorded: 928)
+
+3. Sequence Statistics:
+   Min sequence: [204, 65, 19, 9, 4, 1]
+   Avg sequence: [217.7, 78.42, 22.14, 9.95, 4.02, 1.0]
+   Max sequence: [248, 107, 31, 11, 5, 1]
+
+   Position-by-position (Aligned from End):
+   Pos     Min        Avg          Max       
+   ---------------------------------------
+   1       1          1.00         1         
+   2       4          4.02         5         
+   3       9          9.95         11        
+   4       19         22.14        31        
+   5       65         78.42        107       
+   6       204        217.70       248       
+
+4. Sequence Endings (from 1):
+
+   Last 1 element(s) - 100 sequences, 1 unique patterns:
+      [1]: 100 times (100.00%)
+
+   Last 2 element(s) - 100 sequences, 2 unique patterns:
+      [4, 1]: 98 times (98.00%)
+      [5, 1]: 2 times (2.00%)
+
+   Last 3 element(s) - 100 sequences, 4 unique patterns:
+      [10, 4, 1]: 85 times (85.00%)
+      [9, 4, 1]: 10 times (10.00%)
+      [11, 4, 1]: 3 times (3.00%)
+      [11, 5, 1]: 2 times (2.00%)
+
+   Last 4 element(s) - 100 sequences, 12 unique patterns:
+      [21, 10, 4, 1]: 60 times (60.00%)
+      [23, 10, 4, 1]: 10 times (10.00%)
+      [27, 10, 4, 1]: 7 times (7.00%)
+      [19, 10, 4, 1]: 6 times (6.00%)
+      [24, 9, 4, 1]: 6 times (6.00%)
+      [20, 9, 4, 1]: 3 times (3.00%)
+      [28, 11, 4, 1]: 2 times (2.00%)
+      [24, 11, 5, 1]: 2 times (2.00%)
+      [29, 10, 4, 1]: 1 times (1.00%)
+      [31, 10, 4, 1]: 1 times (1.00%)
+
+   Last 5 element(s) - 100 sequences, 53 unique patterns:
+      [77, 21, 10, 4, 1]: 19 times (19.00%)
+      [67, 21, 10, 4, 1]: 9 times (9.00%)
+      [78, 21, 10, 4, 1]: 8 times (8.00%)
+      [79, 21, 10, 4, 1]: 7 times (7.00%)
+      [80, 21, 10, 4, 1]: 5 times (5.00%)
+      [70, 21, 10, 4, 1]: 2 times (2.00%)
+      [66, 21, 10, 4, 1]: 2 times (2.00%)
+      [69, 21, 10, 4, 1]: 2 times (2.00%)
+      [71, 19, 10, 4, 1]: 2 times (2.00%)
+      [97, 28, 11, 4, 1]: 1 times (1.00%)
+
+   Last 6 element(s) - 47 sequences, 47 unique patterns:
+      [217, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [204, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [208, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [222, 80, 21, 10, 4, 1]: 1 times (2.13%)
+      [231, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [224, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [221, 77, 21, 10, 4, 1]: 1 times (2.13%)
+      [220, 79, 21, 10, 4, 1]: 1 times (2.13%)
+      [216, 67, 21, 10, 4, 1]: 1 times (2.13%)
+      [219, 67, 21, 10, 4, 1]: 1 times (2.13%)
+
+5. Most Common Gaps by Position (from 1):
+
+   Position 1 (from end) - 100 valid gaps, 1 unique values:
+      Gap [1]: 100 times (100.00%)
+
+   Position 2 (from end) - 100 valid gaps, 2 unique values:
+      Gap [4]: 98 times (98.00%)
+      Gap [5]: 2 times (2.00%)
+
+   Position 3 (from end) - 100 valid gaps, 3 unique values:
+      Gap [10]: 85 times (85.00%)
+      Gap [9]: 10 times (10.00%)
+      Gap [11]: 5 times (5.00%)
+
+   Position 4 (from end) - 100 valid gaps, 9 unique values:
+      Gap [21]: 60 times (60.00%)
+      Gap [23]: 10 times (10.00%)
+      Gap [24]: 9 times (9.00%)
+      Gap [27]: 7 times (7.00%)
+      Gap [19]: 6 times (6.00%)
+
+   Position 5 (from end) - 100 valid gaps, 32 unique values:
+      Gap [77]: 21 times (21.00%)
+      Gap [78]: 9 times (9.00%)
+      Gap [67]: 9 times (9.00%)
+      Gap [79]: 8 times (8.00%)
+      Gap [80]: 6 times (6.00%)
+
+   Position 6 (from end) - 47 valid gaps, 23 unique values:
+      Gap [217]: 4 times (8.51%)
+      Gap [214]: 4 times (8.51%)
+      Gap [221]: 3 times (6.38%)
+      Gap [218]: 3 times (6.38%)
+      Gap [215]: 3 times (6.38%)
+
+6. Sequence Types & Flags:
+   Total Unique Types: 9
+   ---------------------------------------
+   Child_Cross12           30 ( 30.0%)
+   Child_Avg               29 ( 29.0%)
+   Child_Cross21           25 ( 25.0%)
+   Child_CrossABC1          7 (  7.0%)
+   Child_CrossABC2          4 (  4.0%)
+   Child_Levy               2 (  2.0%)
+   Child_LevyABC1           1 (  1.0%)
+   Survivor                 1 (  1.0%)
+   Random                   1 (  1.0%)
+
+   Flags Detected:
+   ---------------------------------------
+   Contains |Mutated:       6 (  6.0%)
+   Contains |Validated:     0 (  0.0%)
