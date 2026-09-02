@@ -1,0 +1,20 @@
+=== REPORT FOR RANGE 6000 (19 sequences) ===
+
+1. RATIO BETWEEN GAPS (Excluding final gap):
+  Min: 1.9219
+  Max: 3.6097
+  Average: 2.4912
+  Most common ratios (precision 0.01):
+    Ratio 2.5: 15 occurrences (11.28%)
+    Ratio 2.3: 14 occurrences (10.53%)
+    Ratio 2.48: 9 occurrences (6.77%)
+    Ratio 2.14: 5 occurrences (3.76%)
+    Ratio 2.52: 4 occurrences (3.01%)
+
+2. LENGTH & BOUNDS (Knuth's Theory N/3):
+  Sequence length - Min: 9, Max: 9, Average: 9.0
+  Smallest largest gap: 1745
+  Average largest gap: 2278.1
+  Biggest largest gap: 2541
+  Knuth's target (N/3): 2000.0
+  Average fraction of range N (Expected ~0.333): 0.3797

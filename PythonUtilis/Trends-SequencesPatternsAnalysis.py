@@ -135,8 +135,13 @@ def export_to_txt(results_dict):
             f.write(f"  Max: {data['ratios']['max']:.4f}\n")
             f.write(f"  Average: {data['ratios']['avg']:.4f}\n")
             f.write("  Most common ratios (precision 0.01):\n")
+            
+            # Calculate total ratios to determine percentages
+            total_ratios = len(data['ratios']['all_ratios'])
+            
             for val, count in data['ratios']['most_common']:
-                f.write(f"    Ratio {val}: {count} occurrences\n")
+                pct = (count / total_ratios) * 100 if total_ratios > 0 else 0
+                f.write(f"    Ratio {val}: {count} occurrences ({pct:.2f}%)\n")
 
             if 'knuth_target' in data['bounds']:
                 f.write("\n2. LENGTH & BOUNDS (Knuth's Theory N/3):\n")
