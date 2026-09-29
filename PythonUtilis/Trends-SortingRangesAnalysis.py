@@ -268,19 +268,21 @@ def plot_avg_interval(all_results, sorted_ranges, colors, limit_label):
     filtered_colors = [colors[sorted_ranges.index(r)] for r in numeric_ranges]
     
     fig_width = max(12, len(numeric_ranges) * 1.0)
-    fig, ax = plt.subplots(figsize=(fig_width, 7))
     
     intervals = [all_results[r]['avg_interval'] for r in numeric_ranges]
     stds = [all_results[r]['std_interval'] for r in numeric_ranges]
     labels = [format_title(r) for r in numeric_ranges]
+    max_interval = max(intervals) if intervals else 1
     
+
+    # 1. Linear Plot ------------------------------------------
+    fig, ax = plt.subplots(figsize=(fig_width, 7))
     bars = ax.bar(labels, intervals, color=filtered_colors, edgecolor='black', linewidth=1.2)
     
-    max_interval = max(intervals) if intervals else 1
-    offset = max_interval * 0.02
+    offset_linear = max_interval * 0.02
     
     for bar, interval, std in zip(bars, intervals, stds):
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + offset,
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + offset_linear,
                 f'{interval:.0f}\n±{std:.0f}', ha='center', va='bottom', fontsize=9, fontweight='bold')
                 
     ax.set_ylabel('Average Population Interval', fontsize=12)
@@ -289,7 +291,42 @@ def plot_avg_interval(all_results, sorted_ranges, colors, limit_label):
     
     plt.xticks(rotation=45, ha='right', fontsize=11)
     plt.tight_layout()
-    plt.savefig(f'{OUTPUT_DIR}/plot2_avg_interval.png', dpi=150)
+    plt.savefig(f'{OUTPUT_DIR}/plot2_avg_interval(linear).png', dpi=150)
+    plt.close()
+
+
+    # 2. Logarithmic Plot ------------------------------------------
+    fig_log, ax_log = plt.subplots(figsize=(fig_width, 7))
+    bars_log = ax_log.bar(labels, intervals, color=filtered_colors, edgecolor='black', linewidth=1.2)
+    
+    # Set the y-axis to logarithmic scale
+    ax_log.set_yscale('log')
+    
+    # Set a minimum non-zero value for the log scale to avoid issues with zero intervals
+    min_nonzero = min([i for i in intervals if i > 0]) if any(i > 0 for i in intervals) else 1
+    
+    for bar, interval, std in zip(bars_log, intervals, stds):
+        # Offset for text placement: if interval is zero, place it at 1.25 * min_nonzero to avoid log(0) issues
+        y_pos = interval * 1.25 if interval > 0 else min_nonzero * 1.25
+        
+        ax_log.text(bar.get_x() + bar.get_width()/2, y_pos,
+                    f'{interval:.0f}\n±{std:.0f}', ha='center', va='bottom', fontsize=9, fontweight='bold')
+
+    ax_log.set_ylabel('Average Population Interval \n(Log Scale)', fontsize=12)
+    ax_log.set_title(f'Average Populations Between Finding New Sequences ({TARGET_ALGO}){limit_label}', fontsize=14, fontweight='bold')
+    
+    # Limit the y-axis to a reasonable range based on the data
+    lower_limit = min_nonzero * 0.5
+    upper_limit = max_interval * 3 if max_interval > 0 else 10
+    ax_log.set_ylim(lower_limit, upper_limit)
+    
+    # Helping grid lines for better readability on log scale
+    ax_log.grid(True, which="both", axis="y", ls="--", alpha=0.3, color='gray')
+    ax_log.set_axisbelow(True)
+    
+    plt.xticks(rotation=45, ha='right', fontsize=11)
+    plt.tight_layout()
+    plt.savefig(f'{OUTPUT_DIR}/plot2_avg_interval(log).png', dpi=150)
     plt.close()
 
 def plot_common_beginnings(all_results, sorted_ranges, colors, limit_label):
